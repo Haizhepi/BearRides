@@ -1,0 +1,20 @@
+Hi team,
+
+I wrote this up real quick to help you guys work using this repository. The first thing you'll want to do is download SourceTree.
+https://www.sourcetreeapp.com/
+
+It's made by the same people behind BitBucket so it will work well together.
+
+Once SourceTree is installed go ahead and clone this repository to your local machine. Then you can start working!
+In case you need it, these are the root directories of our repositories:
+https://bitbucket.org/csi-3471/csi-3471-website/src/
+https://bitbucket.org/csi-3471/csi-3471-software/src/
+
+Keep in mind that this is the master branch so make sure you test changes well before pushing here!
+
+The next thing we need to use is a plugin for BitBucket called Time Spent by Easysecrets.
+As the name suggests this will help us track the amount of time each has worked on the repository.
+
+That should be about it, I went ahead and added Time Spent but I'll need to make sure it is working later. So let me know if it is
+working for you. You can read about it here:
+https://marketplace.atlassian.com/apps/1215406/time-spent-add-on-for-bitbucket-cloud?hosting=cloud&tab=overview
