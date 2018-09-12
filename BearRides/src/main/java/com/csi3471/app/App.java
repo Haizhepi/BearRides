@@ -1,4 +1,4 @@
-package com.csi-3471.app;
+package com.csi3471.app;
 
 /**
  * Hello world!

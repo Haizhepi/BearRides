@@ -1,4 +1,4 @@
-package com.csi-3471.app;
+package com.csi3471.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
