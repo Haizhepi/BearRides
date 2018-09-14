@@ -2,10 +2,9 @@ package com.csi3471.entities;
 
 import java.util.Vector;
 
-public class Trip extends Message implements Comparable<MessageHeader> {
+public class Trip {
 	
 	public Trip(String time, String UUID, String title) {
-		super(time, UUID, title);
 	}
 	
 	//setters
@@ -94,6 +93,8 @@ public class Trip extends Message implements Comparable<MessageHeader> {
 	protected Vector<String> riders;
 	//UPID
 	protected Vector<String> requirements;
+	
+	protected Message post;
 	
 	protected String originTime;
 	protected String destinTime;
