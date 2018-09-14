@@ -19,6 +19,10 @@ public class User implements Comparable<User>{
 		return this.email;
 	}
 	
+	public String getPassHash() {
+		return this.passHash;
+	}
+	
 	public String getName() {
 		return this.name;
 	}

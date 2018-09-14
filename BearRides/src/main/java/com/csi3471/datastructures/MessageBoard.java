@@ -1,9 +1,11 @@
 package com.csi3471.datastructures;
 
-public class MessageBoard {
+public class MessageBoard <T extends Comparable<T>> {
 
 	public MessageBoard() {
-		// TODO Auto-generated constructor stub
+		
 	}
+	
+	public void insert(Message)
 
 }
