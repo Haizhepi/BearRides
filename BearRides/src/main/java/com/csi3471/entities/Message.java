@@ -9,16 +9,16 @@ public class Message extends MessageHeader implements Comparable<MessageHeader> 
 	}
 	
 	//getters
-	public String getBody() {
-		return this.body;
-	}
-	
 	public String getUUID() {
 		return this.UUID;
 	}
 	
 	public String getPostTime() {
 		return this.postTime;
+	}
+	
+	public String getBody() {
+		return this.body;
 	}
 	
 	public Vector<String> getRecipients(){

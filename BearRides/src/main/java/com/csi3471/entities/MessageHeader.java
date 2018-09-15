@@ -14,8 +14,12 @@ public class MessageHeader implements Comparable<MessageHeader> {
 	}
 	
 	//setters
-	public void setHidden(Boolean newHidden) {
-		hidden = newHidden;
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public void setHidden(Boolean hidden) {
+		this.hidden = hidden;
 	}
 	
 	//getters

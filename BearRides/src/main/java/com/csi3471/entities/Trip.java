@@ -93,7 +93,7 @@ public class Trip {
 	protected Vector<String> riders;
 	//UPID
 	protected Vector<String> requirements;
-	
+	//UPID
 	protected Message post;
 	
 	protected String originTime;

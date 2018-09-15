@@ -1,13 +1,10 @@
 package com.csi3471.entities;
 
-import java.util.Vector;
-
 public class User implements Comparable<User>{
 	
-	public User(String email, String passHash, Boolean gender) {
+	public User(String email, Integer passHash) {
 		this.email = email;
 		this.passHash = passHash;
-		this.gender = gender;
 	}
 	
 	public int compareTo(User that) {
@@ -19,7 +16,7 @@ public class User implements Comparable<User>{
 		return this.email;
 	}
 	
-	public String getPassHash() {
+	public Integer getPassHash() {
 		return this.passHash;
 	}
 	
@@ -35,16 +32,12 @@ public class User implements Comparable<User>{
 		return this.age;
 	}
 	
+	public Boolean getGender() {
+		return this.gender;
+	}
+	
 	public String getNumber() {
 		return this.number;
-	}
-	
-	public Vector<String> getTrips(){
-		return this.trips;
-	}
-	
-	public Vector<String> getReviews(){
-		return this.reviews;
 	}
 	
 	public Double getRating() {
@@ -52,7 +45,7 @@ public class User implements Comparable<User>{
 	}
 	
 	//setters
-	public void setPassHash(String newPassHash) {
+	public void setPassHash(Integer newPassHash) {
 		this.passHash = newPassHash;
 	}
 	
@@ -72,31 +65,13 @@ public class User implements Comparable<User>{
 		this.number = newNumber;
 	}
 	
-	public void insertTrip(String UMID) {
-		trips.addElement(UMID);
-	}
-	
-	public void removeTrip(String UMID) {
-		trips.removeElement(UMID);
-	}
-	
-	public void insertReview(String UMID, Double newRating) {
-		reviews.addElement(UMID);
-		
-		this.rating += newRating;
-		this.rating /= 2;
-	}
-	
-	public void removeReview(String UMID, Double oldRating) {
-		reviews.removeElement(UMID);
-		
-		this.rating *= 2;
-		this.rating -= oldRating;
+	public void setGender(Boolean gender) {
+		this.gender = gender;
 	}
 	
 	//variables
 	protected String email;
-	protected String passHash;
+	protected Integer passHash;
 	protected Boolean gender;
 	
 	protected String number;
@@ -104,8 +79,8 @@ public class User implements Comparable<User>{
 	protected Integer age;
 	protected String picture;
 	
-	protected Vector<String> trips;
-	protected Vector<String> reviews;
+	protected Boolean isDriver;
+	protected Vehicle car;
 	
 	protected Double rating = 1.0;
 }
