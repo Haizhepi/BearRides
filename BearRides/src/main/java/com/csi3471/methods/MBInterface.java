@@ -1,71 +1,81 @@
 package com.csi3471.methods;
 
 import com.csi3471.datastructures.MessageBoard;
+import com.csi3471.entities.MessageHeader;
 
 //define behavior for MessageBoard
 public interface MBInterface {
-	
+
 	public static void drawBoard(MessageBoard board) {
-		//stubbed
+		// stubbed
 	}
-	
-	public static void drawReview() {
-		//stubbed
+
+	public static void drawReview(MessageBoard board, MessageHeader header) {
+		// stubbed
 	}
-	
-	public static void drawReminder() {
-		//stubbed
+
+	public static void drawReminder(MessageBoard board, MessageHeader header) {
+		// stubbed
 	}
-	
-	public static void drawRequest() {
-		//stubbed
+
+	public static void drawRequest(MessageBoard board, MessageHeader header) {
+		// stubbed
 	}
-	
-	public static void drawOffer() {
-		//stubbed
+
+	public static void drawOffer(MessageBoard board, MessageHeader header) {
+		// stubbed
 	}
-	
-	public static void drawService() {
-		//stubbed
+
+	public static void drawService(MessageBoard board, MessageHeader header) {
+		// stubbed
 	}
-	
-	public static Boolean postRequest() {
+
+	public static Boolean postReview(MessageBoard board) {
+		return null;
+		// stubbed
+	}
+
+	public static Boolean postRequest(MessageBoard board) {
 		return false;
-		//stubbed
+		// stubbed
 	}
-	
-	public static Boolean postOffer() {
+
+	public static Boolean postOffer(MessageBoard board) {
 		return null;
-		//stubbed
+		// stubbed
 	}
-	
-	public static Boolean postService() {
+
+	public static Boolean postService(MessageBoard board) {
 		return null;
-		//stubbed
+		// stubbed
 	}
-	
-	public static Boolean acceptRequest() {
+
+	public static Boolean acceptRequest(MessageBoard board, MessageHeader header) {
 		return null;
-		//stubbed
+		// stubbed
 	}
-	
-	public static Boolean acceptOffer() {
+
+	public static Boolean acceptOffer(MessageBoard board, MessageHeader header) {
 		return null;
-		//stubbed
+		// stubbed
 	}
-	
-	public static Boolean acceptService() {
+
+	public static Boolean acceptService(MessageBoard board, MessageHeader header) {
 		return null;
-		//stubbed
+		// stubbed
 	}
-	
-	public static Boolean leaveReview() {
-		return null;
-		//stubbed
-	}
-	
+
 	public static Boolean pushReminders() {
 		return null;
-		//stubbed
+		// stubbed
+	}
+
+	public static Boolean filterByUser(MessageBoard board, String UUID) {
+		return null;
+		// stubbed
+	}
+
+	public static void removeFinished() {
+		// stubbed
 	}
 }

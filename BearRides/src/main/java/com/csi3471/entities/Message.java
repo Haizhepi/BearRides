@@ -5,44 +5,44 @@ import java.util.Vector;
 @SuppressWarnings("unused")
 public class Message extends MessageHeader implements Comparable<MessageHeader> {
 
-	public Message(String time, String UUID, String title) {
+	public Message(Integer time, String UUID, String title) {
 		super(time, UUID, title);
 	}
-	
+
 	public String toString() {
 		return this.body;
 	}
-	
-	//getters
+
+	// getters
 	public String getCreator() {
 		return this.creator;
 	}
-	
+
 	public Integer getPostTime() {
 		return this.postTime;
 	}
-	
+
 	public String getBody() {
 		return this.body;
 	}
-	
+
 	public Trip getTrip() {
 		return trip;
 	}
-	
-	//setters
+
+	// setters
 	public void setTrip(Trip trip) {
 		this.trip = trip;
 	}
-	
+
 	public void setBody(String body) {
 		this.body = body;
 	}
-	
-	//variables
+
+	// variables
 	private String creator;
 	private Integer postTime;
-	
+
 	private String body;
 	private Trip trip;
 }
