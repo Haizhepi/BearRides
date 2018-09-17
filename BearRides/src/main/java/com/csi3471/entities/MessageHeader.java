@@ -13,6 +13,23 @@ public class MessageHeader implements Comparable<MessageHeader> {
 		return this.UMID.compareTo(that.UMID);
 	}
 	
+	public String toString() {
+		return this.title;
+	}
+	
+	//getters
+	public String getUMID() {
+		return this.UMID;
+	}
+	
+	public String getTitle() {
+		return this.title;
+	}
+	
+	public Boolean isHidden() {
+		return this.hidden;
+	}
+	
 	//setters
 	public void setTitle(String title) {
 		this.title = title;
@@ -20,15 +37,6 @@ public class MessageHeader implements Comparable<MessageHeader> {
 	
 	public void setHidden(Boolean hidden) {
 		this.hidden = hidden;
-	}
-	
-	//getters
-	public String getTitle() {
-		return this.title;
-	}
-	
-	public Boolean isHidden() {
-		return this.hidden;
 	}
 	
 	//variables

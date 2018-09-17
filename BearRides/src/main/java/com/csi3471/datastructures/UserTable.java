@@ -1,9 +1,11 @@
 package com.csi3471.datastructures;
 
-import java.util.*;
+import java.util.Map;
+import java.util.HashMap;
 
 import com.csi3471.entities.User;
 
+//wrapper for HashMap
 public class UserTable {
 	
 	public UserTable() {
@@ -22,15 +24,21 @@ public class UserTable {
 		}
 	}
 	
-	public Boolean insert(User newUser) {
-		return userTable.putIfAbsent(newUser.getUUID(), newUser) == null;
+	public Boolean insert(User user) throws Exception {
+		Boolean attempt = userTable.putIfAbsent(user.getUUID(), user) == null;
+		
+		if(!attempt) {
+			throw new Exception("User Already Registered.");
+		}else {
+			return attempt;
+		}
 	}
 	
 	public Boolean remove(String UUID) {
 		return userTable.remove(UUID) != null;
 	}
 	
-	public User find(String UUID) {
+	public User get(String UUID) {
 		return userTable.get(UUID);
 	}
 	

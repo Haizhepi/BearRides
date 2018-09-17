@@ -1,10 +1,13 @@
 package com.csi3471.entities;
 
+import java.util.Vector;
+
+@SuppressWarnings("unused")
 public class User implements Comparable<User>{
 	
-	public User(String email, Integer passHash) {
+	public User(String email, String password) {
 		this.email = email;
-		this.passHash = passHash;
+		this.passHash = password.hashCode();
 	}
 	
 	public int compareTo(User that) {
@@ -36,51 +39,56 @@ public class User implements Comparable<User>{
 		return this.gender;
 	}
 	
-	public String getNumber() {
-		return this.number;
+	public String getContact() {
+		return this.contact;
 	}
 	
-	public Double getRating() {
+	public Integer getRating() {
 		return this.rating;
 	}
 	
 	//setters
-	public void setPassHash(Integer newPassHash) {
-		this.passHash = newPassHash;
+	public void setPassHash(Integer passHash) {
+		this.passHash = passHash;
 	}
 	
-	public void setName(String newName) {
-		this.name = newName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public void setPicture(String newPath) {
-		this.picture = newPath;
+	public void setPicture(String path) {
+		this.picture = path;
 	}
 	
-	public void setAge(Integer newAge) {
-		this.age= newAge;
+	public void setAge(Integer age) {
+		this.age= age;
 	}
 	
-	public void setNumber(String newNumber) {
-		this.number = newNumber;
+	public void setContact(String contact) {
+		this.contact = contact;
 	}
 	
 	public void setGender(Boolean gender) {
 		this.gender = gender;
 	}
 	
+	public void insertRating(Integer rating) {
+		this.rating = (this.rating * this.ratingCount++ + rating) / ratingCount;
+	}
+	
 	//variables
-	protected String email;
-	protected Integer passHash;
-	protected Boolean gender;
+	private String email;
+	private Integer passHash;
+	private Boolean gender;
 	
-	protected String number;
-	protected String name;
-	protected Integer age;
-	protected String picture;
+	private String contact;
+	private String name;
+	private Integer age;
+	private String picture;
 	
-	protected Boolean isDriver;
-	protected Vehicle car;
+	private Boolean isDriver = false;
+	private Vehicle car;
 	
-	protected Double rating = 1.0;
+	private Integer rating = 100;
+	private Integer ratingCount;
 }

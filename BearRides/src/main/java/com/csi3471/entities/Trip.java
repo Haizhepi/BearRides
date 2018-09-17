@@ -4,24 +4,36 @@ import java.util.Vector;
 
 public class Trip {
 	
-	public Trip(String time, String UUID, String title) {
+	public Trip() {
+		//stubbed
+	}
+	
+	public String toString() {
+		return null;
+		//stubbed
 	}
 	
 	//setters
-	public void insertRider(String newRider) {
-		this.riders.addElement(newRider);
+	public Boolean insertRider(String rider) {
+		if(this.riders.size() < this.passengerCount) {
+			this.riders.addElement(rider);
+			
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
-	public void removeRider(String oldRider) {
-		this.riders.removeElement(oldRider);
+	public void insertRequirement(String requirement) {
+		this.requirements.addElement(requirement);
 	}
 	
-	public void insertRequirement(String newRequirement) {
-		this.requirements.addElement(newRequirement);
+	public Boolean removeRider(String rider) {
+		return this.riders.removeElement(rider);
 	}
 	
-	public void removeRequirement(String oldRequirement) {
-		this.requirements.removeElement(oldRequirement);
+	public Boolean removeRequirement(String oldRequirement) {
+		return this.requirements.removeElement(oldRequirement);
 	}
 	
 	public void setOriginTime(String newOriginTime) {
@@ -36,16 +48,16 @@ public class Trip {
 		this.returnTime = newReturnTime;
 	}
 	
-	public void setOriginPlace(String newOriginPlace) {
-		this.originPlace = newOriginPlace;
+	public void setOriginLoc(String originLoc) {
+		this.originLoc = originLoc;
 	}
 	
-	public void setDestinPlace(String newDestinPlace) {
-		this.destinPlace = newDestinPlace;
+	public void setDestinLoc(String destinLoc) {
+		this.destinLoc = destinLoc;
 	}
 	
-	public void setReturnPlace(String newReturnPlace) {
-		this.returnPlace = newReturnPlace;
+	public void setReturnLoc(String returnLoc) {
+		this.returnLoc = returnLoc;
 	}
 	
 	public void setPassengerCount(Integer newPassengerCount) {
@@ -73,36 +85,32 @@ public class Trip {
 		return this.returnTime;
 	}
 	
-	public String getOriginPlace() {
-		return this.originPlace;
+	public String getOriginLoc() {
+		return this.originLoc;
 	}
 	
-	public String getDestinPlace() {
-		return this.destinPlace;
+	public String getDestinLoc() {
+		return this.destinLoc;
 	}
 	
-	public String getReturnPlace() {
-		return this.returnPlace;
+	public String getReturnLoc() {
+		return this.returnLoc;
 	}
 	
 	public Integer getPassengerCount() {
 		return this.passengerCount;
 	}
 	
-	//UUID
-	protected Vector<String> riders;
-	//UPID
-	protected Vector<String> requirements;
-	//UPID
-	protected Message post;
+	private Vector<String> riders;
+	private Vector<String> requirements;
 	
-	protected String originTime;
-	protected String destinTime;
-	protected String returnTime;
+	private String originTime;
+	private String destinTime;
+	private String returnTime;
 	
-	protected String originPlace;
-	protected String destinPlace;
-	protected String returnPlace;
+	private String originLoc;
+	private String destinLoc;
+	private String returnLoc;
 	
-	protected Integer passengerCount;
+	private Integer passengerCount;
 }

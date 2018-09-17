@@ -2,18 +2,23 @@ package com.csi3471.entities;
 
 import java.util.Vector;
 
+@SuppressWarnings("unused")
 public class Message extends MessageHeader implements Comparable<MessageHeader> {
 
 	public Message(String time, String UUID, String title) {
 		super(time, UUID, title);
 	}
 	
-	//getters
-	public String getUUID() {
-		return this.UUID;
+	public String toString() {
+		return this.body;
 	}
 	
-	public String getPostTime() {
+	//getters
+	public String getCreator() {
+		return this.creator;
+	}
+	
+	public Integer getPostTime() {
 		return this.postTime;
 	}
 	
@@ -21,27 +26,23 @@ public class Message extends MessageHeader implements Comparable<MessageHeader> 
 		return this.body;
 	}
 	
-	public Vector<String> getRecipients(){
-		return this.recipients;
+	public Trip getTrip() {
+		return trip;
 	}
 	
 	//setters
-	public void setBody(String newBody) {
-		this.body = newBody;
+	public void setTrip(Trip trip) {
+		this.trip = trip;
 	}
 	
-	public void insertRecipient(String newRecipient) {
-		this.recipients.addElement(newRecipient);
-	}
-	
-	public void removeRecipient(String oldRecipient) {
-		this.recipients.removeElement(oldRecipient);
+	public void setBody(String body) {
+		this.body = body;
 	}
 	
 	//variables
-	protected String UUID;
-	protected String postTime;
+	private String creator;
+	private Integer postTime;
 	
-	protected String body;
-	protected Vector<String> recipients;
+	private String body;
+	private Trip trip;
 }
