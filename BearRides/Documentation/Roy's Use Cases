@@ -1,0 +1,87 @@
+Use Case:
+
+——————————Delete Account
+Scope: Application
+Level: User Goal
+Primary Actor: User
+Stakeholders and Interests:
+	-User: want to delete his/her own account 
+Preconditions: User account exist on the system
+Postconditions: User account deleted from the system
+
+Main Success Scenario:
+1. User request delete his/her account
+2. System check for holds on this account
+3. Account deleted from the system
+
+Alternate Scenario:
+a. User request delete his/her account
+1. system deny request because this account has unfinished trip
+2. user should finish trip first
+3. try main scenario again
+
+Special Requirements:
+-Account information should not remain in the system
+
+Frequency of Occurrence: Seldom (nearly not for first year)
+
+
+——————————Student Identity Renew
+Scope: Application
+Level: System Requirement
+Primary Actor: User
+Stakeholders and Interests: user want renew their account
+Preconditions: User account will expire in 3 months
+Postconditions: User account will keep for next year
+
+Main Success scenario:
+1. System will send user a renew email on September 1st
+2. User response email
+3. Account will keep for next year.
+
+Alternate scenarios:
+a.
+1. System send user a renew email during September 1st
+2. User do not response to this email
+3. User get alert when login to his/her account
+4. Account not renew by December 1st
+5. Account deleted from the system automatically
+
+b.
+1. System send user a renew email during September 1st
+2. user do not response to this email
+3. User get alert when login to the account
+4. user check and response email before December 1st
+5. Account keep for next year.
+
+Special Requirements:
+-Warn user result of not renewing account
+
+Frequency of Occurrence: Once each year (start from second year)
+
+
+——————————Change client setting 
+Scope: Application
+Level: User Goal
+Primary Actor: User
+Stakeholders and Interests: user want change client setting
+Preconditions: Client setting is in current status
+Postconditions: Client setting changed
+
+Main Success scenario:
+1. User open “setting” tab on application
+2. User change setting on client
+3. Client keep the changed settings
+
+Alternate scenarios:
+a.
+1. User open “setting” tab on application
+2. User do not change setting
+3. Client do not change anything for user
+
+Special Requirements:
+-Setting should be readable from application
+
+Frequency of Occurrence: N/A
+
+
