@@ -18,13 +18,13 @@ public class MessageBoard {
 		this.messageBoard = BTreeMap.create();
 	}
 
-	public Boolean insert(Message newMessage) {
-		return messageBoard.putIfAbsent(newMessage, newMessage) == null;
+	public Boolean insert(Message message) {
+		return messageBoard.putIfAbsent(message, message) == null;
 	}
 
-	public Boolean remove(MessageHeader oldMessage) {
+	public Boolean remove(MessageHeader message) {
 		// need to make sure the return is not null upon success
-		return messageBoard.remove(oldMessage) != null;
+		return messageBoard.remove(message) != null;
 	}
 
 	public Message get(MessageHeader message) {
@@ -43,13 +43,7 @@ public class MessageBoard {
 		return null;
 		// stubbed
 	}
-
-	public void drawBoard() {
-		for (MessageHeader message : messageBoard.values()) {
-			System.out.println(message);
-		}
-	}
-
+	
 	private BTreeMap<MessageHeader, Message> messageBoard;
 	private Multimap<String, MessageHeader> userMap;
 }

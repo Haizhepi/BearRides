@@ -4,7 +4,7 @@ import com.csi3471.datastructures.MessageBoard;
 import com.csi3471.entities.MessageHeader;
 
 //define behavior for MessageBoard
-public interface MBInterface {
+public interface MessageBoardInterface {
 
 	public static void drawBoard(MessageBoard board) {
 		// stubbed

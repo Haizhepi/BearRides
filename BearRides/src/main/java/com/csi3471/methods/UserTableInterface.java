@@ -6,7 +6,7 @@ import com.csi3471.entities.User;
 
 //define behavior for usertable
 @SuppressWarnings("unused")
-public interface UTInterface {
+public interface UserTableInterface {
 
 	public static User login(UserTable table) {
 		inputBuffer in = new inputBuffer();
