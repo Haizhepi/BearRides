@@ -5,7 +5,7 @@ public class TableController {
     
     // Design Principle!
     //      ->
-    //  GUI     Interface
+    //  GUI     Controller
     //   |  <-      |
     //   |          V
     //  GUI     Object
