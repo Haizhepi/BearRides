@@ -3,12 +3,12 @@ package gui;
 import javax.swing.JPanel;
 import javax.swing.UnsupportedLookAndFeelException;
 
-public class UserGUI extends JPanel {
+public class ViewProfileGUI extends JPanel {
     
     /**
      * Creates new form UserGUI
      */
-    public UserGUI() {
+    public ViewProfileGUI() {
         initComponents();
     }
 
@@ -188,7 +188,7 @@ public class UserGUI extends JPanel {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewProfileGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         
@@ -197,7 +197,7 @@ public class UserGUI extends JPanel {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UserGUI().setVisible(true);
+                new ViewProfileGUI().setVisible(true);
             }
         });
     }

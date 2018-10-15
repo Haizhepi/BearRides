@@ -12,10 +12,6 @@ public class UserTableController {
         return null;
     }
     
-    public static Boolean remove(UserTable table, User user) {
-        return null;
-    }
-    
     public static Boolean remove(UserTable table, String UUID) {
         return null;
     }

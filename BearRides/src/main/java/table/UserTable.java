@@ -16,15 +16,28 @@ public class UserTable extends AbstractTableModel {
     
     public UserTable() {
         userTable = new HashMap<String, User>();
-        loginTracker = new HashSet<String>();
+        logger = new HashSet<String>();
     }
 
     public User login(String UUID, String password) {
-        if(isLogged(UUID)) {
-            return null;
+        if(!isLogged(UUID)) {
+            if(userTable.containsKey(UUID)) {
+                User attempt = userTable.get(UUID);
+                if(attempt.getPassHash() == password.hashCode()) {
+                    logger.add(UUID);
+                    return attempt;
+                }else {
+                }
+            }
         } else {
-            User attempt = userTable.get(UUID);
-            return (attempt.getPassHash() == password.hashCode()) ? attempt : null;
+        }
+        return null;
+    }
+    
+    public void logout(String UUID) {
+        if(isLogged(UUID)) {
+            logger.remove(UUID);
+        }else {
         }
     }
 
@@ -45,7 +58,7 @@ public class UserTable extends AbstractTableModel {
     }
     
     private Boolean isLogged(String UUID) {
-        return loginTracker.contains(UUID);
+        return logger.contains(UUID);
     }
 
     public int getColumnCount() {
@@ -66,7 +79,7 @@ public class UserTable extends AbstractTableModel {
     @XmlElement
     Map<String, User> userTable;
     @XmlElement
-    Set<String> loginTracker;
+    Set<String> logger;
     
     private static final long serialVersionUID = -8789212477038794129L;
 }
