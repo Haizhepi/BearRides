@@ -1,6 +1,9 @@
 package objects;
 
-@SuppressWarnings("unused")
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class User implements Comparable<User> {
 
     public User(String email, String password) {
@@ -164,18 +167,29 @@ public class User implements Comparable<User> {
     }
 
     // variables
+    @XmlElement
     private String email;
+    @XmlElement
     private Integer passHash;
+    @XmlElement
     private Boolean gender;
     
+    @XmlElement
     private String name;
+    @XmlElement
     private String contact;
+    @XmlElement
     private Integer age;
+    @XmlElement
     private String picture;
-
+    
+    @XmlElement
     private Boolean isDriver = false;
+    @XmlElement
     private Vehicle car;
-
+    
+    @XmlElement
     private Integer rating = 100;
+    @XmlElement
     private Integer ratingCount;
 }

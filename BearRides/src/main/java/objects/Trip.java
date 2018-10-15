@@ -2,7 +2,10 @@ package objects;
 
 import java.util.Vector;
 
-@SuppressWarnings("unused")
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Trip {
 
     public Trip() {
@@ -180,16 +183,25 @@ public class Trip {
         this.passengerCount = passengerCount;
     }
     
+    @XmlElement
     private Vector<String> riders;
+    @XmlElement
     private Vector<String> requirements;
-
+    
+    @XmlElement
     private String originTime;
+    @XmlElement
     private String destinTime;
+    @XmlElement
     private String returnTime;
-
+    
+    @XmlElement
     private String originLoc;
+    @XmlElement
     private String destinLoc;
+    @XmlElement
     private String returnLoc;
-
+    
+    @XmlElement
     private Integer passengerCount;
 }

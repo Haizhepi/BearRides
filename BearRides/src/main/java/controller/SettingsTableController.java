@@ -1,5 +1,5 @@
 package controller;
 
-public class SettingsTableController extends TableController {
+public class SettingsTableController {
 
 }

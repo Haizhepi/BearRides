@@ -1,6 +1,9 @@
 package objects;
 
-@SuppressWarnings("unused")
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class MessageHeader implements Comparable<MessageHeader> {
     
     public MessageHeader(Integer time, String UUID, String title) {
@@ -73,8 +76,11 @@ public class MessageHeader implements Comparable<MessageHeader> {
     }
 
     // variables
+    @XmlElement
     protected String UMID;
+    @XmlElement
     protected String title;
-
+    
+    @XmlElement
     public Boolean hidden;
 }

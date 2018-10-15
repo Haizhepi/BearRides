@@ -6,9 +6,12 @@ import java.util.Map;
 import java.util.Set;
 
 import javax.swing.table.AbstractTableModel;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import objects.User;
 
+@XmlRootElement
 public class UserTable extends AbstractTableModel {
     
     public UserTable() {
@@ -60,7 +63,9 @@ public class UserTable extends AbstractTableModel {
         return null;
     }
     
+    @XmlElement
     Map<String, User> userTable;
+    @XmlElement
     Set<String> loginTracker;
     
     private static final long serialVersionUID = -8789212477038794129L;

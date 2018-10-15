@@ -1,6 +1,9 @@
 package objects;
 
-@SuppressWarnings("unused")
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Vehicle {
     
     public Vehicle() {
@@ -87,8 +90,12 @@ public class Vehicle {
     }
     
     //variables
+    @XmlElement
     private String model;
+    @XmlElement
     private String picture;
+    @XmlElement
     private Integer passengerCapacity;
+    @XmlElement
     private String storageSpace;
 }

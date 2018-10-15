@@ -1,6 +1,9 @@
 package objects;
 
-@SuppressWarnings("unused")
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Message extends MessageHeader implements Comparable<MessageHeader> {
     
     public Message(Integer time, String UUID, String title) {
@@ -85,9 +88,13 @@ public class Message extends MessageHeader implements Comparable<MessageHeader> 
     }
 
     // variables
+    @XmlElement
     private String creator;
+    @XmlElement
     private Integer postTime;
-
+    
+    @XmlElement
     private String body;
+    @XmlElement
     private Trip trip;
 }

@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.NavigableSet;
 
 import javax.swing.table.AbstractTableModel;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.TreeMultimap;
@@ -12,6 +14,7 @@ import objects.Message;
 import objects.MessageHeader;
 import uk.co.omegaprime.btreemap.BTreeMap;
 
+@XmlRootElement
 public class MessageTable extends AbstractTableModel {
     
     public MessageTable() {
@@ -68,7 +71,11 @@ public class MessageTable extends AbstractTableModel {
         return null;
     }
     
+    
+    
+    @XmlElement
     private BTreeMap<MessageHeader, Message> messageBoard;
+    @XmlElement
     private Multimap<String, MessageHeader> userMap;
     
     private static final long serialVersionUID = 7104942565195945524L;

@@ -1,4 +1,4 @@
-package method;
+package io;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
-//define input and out buffers for use throught the program here
+//define input and out buffers for use throughout the program here
 public class IOBuffers {
     
     public IOBuffers() {
