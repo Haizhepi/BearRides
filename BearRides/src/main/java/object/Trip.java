@@ -1,17 +1,29 @@
-package objects;
+package object;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class Trip {
+public class Trip implements Comparable<Trip> {
 
-    public Trip() {
-        // stubbed
+    public Trip(User driver, Date originTime, Integer passengerCap) {
+        this.driver = driver;
+        this.originTime = originTime;
+        this.passengerCap = passengerCap;
+        
+        riders = new ArrayList<User>();
+        requirements = new ArrayList<String>();
     }
-
+    
+    @Override
+    public int compareTo(Trip arg0) {
+        return getOriginTime().compareTo(arg0.getOriginTime());
+    }
+    
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -25,7 +37,7 @@ public class Trip {
         result = prime * result
                 + ((originTime == null) ? 0 : originTime.hashCode());
         result = prime * result
-                + ((passengerCount == null) ? 0 : passengerCount.hashCode());
+                + ((passengerCap == null) ? 0 : passengerCap.hashCode());
         result = prime * result
                 + ((requirements == null) ? 0 : requirements.hashCode());
         result = prime * result
@@ -65,10 +77,10 @@ public class Trip {
                 return false;
         } else if (!originTime.equals(other.originTime))
             return false;
-        if (passengerCount == null) {
-            if (other.passengerCount != null)
+        if (passengerCap == null) {
+            if (other.passengerCap != null)
                 return false;
-        } else if (!passengerCount.equals(other.passengerCount))
+        } else if (!passengerCap.equals(other.passengerCap))
             return false;
         if (requirements == null) {
             if (other.requirements != null)
@@ -92,11 +104,11 @@ public class Trip {
             return false;
         return true;
     }
-    
+
     // insertion
-    public Boolean insertRider(String rider) {
-        if (this.riders.size() < this.passengerCount) {
-            this.riders.addElement(rider);
+    public Boolean insertRider(User user) {
+        if (this.riders.size() < this.passengerCap) {
+            this.riders.add(user);
             return true;
         } else {
             return false;
@@ -104,37 +116,37 @@ public class Trip {
     }
 
     public void insertRequirement(String requirement) {
-        this.requirements.addElement(requirement);
+        this.requirements.add(requirement);
     }
     
     //removal
-    public Boolean removeRider(String rider) {
-        passengerCount--;
-        return this.riders.removeElement(rider);
+    public Boolean removeRider(User user) {
+        passengerCap--;
+        return this.riders.remove(user);
     }
 
     public Boolean removeRequirement(String requirement) {
-        return this.requirements.removeElement(requirement);
+        return this.requirements.remove(requirement);
     }
     
     // getters
-    public Vector<String> getRiders() {
+    public List<User> getRiders() {
         return this.riders;
     }
 
-    public Vector<String> getRequirements() {
+    public List<String> getRequirements() {
         return this.requirements;
     }
 
-    public String getOriginTime() {
+    public Date getOriginTime() {
         return this.originTime;
     }
 
-    public String getDestinTime() {
+    public Date getDestinTime() {
         return this.destinTime;
     }
 
-    public String getReturnTime() {
+    public Date getReturnTime() {
         return this.returnTime;
     }
 
@@ -151,19 +163,23 @@ public class Trip {
     }
 
     public Integer getPassengerCount() {
-        return this.passengerCount;
+        return this.passengerCap;
+    }
+    
+    public User getDriver() {
+        return driver;
     }
     
     // setters
-    public void setOriginTime(String originTime) {
+    public void setOriginTime(Date originTime) {
         this.originTime = originTime;
     }
 
-    public void setDestinTime(String destinTime) {
+    public void setDestinTime(Date destinTime) {
         this.destinTime = destinTime;
     }
 
-    public void setReturnTime(String returnTime) {
+    public void setReturnTime(Date returnTime) {
         this.returnTime = returnTime;
     }
 
@@ -180,20 +196,26 @@ public class Trip {
     }
 
     public void setPassengerCount(Integer passengerCount) {
-        this.passengerCount = passengerCount;
+        this.passengerCap = passengerCount;
+    }
+    
+    public void setDriver(User user) {
+        this.driver = user;
     }
     
     @XmlElement
-    private Vector<String> riders;
+    private User driver;
     @XmlElement
-    private Vector<String> requirements;
+    private List<User> riders;
+    @XmlElement
+    private List<String> requirements;
     
     @XmlElement
-    private String originTime;
+    private Date originTime;
     @XmlElement
-    private String destinTime;
+    private Date destinTime;
     @XmlElement
-    private String returnTime;
+    private Date returnTime;
     
     @XmlElement
     private String originLoc;
@@ -203,5 +225,5 @@ public class Trip {
     private String returnLoc;
     
     @XmlElement
-    private Integer passengerCount;
+    private Integer passengerCap;
 }

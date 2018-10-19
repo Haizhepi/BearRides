@@ -1,7 +1,9 @@
 package table;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.NavigableSet;
+import java.util.Date;
+import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
 import javax.xml.bind.annotation.XmlElement;
@@ -10,73 +12,87 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.TreeMultimap;
 
-import objects.Message;
-import objects.MessageHeader;
-import uk.co.omegaprime.btreemap.BTreeMap;
+import object.Message;
+import object.Trip;
+import object.User;
 
 @XmlRootElement
 public class MessageTable extends AbstractTableModel {
     
     public MessageTable() {
-        this.messageBoard = BTreeMap.create();
+        this.messages = new ArrayList<Message>();
         this.userMap = TreeMultimap.create();
+        this.tripQueue = TreeMultimap.create();
     }
     
-    public static Boolean pushReminders() {
-        return null;
-        // stubbed
-    }
-
+    //insertion
     public Boolean insert(Message message) {
         userMap.put(message.getCreator(), message);
-        return messageBoard.putIfAbsent(message, message) == null;
+        Trip trip = message.getTrip();
+        if(trip != null) {
+            tripQueue.put(trip.getOriginTime(), trip);
+        }else {
+        }
+        return messages.add(message);
     }
-
-    public Boolean removeAll(String UUID) {
-        userMap.removeAll(UUID);
-        return userMap.containsKey(UUID);
+    
+    //removal
+    public Boolean removeAll(User user) {
+        userMap.removeAll(user);
+        return userMap.containsKey(user);
     }
     
     public Boolean remove(Message message) {
         userMap.remove(message.getCreator(), message);
         // need to make sure the return is not null upon success
-        return messageBoard.remove(message) != null;
+        return messages.remove(message);
     }
 
-    public Message get(MessageHeader message) {
-        return messageBoard.get(message);
+    public Boolean checkFor(Message message) {
+        return messages.contains(message);
     }
 
-    public Boolean checkFor(MessageHeader message) {
-        return messageBoard.containsKey(message);
+    public Collection<Message> fromUser(User user) {
+        return userMap.get(user);
     }
-
-    public NavigableSet<MessageHeader> getHeaders() {
-        return messageBoard.keySet();
+    
+    public void pushReminders(Date date) {
+        for(Trip trip : tripQueue.get(date)) {
+            for(User user : trip.getRiders()) {
+                //generate passenger notification
+                user.notify(new Message(null, null));
+            }
+            
+            //generate driver notification
+            trip.getDriver().notify(new Message(null, null));
+        }
     }
-
-    public Collection<MessageHeader> fromUser(String UUID) {
-        return userMap.get(UUID);
-    }
-
+    
+    //getters
     public int getColumnCount() {
-        return 0;
+        return COLUMNcOUNT;
     }
 
     public int getRowCount() {
-        return 0;
+        return messages.size();
     }
 
-    public Object getValueAt(int arg0, int arg1) {
-        return null;
+    public Object getValueAt(int row, int col) {
+        return (col < COLUMNcOUNT && row < messages.size()) ? messages.get(row) : null;
     }
     
-    
+    public List<Message> getMessages() {
+        return messages;
+    }
     
     @XmlElement
-    private BTreeMap<MessageHeader, Message> messageBoard;
+    private List<Message> messages;
     @XmlElement
-    private Multimap<String, MessageHeader> userMap;
+    private Multimap<User, Message> userMap;
+    @XmlElement
+    private Multimap<Date, Trip> tripQueue;
+    
+    private final int COLUMNcOUNT = 1;
     
     private static final long serialVersionUID = 7104942565195945524L;
 }

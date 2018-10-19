@@ -1,4 +1,9 @@
-package objects;
+package object;
+
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.UUID;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -9,8 +14,10 @@ public class User implements Comparable<User> {
     public User(String email, String password) {
         this.email = email;
         this.passHash = password.hashCode();
+        notifications = new TreeSet<Message>();
     }
     
+    @Override
     public int compareTo(User that) {
         return this.email.compareTo(that.email);
     }
@@ -33,6 +40,7 @@ public class User implements Comparable<User> {
         result = prime * result + ((rating == null) ? 0 : rating.hashCode());
         result = prime * result
                 + ((ratingCount == null) ? 0 : ratingCount.hashCode());
+        result = prime * result + ((token == null) ? 0 : token.hashCode());
         return result;
     }
 
@@ -100,12 +108,26 @@ public class User implements Comparable<User> {
                 return false;
         } else if (!ratingCount.equals(other.ratingCount))
             return false;
+        if (token == null) {
+            if (other.token != null)
+                return false;
+        } else if (!token.equals(other.token))
+            return false;
         return true;
     }
-    
+
     //insertion
     public void insertRating(Integer rating) {
         this.rating = (this.rating * this.ratingCount++ + rating) / ratingCount;
+    }
+    
+    public void notify(Message notification) {
+        this.notifications.add(notification);
+    }
+    
+    //deletion
+    public void forget(Message notification) {
+        this.notifications.remove(notification);
     }
 
     // getters
@@ -140,6 +162,14 @@ public class User implements Comparable<User> {
     public Integer getRating() {
         return this.rating;
     }
+    
+    public UUID getToken() {
+        return token;
+    }
+    
+    public Set<Message> getNotifications(){
+        return notifications;
+    }
 
     // setters
     public void setPassHash(Integer passHash) {
@@ -165,6 +195,10 @@ public class User implements Comparable<User> {
     public void setGender(Boolean gender) {
         this.gender = gender;
     }
+    
+    public void setToken(UUID token) {
+        this.token = token;
+    }
 
     // variables
     @XmlElement
@@ -173,6 +207,7 @@ public class User implements Comparable<User> {
     private Integer passHash;
     @XmlElement
     private Boolean gender;
+    private UUID token = null;
     
     @XmlElement
     private String name;
@@ -192,4 +227,7 @@ public class User implements Comparable<User> {
     private Integer rating = 100;
     @XmlElement
     private Integer ratingCount;
+    
+    @XmlElement
+    private SortedSet<Message> notifications;
 }
