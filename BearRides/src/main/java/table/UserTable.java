@@ -1,72 +1,68 @@
 package table;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
+import java.util.UUID;
 
-import javax.swing.table.AbstractTableModel;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import objects.User;
+import object.User;
 
 @XmlRootElement
-public class UserTable extends AbstractTableModel {
+public class UserTable {
     
     public UserTable() {
         userTable = new HashMap<String, User>();
-        loginTracker = new HashSet<String>();
+        tokenMap = new HashMap<String, UUID>();
     }
 
-    public User login(String UUID, String password) {
-        if(isLogged(UUID)) {
-            return null;
-        } else {
-            User attempt = userTable.get(UUID);
-            return (attempt.getPassHash() == password.hashCode()) ? attempt : null;
+    public User login(String uuid, String password) {
+        if(userTable.containsKey(uuid)) {
+            User attempt = userTable.get(uuid);
+            if(attempt.getPassHash().equals(password.hashCode()) &&
+                    !tokenMap.containsKey(attempt.getUUID())) {
+                UUID token = generateToken();
+                attempt.setToken(token);
+                tokenMap.put(attempt.getUUID(), token);
+                return attempt;
+            }else {
+            }
         }
+        return null;
+    }
+    
+    public Boolean authenticate(User user) {
+        return user.getToken() != null &&
+                user.getToken().equals(tokenMap.get(user.getUUID()));
+    }
+    
+    public void logout(User user) {
+        tokenMap.remove(user.getUUID());
+        user.setToken(null);
     }
 
     public Boolean insert(User user) {
         return userTable.putIfAbsent(user.getUUID(), user) == null;
     }
 
-    public Boolean remove(String UUID) {
-        return  userTable.remove(UUID) != null;
+    public Boolean remove(User user) {
+        return userTable.remove(user.getUUID()) != null;
     }
 
-    public User get(String UUID) {
-        return userTable.get(UUID);
+    public User get(User user, String uuid) {
+        return userTable.get(uuid);
     }
 
-    public Boolean checkFor(String UUID) {
-        return userTable.containsKey(UUID);
+    public Boolean checkFor(String uuid) {
+        return userTable.containsKey(uuid);
     }
     
-    private Boolean isLogged(String UUID) {
-        return loginTracker.contains(UUID);
-    }
-
-    public int getColumnCount() {
-        // TODO Auto-generated method stub
-        return 0;
-    }
-
-    public int getRowCount() {
-        // TODO Auto-generated method stub
-        return 0;
-    }
-
-    public Object getValueAt(int arg0, int arg1) {
-        // TODO Auto-generated method stub
-        return null;
+    private UUID generateToken() {
+        return UUID.randomUUID();
     }
     
     @XmlElement
     Map<String, User> userTable;
-    @XmlElement
-    Set<String> loginTracker;
-    
-    private static final long serialVersionUID = -8789212477038794129L;
+    Map<String, UUID> tokenMap;
 }
