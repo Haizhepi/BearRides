@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -11,49 +11,49 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,21,0,0,1,116"/>
   </AuxValues>
 
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="LowerSeparator" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="userInfoLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
-                                  <Component id="reqLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="firstnameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lastnameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="ageLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="genderLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="contactLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="emailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="ageFormattedTextField" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lastNameFormattedTextField" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="firstNameFormattedTextField" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="genderFormattedTextField" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="contactFormattedTextField" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="emailFormattedTextField" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Component id="upperSeparator" alignment="0" min="-2" pref="352" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="userInfoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="93" max="32767" attributes="0"/>
+                      <Component id="reqLabel" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="firstnameLabel" max="32767" attributes="0"/>
+                              <EmptySpace min="62" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lastnameLabel" max="32767" attributes="0"/>
+                              <EmptySpace min="119" pref="119" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="ageLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="genderLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="contactLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="emailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="contactFormattedTextField" pref="139" max="32767" attributes="0"/>
+                          <Component id="genderFormattedTextField" alignment="1" max="32767" attributes="0"/>
+                          <Component id="ageFormattedTextField" alignment="1" max="32767" attributes="0"/>
+                          <Component id="firstNameFormattedTextField" alignment="1" max="32767" attributes="0"/>
+                          <Component id="lastNameFormattedTextField" max="32767" attributes="0"/>
+                          <Component id="emailFormattedTextField" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="upperSeparator" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
@@ -66,64 +66,59 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="editDriverInfoButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="registerAsDriverButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="userInfoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="reqLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="upperSeparator" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="upperSeparator" pref="10" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="firstnameLabel" min="-2" max="-2" attributes="0"/>
                   <Component id="firstNameFormattedTextField" linkSize="5" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lastnameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lastNameFormattedTextField" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="ageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ageFormattedTextField" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="genderLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="genderFormattedTextField" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="contactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="contactFormattedTextField" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="emailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="emailFormattedTextField" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="registerAsDriverButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="editDriverInfoButton" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="editDriverInfoButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="LowerSeparator" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="saveButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cancelButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -169,40 +164,17 @@
         <Property name="text" type="java.lang.String" value="Email Address*"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="registerAsDriverButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Register as a Driver"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JFormattedTextField" name="firstNameFormattedTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="lastNameFormattedTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="ageFormattedTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="genderFormattedTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="contactFormattedTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="emailFormattedTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="upperSeparator">
     </Component>
@@ -212,6 +184,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cancelButton">
       <Properties>
@@ -220,8 +195,11 @@
     </Component>
     <Component class="javax.swing.JButton" name="editDriverInfoButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Edit your Driver Info"/>
+        <Property name="text" type="java.lang.String" value="Driver Info"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editDriverInfoButtonActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
