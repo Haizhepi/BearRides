@@ -18,17 +18,28 @@ public class UserTableController {
      * precondition: user is not already logged in, user is registered
      * postcondition: the user is marked as logged in and
      */
-    public static User login(UserTable table, String UUID, String Password) throws Exception {
+    public static User login(UserTable table, String UUID, String password) throws Exception {
+        User attempt = table.login(UUID, password);
         
-        return null;
+        if(attempt == null) {
+        	throw new Exception("User Not Found");
+        }
+        
+    	return attempt;
     }
     
-    public static Boolean register(UserTable table, User user) throws Exception {
-        return null;
+    public static void register(UserTable table, User user) throws Exception {
+        if(!user.getUUID().contains("_") && user.getUUID().equals("@baylor.edu")) {
+        	throw new Exception("Invalid Baylor Email-Address");
+        } else if (user.getName().contains("[a-zA-Z]+")) {
+        	throw new Exception("Name Contains Non-Letter Input");
+        }
+        
+        table.insert(user);
     }
     
     public static Boolean remove(UserTable table, User user) {
-        return null;
+    	return table.remove(user);
     }
 
     public static Boolean recover(UserTable table, User user) {
@@ -50,8 +61,7 @@ public class UserTableController {
     public static Boolean setInfo(List<String> info) {
         return null;
     }
-    
-    
+        
     // gui -> controller
     //          |
     //          v

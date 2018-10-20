@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class User implements Comparable<User> {
 
     public User(String email, String password) {
-        this.email = email;
+        this.uuid = email;
         this.passHash = password.hashCode();
         notifications = new TreeSet<Message>();
     }
     
     @Override
     public int compareTo(User that) {
-        return this.email.compareTo(that.email);
+        return this.uuid.compareTo(that.uuid);
     }
     
     @Override
@@ -29,7 +29,7 @@ public class User implements Comparable<User> {
         result = prime * result + ((age == null) ? 0 : age.hashCode());
         result = prime * result + ((car == null) ? 0 : car.hashCode());
         result = prime * result + ((contact == null) ? 0 : contact.hashCode());
-        result = prime * result + ((email == null) ? 0 : email.hashCode());
+        result = prime * result + ((uuid == null) ? 0 : uuid.hashCode());
         result = prime * result + ((gender == null) ? 0 : gender.hashCode());
         result = prime * result
                 + ((isDriver == null) ? 0 : isDriver.hashCode());
@@ -68,10 +68,10 @@ public class User implements Comparable<User> {
                 return false;
         } else if (!contact.equals(other.contact))
             return false;
-        if (email == null) {
-            if (other.email != null)
+        if (uuid == null) {
+            if (other.uuid != null)
                 return false;
-        } else if (!email.equals(other.email))
+        } else if (!uuid.equals(other.uuid))
             return false;
         if (gender == null) {
             if (other.gender != null)
@@ -132,7 +132,7 @@ public class User implements Comparable<User> {
 
     // getters
     public String getUUID() {
-        return this.email;
+        return this.uuid;
     }
 
     public Integer getPassHash() {
@@ -202,7 +202,7 @@ public class User implements Comparable<User> {
 
     // variables
     @XmlElement
-    private String email;
+    private String uuid;
     @XmlElement
     private Integer passHash;
     @XmlElement

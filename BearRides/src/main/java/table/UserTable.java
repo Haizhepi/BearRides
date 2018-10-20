@@ -26,7 +26,8 @@ public class UserTable {
                 attempt.setToken(token);
                 tokenMap.put(attempt.getUUID(), token);
                 return attempt;
-            }else {
+            }else { 
+            	
             }
         }
         return null;

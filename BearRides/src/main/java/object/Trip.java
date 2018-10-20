@@ -163,7 +163,7 @@ public class Trip implements Comparable<Trip> {
     }
 
     public Integer getPassengerCount() {
-        return requirements != null ? requirements.size() : 0;
+        return riders != null ? riders.size() : 0;
     }
     
     public Integer getPassengerCap() {
