@@ -26,7 +26,6 @@ public class UserTable {
                 attempt.setToken(token);
                 tokenMap.put(attempt.getUUID(), token);
                 return attempt;
-            }else {
             }
         }
         return null;
@@ -35,6 +34,10 @@ public class UserTable {
     public Boolean authenticate(User user) {
         return user.getToken() != null &&
                 user.getToken().equals(tokenMap.get(user.getUUID()));
+    }
+    
+    public void register(User user) {
+    	this.userTable.put(user.getUUID(), user);
     }
     
     public void logout(User user) {
