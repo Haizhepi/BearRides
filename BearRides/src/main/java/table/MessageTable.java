@@ -69,14 +69,17 @@ public class MessageTable extends AbstractTableModel {
     }
     
     //getters
+    @Override
     public int getColumnCount() {
         return COLUMNcOUNT;
     }
-
+    
+    @Override
     public int getRowCount() {
         return messages.size();
     }
-
+    
+    @Override
     public Object getValueAt(int row, int col) {
         return (col < COLUMNcOUNT && row < messages.size()) ? messages.get(row) : null;
     }
