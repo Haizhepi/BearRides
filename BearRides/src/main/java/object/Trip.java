@@ -163,6 +163,10 @@ public class Trip implements Comparable<Trip> {
     }
 
     public Integer getPassengerCount() {
+        return requirements != null ? requirements.size() : 0;
+    }
+    
+    public Integer getPassengerCap() {
         return this.passengerCap;
     }
     
@@ -194,9 +198,9 @@ public class Trip implements Comparable<Trip> {
     public void setReturnLoc(String returnLoc) {
         this.returnLoc = returnLoc;
     }
-
-    public void setPassengerCount(Integer passengerCount) {
-        this.passengerCap = passengerCount;
+    
+    public void setPassengerCap(Integer passengerCap) {
+        this.passengerCap = passengerCap;
     }
     
     public void setDriver(User user) {

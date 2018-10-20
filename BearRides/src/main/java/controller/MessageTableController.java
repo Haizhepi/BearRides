@@ -13,16 +13,17 @@ import object.Message;
 import object.Trip;
 import table.MessageTable;
 
+
 public class MessageTableController {
     
     public MessageTableController() {
         sorter = new TableRowSorter<MessageTable>();
     }
     
-    public void sortBy(Sorters sort, MessageTable table) {
+    public void sortBy(Sorters sorters, MessageTable table) {
         Comparator<Message> compare;
         
-        switch(sort) {
+        switch(sorters) {
         case POSTtIME:
             compare = new postTimeComparator();
             break;
@@ -45,42 +46,41 @@ public class MessageTableController {
         table.fireTableDataChanged();
     }
     
-    public void filterBy(Filters filt, JTable table, String search) {
-        Filter filter = null;
+    public void filterBy(Filters filters, JTable table, String search) {
+        RowFilter<TableModel, Integer> filter = null;
         
-        switch(filt) {
+        switch(filters) {
         case CREATOR:
-            filter = new creatorFilter(new String(), new MessageTable());
+            filter = new driverFilter(search);
             break;
-        case TRIP:
-            filter = new tripFilter(new String(), new MessageTable());
+        case HAsTRIP:
+            filter = new hasTripFilter();
             break;
         case ORIGINlOC:
-            filter = new originLocFilter(new String(), new MessageTable());
+            filter = new originLocFilter(search);
             break;
         case DESTINlOC:
-            filter = new destinLocFilter(new String(), new MessageTable());
+            filter = new destinLocFilter(search);
             break;
         case RETURNlOC:
-            filter = new returnLocFilter(new String(), new MessageTable());
+            filter = new returnLocFilter(search);
             break;
         case PASSENGERcAP:
-            filter = new passengerCapFilter(new String(), new MessageTable());
+            filter = new passengerCapFilter(search);
             break;
         default:
             return;
         }
+        
         sorter.setRowFilter(filter);
         table.setRowSorter(sorter);
-        
     }
     
-    public void viewMessage() {
-        
-    }
-    
-    public void postMessage() {
-        
+    public void postMessage(Message message) {
+        //authenticate user
+        //verify title isnt empty
+        //make sure that the message isnt already in the set
+        //verify that the body isn't e
     }
     
     public void editMessage() {
@@ -100,7 +100,7 @@ public class MessageTableController {
     }
     
     public enum Filters {
-        CREATOR, TRIP, ORIGINlOC, DESTINlOC, RETURNlOC, PASSENGERcAP
+        CREATOR, HAsTRIP, ORIGINlOC, DESTINlOC, RETURNlOC, PASSENGERcAP
     }
     
     private TableRowSorter<MessageTable> sorter;
@@ -165,85 +165,149 @@ class tripPassengerCapComparator implements Comparator<Message> {
     }
 }
 
-abstract class Filter extends RowFilter<TableModel, Integer> {
+class driverFilter extends RowFilter<TableModel, Integer> {
     
-    public Filter(String search, TableModel table) {
+    public driverFilter(String search) {
         this.search = search;
-        this.table = table;
+    }
+    
+    @Override
+    public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
+        TableModel table = row.getModel();
+        Integer index = row.getIdentifier();
+        
+        for (int i = 0; i < row.getValueCount(); i++) {
+            Message message = (Message) table.getValueAt(index, i);
+            
+            if(message.getTrip() != null && message.getTrip().getDriver().getName().contains(search)) {
+                return true;
+            }else {
+            }
+        }
+        return false;
     }
     
     String search;
-    TableModel table;
 }
 
-class creatorFilter extends Filter {
+class hasTripFilter extends RowFilter<TableModel, Integer> {
     
-    public creatorFilter(String search, TableModel table) {
-        super(search, table);
+    public hasTripFilter() {
     }
     
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
+        TableModel table = row.getModel();
+        Integer index = row.getIdentifier();
+        
+        for (int i = 0; i < row.getValueCount(); i++) {
+            Message message = (Message) table.getValueAt(index, i);
+            
+            if(message.getTrip() != null) {
+                return true;
+            }else {
+            }
+        }
         return false;
     }
 }
 
-class tripFilter extends Filter {
+class originLocFilter extends RowFilter<TableModel, Integer> {
     
-    public tripFilter(String search, TableModel table) {
-        super(search, table);
+    public originLocFilter(String search) {
+        this.search = search;
     }
     
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
+        TableModel table = row.getModel();
+        Integer index = row.getIdentifier();
+        
+        for (int i = 0; i < row.getValueCount(); i++) {
+            Message message = (Message) table.getValueAt(index, i);
+            
+            if(message.getTrip() != null && message.getTrip().getOriginLoc().contains(search)) {
+                return true;
+            }else {
+            }
+        }
         return false;
     }
+    
+    String search;
 }
 
-class originLocFilter extends Filter {
+class destinLocFilter extends RowFilter<TableModel, Integer> {
     
-    public originLocFilter(String search, TableModel table) {
-        super(search, table);
+    public destinLocFilter(String search) {
+        this.search = search;
     }
     
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
+        TableModel table = row.getModel();
+        Integer index = row.getIdentifier();
+        
+        for (int i = 0; i < row.getValueCount(); i++) {
+            Message message = (Message) table.getValueAt(index, i);
+            
+            if(message.getTrip() != null && message.getTrip().getDestinLoc().contains(search)) {
+                return true;
+            }else {
+            }
+        }
         return false;
     }
+    
+    String search;
 }
 
-class destinLocFilter extends Filter {
+class returnLocFilter extends RowFilter<TableModel, Integer> {
     
-    public destinLocFilter(String search, TableModel table) {
-        super(search, table);
+    public returnLocFilter(String search) {
+        this.search = search;
     }
     
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
+        TableModel table = row.getModel();
+        Integer index = row.getIdentifier();
+        
+        for (int i = 0; i < row.getValueCount(); i++) {
+            Message message = (Message) table.getValueAt(index, i);
+            
+            if(message.getTrip() != null && message.getTrip().getReturnLoc().contains(search)) {
+                return true;
+            }else {
+            }
+        }
         return false;
     }
+    
+    String search;
 }
 
-class returnLocFilter extends Filter {
+class passengerCapFilter extends RowFilter<TableModel, Integer> {
     
-    public returnLocFilter(String search, TableModel table) {
-        super(search, table);
+    public passengerCapFilter(String search) {
+        this.search = search;
     }
     
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
+        TableModel table = row.getModel();
+        Integer index = row.getIdentifier();
+        
+        for (int i = 0; i < row.getValueCount(); i++) {
+            Message message = (Message) table.getValueAt(index, i);
+            
+            if(message.getTrip() != null && message.getTrip().getPassengerCap() > Integer.parseInt(search)) {
+                return true;
+            }else {
+            }
+        }
         return false;
     }
-}
-
-class passengerCapFilter extends Filter {
     
-    public passengerCapFilter(String search, TableModel table) {
-        super(search, table);
-    }
-    
-    @Override
-    public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
-        return false;
-    }
+    String search;
 }
