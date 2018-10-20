@@ -1,5 +1,6 @@
 package gui;
 
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -28,7 +29,6 @@ public class UserGUI extends JPanel {
         genderLabel = new javax.swing.JLabel();
         contactLabel = new javax.swing.JLabel();
         emailLabel = new javax.swing.JLabel();
-        registerAsDriverButton = new javax.swing.JButton();
         firstNameFormattedTextField = new javax.swing.JFormattedTextField();
         lastNameFormattedTextField = new javax.swing.JFormattedTextField();
         ageFormattedTextField = new javax.swing.JFormattedTextField();
@@ -57,25 +57,21 @@ public class UserGUI extends JPanel {
 
         emailLabel.setText("Email Address*");
 
-        registerAsDriverButton.setText("Register as a Driver");
-
-        firstNameFormattedTextField.setText("jFormattedTextField1");
-
-        lastNameFormattedTextField.setText("jFormattedTextField1");
-
-        ageFormattedTextField.setText("jFormattedTextField1");
-
-        genderFormattedTextField.setText("jFormattedTextField1");
-
-        contactFormattedTextField.setText("jFormattedTextField1");
-
-        emailFormattedTextField.setText("jFormattedTextField1");
-
         saveButton.setText("Save");
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveButtonActionPerformed(evt);
+            }
+        });
 
         cancelButton.setText("Cancel");
 
-        editDriverInfoButton.setText("Edit your Driver Info");
+        editDriverInfoButton.setText("Driver Info");
+        editDriverInfoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editDriverInfoButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -86,30 +82,30 @@ public class UserGUI extends JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(LowerSeparator)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(userInfoLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                        .addComponent(reqLabel))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(userInfoLabel)
-                                    .addGap(93, 93, 93)
-                                    .addComponent(reqLabel))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(firstnameLabel)
-                                        .addComponent(lastnameLabel)
-                                        .addComponent(ageLabel)
-                                        .addComponent(genderLabel)
-                                        .addComponent(contactLabel)
-                                        .addComponent(emailLabel))
-                                    .addGap(106, 106, 106)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(ageFormattedTextField)
-                                        .addComponent(lastNameFormattedTextField)
-                                        .addComponent(firstNameFormattedTextField)
-                                        .addComponent(genderFormattedTextField)
-                                        .addComponent(contactFormattedTextField)
-                                        .addComponent(emailFormattedTextField))))
-                            .addComponent(upperSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(firstnameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(62, 62, 62))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lastnameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(119, 119, 119))
+                            .addComponent(ageLabel)
+                            .addComponent(genderLabel)
+                            .addComponent(contactLabel)
+                            .addComponent(emailLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(contactFormattedTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
+                            .addComponent(genderFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ageFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(firstNameFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lastNameFormattedTextField)
+                            .addComponent(emailFormattedTextField)))
+                    .addComponent(upperSeparator))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(47, 47, 47)
@@ -120,9 +116,7 @@ public class UserGUI extends JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(editDriverInfoButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(registerAsDriverButton)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,7 +126,7 @@ public class UserGUI extends JPanel {
                     .addComponent(userInfoLabel)
                     .addComponent(reqLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(upperSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(upperSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 10, Short.MAX_VALUE)
                 .addGap(1, 1, 1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(firstnameLabel)
@@ -158,21 +152,27 @@ public class UserGUI extends JPanel {
                     .addComponent(emailLabel)
                     .addComponent(emailFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(registerAsDriverButton)
-                    .addComponent(editDriverInfoButton))
+                .addComponent(editDriverInfoButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(LowerSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(saveButton)
                     .addComponent(cancelButton))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ageFormattedTextField, contactFormattedTextField, emailFormattedTextField, firstNameFormattedTextField, genderFormattedTextField, lastNameFormattedTextField});
 
     }// </editor-fold>//GEN-END:initComponents
+
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
+        
+    }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void editDriverInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editDriverInfoButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editDriverInfoButtonActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -182,7 +182,7 @@ public class UserGUI extends JPanel {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -195,11 +195,19 @@ public class UserGUI extends JPanel {
         //</editor-fold>
 
         /* Create and display the form */
+        /*
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new UserGUI().setVisible(true);
             }
         });
+        */
+        JFrame jframe = new JFrame("123");
+        jframe.setContentPane(new UserGUI());
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.pack();
+        jframe.setVisible(true);
+ 
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -218,7 +226,6 @@ public class UserGUI extends JPanel {
     private javax.swing.JLabel genderLabel;
     private javax.swing.JFormattedTextField lastNameFormattedTextField;
     private javax.swing.JLabel lastnameLabel;
-    private javax.swing.JButton registerAsDriverButton;
     private javax.swing.JLabel reqLabel;
     private javax.swing.JButton saveButton;
     private javax.swing.JSeparator upperSeparator;
