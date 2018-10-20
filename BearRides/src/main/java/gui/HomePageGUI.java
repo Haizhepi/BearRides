@@ -19,6 +19,11 @@ import com.jgoodies.forms.layout.FormSpecs;
 
 public class HomePageGUI extends JPanel{
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2264437744063615857L;
+
+	/**
 	 * Create the application.
 	 */
 	public HomePageGUI() {
