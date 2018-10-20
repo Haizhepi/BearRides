@@ -7,22 +7,23 @@ public class MainGUI extends JPanel {
     private static final long serialVersionUID = -6508626185123863757L;
     private static JFrame frame = null;
     
-    private static EditMessageGUI editMessage				= null;
-    private static EditSettingsGUI editSettings			= null;
-    private static EditUserGUI editUser					= null;
-    private static LoginUserGUI loginUser					= null;
-    private static RegisterDriverGUI registerDriver		= null;
-    private static RegisterMessageGUI registerMessage		= null;
-    private static RegisterUserGUI registerUser			= null;
-    private static ViewMessageBoardGUI viewMessageBoard	= null;
-    private static ViewMessageGUI viewMessage				= null;
-    private static ViewProfileGUI viewProfile				= null;
+    private EditMessageGUI editMessage;
+    private EditSettingsGUI editSettings;
+    private EditUserGUI editUser;
+    private LoginUserGUI loginUser;
+    private RegisterDriverGUI registerDriver;
+    private RegisterMessageGUI registerMessage;
+    private RegisterUserGUI registerUser;
+    private ViewMessageBoardGUI viewMessageBoard;
+    private ViewMessageGUI viewMessage;
+    private ViewProfileGUI viewProfile;
     
     public MainGUI() {
     	System.out.println("We are in const");
     	
     	frame = new JFrame("BearRides");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600, 600);
         frame.setVisible(true);
         
         this.editMessage 		= new EditMessageGUI();
@@ -37,8 +38,8 @@ public class MainGUI extends JPanel {
         this.viewProfile 		= new ViewProfileGUI();
     }
     
-    public void drawTest() {
-    	this.viewProfile.draw(frame);
+    public void runMain() {
+    	viewProfile.draw(frame);
     }
     
 }
