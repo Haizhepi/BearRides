@@ -7,15 +7,11 @@ package gui;
 
 /**
  *
- * @author wan
+ * @author Xingan_Wan
  */
 public class MessageBoardGUI extends javax.swing.JPanel {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = -4736595129462899268L;
-	/**
      * Creates new form MessageTableGUI1
      */
     public MessageBoardGUI() {
@@ -35,36 +31,53 @@ public class MessageBoardGUI extends javax.swing.JPanel {
         messageList = new javax.swing.JList<>();
         backButton = new javax.swing.JButton();
 
-        messageList.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 18)); // NOI18N
+        messageList.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         messageList.setModel(new javax.swing.AbstractListModel<String>() {
-            /**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
-			String[] strings = { "Message 1", "Message 2", "Message 3", "Message 4", "Message 5" };
+            String[] strings = { "Message 1", "Message 2", "Message 3", "Message 4", "Message 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
         messageList.setFixedCellHeight(50);
+        messageList.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                messageListMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(messageList);
 
+        backButton.setBackground(new java.awt.Color(0, 102, 0));
+        backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 372, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
             .addComponent(backButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(backButton, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backButtonActionPerformed
+
+    private void messageListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_messageListMouseClicked
+        // TODO add your handling code here:
+        // use mouse listener - get point - get row at point
+    }//GEN-LAST:event_messageListMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
