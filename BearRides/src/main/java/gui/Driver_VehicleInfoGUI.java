@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javax.swing.*;
+
 /**
  *
  * @author Xingan_Wan
@@ -221,5 +223,24 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     private javax.swing.JLabel spaceLabel;
     private javax.swing.JSeparator topSeparator;
     private javax.swing.JLabel vInfoLabel;
+
+
+    public static void main(String[] args) throws Exception{
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {}
+        JFrame jFrame = new JFrame("test");
+        Driver_VehicleInfoGUI test = new Driver_VehicleInfoGUI();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setContentPane(test);
+        jFrame.pack();
+        jFrame.setVisible(true);
+
+    }
     // End of variables declaration//GEN-END:variables
 }

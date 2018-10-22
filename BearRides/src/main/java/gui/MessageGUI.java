@@ -5,6 +5,10 @@
  */
 package gui;
 
+import object.Message;
+
+import javax.swing.*;
+
 /**
  *
  * @author Xingan_Wan
@@ -135,7 +139,9 @@ public class MessageGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+
         // TODO add your handling code here:
+        MainGUI.exitGUI();
     }//GEN-LAST:event_backButtonActionPerformed
 
 
@@ -153,4 +159,21 @@ public class MessageGUI extends javax.swing.JPanel {
     private javax.swing.JTextField postTimeTextField1;
     private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
+    public static void main(String[] args) throws Exception{
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {}
+        JFrame jFrame = new JFrame("test");
+        MessageGUI test = new MessageGUI();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setContentPane(test);
+        jFrame.pack();
+        jFrame.setVisible(true);
+
+    }
 }

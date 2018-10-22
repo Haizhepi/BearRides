@@ -5,6 +5,11 @@
  */
 package gui;
 
+import main.Main;
+import object.Message;
+
+import javax.swing.*;
+
 /**
  *
  * @author Xingan_Wan
@@ -72,10 +77,12 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
+        MainGUI.exitGUI();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void messageListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_messageListMouseClicked
         // TODO add your handling code here:
+        MainGUI.loadGUI(MainGUI.messageGUI);
         // use mouse listener - get point - get row at point
     }//GEN-LAST:event_messageListMouseClicked
 
@@ -85,4 +92,24 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> messageList;
     // End of variables declaration//GEN-END:variables
+    public static void main(String[] args) throws Exception{
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {}
+
+        JFrame jFrame = new JFrame("test");
+        MessageBoardGUI test = new MessageBoardGUI();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setContentPane(test);
+        jFrame.pack();
+        jFrame.setVisible(true);
+
+    }
+
+
 }

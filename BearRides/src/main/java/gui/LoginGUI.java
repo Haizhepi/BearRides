@@ -5,6 +5,9 @@
  */
 package gui;
 
+import javax.swing.*;
+import java.net.SocketOption;
+
 /**
  *
  * @author Xingan_Wan
@@ -55,8 +58,10 @@ public class LoginGUI extends javax.swing.JPanel {
                 loginButtonActionPerformed(evt);
             }
         });
-
-        iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/BearRidesLogo.png"))); // NOI18N
+        // null pointer exception
+        //iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("src/main/resources/BearRidesLogo.png"))); // NOI18N
+        // may fix
+        iconLabel.setIcon(new ImageIcon("src/main/resources/BearRidesLogo.png")); // NOI18N
 
         registerButton.setBackground(new java.awt.Color(255, 255, 51));
         registerButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
@@ -128,9 +133,12 @@ public class LoginGUI extends javax.swing.JPanel {
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         // TODO add your handling code here:
+        MainGUI.loadGUI(MainGUI.messageBoardGUI);
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
+        System.out.print("login");
+        MainGUI.loadGUI(MainGUI.registerGUI);
         // TODO add your handling code here:
     }//GEN-LAST:event_registerButtonActionPerformed
 
@@ -144,5 +152,26 @@ public class LoginGUI extends javax.swing.JPanel {
     private javax.swing.JLabel passwordLabel;
     private javax.swing.JButton registerButton;
     private javax.swing.JLabel titleLabel;
+
+    public void createAndShowGUI() {
+        JFrame jFrame = new JFrame("test");
+        LoginGUI loginGUI = new LoginGUI();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setContentPane(loginGUI);
+        jFrame.pack();
+        jFrame.setVisible(true);
+    }
+
+public static void main(String[] args) throws Exception{
+    final LoginGUI guiMaker = new LoginGUI();
+    //invokelater is static thus main is final
+    javax.swing.SwingUtilities.invokeLater(new Runnable() {
+        public void run() {
+            guiMaker.createAndShowGUI();
+        }
+    });
+    guiMaker.createAndShowGUI();
+
+}
     // End of variables declaration//GEN-END:variables
 }
