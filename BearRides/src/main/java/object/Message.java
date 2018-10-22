@@ -16,12 +16,12 @@ public class Message implements Comparable<Message> {
     
     /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
     
-    public Message(User creator, String title) {
+    public Message(User creator) {
         postTime = Clock.systemUTC().instant().toString();
         this.creator = creator;
         
         umid = postTime + creator.getUUID();
-        this.title = title;
+        title = new String();
         body = new String();
     }
     

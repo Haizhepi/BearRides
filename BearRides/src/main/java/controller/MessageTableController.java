@@ -1,3 +1,9 @@
+/*
+ * Contributors: Ash
+ * Description: define input and out buffers for program here
+ * Date Last Modified: 10/22/2018
+ */
+
 package controller;
 
 import java.util.Collections;
@@ -18,10 +24,20 @@ import table.MessageTable;
 
 public class MessageTableController {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public MessageTableController() {
         sorter = new TableRowSorter<MessageTable>();
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: generic sorter
+     * return: void
+     * precondition: void
+     * postcondition: table is sorted respectively to sorters
+     */
     public void sortBy(Sorters sorters, MessageTable table) {
         Comparator<Message> compare;
         
@@ -48,6 +64,12 @@ public class MessageTableController {
         table.fireTableDataChanged();
     }
     
+    /*
+     * description: generic filter
+     * return: void
+     * precondition: void
+     * postcondition: table is filtered by search respectively to filters
+     */
     public void filterBy(Filters filters, String search, JTable table) {
         RowFilter<TableModel, Integer> filter = null;
         
@@ -78,41 +100,105 @@ public class MessageTableController {
         table.setRowSorter(sorter);
     }
     
+    /*
+     * description: posts a message to table
+     * return: void
+     * precondition: void
+     * postcondition: a new message may be put into table if its valid
+     */
     public void postMessage(Message message, MessageTable table) {
-        if(authenticate(message)) {
-            if(message.getTitle().isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Error: The title can not be empty.");
-            }else {
-                if(message.getBody().isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "Error: The message can not be empty.");
-                }else {
-                    Trip trip = message.getTrip();
-                    Date now = new Date();
-                    if(trip == null ||
-                            (trip.getOriginTime().after(now) &&
-                            trip.getDestinTime().after(now) &&
-                            trip.getReturnTime().after(now))) {
-                        table.insert(message);
-                        table.fireTableDataChanged();
-                    }else {
-                        JOptionPane.showMessageDialog(null, "Error: The dates for the trip can not be in the past.");
-                    }
-                }
+        //make sure the user is logged in and who they say the are
+        // then make sure all the fields in the message are valid
+        if(authenticate(message) && verify(message)) {
+            table.insert(message);
+            table.fireTableDataChanged();
+        }else {
+            JOptionPane.showMessageDialog(null, "Error: this message is not valid, "
+                    + "please make sure all the fields are filled.");
+        }
+    }
+    
+    /*
+     * description: authenticates the user posting the message
+     * return: true if authentic user
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    private Boolean authenticate(Message message) {
+        User user = message.getCreator();
+        return user.getTable().authenticate(user);
+    }
+    
+    /*
+     * description: authenticates the user editing the message
+     * return: true if authentic user
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    private Boolean authenticate(Message newMessage, Message oldMessage) {
+        return newMessage.getCreator().equals(oldMessage.getCreator()) && authenticate(newMessage);
+    }
+    
+    /*
+     * description: verifies that a message is valid
+     * return: true if valid
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    private Boolean verify(Message message) {
+        Trip trip = message.getTrip();
+        
+        return !message.getBody().isEmpty() &&
+                !message.getTitle().isEmpty() &&
+                trip != null ? verify(trip) : true;
+    }
+    
+    /*
+     * description: verifies that a trip is valid
+     * return: true if valid
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    private Boolean verify(Trip trip) {
+        Date now = new Date();
+        
+        return trip.getOriginLoc() != null &&
+                trip.getDestinLoc() != null &&
+                trip.getReturnLoc() !=  null &&
+                trip.getOriginTime() != null &&
+                trip.getDestinTime() != null &&
+                trip.getReturnTime() != null &&
+                trip.getOriginTime().after(now) &&
+                trip.getDestinTime().after(now) &&
+                trip.getReturnTime().after(now);
+    }
+    
+    /*
+     * description: replaces an old message with a new message
+     * return: void
+     * precondition: void
+     * postcondition: the old message might be replaced
+     */
+    public void editMessage(Message newMessage, Message oldMessage, MessageTable table) {
+        if(authenticate(newMessage, oldMessage)) {
+            if(verify(newMessage)) {
+                table.insert(newMessage);
+                table.remove(oldMessage);
+                table.fireTableDataChanged();
+            } else {
+                //jOptionpane
             }
         } else {
             JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
         }
     }
     
-    public void editMessage(Message newMessage, Message oldMessage, MessageTable table) {
-        if(authenticate(newMessage, oldMessage)) {
-            postMessage(newMessage, table);
-            table.remove(oldMessage);
-        } else {
-            JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
-        }
-    }
-    
+    /*
+     * description: removes all messages from a user
+     * return: void
+     * precondition: void
+     * postcondition: if the user is authentic the messages are cleared
+     */
     public void clearUser(User user, MessageTable table) {
         if(user.getTable().authenticate(user)) {
             table.removeAll(user);
@@ -121,34 +207,36 @@ public class MessageTableController {
         }
     }
     
+    /*
+     * description: reminds all participants of trip on the given date
+     * return: void
+     * precondition: void
+     * postcondition: notifications are sent to the participants
+     */
     public void remind(Date date, MessageTable table) {
-        if(date.before(new Date())) {
+        if(date.after(new Date())) {
             table.pushReminders(date);
         }else {
         }
     }
     
-    private Boolean authenticate(Message message) {
-        User user = message.getCreator();
-        return user.getTable().authenticate(user);
-    }
-    
-    private Boolean authenticate(Message newMessage, Message oldMessage) {
-        return newMessage.getCreator().equals(oldMessage.getCreator()) && authenticate(newMessage);
-    }
-    
+    //variable not to be saved upon shutdown
+    private TableRowSorter<MessageTable> sorter;
     public enum Sorters {
         POST_TIME, ORIGIN_TIME, DESTIN_TIME, RETURN_TIME, PASSENGER_CAP
     }
-    
     public enum Filters {
         CREATOR, HAS_TRIP, ORIGIN_LOC, DESTIN_LOC, RETURN_LOC, PASSENGER_CAP
     }
-    
-    private TableRowSorter<MessageTable> sorter;
 }
 
 class postTimeComparator implements Comparator<Message> {
+    /*
+     * description: compares two messages
+     * return: 0 if equal
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public int compare(Message arg0, Message arg1) {
         return arg0.getPostTime().compareTo(arg1.getPostTime());
@@ -156,6 +244,12 @@ class postTimeComparator implements Comparator<Message> {
 }
 
 class tripOriginTimeComparator implements Comparator<Message> {
+    /*
+     * description: compares two messages
+     * return: 0 if equal
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public int compare(Message arg0, Message arg1) {
         Trip trip0 = arg0.getTrip();
@@ -169,6 +263,12 @@ class tripOriginTimeComparator implements Comparator<Message> {
 }
 
 class tripDestinTimeComparator implements Comparator<Message> {
+    /*
+     * description: compares two messages
+     * return: 0 if equal
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public int compare(Message arg0, Message arg1) {
         Trip trip0 = arg0.getTrip();
@@ -182,6 +282,12 @@ class tripDestinTimeComparator implements Comparator<Message> {
 }
 
 class tripReturnTimeComparator implements Comparator<Message> {
+    /*
+     * description: compares two messages
+     * return: 0 if equal
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public int compare(Message arg0, Message arg1) {
         Trip trip0 = arg0.getTrip();
@@ -195,24 +301,40 @@ class tripReturnTimeComparator implements Comparator<Message> {
 }
 
 class tripPassengerCapComparator implements Comparator<Message> {
+    /*
+     * description: compares two messages
+     * return: 0 if equal
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public int compare(Message arg0, Message arg1) {
         Trip trip0 = arg0.getTrip();
         Trip trip1 = arg1.getTrip();
         
-        Integer date0 = (trip0 != null) ? trip0.getPassengerCount() : 0;
-        Integer date1 = (trip1 != null) ? trip1.getPassengerCount() : 0;
+        Integer cap0 = (trip0 != null) ? trip0.getPassengerCount() : 0;
+        Integer cap1 = (trip1 != null) ? trip1.getPassengerCount() : 0;
         
-        return date0.compareTo(date1);
+        return cap0.compareTo(cap1);
     }
 }
 
 class driverFilter extends RowFilter<TableModel, Integer> {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public driverFilter(String search) {
         this.search = search;
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: returns whether a message should be included or not
+     * return: true if it should be
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
         TableModel table = row.getModel();
@@ -234,9 +356,19 @@ class driverFilter extends RowFilter<TableModel, Integer> {
 
 class hasTripFilter extends RowFilter<TableModel, Integer> {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public hasTripFilter() {
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: returns whether a message should be included or not
+     * return: true if it should be
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
         TableModel table = row.getModel();
@@ -256,10 +388,20 @@ class hasTripFilter extends RowFilter<TableModel, Integer> {
 
 class originLocFilter extends RowFilter<TableModel, Integer> {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public originLocFilter(String search) {
         this.search = search;
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: returns whether a message should be included or not
+     * return: true if it should be
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
         TableModel table = row.getModel();
@@ -281,10 +423,20 @@ class originLocFilter extends RowFilter<TableModel, Integer> {
 
 class destinLocFilter extends RowFilter<TableModel, Integer> {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public destinLocFilter(String search) {
         this.search = search;
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: returns whether a message should be included or not
+     * return: true if it should be
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
         TableModel table = row.getModel();
@@ -306,10 +458,20 @@ class destinLocFilter extends RowFilter<TableModel, Integer> {
 
 class returnLocFilter extends RowFilter<TableModel, Integer> {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public returnLocFilter(String search) {
         this.search = search;
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: returns whether a message should be included or not
+     * return: true if it should be
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
         TableModel table = row.getModel();
@@ -331,10 +493,20 @@ class returnLocFilter extends RowFilter<TableModel, Integer> {
 
 class passengerCapFilter extends RowFilter<TableModel, Integer> {
     
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
     public passengerCapFilter(String search) {
         this.search = search;
     }
     
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: returns whether a message should be included or not
+     * return: true if it should be
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     @Override
     public boolean include(RowFilter.Entry<? extends TableModel,? extends Integer> row) {
         TableModel table = row.getModel();

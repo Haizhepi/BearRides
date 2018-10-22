@@ -19,7 +19,7 @@ import table.UserTable;
 @XmlRootElement
 public class User implements Comparable<User> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯)*/
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
     
     public User(String email, String password) {
         uuid = email;
@@ -61,7 +61,7 @@ public class User implements Comparable<User> {
         notifications.remove(notification);
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯)*/
+    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
     
     /*
      * description: getter

@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Trip implements Comparable<Trip> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯)*/
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
     
     public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
         this.driver = driver;
@@ -76,7 +76,7 @@ public class Trip implements Comparable<Trip> {
         return requirements.remove(requirement);
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯)*/
+    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
     
     /*
      * description: getter

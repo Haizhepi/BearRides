@@ -181,7 +181,8 @@ public class MessageTable extends AbstractTableModel {
                 for(User user : trip.getRiders()) {
                     greeting = "Hi " + user.getName();
                     
-                    message = new Message(mailMan, title);
+                    message = new Message(mailMan);
+                    message.setTitle(title);
                     message.setBody(greeting + body);
                     message.setHidden(true);
                     
@@ -191,7 +192,8 @@ public class MessageTable extends AbstractTableModel {
                 User driver = trip.getDriver();
                 greeting = "Hi " + driver.getName();
                 
-                message = new Message(mailMan, title);
+                message = new Message(mailMan);
+                message.setTitle(title);
                 message.setBody(greeting + body);
                 message.setHidden(true);
                 

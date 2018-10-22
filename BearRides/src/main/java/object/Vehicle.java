@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Vehicle {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯)*/
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
     
     public Vehicle(String model, Integer passengerCap) {
         this.model = model;
         this.passengerCap = passengerCap;
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯)*/
+    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
     
     /*
      * description: getter
