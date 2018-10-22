@@ -8,9 +8,11 @@ import javax.swing.JTable;
 import javax.swing.RowFilter;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
+import javax.swing.JOptionPane;
 
 import object.Message;
 import object.Trip;
+import object.User;
 import table.MessageTable;
 
 
@@ -24,19 +26,19 @@ public class MessageTableController {
         Comparator<Message> compare;
         
         switch(sorters) {
-        case POSTtIME:
+        case POST_TIME:
             compare = new postTimeComparator();
             break;
-        case ORIGINtIME:
+        case ORIGIN_TIME:
             compare = new tripOriginTimeComparator();
             break;
-        case DESTINtIME:
+        case DESTIN_TIME:
             compare = new tripDestinTimeComparator();
             break;
-        case RETURNtIME:
+        case RETURN_TIME:
             compare = new tripReturnTimeComparator();
             break;
-        case PASSENGERcAP:
+        case PASSENGER_CAP:
             compare = new tripPassengerCapComparator();
         default:
             return;
@@ -46,26 +48,26 @@ public class MessageTableController {
         table.fireTableDataChanged();
     }
     
-    public void filterBy(Filters filters, JTable table, String search) {
+    public void filterBy(Filters filters, String search, JTable table) {
         RowFilter<TableModel, Integer> filter = null;
         
         switch(filters) {
         case CREATOR:
             filter = new driverFilter(search);
             break;
-        case HAsTRIP:
+        case HAS_TRIP:
             filter = new hasTripFilter();
             break;
-        case ORIGINlOC:
+        case ORIGIN_LOC:
             filter = new originLocFilter(search);
             break;
-        case DESTINlOC:
+        case DESTIN_LOC:
             filter = new destinLocFilter(search);
             break;
-        case RETURNlOC:
+        case RETURN_LOC:
             filter = new returnLocFilter(search);
             break;
-        case PASSENGERcAP:
+        case PASSENGER_CAP:
             filter = new passengerCapFilter(search);
             break;
         default:
@@ -76,31 +78,71 @@ public class MessageTableController {
         table.setRowSorter(sorter);
     }
     
-    public void postMessage(Message message) {
-        //authenticate user
-        //verify title isnt empty
-        //make sure that the message isnt already in the set
-        //verify that the body isn't e
+    public void postMessage(Message message, MessageTable table) {
+        if(authenticate(message)) {
+            if(message.getTitle().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Error: The title can not be empty.");
+            }else {
+                if(message.getBody().isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Error: The message can not be empty.");
+                }else {
+                    Trip trip = message.getTrip();
+                    Date now = new Date();
+                    if(trip == null ||
+                            (trip.getOriginTime().after(now) &&
+                            trip.getDestinTime().after(now) &&
+                            trip.getReturnTime().after(now))) {
+                        table.insert(message);
+                        table.fireTableDataChanged();
+                    }else {
+                        JOptionPane.showMessageDialog(null, "Error: The dates for the trip can not be in the past.");
+                    }
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
+        }
     }
     
-    public void editMessage() {
-        
+    public void editMessage(Message newMessage, Message oldMessage, MessageTable table) {
+        if(authenticate(newMessage, oldMessage)) {
+            postMessage(newMessage, table);
+            table.remove(oldMessage);
+        } else {
+            JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
+        }
     }
     
-    public void clearUser() {
-        
+    public void clearUser(User user, MessageTable table) {
+        if(user.getTable().authenticate(user)) {
+            table.removeAll(user);
+        }else {
+            JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
+        }
     }
     
-    public void remind() {
-        
+    public void remind(Date date, MessageTable table) {
+        if(date.before(new Date())) {
+            table.pushReminders(date);
+        }else {
+        }
+    }
+    
+    private Boolean authenticate(Message message) {
+        User user = message.getCreator();
+        return user.getTable().authenticate(user);
+    }
+    
+    private Boolean authenticate(Message newMessage, Message oldMessage) {
+        return newMessage.getCreator().equals(oldMessage.getCreator()) && authenticate(newMessage);
     }
     
     public enum Sorters {
-        POSTtIME, ORIGINtIME, DESTINtIME, RETURNtIME, PASSENGERcAP
+        POST_TIME, ORIGIN_TIME, DESTIN_TIME, RETURN_TIME, PASSENGER_CAP
     }
     
     public enum Filters {
-        CREATOR, HAsTRIP, ORIGINlOC, DESTINlOC, RETURNlOC, PASSENGERcAP
+        CREATOR, HAS_TRIP, ORIGIN_LOC, DESTIN_LOC, RETURN_LOC, PASSENGER_CAP
     }
     
     private TableRowSorter<MessageTable> sorter;

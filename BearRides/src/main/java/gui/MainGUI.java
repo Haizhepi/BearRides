@@ -2,12 +2,12 @@ package gui;
 
 import javax.swing.JPanel;
 
-import controller.FrameController;
+import controller.PanelController;
 
 
 public class MainGUI extends JPanel {
     private static final long serialVersionUID = -6508626185123863757L;    
-    private FrameController fm;
+    private PanelController fm;
     
     
     /*
@@ -24,7 +24,7 @@ public class MainGUI extends JPanel {
     */
         
     public MainGUI() {
-    	fm = new FrameController();
+    	fm = new PanelController();
     }
     
     public void runGUI() {

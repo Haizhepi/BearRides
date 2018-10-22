@@ -1,3 +1,9 @@
+/*
+ * Contributors: Ash
+ * Description: This class serves as our data structure for users
+ * Date Last Modified: 10/22/2018
+ */
+
 package object;
 
 import java.time.Clock;
@@ -8,19 +14,133 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Message implements Comparable<Message> {
     
-    public Message(User user, String title) {
-        this.postTime = Clock.systemUTC().instant().toString();
-        this.creator = user;
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    
+    public Message(User creator, String title) {
+        postTime = Clock.systemUTC().instant().toString();
+        this.creator = creator;
         
-        this.umid = postTime + user.getUUID();
+        umid = postTime + creator.getUUID();
+        this.title = title;
+        body = new String();
+    }
+    
+    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: getter
+     * return: creator
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public User getCreator() {
+        return creator;
+    }
+    
+    /*
+     * description: getter
+     * return: postTime
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getPostTime() {
+        return postTime;
+    }
+    
+    /*
+     * description: getter
+     * return: body
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getBody() {
+        return body;
+    }
+    
+    /*
+     * description: getter
+     * return: trip
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Trip getTrip() {
+        return trip;
+    }
+    
+    /*
+     * description: getter
+     * return: umid
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getUMID() {
+        return umid;
+    }
+    
+    /*
+     * description: getter
+     * return: title
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getTitle() {
+        return title;
+    }
+    
+    /*
+     * description: getter
+     * return: hidden
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Boolean isHidden() {
+        return hidden;
+    }
+
+    /*¯`·._.·(¯`·._.· Setters ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: trip is set
+     */
+    public void setTrip(Trip trip) {
+        this.trip = trip;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: body is set
+     */
+    public void setBody(String body) {
+        this.body = body;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: title is set
+     */
+    public void setTitle(String title) {
         this.title = title;
     }
     
-    @Override
-    public int compareTo(Message that) {
-        return this.getUMID().compareTo(that.getUMID());
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: hidden is set
+     */
+    public void setHidden(Boolean hidden) {
+        this.hidden = hidden;
     }
-
+    
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -35,7 +155,7 @@ public class Message implements Comparable<Message> {
         result = prime * result + ((umid == null) ? 0 : umid.hashCode());
         return result;
     }
-
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -82,67 +202,23 @@ public class Message implements Comparable<Message> {
             return false;
         return true;
     }
-
-    // getters
-    public User getCreator() {
-        return this.creator;
-    }
-
-    public String getPostTime() {
-        return this.postTime;
-    }
-
-    public String getBody() {
-        return this.body;
-    }
-
-    public Trip getTrip() {
-        return trip;
+    
+    @Override
+    public int compareTo(Message that) {
+        return getUMID().compareTo(that.getUMID());
     }
     
-    public String getUMID() {
-        return this.umid;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public Boolean isHidden() {
-        return this.hidden;
-    }
-
-    // setters
-    public void setTrip(Trip trip) {
-        this.trip = trip;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
-    }
-    
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setHidden(Boolean hidden) {
-        this.hidden = hidden;
-    }
-
-    // variables
+    //variables to be saved upon shutdown, must be tagged with @XmlElement
     @XmlElement
     protected String umid;
     @XmlElement
     protected String title;
-    
     @XmlElement
     public Boolean hidden = false;
-    
     @XmlElement
     private User creator;
     @XmlElement
     private String postTime;
-    
     @XmlElement
     private String body;
     @XmlElement

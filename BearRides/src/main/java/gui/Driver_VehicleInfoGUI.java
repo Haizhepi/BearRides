@@ -12,6 +12,10 @@ package gui;
 public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
 
     /**
+     * 
+     */
+    private static final long serialVersionUID = 7794269541984046099L;
+    /**
      * Creates new form DriverInfo
      */
     public Driver_VehicleInfoGUI() {

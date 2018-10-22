@@ -10,6 +10,10 @@ import javax.swing.UnsupportedLookAndFeelException;
 public class UserGUI extends JPanel {
     
     /**
+     * 
+     */
+    private static final long serialVersionUID = -4925806868701427735L;
+    /**
      * Creates new form UserGUI
      */
     public UserGUI() {

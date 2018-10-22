@@ -1,3 +1,9 @@
+/*
+ * Contributors: Ash
+ * Description: This class serves as our data structure for users
+ * Date Last Modified: 10/22/2018
+ */
+
 package object;
 
 import java.util.ArrayList;
@@ -9,9 +15,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Trip implements Comparable<Trip> {
-
-    public Trip(User driver, Date originTime, Integer passengerCap) {
+    
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯)*/
+    
+    public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
         this.driver = driver;
+        this.message = message;
         this.originTime = originTime;
         this.passengerCap = passengerCap;
         
@@ -19,10 +28,258 @@ public class Trip implements Comparable<Trip> {
         requirements = new ArrayList<String>();
     }
     
-    @Override
-    public int compareTo(Trip arg0) {
-        return getOriginTime().compareTo(arg0.getOriginTime());
+    /*¯`·._.·(¯`·._.· Insertion ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: inserts a user into riders
+     * return: true if inserted
+     * precondition: void
+     * postcondition: the user will be listed if it can be
+     */
+    public Boolean insertRider(User user) {
+        if (riders.size() < passengerCap) {
+            return riders.add(user);
+        } else {
+            return false;
+        }
     }
+    
+    /*
+     * description: inserts new requirement into the trip
+     * return: void
+     * precondition: void
+     * postcondition: the requirement will be listed
+     */
+    public void insertRequirement(String requirement) {
+        requirements.add(requirement);
+    }
+    
+    /*¯`·._.·(¯`·._.· Removal ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: removes all references to user
+     * return: false if user can't be removed.
+     * precondition: void
+     * postcondition: all references to user will be removed
+     */
+    public Boolean removeRider(User user) {
+        return riders.remove(user);
+    }
+    
+    /*
+     * description: removes all references to requirement
+     * return: false if requirement can't be removed.
+     * precondition: void
+     * postcondition: all references to requirement will be removed
+     */
+    public Boolean removeRequirement(String requirement) {
+        return requirements.remove(requirement);
+    }
+    
+    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯)*/
+    
+    /*
+     * description: getter
+     * return: riders
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public List<User> getRiders() {
+        return riders;
+    }
+    /*
+     * description: getter
+     * return: requirements
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public List<String> getRequirements() {
+        return requirements;
+    }
+    
+    /*
+     * description: getter
+     * return: originTime
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Date getOriginTime() {
+        return originTime;
+    }
+    
+    /*
+     * description: getter
+     * return: destinTime
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Date getDestinTime() {
+        return destinTime;
+    }
+    
+    /*
+     * description: getter
+     * return: returnTime
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Date getReturnTime() {
+        return returnTime;
+    }
+    
+    /*
+     * description: getter
+     * return: originLoc
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getOriginLoc() {
+        return originLoc;
+    }
+    
+    /*
+     * description: getter
+     * return: destinLoc
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getDestinLoc() {
+        return destinLoc;
+    }
+    
+    /*
+     * description: getter
+     * return: returnLoc
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String getReturnLoc() {
+        return returnLoc;
+    }
+    
+    /*
+     * description: getter
+     * return: the size of riders
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Integer getPassengerCount() {
+        return riders.size();
+    }
+    
+    /*
+     * description: getter
+     * return: passengerCap
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Integer getPassengerCap() {
+        return passengerCap;
+    }
+    
+    /*
+     * description: getter
+     * return: driver
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public User getDriver() {
+        return driver;
+    }
+    
+    /*
+     * description: getter
+     * return: message
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Message getMessage() {
+        return message;
+    }
+
+    /*¯`·._.·(¯`·._.· Setters ·._.·´¯)·._.·´¯*/
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: originTime is set
+     */
+    public void setOriginTime(Date originTime) {
+        this.originTime = originTime;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: destinTime is set
+     */
+    public void setDestinTime(Date destinTime) {
+        this.destinTime = destinTime;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: returnTime is set
+     */
+    public void setReturnTime(Date returnTime) {
+        this.returnTime = returnTime;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: originLoc is set
+     */
+    public void setOriginLoc(String originLoc) {
+        this.originLoc = originLoc;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: destinLoc is set
+     */
+    public void setDestinLoc(String destinLoc) {
+        this.destinLoc = destinLoc;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: returnLoc is set
+     */
+    public void setReturnLoc(String returnLoc) {
+        this.returnLoc = returnLoc;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: passengerCap is set
+     */
+    public void setPassengerCap(Integer passengerCap) {
+        this.passengerCap = passengerCap;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: driver is set
+     */
+    public void setDriver(User driver) {
+        this.driver = driver;
+    }
+    
+    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
     
     @Override
     public int hashCode() {
@@ -32,6 +289,8 @@ public class Trip implements Comparable<Trip> {
                 + ((destinLoc == null) ? 0 : destinLoc.hashCode());
         result = prime * result
                 + ((destinTime == null) ? 0 : destinTime.hashCode());
+        result = prime * result + ((driver == null) ? 0 : driver.hashCode());
+        result = prime * result + ((message == null) ? 0 : message.hashCode());
         result = prime * result
                 + ((originLoc == null) ? 0 : originLoc.hashCode());
         result = prime * result
@@ -39,15 +298,12 @@ public class Trip implements Comparable<Trip> {
         result = prime * result
                 + ((passengerCap == null) ? 0 : passengerCap.hashCode());
         result = prime * result
-                + ((requirements == null) ? 0 : requirements.hashCode());
-        result = prime * result
                 + ((returnLoc == null) ? 0 : returnLoc.hashCode());
         result = prime * result
                 + ((returnTime == null) ? 0 : returnTime.hashCode());
-        result = prime * result + ((riders == null) ? 0 : riders.hashCode());
         return result;
     }
-
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -67,6 +323,16 @@ public class Trip implements Comparable<Trip> {
                 return false;
         } else if (!destinTime.equals(other.destinTime))
             return false;
+        if (driver == null) {
+            if (other.driver != null)
+                return false;
+        } else if (!driver.equals(other.driver))
+            return false;
+        if (message == null) {
+            if (other.message != null)
+                return false;
+        } else if (!message.equals(other.message))
+            return false;
         if (originLoc == null) {
             if (other.originLoc != null)
                 return false;
@@ -82,11 +348,6 @@ public class Trip implements Comparable<Trip> {
                 return false;
         } else if (!passengerCap.equals(other.passengerCap))
             return false;
-        if (requirements == null) {
-            if (other.requirements != null)
-                return false;
-        } else if (!requirements.equals(other.requirements))
-            return false;
         if (returnLoc == null) {
             if (other.returnLoc != null)
                 return false;
@@ -97,137 +358,34 @@ public class Trip implements Comparable<Trip> {
                 return false;
         } else if (!returnTime.equals(other.returnTime))
             return false;
-        if (riders == null) {
-            if (other.riders != null)
-                return false;
-        } else if (!riders.equals(other.riders))
-            return false;
         return true;
     }
-
-    // insertion
-    public Boolean insertRider(User user) {
-        if (this.riders.size() < this.passengerCap) {
-            this.riders.add(user);
-            return true;
-        } else {
-            return false;
-        }
+    @Override
+    public int compareTo(Trip arg0) {
+        return getOriginTime().compareTo(arg0.getOriginTime());
     }
 
-    public void insertRequirement(String requirement) {
-        this.requirements.add(requirement);
-    }
-    
-    //removal
-    public Boolean removeRider(User user) {
-        passengerCap--;
-        return this.riders.remove(user);
-    }
-
-    public Boolean removeRequirement(String requirement) {
-        return this.requirements.remove(requirement);
-    }
-    
-    // getters
-    public List<User> getRiders() {
-        return this.riders;
-    }
-
-    public List<String> getRequirements() {
-        return this.requirements;
-    }
-
-    public Date getOriginTime() {
-        return this.originTime;
-    }
-
-    public Date getDestinTime() {
-        return this.destinTime;
-    }
-
-    public Date getReturnTime() {
-        return this.returnTime;
-    }
-
-    public String getOriginLoc() {
-        return this.originLoc;
-    }
-
-    public String getDestinLoc() {
-        return this.destinLoc;
-    }
-
-    public String getReturnLoc() {
-        return this.returnLoc;
-    }
-
-    public Integer getPassengerCount() {
-        return riders != null ? riders.size() : 0;
-    }
-    
-    public Integer getPassengerCap() {
-        return this.passengerCap;
-    }
-    
-    public User getDriver() {
-        return driver;
-    }
-    
-    // setters
-    public void setOriginTime(Date originTime) {
-        this.originTime = originTime;
-    }
-
-    public void setDestinTime(Date destinTime) {
-        this.destinTime = destinTime;
-    }
-
-    public void setReturnTime(Date returnTime) {
-        this.returnTime = returnTime;
-    }
-
-    public void setOriginLoc(String originLoc) {
-        this.originLoc = originLoc;
-    }
-
-    public void setDestinLoc(String destinLoc) {
-        this.destinLoc = destinLoc;
-    }
-
-    public void setReturnLoc(String returnLoc) {
-        this.returnLoc = returnLoc;
-    }
-    
-    public void setPassengerCap(Integer passengerCap) {
-        this.passengerCap = passengerCap;
-    }
-    
-    public void setDriver(User user) {
-        this.driver = user;
-    }
-    
+    //variables to be saved upon shutdown, must be tagged with @XmlElement
     @XmlElement
     private User driver;
+    @XmlElement
+    private Message message;
     @XmlElement
     private List<User> riders;
     @XmlElement
     private List<String> requirements;
-    
     @XmlElement
     private Date originTime;
     @XmlElement
     private Date destinTime;
     @XmlElement
     private Date returnTime;
-    
     @XmlElement
     private String originLoc;
     @XmlElement
     private String destinLoc;
     @XmlElement
     private String returnLoc;
-    
     @XmlElement
     private Integer passengerCap;
 }

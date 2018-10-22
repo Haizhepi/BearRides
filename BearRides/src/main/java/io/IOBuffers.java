@@ -1,3 +1,9 @@
+/*
+ * Contributors: Ash
+ * Description: define input and out buffers for program here
+ * Date Last Modified: 10/22/2018
+ */
+
 package io;
 
 import java.io.BufferedReader;
@@ -11,8 +17,9 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
-//define input and out buffers for use throughout the program here
 public class IOBuffers {
+    
+    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯)*/
     
     public IOBuffers(File file) {
         try {
@@ -30,7 +37,8 @@ public class IOBuffers {
             e.printStackTrace();
         }
     }
-
+    
+    //variable not to be saved upon shutdown
     public Scanner in;
     public BufferedWriter out;
 }

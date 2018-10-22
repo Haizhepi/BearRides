@@ -7,9 +7,9 @@ import javax.swing.JPanel;
 
 import main.Shutdown;
 
-public class FrameController {
+public class PanelController {
 
-	public FrameController() {
+	public PanelController() {
 		frame = new JFrame("BearRides");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(600, 600);
