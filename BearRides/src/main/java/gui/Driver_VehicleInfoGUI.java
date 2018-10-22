@@ -7,6 +7,8 @@ package gui;
 
 import javax.swing.*;
 
+import controller.PanelController;
+
 /**
  *
  * @author Xingan_Wan
@@ -17,10 +19,12 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
      * 
      */
     private static final long serialVersionUID = 7794269541984046099L;
+    private PanelController pm;
     /**
      * Creates new form DriverInfo
      */
-    public Driver_VehicleInfoGUI() {
+    public Driver_VehicleInfoGUI(PanelController pm) {
+        this.pm = pm;
         initComponents();
     }
 
@@ -234,8 +238,9 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                 }
             }
         } catch (ClassNotFoundException ex) {}
+        PanelController pm = new PanelController();
         JFrame jFrame = new JFrame("test");
-        Driver_VehicleInfoGUI test = new Driver_VehicleInfoGUI();
+        Driver_VehicleInfoGUI test = new Driver_VehicleInfoGUI(pm);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setContentPane(test);
         jFrame.pack();
