@@ -4,8 +4,7 @@ package gui;
  *
  * @author Xingan_Wan
  */
-import javax.swing.JPanel;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.*;
 
 public class UserGUI extends JPanel {
     
@@ -229,6 +228,7 @@ public class UserGUI extends JPanel {
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
+        MainGUI.loadGUI(this);
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
@@ -264,5 +264,22 @@ public class UserGUI extends JPanel {
     private javax.swing.JPasswordField setPasswordField;
     private javax.swing.JSeparator upperSeparator;
     private javax.swing.JLabel userInfoLabel;
+    public static void main(String[] args) throws Exception{
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {}
+        JFrame jFrame = new JFrame("test");
+        UserGUI test = new UserGUI();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setContentPane(test);
+        jFrame.pack();
+        jFrame.setVisible(true);
+
+    }
     // End of variables declaration//GEN-END:variables
 }

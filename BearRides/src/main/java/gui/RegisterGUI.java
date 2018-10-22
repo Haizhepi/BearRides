@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javax.swing.*;
+
 /**
  *
  * @author Xingan_Wan
@@ -235,10 +237,12 @@ public class RegisterGUI extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
+        MainGUI.exitGUI();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
+        MainGUI.exitGUI();
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void agreementCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agreementCheckBoxActionPerformed
@@ -272,4 +276,21 @@ public class RegisterGUI extends javax.swing.JPanel {
     private javax.swing.JLabel titleLabel;
     private javax.swing.JLabel warningLabel;
     // End of variables declaration//GEN-END:variables
+    public static void main(String[] args) throws Exception{
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {}
+        JFrame jFrame = new JFrame("test");
+        RegisterGUI test = new RegisterGUI();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setContentPane(test);
+        jFrame.pack();
+        jFrame.setVisible(true);
+
+    }
 }
