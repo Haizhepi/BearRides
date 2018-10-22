@@ -5,21 +5,21 @@
  */
 package gui;
 
-import main.Main;
-import object.Message;
-
 import javax.swing.*;
+
+import controller.PanelController;
 
 /**
  *
  * @author Xingan_Wan
  */
 public class MessageBoardGUI extends javax.swing.JPanel {
-
+    
     /**
      * Creates new form MessageTableGUI1
      */
-    public MessageBoardGUI() {
+    public MessageBoardGUI(PanelController pm) {
+        this.pm = pm;
         initComponents();
     }
 
@@ -38,6 +38,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
         messageList.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         messageList.setModel(new javax.swing.AbstractListModel<String>() {
+            private static final long serialVersionUID = 1L;
             String[] strings = { "Message 1", "Message 2", "Message 3", "Message 4", "Message 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
@@ -76,40 +77,51 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
-        MainGUI.exitGUI();
+        pm.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void messageListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_messageListMouseClicked
         // TODO add your handling code here:
-        MainGUI.loadGUI(MainGUI.messageGUI);
+        pm.changeFrame(new MessageGUI(pm));
         // use mouse listener - get point - get row at point
     }//GEN-LAST:event_messageListMouseClicked
-
-
+    
+    public static void main(String[] args) throws Exception{
+        // take place on thread other than main thread
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                        if ("Windows".equals(info.getName())) {
+                            javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                            break;
+                        }
+                    }
+                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (UnsupportedLookAndFeelException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                
+                // turn off metal's use of bold fonts
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+                PanelController pm = new PanelController();
+                pm.changeFrame(new MessageBoardGUI(pm));
+            }
+        });
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> messageList;
     // End of variables declaration//GEN-END:variables
-    public static void main(String[] args) throws Exception{
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {}
-
-        JFrame jFrame = new JFrame("test");
-        MessageBoardGUI test = new MessageBoardGUI();
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setContentPane(test);
-        jFrame.pack();
-        jFrame.setVisible(true);
-
-    }
-
-
+    
+    PanelController pm;
+    private static final long serialVersionUID = 5164463894978645312L;
 }

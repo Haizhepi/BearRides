@@ -24,6 +24,7 @@ public class PanelController {
 		frame.getContentPane().removeAll();
 		frame.add(newFrame);
 		frame.revalidate();
+		frame.pack();
 		frame.repaint();
 	}
 

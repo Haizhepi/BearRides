@@ -6,16 +6,15 @@ package gui;
  */
 import javax.swing.*;
 
+import controller.PanelController;
+
 public class UserGUI extends JPanel {
     
     /**
-     * 
-     */
-    private static final long serialVersionUID = -4925806868701427735L;
-    /**
      * Creates new form UserGUI
      */
-    public UserGUI() {
+    public UserGUI(PanelController pm) {
+        this.pm = pm;
         initComponents();
     }
 
@@ -232,7 +231,7 @@ public class UserGUI extends JPanel {
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
-        MainGUI.loadGUI(this);
+        pm.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
@@ -241,8 +240,38 @@ public class UserGUI extends JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
+        pm.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
-
+    
+    public static void main(String[] args) throws Exception{
+        // take place on thread other than main thread
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                        if ("Windows".equals(info.getName())) {
+                            javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                            break;
+                        }
+                    }
+                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (UnsupportedLookAndFeelException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                
+                // turn off metal's use of bold fonts
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+                PanelController pm = new PanelController();
+                pm.changeFrame(new UserGUI(pm));
+            }
+        });
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton D_VInfoButton;
@@ -268,22 +297,8 @@ public class UserGUI extends JPanel {
     private javax.swing.JPasswordField setPasswordField;
     private javax.swing.JSeparator upperSeparator;
     private javax.swing.JLabel userInfoLabel;
-    public static void main(String[] args) throws Exception{
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {}
-        JFrame jFrame = new JFrame("test");
-        UserGUI test = new UserGUI();
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setContentPane(test);
-        jFrame.pack();
-        jFrame.setVisible(true);
-
-    }
     // End of variables declaration//GEN-END:variables
+    
+    private PanelController pm;
+    private static final long serialVersionUID = -4925806868701427735L;
 }

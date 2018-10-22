@@ -14,12 +14,7 @@ import controller.PanelController;
  * @author Xingan_Wan
  */
 public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
-
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 7794269541984046099L;
-    private PanelController pm;
+    
     /**
      * Creates new form DriverInfo
      */
@@ -207,7 +202,36 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     private void driverCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_driverCheckBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_driverCheckBoxActionPerformed
-
+    
+    public static void main(String[] args) {
+        // take place on thread other than main thread
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                        if ("Windows".equals(info.getName())) {
+                            javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                            break;
+                        }
+                    }
+                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (UnsupportedLookAndFeelException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                
+                // turn off metal's use of bold fonts
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+                PanelController pm = new PanelController();
+                pm.changeFrame(new Driver_VehicleInfoGUI(pm));
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
@@ -227,25 +251,8 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     private javax.swing.JLabel spaceLabel;
     private javax.swing.JSeparator topSeparator;
     private javax.swing.JLabel vInfoLabel;
-
-
-    public static void main(String[] args) throws Exception{
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {}
-        PanelController pm = new PanelController();
-        JFrame jFrame = new JFrame("test");
-        Driver_VehicleInfoGUI test = new Driver_VehicleInfoGUI(pm);
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setContentPane(test);
-        jFrame.pack();
-        jFrame.setVisible(true);
-
-    }
     // End of variables declaration//GEN-END:variables
+    
+    PanelController pm;
+    private static final long serialVersionUID = 7794269541984046099L;
 }

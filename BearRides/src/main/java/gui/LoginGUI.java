@@ -7,21 +7,19 @@ package gui;
 
 import javax.swing.*;
 
+import controller.PanelController;
+
 /**
  *
  * @author Xingan_Wan
  */
 public class LoginGUI extends javax.swing.JPanel {
-
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 1036190957928140546L;
-
+    
     /**
      * Creates new form LoginGUI
      */
-    public LoginGUI() {
+    public LoginGUI(PanelController pm) {
+        this.pm = pm;
         initComponents();
     }
 
@@ -135,17 +133,43 @@ public class LoginGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
-        pm.changeFrame(new messageBoardGUI());
+        pm.changeFrame(new MessageBoardGUI(pm));
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
-        System.out.print("login");
-        MainGUI.loadGUI(MainGUI.registerGUI);
-        // TODO add your handling code here:
+        pm.changeFrame(new RegisterGUI(pm));
     }//GEN-LAST:event_registerButtonActionPerformed
-
-
+    
+    public static void main(String[] args) throws Exception{
+        // take place on thread other than main thread
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                        if ("Windows".equals(info.getName())) {
+                            javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                            break;
+                        }
+                    }
+                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (UnsupportedLookAndFeelException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                
+                // turn off metal's use of bold fonts
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+                PanelController pm = new PanelController();
+                pm.changeFrame(new LoginGUI(pm));
+            }
+        });
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel emailLabel;
     private javax.swing.JTextField emailTextField;
@@ -155,26 +179,8 @@ public class LoginGUI extends javax.swing.JPanel {
     private javax.swing.JLabel passwordLabel;
     private javax.swing.JButton registerButton;
     private javax.swing.JLabel titleLabel;
-
-    public void createAndShowGUI() {
-        JFrame jFrame = new JFrame("test");
-        LoginGUI loginGUI = new LoginGUI();
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setContentPane(loginGUI);
-        jFrame.pack();
-        jFrame.setVisible(true);
-    }
-
-public static void main(String[] args) throws Exception{
-    final LoginGUI guiMaker = new LoginGUI();
-    //invokelater is static thus main is final
-    javax.swing.SwingUtilities.invokeLater(new Runnable() {
-        public void run() {
-            guiMaker.createAndShowGUI();
-        }
-    });
-    guiMaker.createAndShowGUI();
-
-}
     // End of variables declaration//GEN-END:variables
+    
+    private PanelController pm;
+    private static final long serialVersionUID = -2304000181439121969L;
 }
