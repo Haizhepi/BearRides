@@ -6,12 +6,16 @@
 
 package controller;
 
+import java.io.File;
+
 import object.User;
 import table.UserTable;
 
 public class UserTableController {
     
-    public UserTableController() {
+    public UserTableController(File file) {
+        //load from file later
+        
         this.table = new UserTable();
     }
     

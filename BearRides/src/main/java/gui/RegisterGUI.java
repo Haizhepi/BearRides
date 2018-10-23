@@ -5,8 +5,11 @@
  */
 package gui;
 
+import java.io.File;
+
 import javax.swing.*;
 
+import controller.ControlPanel;
 import controller.PanelController;
 
 /**
@@ -18,8 +21,9 @@ public class RegisterGUI extends javax.swing.JPanel {
     /**
      * Creates new form Register
      */
-    public RegisterGUI(PanelController pm) {
-        this.pm = pm;
+    public RegisterGUI(ControlPanel cp) {
+        this.cp = cp;
+        this.pm = cp.getPanelController();
         initComponents();
     }
 
@@ -252,7 +256,7 @@ public class RegisterGUI extends javax.swing.JPanel {
     }//GEN-LAST:event_agreementCheckBoxActionPerformed
     
     public static void main(String[] args) throws Exception{
-        // take place on thread other than main thread
+     // take place on thread other than main thread
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 try {
@@ -262,7 +266,8 @@ public class RegisterGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                } catch (ClassNotFoundException ex) {
+                } catch (InstantiationException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {
@@ -272,11 +277,11 @@ public class RegisterGUI extends javax.swing.JPanel {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                
+
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new RegisterGUI(pm));
+                ControlPanel cp = new ControlPanel(new File(""));
+                cp.getPanelController().changeFrame(new RegisterGUI(cp));
             }
         });
     }
@@ -308,6 +313,7 @@ public class RegisterGUI extends javax.swing.JPanel {
     private javax.swing.JLabel warningLabel;
     // End of variables declaration//GEN-END:variables
     
+    private ControlPanel cp;
     private PanelController pm;
     private static final long serialVersionUID = -3916977028254844999L;
 }

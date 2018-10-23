@@ -5,10 +5,13 @@
  */
 package gui;
 
+import java.io.File;
+
 import javax.swing.*;
 
+import controller.ControlPanel;
+import controller.MessageTableController;
 import controller.PanelController;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -19,8 +22,12 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     /**
      * Creates new form MessageTableGUI1
      */
-    public MessageBoardGUI(PanelController pm) {
-        this.pm = pm;
+    public MessageBoardGUI(ControlPanel cp) {
+        //later make load from file
+        this.cp = cp;
+        tc = cp.getMessageTableController();
+        messageTable = tc.getTable();
+        pc = cp.getPanelController();
         initComponents();
     }
 
@@ -35,7 +42,6 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
         backButton = new javax.swing.JButton();
         jScrollPane = new javax.swing.JScrollPane();
-        messageTable = new javax.swing.JTable();
 
         backButton.setBackground(new java.awt.Color(0, 102, 0));
         backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
@@ -66,6 +72,8 @@ public class MessageBoardGUI extends javax.swing.JPanel {
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
+            
+            private static final long serialVersionUID = 1957375337531529322L;
         });
         messageTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         messageTable.setFillsViewportHeight(true);
@@ -100,16 +108,15 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        pm.closeFrame();
+        pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void messageTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_messageTableMouseClicked
         // TODO add your handling code here:
-        DefaultTableModel model = (DefaultTableModel) messageTable.getModel();
         if (2 == evt.getClickCount()) {
             int mouseIndex = messageTable.rowAtPoint(evt.getPoint());
             mouseIndex = messageTable.convertRowIndexToModel(mouseIndex);
-            pm.changeFrame(new MessageGUI(pm));       
+            pc.changeFrame(new MessageGUI(cp));
         }
         
     }//GEN-LAST:event_messageTableMouseClicked
@@ -139,8 +146,8 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new MessageBoardGUI(pm));
+                ControlPanel cp = new ControlPanel(new File(""));
+                cp.getPanelController().changeFrame(new MessageBoardGUI(cp));
             }
         });
     }
@@ -150,7 +157,9 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane;
     private javax.swing.JTable messageTable;
     // End of variables declaration//GEN-END:variables
-
-    PanelController pm;
+    
+    private ControlPanel cp;
+    private MessageTableController tc;
+    private PanelController pc;
     private static final long serialVersionUID = 5164463894978645312L;
 }

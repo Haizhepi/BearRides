@@ -5,8 +5,11 @@
  */
 package gui;
 
+import java.io.File;
+
 import javax.swing.*;
 
+import controller.ControlPanel;
 import controller.PanelController;
 
 /**
@@ -18,8 +21,9 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     /**
      * Creates new form DriverInfo
      */
-    public Driver_VehicleInfoGUI(PanelController pm) {
-        this.pm = pm;
+    public Driver_VehicleInfoGUI(ControlPanel cp) {
+        this.cp = cp;
+        this.pc = cp.getPanelController();
         initComponents();
     }
 
@@ -193,12 +197,12 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
-        pm.closeFrame();
+        pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
-        pm.closeFrame();
+        pc.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void driverCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_driverCheckBoxActionPerformed
@@ -216,7 +220,8 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                } catch (ClassNotFoundException ex) {
+                } catch (InstantiationException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {
@@ -226,11 +231,11 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                
+
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new Driver_VehicleInfoGUI(pm));
+                ControlPanel cp = new ControlPanel(new File(""));
+                cp.getPanelController().changeFrame(new Driver_VehicleInfoGUI(cp));
             }
         });
     }
@@ -255,6 +260,7 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     private javax.swing.JLabel vInfoLabel;
     // End of variables declaration//GEN-END:variables
     
-    PanelController pm;
+    private ControlPanel cp;
+    private PanelController pc;
     private static final long serialVersionUID = 7794269541984046099L;
 }

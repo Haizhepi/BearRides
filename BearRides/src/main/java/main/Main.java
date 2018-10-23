@@ -6,9 +6,12 @@
 
 package main;
 
+import java.io.File;
+
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+import controller.ControlPanel;
 import controller.PanelController;
 import gui.LoginGUI;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -38,8 +41,9 @@ public class Main {
                 }
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new LoginGUI(pm));
+                
+                ControlPanel cp = new ControlPanel(new File(""));
+                cp.getPanelController().changeFrame(new LoginGUI(cp));
             }
         });
     }

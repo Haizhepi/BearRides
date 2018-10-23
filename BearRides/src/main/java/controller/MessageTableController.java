@@ -6,6 +6,7 @@
 
 package controller;
 
+import java.io.File;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -26,7 +27,9 @@ public class MessageTableController {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public MessageTableController() {
+    public MessageTableController(File file) {
+        //load from file in future
+        
         tableModel = new MessageTable();
         table = new JTable(tableModel);
         sorter = new TableRowSorter<MessageTable>(tableModel);

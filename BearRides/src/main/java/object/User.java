@@ -378,7 +378,7 @@ public class User implements Comparable<User> {
     @XmlElement
     private Integer rating = 100;
     @XmlElement
-    private Integer ratingCount;
+    private Integer ratingCount = 1;
     @XmlElement
     private SortedSet<Message> notifications;
     @XmlElement

@@ -1,11 +1,14 @@
 package gui;
 
+import java.io.File;
+
 /**
  *
  * @author Xingan_Wan
  */
 import javax.swing.*;
 
+import controller.ControlPanel;
 import controller.PanelController;
 
 public class UserGUI extends JPanel {
@@ -13,8 +16,9 @@ public class UserGUI extends JPanel {
     /**
      * Creates new form UserGUI
      */
-    public UserGUI(PanelController pm) {
-        this.pm = pm;
+    public UserGUI(ControlPanel cp) {
+        this.cp = cp;
+        this.pm = cp.getPanelController();
         initComponents();
     }
 
@@ -236,7 +240,7 @@ public class UserGUI extends JPanel {
 
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
         // TODO add your handling code here:
-        pm.changeFrame(new Driver_VehicleInfoGUI(pm));
+        pm.changeFrame(new Driver_VehicleInfoGUI(cp));
     }//GEN-LAST:event_D_VInfoButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
@@ -246,33 +250,34 @@ public class UserGUI extends JPanel {
     
     public static void main(String[] args) throws Exception{
         // take place on thread other than main thread
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                        if ("Windows".equals(info.getName())) {
-                            javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                            break;
-                        }
-                    }
-                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-                
-                // turn off metal's use of bold fonts
-                UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new UserGUI(pm));
-            }
-        });
-    }
+           SwingUtilities.invokeLater(new Runnable() {
+               public void run() {
+                   try {
+                       for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                           if ("Windows".equals(info.getName())) {
+                               javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                               break;
+                           }
+                       }
+                   } catch (ClassNotFoundException ex) {
+                   } catch (InstantiationException e) {
+                       // TODO Auto-generated catch block
+                       e.printStackTrace();
+                   } catch (IllegalAccessException e) {
+                       // TODO Auto-generated catch block
+                       e.printStackTrace();
+                   } catch (UnsupportedLookAndFeelException e) {
+                       // TODO Auto-generated catch block
+                       e.printStackTrace();
+                   }
+
+                   // turn off metal's use of bold fonts
+                   UIManager.put("swing.boldMetal", Boolean.FALSE);
+                   ControlPanel cp = new ControlPanel(new File(""));
+                   cp.getPanelController().changeFrame(new UserGUI(cp));
+               }
+           });
+       }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton D_VInfoButton;
@@ -300,6 +305,7 @@ public class UserGUI extends JPanel {
     private javax.swing.JLabel userInfoLabel;
     // End of variables declaration//GEN-END:variables
     
+    private ControlPanel cp;
     private PanelController pm;
     private static final long serialVersionUID = -4925806868701427735L;
 }

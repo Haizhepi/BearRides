@@ -5,8 +5,12 @@
  */
 package gui;
 
+import java.io.File;
+
 import javax.swing.*;
 
+import controller.ControlPanel;
+import controller.MessageTableController;
 import controller.PanelController;
 
 /**
@@ -18,8 +22,10 @@ public class MessageGUI extends javax.swing.JPanel {
     /**
      * Creates new form MessageGUI
      */
-    public MessageGUI(PanelController pm) {
-        this.pm = pm;
+    public MessageGUI(ControlPanel cp) {
+        this.cp = cp;
+        this.tc = cp.getMessageTableController();
+        this.pc = cp.getPanelController();
         initComponents();
     }
 
@@ -141,8 +147,14 @@ public class MessageGUI extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
-        pm.closeFrame();
+        pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
+    
+    @SuppressWarnings("unused")
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        // TODO add your handling code here:
+        pc.closeFrame();
+    }//GEN-LAST:event_addButtonActionPerformed
     
     public static void main(String[] args) throws Exception{
         // take place on thread other than main thread
@@ -155,7 +167,8 @@ public class MessageGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                } catch (ClassNotFoundException ex) {
+                } catch (InstantiationException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {
@@ -165,11 +178,11 @@ public class MessageGUI extends javax.swing.JPanel {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                
+
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new MessageGUI(pm));
+                ControlPanel cp = new ControlPanel(new File(""));
+                cp.getPanelController().changeFrame(new MessageGUI(cp));
             }
         });
     }
@@ -189,6 +202,8 @@ public class MessageGUI extends javax.swing.JPanel {
     private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
     
-    PanelController pm;
+    private ControlPanel cp;
+    private MessageTableController tc;
+    private PanelController pc;
     private static final long serialVersionUID = -8737577434831994363L;
 }

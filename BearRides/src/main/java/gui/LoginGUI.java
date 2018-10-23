@@ -5,8 +5,11 @@
  */
 package gui;
 
+import java.io.File;
+
 import javax.swing.*;
 
+import controller.ControlPanel;
 import controller.PanelController;
 
 /**
@@ -18,8 +21,9 @@ public class LoginGUI extends javax.swing.JPanel {
     /**
      * Creates new form LoginGUI
      */
-    public LoginGUI(PanelController pm) {
-        this.pm = pm;
+    public LoginGUI(ControlPanel cp) {
+        this.cp = cp;
+        this.pc = cp.getPanelController();
         initComponents();
     }
 
@@ -62,8 +66,6 @@ public class LoginGUI extends javax.swing.JPanel {
         // null pointer exception
         //iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("src/main/resources/BearRidesLogo.png"))); // NOI18N
         // may fix
-        java.net.URL logoOneUrl = getClass().getResource("src/main/resources/BearRidesLogo.png");
-
         iconLabel.setIcon(new ImageIcon(getClass().getResource("/BearRidesLogo.png"))); // NOI18N
 
         registerButton.setBackground(new java.awt.Color(255, 255, 51));
@@ -135,11 +137,11 @@ public class LoginGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        pm.changeFrame(new HomePageGUI(pm));
+        pc.changeFrame(new HomePageGUI(cp));
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
-        pm.changeFrame(new RegisterGUI(pm));
+        pc.changeFrame(new RegisterGUI(cp));
     }//GEN-LAST:event_registerButtonActionPerformed
     
     public static void main(String[] args) throws Exception{
@@ -153,7 +155,8 @@ public class LoginGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {} catch (InstantiationException e) {
+                } catch (ClassNotFoundException ex) {
+                } catch (InstantiationException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {
@@ -163,11 +166,11 @@ public class LoginGUI extends javax.swing.JPanel {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                
+
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                PanelController pm = new PanelController();
-                pm.changeFrame(new LoginGUI(pm));
+                ControlPanel cp = new ControlPanel(new File(""));
+                cp.getPanelController().changeFrame(new LoginGUI(cp));
             }
         });
     }
@@ -183,6 +186,7 @@ public class LoginGUI extends javax.swing.JPanel {
     private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
     
-    private PanelController pm;
+    private ControlPanel cp;
+    private PanelController pc;
     private static final long serialVersionUID = -2304000181439121969L;
 }
