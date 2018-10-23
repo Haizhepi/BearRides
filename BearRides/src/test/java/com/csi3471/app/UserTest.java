@@ -28,10 +28,4 @@ public class UserTest {
         });
     }
 
-    @Test
-    void testConstructor2() {
-        //assertThrows(RuntimeException.class, () -> {
-        //    user = new User(null, "Guess");
-        //});
-    }
 }
