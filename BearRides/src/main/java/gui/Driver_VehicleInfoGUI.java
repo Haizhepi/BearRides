@@ -193,10 +193,12 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
+        pm.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
+        pm.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void driverCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_driverCheckBoxActionPerformed

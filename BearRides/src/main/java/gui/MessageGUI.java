@@ -50,6 +50,7 @@ public class MessageGUI extends javax.swing.JPanel {
         descriptionLabel.setText("Description");
 
         jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 

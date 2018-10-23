@@ -20,7 +20,7 @@ public class PanelController {
 	public PanelController() {
 		frame = new JFrame("BearRides");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(600, 600);
+		frame.setSize(700, 500);
 		frame.setVisible(true);
 
 		this.stack = new Stack<JPanel>();
