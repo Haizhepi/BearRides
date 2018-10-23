@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash
- * Description: This class serves as our data structure for users
+ * Description: this class serves as our user data structure
  * Date Last Modified: 10/22/2018
  */
 

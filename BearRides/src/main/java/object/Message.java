@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash
- * Description: This class serves as our data structure for users
+ * Description: this class serves as any message in the program
  * Date Last Modified: 10/22/2018
  */
 
