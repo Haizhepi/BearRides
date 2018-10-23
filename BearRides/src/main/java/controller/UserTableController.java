@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash
- * Description: define input and out buffers for program here
+ * Description: this serves as our controller for UserTable
  * Date Last Modified: 10/22/2018
  */
 
@@ -13,10 +13,74 @@ import table.UserTable;
 
 public class UserTableController {
     
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
+    
     public UserTableController(File file) {
         //load from file later
         
         this.table = new UserTable();
+    }
+    
+    /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: registers a new user
+     * return: void
+     * precondition: void
+     * postcondition: the new user will be mapped
+     */
+    public void register(User user) {
+        if(user.getUUID().contains("@baylor.edu")) {
+        	table.insert(user);
+        } else {
+        }
+    }
+    
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: removes user from the table
+     * return: void
+     * precondition: void
+     * postcondition: all references to user will be removed
+     */
+    public void remove(User user) {
+    	table.remove(user);
+    }
+    
+    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: changes a user
+     * return: void
+     * precondition: void
+     * postcondition: oldUser will be replaced with new user
+     */
+    public Boolean setInfo(User newUser, User oldUser) {
+        //stubbed
+        return null;
+    }
+    
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: recovers an account when someone forgot their password
+     * return: void
+     * precondition: void
+     * postcondition: their account's password is changed
+     */
+    public void recover(User user) {
+        //stubbed
+    }
+    
+    /*
+     * description: reverifies all accounts to make sure they are students
+     * return: void
+     * precondition: void
+     * postcondition: accounts are no longer active until verified
+     */
+    public void reverifyAll() {
+        //stubbed
     }
     
     /*
@@ -34,33 +98,6 @@ public class UserTableController {
         }
         
         return attempt;
-    }
-    
-    public Boolean register(User user) {
-        if(user.getUUID().contains("@baylor.edu")) {
-        	return table.insert(user);
-        } else {
-        }
-        
-        return false;
-    }
-    
-    public Boolean remove(User user) {
-    	return table.remove(user);
-    }
-
-    public Boolean recover(User user) {
-        //stubbed
-        return null;
-    }
-
-    public void reverifyAll() {
-        //stubbed
-    }
-    
-    public Boolean setInfo(User newUser, User oldUser) {
-        //stubbed
-        return null;
     }
     
     private UserTable table;

@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash
- * Description: define input and out buffers for program here
+ * Description: this serves as our controller for MessageTable
  * Date Last Modified: 10/22/2018
  */
 

@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash, Andrew
- * Description: This class serves as our data structure for users
+ * Description: this serves as our panel controller for our frame
  * Date Last Modified: 10/22/2018
  */
 

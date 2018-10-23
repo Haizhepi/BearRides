@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash
- * Description: define input and out buffers for program here
+ * Description: this serves to define input and out buffers in one place
  * Date Last Modified: 10/22/2018
  */
 

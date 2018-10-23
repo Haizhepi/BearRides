@@ -1,6 +1,6 @@
 /*
  * Contributors: Ash
- * Description: This class serves as our data structure for messages
+ * Description: this class serves as our message data structure
  * Date Last Modified: 10/22/2018
  */
 
