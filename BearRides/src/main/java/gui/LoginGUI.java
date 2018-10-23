@@ -62,7 +62,9 @@ public class LoginGUI extends javax.swing.JPanel {
         // null pointer exception
         //iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("src/main/resources/BearRidesLogo.png"))); // NOI18N
         // may fix
-        iconLabel.setIcon(new ImageIcon("src/main/resources/BearRidesLogo.png")); // NOI18N
+        java.net.URL logoOneUrl = getClass().getResource("src/main/resources/BearRidesLogo.png");
+
+        iconLabel.setIcon(new ImageIcon(getClass().getResource("/BearRidesLogo.png"))); // NOI18N
 
         registerButton.setBackground(new java.awt.Color(255, 255, 51));
         registerButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
