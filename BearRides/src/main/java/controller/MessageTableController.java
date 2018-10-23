@@ -12,9 +12,9 @@ import java.util.Date;
 
 import javax.swing.JTable;
 import javax.swing.RowFilter;
+import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-import javax.swing.JOptionPane;
 
 import object.Message;
 import object.Trip;
@@ -27,7 +27,31 @@ public class MessageTableController {
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public MessageTableController() {
-        sorter = new TableRowSorter<MessageTable>();
+        tableModel = new MessageTable();
+        table = new JTable(tableModel);
+        sorter = new TableRowSorter<MessageTable>(tableModel);
+    }
+    
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: getter
+     * return: table
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public JTable getTable() {
+        return this.table;
+    }
+    
+    /*
+     * description: getter
+     * return: tableModel
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public AbstractTableModel getModel() {
+        return this.tableModel;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -38,7 +62,7 @@ public class MessageTableController {
      * precondition: void
      * postcondition: table is sorted respectively to sorters
      */
-    public void sortBy(Sorters sorters, MessageTable table) {
+    public void sortBy(Sorters sorters) {
         Comparator<Message> compare;
         
         switch(sorters) {
@@ -60,8 +84,8 @@ public class MessageTableController {
             return;
         }
         
-        Collections.sort(table.getMessages(), compare);
-        table.fireTableDataChanged();
+        Collections.sort(tableModel.getMessages(), compare);
+        tableModel.fireTableDataChanged();
     }
     
     /*
@@ -70,7 +94,7 @@ public class MessageTableController {
      * precondition: void
      * postcondition: table is filtered by search respectively to filters
      */
-    public void filterBy(Filters filters, String search, JTable table) {
+    public void filterBy(Filters filters, String search) {
         RowFilter<TableModel, Integer> filter = null;
         
         switch(filters) {
@@ -106,15 +130,13 @@ public class MessageTableController {
      * precondition: void
      * postcondition: a new message may be put into table if its valid
      */
-    public void postMessage(Message message, MessageTable table) {
+    public void postMessage(Message message) {
         //make sure the user is logged in and who they say the are
         // then make sure all the fields in the message are valid
         if(authenticate(message) && verify(message)) {
-            table.insert(message);
-            table.fireTableDataChanged();
+            tableModel.insert(message);
+            tableModel.fireTableDataChanged();
         }else {
-            JOptionPane.showMessageDialog(null, "Error: this message is not valid, "
-                    + "please make sure all the fields are filled.");
         }
     }
     
@@ -179,17 +201,15 @@ public class MessageTableController {
      * precondition: void
      * postcondition: the old message might be replaced
      */
-    public void editMessage(Message newMessage, Message oldMessage, MessageTable table) {
+    public void editMessage(Message newMessage, Message oldMessage) {
         if(authenticate(newMessage, oldMessage)) {
             if(verify(newMessage)) {
-                table.insert(newMessage);
-                table.remove(oldMessage);
-                table.fireTableDataChanged();
+                tableModel.insert(newMessage);
+                tableModel.remove(oldMessage);
+                tableModel.fireTableDataChanged();
             } else {
-                //jOptionpane
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
         }
     }
     
@@ -199,11 +219,11 @@ public class MessageTableController {
      * precondition: void
      * postcondition: if the user is authentic the messages are cleared
      */
-    public void clearUser(User user, MessageTable table) {
+    public void clearUser(User user) {
         if(user.getTable().authenticate(user)) {
-            table.removeAll(user);
+            tableModel.removeAll(user);
+            tableModel.fireTableDataChanged();
         }else {
-            JOptionPane.showMessageDialog(null, "Error: this account is not logged in here.");
         }
     }
     
@@ -213,14 +233,16 @@ public class MessageTableController {
      * precondition: void
      * postcondition: notifications are sent to the participants
      */
-    public void remind(Date date, MessageTable table) {
+    public void remind(Date date) {
         if(date.after(new Date())) {
-            table.pushReminders(date);
+            tableModel.pushReminders(date);
         }else {
         }
     }
     
     //variable not to be saved upon shutdown
+    private JTable table;
+    private MessageTable tableModel;
     private TableRowSorter<MessageTable> sorter;
     public enum Sorters {
         POST_TIME, ORIGIN_TIME, DESTIN_TIME, RETURN_TIME, PASSENGER_CAP

@@ -174,7 +174,6 @@ public class MessageGUI extends javax.swing.JPanel {
         });
     }
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JLabel creatorLabel;

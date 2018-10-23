@@ -83,7 +83,8 @@ public class UserTable {
         if(userTable.containsKey(uuid)) {
             User attempt = userTable.get(uuid);
             
-            if(attempt.getPassHash().equals(password.hashCode()) &&
+            if(attempt != null &&
+                    attempt.getPassHash().equals(password.hashCode()) &&
                     !tokenMap.containsKey(attempt.getUUID())) {
                 
                 UUID token = generateToken();
