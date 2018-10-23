@@ -24,13 +24,13 @@ import table.MessageTable;
 
 public class MessageTableController {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public MessageTableController() {
         sorter = new TableRowSorter<MessageTable>();
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: generic sorter
@@ -321,13 +321,13 @@ class tripPassengerCapComparator implements Comparator<Message> {
 
 class driverFilter extends RowFilter<TableModel, Integer> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public driverFilter(String search) {
         this.search = search;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: returns whether a message should be included or not
@@ -356,12 +356,12 @@ class driverFilter extends RowFilter<TableModel, Integer> {
 
 class hasTripFilter extends RowFilter<TableModel, Integer> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public hasTripFilter() {
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: returns whether a message should be included or not
@@ -388,13 +388,13 @@ class hasTripFilter extends RowFilter<TableModel, Integer> {
 
 class originLocFilter extends RowFilter<TableModel, Integer> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public originLocFilter(String search) {
         this.search = search;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: returns whether a message should be included or not
@@ -423,13 +423,13 @@ class originLocFilter extends RowFilter<TableModel, Integer> {
 
 class destinLocFilter extends RowFilter<TableModel, Integer> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public destinLocFilter(String search) {
         this.search = search;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: returns whether a message should be included or not
@@ -458,13 +458,13 @@ class destinLocFilter extends RowFilter<TableModel, Integer> {
 
 class returnLocFilter extends RowFilter<TableModel, Integer> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public returnLocFilter(String search) {
         this.search = search;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: returns whether a message should be included or not
@@ -493,13 +493,13 @@ class returnLocFilter extends RowFilter<TableModel, Integer> {
 
 class passengerCapFilter extends RowFilter<TableModel, Integer> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public passengerCapFilter(String search) {
         this.search = search;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: returns whether a message should be included or not

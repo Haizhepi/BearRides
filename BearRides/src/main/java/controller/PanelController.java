@@ -1,3 +1,9 @@
+/*
+ * Contributors: Ash, Andrew
+ * Description: This class serves as our data structure for users
+ * Date Last Modified: 10/22/2018
+ */
+
 package controller;
 
 import java.util.Stack;
@@ -8,6 +14,8 @@ import javax.swing.JPanel;
 import main.Shutdown;
 
 public class PanelController {
+    
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
 
 	public PanelController() {
 		frame = new JFrame("BearRides");
@@ -17,33 +25,59 @@ public class PanelController {
 
 		this.stack = new Stack<JPanel>();
 	}
+    
+    /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: puts a frame onto the stack
+     * return: void
+     * precondition: void
+     * postcondition: the new frame will be on top
+     */
+    public void changeFrame(JPanel newFrame) {
+        this.stack.push(newFrame);
 
-	public void changeFrame(JPanel newFrame) {
-		this.stack.push(newFrame);
+        frame.getContentPane().removeAll();
+        frame.add(newFrame);
+        frame.revalidate();
+        frame.pack();
+        frame.repaint();
+    }
+    
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: pops off the top of the stack
+     * return: void
+     * precondition: void
+     * postcondition: if there is no frame to pop shutdown is called
+     */
+    public void closeFrame() {
+        if (this.stack.isEmpty()) {
+            new Shutdown();
+        }
+        this.stack.pop();
 
-		frame.getContentPane().removeAll();
-		frame.add(newFrame);
-		frame.revalidate();
-		frame.pack();
-		frame.repaint();
-	}
-
-	public void closeFrame() {
-		if (this.stack.isEmpty()) {
-			new Shutdown();
-		}
-		this.stack.pop();
-
-		frame.getContentPane().removeAll();
-		frame.add(this.stack.peek());
-		frame.revalidate();
-		frame.repaint();
-	}
-
+        frame.getContentPane().removeAll();
+        frame.add(this.stack.peek());
+        frame.revalidate();
+        frame.repaint();
+    }
+    
+	/*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: getter
+     * return: the top of stack
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+	
 	public JPanel getCurrentFrame() {
-		return stack.peek();
-	}
-
+        return stack.peek();
+    }
+	
+	//variable not to be saved upon shutdown
 	private static JFrame frame;
 	private Stack<JPanel> stack;
 }

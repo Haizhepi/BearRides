@@ -18,14 +18,14 @@ import object.User;
 @XmlRootElement
 public class UserTable {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public UserTable() {
         userTable = new HashMap<String, User>();
         tokenMap = new HashMap<String, UUID>();
     }
     
-    /*¯`·._.·(¯`·._.· Insertion ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
     
     /*
      * description: inserts a user
@@ -37,7 +37,7 @@ public class UserTable {
         return userTable.putIfAbsent(user.getUUID(), user) == null;
     }
     
-    /*¯`·._.·(¯`·._.· Removal ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
     
     /*
      * description: removes all references to user
@@ -49,7 +49,7 @@ public class UserTable {
         return userTable.remove(user.getUUID()) != null;
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*
      * description: getter
@@ -61,7 +61,7 @@ public class UserTable {
         return userTable.get(uuid);
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: checks for a user in the list

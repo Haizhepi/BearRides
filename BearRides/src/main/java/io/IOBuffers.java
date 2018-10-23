@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 public class IOBuffers {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯)*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public IOBuffers(File file) {
         try {

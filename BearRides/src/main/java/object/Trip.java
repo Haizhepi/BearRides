@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Trip implements Comparable<Trip> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
         this.driver = driver;
@@ -28,7 +28,7 @@ public class Trip implements Comparable<Trip> {
         requirements = new ArrayList<String>();
     }
     
-    /*¯`·._.·(¯`·._.· Insertion ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
     
     /*
      * description: inserts a user into riders
@@ -54,7 +54,7 @@ public class Trip implements Comparable<Trip> {
         requirements.add(requirement);
     }
     
-    /*¯`·._.·(¯`·._.· Removal ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
     
     /*
      * description: removes all references to user
@@ -76,7 +76,7 @@ public class Trip implements Comparable<Trip> {
         return requirements.remove(requirement);
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*
      * description: getter
@@ -197,7 +197,7 @@ public class Trip implements Comparable<Trip> {
         return message;
     }
 
-    /*¯`·._.·(¯`·._.· Setters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
     /*
      * description: setter
@@ -279,7 +279,7 @@ public class Trip implements Comparable<Trip> {
         this.driver = driver;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override
     public int hashCode() {

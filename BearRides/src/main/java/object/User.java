@@ -19,7 +19,7 @@ import table.UserTable;
 @XmlRootElement
 public class User implements Comparable<User> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public User(String email, String password) {
         uuid = email;
@@ -27,7 +27,7 @@ public class User implements Comparable<User> {
         notifications = new TreeSet<Message>();
     }
     
-    /*¯`·._.·(¯`·._.· Insertion ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
     
     /*
      * description: adds a rating
@@ -49,7 +49,7 @@ public class User implements Comparable<User> {
         notifications.add(notification);
     }
     
-    /*¯`·._.·(¯`·._.· Removal ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
     
     /*
      * description: removes all references to notification
@@ -61,7 +61,7 @@ public class User implements Comparable<User> {
         notifications.remove(notification);
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*
      * description: getter
@@ -173,7 +173,7 @@ public class User implements Comparable<User> {
         return table;
     }
 
-    /*¯`·._.·(¯`·._.· Setters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
     /*
      * description: setter
@@ -255,7 +255,7 @@ public class User implements Comparable<User> {
         this.table = table;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override
     public int hashCode() {

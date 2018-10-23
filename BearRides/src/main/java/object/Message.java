@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Message implements Comparable<Message> {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public Message(User creator) {
         postTime = Clock.systemUTC().instant().toString();
@@ -25,7 +25,7 @@ public class Message implements Comparable<Message> {
         body = new String();
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*
      * description: getter
@@ -96,8 +96,8 @@ public class Message implements Comparable<Message> {
     public Boolean isHidden() {
         return hidden;
     }
-
-    /*¯`·._.·(¯`·._.· Setters ·._.·´¯)·._.·´¯*/
+    
+    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
     /*
      * description: setter
@@ -139,7 +139,7 @@ public class Message implements Comparable<Message> {
         this.hidden = hidden;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override
     public int hashCode() {

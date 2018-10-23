@@ -26,7 +26,7 @@ import object.User;
 @XmlRootElement
 public class MessageTable extends AbstractTableModel {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public MessageTable() {
         messages = new ArrayList<Message>();
@@ -39,7 +39,7 @@ public class MessageTable extends AbstractTableModel {
         mailMan.insertRating(999);
     }
     
-    /*¯`·._.·(¯`·._.· Insertion ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
     
     /*
      * description: inserts a message
@@ -55,7 +55,7 @@ public class MessageTable extends AbstractTableModel {
                 trip != null ? tripQueue.put(trip.getOriginTime(), trip) : true;
     }
     
-    /*¯`·._.·(¯`·._.· Removal ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
     
     /*
      * description: removes all references to messages from one user
@@ -88,7 +88,7 @@ public class MessageTable extends AbstractTableModel {
                 trip != null ? tripQueue.remove(trip.getOriginTime(), trip) : true;
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*
      * description: getter
@@ -133,7 +133,7 @@ public class MessageTable extends AbstractTableModel {
         return messages;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
      * description: verifies references to message

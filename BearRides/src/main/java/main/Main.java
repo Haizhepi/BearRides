@@ -1,3 +1,9 @@
+/*
+ * Contributors: Ash
+ * Description: This class serves as our data structure for users
+ * Date Last Modified: 10/22/2018
+ */
+
 package main;
 
 import javax.swing.SwingUtilities;

@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Vehicle {
     
-    /*¯`·._.·(¯`·._.· Construction ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public Vehicle(String model, Integer passengerCap) {
         this.model = model;
         this.passengerCap = passengerCap;
     }
     
-    /*¯`·._.·(¯`·._.· Getters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*
      * description: getter
@@ -61,7 +61,7 @@ public class Vehicle {
         return storageSpace;
     }
 
-    /*¯`·._.·(¯`·._.· Setters ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
     /*
      * description: setter
@@ -103,7 +103,7 @@ public class Vehicle {
         this.storageSpace = storageSpace;
     }
     
-    /*¯`·._.·(¯`·._.· Utilities ·._.·´¯)·._.·´¯*/
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override
     public int hashCode() {
