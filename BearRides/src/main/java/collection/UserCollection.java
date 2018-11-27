@@ -157,7 +157,7 @@ public class UserCollection {
         return UUID.randomUUID();
     }
     
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
+    //variables to be saved upon shutdown
     private Map<String, User> userTable;
     private static User mailMan = null;
     

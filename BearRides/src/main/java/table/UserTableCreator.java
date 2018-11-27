@@ -2,11 +2,13 @@ package table;
 
 import java.sql.Connection;
 
-public class UserTableCreator extends TableCreator {
+import database.SQLStatementExecuter;
+
+public class UserTableCreator extends SQLStatementExecuter {
     
     @Override
-    protected void hook(Connection connection) {
-        createTableSQL =
+    protected Boolean hook(Connection connection, Object object) {
+        SQLStatement =
                 "CREATE TABLE User("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "email CLOB NOT NULL, "
@@ -22,5 +24,7 @@ public class UserTableCreator extends TableCreator {
                 + "ratingCount INTEGER NOT NULL, "
                 + "notifications FOREIGN_KEY_SET, " //nested table of BIGINT foreign keys
                 + "PRIMARY KEY (id) );";
+        
+        return true;
     }
 }

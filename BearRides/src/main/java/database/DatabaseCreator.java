@@ -28,6 +28,7 @@ public class DatabaseCreator {
                 String InitializeDatabaseSQL =
                         "CREATE TYPE FOREIGN_KEY_SET AS TABLE OF BIGINT;"
                         + "CREATE TYPE STRING_SET AS TABLE OF CLOB;";
+                
                 Statement statement = connection.createStatement();
                 
                 try {

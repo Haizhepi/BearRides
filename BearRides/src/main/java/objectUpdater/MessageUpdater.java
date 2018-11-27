@@ -2,16 +2,17 @@ package objectUpdater;
 
 import java.sql.Connection;
 
+import database.SQLStatementExecuter;
 import object.Message;
 
-public class MessageUpdater extends Updater{
+public class MessageUpdater extends SQLStatementExecuter {
 
     @Override
     public Boolean hook(Connection connection, Object object) {
         Message message = (Message) object;
         
         if(message.getPrimaryKey() != null) {
-            UpdateSQL = "UPDATE Message"
+            SQLStatement = "UPDATE Message"
                     + " SET umid = '" + message.getUMID() //CLOB
                     + "' SET title = '" + message.getTitle() //CLOB
                     + "' SET hidden = " + ((message.isHidden() == true) ? 1 : 0) //BIT

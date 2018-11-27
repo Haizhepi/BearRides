@@ -1,14 +1,14 @@
-package objectUpdater;
+package database;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public abstract class Updater {
-    protected String UpdateSQL = null;
+public abstract class SQLStatementExecuter {
+    protected String SQLStatement = null;
     
-    public abstract Boolean hook(Connection connection, Object object);
-    
+    protected abstract Boolean hook(Connection connection, Object object);
+        
     public void update(Connection connection, Object object) {
         
         if(hook(connection, object)) {
@@ -16,9 +16,8 @@ public abstract class Updater {
             
             try {
                 statement = connection.createStatement();
-                
                 // execute update SQL stetement
-                statement.execute(UpdateSQL);
+                statement.execute(SQLStatement);
                 System.out.println("Record is updated to DBUSER table!");
             } catch (SQLException e) {
                 System.out.println(e.getMessage());

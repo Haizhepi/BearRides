@@ -2,11 +2,13 @@ package table;
 
 import java.sql.Connection;
 
-public class VehicleTableCreator extends TableCreator {
+import database.SQLStatementExecuter;
+
+public class VehicleTableCreator extends SQLStatementExecuter {
 
     @Override
-    protected void hook(Connection connection) {
-        createTableSQL =
+    protected Boolean hook(Connection connection, Object object) {
+        SQLStatement =
                 "CREATE TABLE Vehicle("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "model CLOB NOT NULL, "
@@ -14,5 +16,7 @@ public class VehicleTableCreator extends TableCreator {
                 + "passengerCap INTEGER NOT NULL, "
                 + "storageSpace CLOB, "
                 + "PRIMARY KEY (id) );";
+        
+        return true;
     }
 }

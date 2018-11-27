@@ -2,12 +2,13 @@ package table;
 
 import java.sql.Connection;
 
-public class MessageTableCreator extends TableCreator {
+import database.SQLStatementExecuter;
+
+public class MessageTableCreator extends SQLStatementExecuter {
 
     @Override
-    protected void hook(Connection connection) {
-        createTableSQL =
-                "CREATE TABLE Message("
+    protected Boolean hook(Connection connection, Object object) {
+        SQLStatement = "CREATE TABLE Message("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "umid CLOB NOT NULL, "
                 + "title CLOB NOT NULL, "
@@ -17,5 +18,7 @@ public class MessageTableCreator extends TableCreator {
                 + "body CLOB NOT NULL, "
                 + "trip BIGINT, " //foreign key
                 + "PRIMARY KEY (id) );";
+        
+        return true;
     }
 }

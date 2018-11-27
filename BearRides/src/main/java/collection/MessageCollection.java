@@ -195,7 +195,7 @@ public class MessageCollection extends AbstractTableModel {
         }
     }
     
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
+    //variables to be saved upon shutdown
     private List<Message> messages;
     private TreeMultimap<User, Message> userMap;
     private TreeMultimap<Date, Trip> tripQueue;
