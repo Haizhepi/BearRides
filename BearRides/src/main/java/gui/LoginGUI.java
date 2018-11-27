@@ -25,7 +25,7 @@ public class LoginGUI extends javax.swing.JPanel {
     public LoginGUI(DashBoard cp) {
         this.cp = cp;
         pc = cp.getPanelController();
-        uc = cp.getUserTableController();
+        uc = cp.getUserCollectionController();
         initComponents();
     }
 

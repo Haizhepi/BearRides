@@ -20,7 +20,7 @@ public class TripGUI extends javax.swing.JPanel {
      */
     public TripGUI(DashBoard cp) {
         this.cp = cp;
-        this.tc = cp.getMessageTableController();
+        this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
         initComponents();
     }

@@ -6,7 +6,12 @@
 
 package controller;
 
-import collection.IOBuffers;
+import java.util.List;
+
+import database.DatabaseCreator;
+import object.Message;
+import objectGateway.Gateway;
+import objectGateway.MessageGateway;
 
 public class DashBoard {
     
@@ -14,9 +19,8 @@ public class DashBoard {
     
     public DashBoard() {
         pc = new PanelController();
-        tc = new MessageCollectionController();
+        mc = new MessageCollectionController();
         uc = new UserCollectionController();
-        buffers = new IOBuffers();
     }
     
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
@@ -37,8 +41,8 @@ public class DashBoard {
      * precondition: void
      * postcondition: nothing is changed
      */
-    public MessageCollectionController getMessageTableController() {
-        return tc;
+    public MessageCollectionController getMessageCollectionController() {
+        return mc;
     }
     
     /*
@@ -47,23 +51,29 @@ public class DashBoard {
      * precondition: void
      * postcondition: nothing is changed
      */
-    public UserCollectionController getUserTableController() {
+    public UserCollectionController getUserCollectionController() {
         return uc;
     }
     
     public void save() {
-        tc.save(buffers);
-        uc.save(buffers);
     }
     
     public void load() {
-        tc.load(buffers);
-        uc.load(buffers);
+        //grab the unlinked messages
+        Gateway<Message> messageLoader = new MessageGateway(DatabaseCreator.getInstance().getConnection());
+        List<Message> messages = messageLoader.load();
+        
+        //grab the unlinked users
+        
+        //grab the vehicles
+        
+        //grab the unlinked trips
+        
+        //link them
     }
     
     //variable not to be saved upon shutdown
-    private IOBuffers buffers;
     private PanelController pc;
-    private MessageCollectionController tc;
+    private MessageCollectionController mc;
     private UserCollectionController uc;
 }

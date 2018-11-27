@@ -3,34 +3,34 @@ package objectGateway;
 import java.sql.Connection;
 import java.util.List;
 
-import object.User;
+import object.Vehicle;
 
-public class UserGateway extends Gateway<User> {
+public class VehicleGateway extends Gateway<Vehicle> {
 
-    public UserGateway(Connection connection) {
+    public VehicleGateway(Connection connection) {
         super(connection);
     }
 
     @Override
-    public Gateway<User> save(Object object) {
+    public Gateway<Vehicle> save(Object object) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public Gateway<User> delete(Object object) {
+    public Gateway<Vehicle> delete(Object object) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public List<User> load() {
+    public List<Vehicle> load() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public User find(Long id) {
+    public Vehicle find(Long id) {
         // TODO Auto-generated method stub
         return null;
     }

@@ -14,6 +14,9 @@ public class Trip implements Comparable<Trip> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
+    protected Trip() {
+    }
+    
     public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
         this.driver = driver;
         this.message = message;
@@ -376,23 +379,24 @@ public class Trip implements Comparable<Trip> {
             return false;
         return true;
     }
+    
     @Override
     public int compareTo(Trip arg0) {
         return getOriginTime().compareTo(arg0.getOriginTime());
     }
 
     //variables to be saved upon shutdown
-    private Long primaryKey = null;
+    protected Long primaryKey = null;
     
-    private User driver;
-    private Message message;
-    private List<User> riders;
-    private List<String> requirements;
-    private Date originTime;
-    private Date destinTime;
-    private Date returnTime;
-    private String originLoc;
-    private String destinLoc;
-    private String returnLoc;
-    private Integer passengerCap;
+    protected User driver;
+    protected Message message;
+    protected List<User> riders;
+    protected List<String> requirements;
+    protected Date originTime;
+    protected Date destinTime;
+    protected Date returnTime;
+    protected String originLoc;
+    protected String destinLoc;
+    protected String returnLoc;
+    protected Integer passengerCap;
 }

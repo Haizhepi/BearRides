@@ -10,9 +10,13 @@ public class MessageSaver extends SQLStatementExecuter {
     @Override
     protected Boolean hook(Connection connection, Object object) {
         Message message = (Message) object;
+        Long key = message.getPrimaryKey();
         
-        SQLStatement = "INSERT INTO Message (umid, title, hidden, creator, postTime, body, trip) VALUES "
-                + "('" + message.getUMID()
+        SQLStatement = "INSERT INTO Message ("
+                + ((key != null) ? "id, " : "")
+                + "umid, title, hidden, creator, postTime, body, trip) VALUES "
+                + "(" + ((key != null) ? key + ", " : "")
+                + "'" + message.getUMID()
                 + "', '" + message.getTitle()
                 + "', " + ((message.isHidden() == true) ? 1 : 0)
                 + ", " + message.getCreator().getPrimaryKey()

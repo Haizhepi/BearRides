@@ -8,6 +8,7 @@ public class MessageTableCreator extends SQLStatementExecuter {
 
     @Override
     protected Boolean hook(Connection connection, Object object) {
+        
         SQLStatement = "CREATE TABLE Message("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "umid CLOB NOT NULL, "

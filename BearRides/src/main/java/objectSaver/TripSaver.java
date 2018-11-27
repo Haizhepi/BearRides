@@ -13,9 +13,13 @@ public class TripSaver extends SQLStatementExecuter {
     @Override
     protected Boolean hook(Connection connection, Object object) {
         Trip trip = (Trip) object;
+        Long key = trip.getPrimaryKey();
         
-        SQLStatement = "INSERT INTO Trip (driver, message, riders, requirements, originTime, destinTime, returnTime, originLoc, destinLoc, returnLoc, passengerCap) VALUES "
-                + "(" + trip.getDriver().getPrimaryKey()
+        SQLStatement = "INSERT INTO Trip ("
+                + ((key != null) ? "id, " : "")
+                + "driver, message, riders, requirements, originTime, destinTime, returnTime, originLoc, destinLoc, returnLoc, passengerCap) VALUES "
+                + "(" + ((key != null) ? key + ", " : "")
+                + trip.getDriver().getPrimaryKey()
                 + ", " + trip.getMessage().getPrimaryKey()
                 + ", " + DatabaseProtocol.dataTypes.foreignKeySet
                 + "( ";

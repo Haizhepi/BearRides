@@ -26,7 +26,7 @@ public class RegisterGUI extends javax.swing.JPanel {
     public RegisterGUI(DashBoard cp) {
         this.cp = cp;
         pc = cp.getPanelController();
-        uc = cp.getUserTableController();
+        uc = cp.getUserCollectionController();
         initComponents();
     }
 

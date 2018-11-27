@@ -8,8 +8,8 @@ public class VehicleTableCreator extends SQLStatementExecuter {
 
     @Override
     protected Boolean hook(Connection connection, Object object) {
-        SQLStatement =
-                "CREATE TABLE Vehicle("
+        
+        SQLStatement = "CREATE TABLE Vehicle("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "model CLOB NOT NULL, "
                 + "picture CLOB, "

@@ -32,15 +32,6 @@ public class MessageCollectionController {
         sorter = new TableRowSorter<MessageCollection>(tableModel);
     }
     
-    /*~~~~~~~~~~~~ IO  ~~~~~~~~~~~~*/
-    
-    public void load(IOBuffers buffers) {
-        tableModel.fireTableDataChanged();
-    }
-    
-    public void save(IOBuffers buffers) {
-    }
-    
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*

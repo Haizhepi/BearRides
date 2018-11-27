@@ -25,8 +25,7 @@ public class DatabaseCreator {
             if (connection != null) {
                 System.out.println("You made it, take control your database now!");
                 
-                String InitializeDatabaseSQL =
-                        "CREATE TYPE FOREIGN_KEY_SET AS TABLE OF BIGINT;"
+                String InitializeDatabaseSQL = "CREATE TYPE FOREIGN_KEY_SET AS TABLE OF BIGINT;"
                         + "CREATE TYPE STRING_SET AS TABLE OF CLOB;";
                 
                 Statement statement = connection.createStatement();

@@ -25,7 +25,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     public MessageBoardGUI(DashBoard cp) {
         //later make load from file
         this.cp = cp;
-        tc = cp.getMessageTableController();
+        tc = cp.getMessageCollectionController();
         messageTable = tc.getTable();
         pc = cp.getPanelController();
         initComponents();

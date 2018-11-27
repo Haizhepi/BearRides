@@ -1,6 +1,7 @@
 package database;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -9,7 +10,7 @@ public abstract class SQLStatementExecuter {
     
     protected abstract Boolean hook(Connection connection, Object object);
         
-    public void update(Connection connection, Object object) {
+    public void execute(Connection connection, Object object) {
         
         if(hook(connection, object)) {
             Statement statement = null;
@@ -31,5 +32,30 @@ public abstract class SQLStatementExecuter {
                 }
             }
         }
+    }
+    
+    public ResultSet executeQuery(Connection connection, Object object) {
+        ResultSet rs = null;
+        
+        if(hook(connection, object)) {
+            Statement statement = null;
+            
+            try {
+                statement = connection.createStatement();
+                // execute select SQL stetement
+                rs = statement.executeQuery(SQLStatement);
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            } finally {
+                if (statement != null) {
+                    try {
+                        statement.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }    
+        }
+        return rs;
     }
 }

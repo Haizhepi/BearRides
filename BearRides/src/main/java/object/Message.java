@@ -12,6 +12,9 @@ public class Message implements Comparable<Message> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
+    protected Message() {
+    }
+    
     public Message(User creator) {
         postTime = Clock.systemUTC().instant().toString();
         this.creator = creator;
@@ -225,13 +228,13 @@ public class Message implements Comparable<Message> {
     }
     
     //variables to be saved upon shutdown
-    private Long primaryKey = null;
+    protected Long primaryKey = null;
     
     protected String umid;
     protected String title;
-    public Boolean hidden = false;
-    private User creator;
-    private String postTime;
-    private String body;
-    private Trip trip;
+    protected Boolean hidden = false;
+    protected User creator;
+    protected String postTime;
+    protected String body;
+    protected Trip trip;
 }

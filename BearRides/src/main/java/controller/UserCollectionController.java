@@ -6,7 +6,6 @@
 
 package controller;
 
-import collection.IOBuffers;
 import collection.UserCollection;
 import object.User;
 
@@ -18,14 +17,6 @@ public class UserCollectionController {
         //load from file later
         
         this.table = new UserCollection();
-    }
-    
-    /*~~~~~~~~~~~~ IO  ~~~~~~~~~~~~*/
-    
-    public void load(IOBuffers buffers) {
-    }
-    
-    public void save(IOBuffers buffers) {
     }
     
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/

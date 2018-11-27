@@ -8,8 +8,8 @@ public class UserTableCreator extends SQLStatementExecuter {
     
     @Override
     protected Boolean hook(Connection connection, Object object) {
-        SQLStatement =
-                "CREATE TABLE User("
+        
+        SQLStatement = "CREATE TABLE User("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "email CLOB NOT NULL, "
                 + "passHash INTEGER NOT NULL, "
