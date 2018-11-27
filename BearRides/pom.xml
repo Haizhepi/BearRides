@@ -16,25 +16,20 @@
             <version>${junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
-
-		<!--dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency-->
 
 		<!-- https://mvnrepository.com/artifact/uk.co.omega-prime/btreemap -->
 		<dependency>
@@ -50,37 +45,33 @@
 			<version>26.0-jre</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.4.0-b180830.0359</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
-		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-runtime</artifactId>
-			<version>2.4.0-b180830.0438</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-core -->
-		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-core</artifactId>
-			<version>2.3.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-impl</artifactId>
-			<version>2.2.11</version>
-		</dependency>
-
 		<dependency>
 			<groupId>javax.activation</groupId>
 			<artifactId>activation</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-
+		
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-api</artifactId>
+		  <version>2.11.1</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-core</artifactId>
+		  <version>2.11.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+		<dependency>
+		    <groupId>org.apache.derby</groupId>
+		    <artifactId>derby</artifactId>
+		    <version>10.12.1.1</version>
+		    <scope>test</scope>
+		</dependency>
 	</dependencies>
+	
 	<properties>
 		<maven.compiler.source>10</maven.compiler.source>
 		<maven.compiler.target>10</maven.compiler.target>
@@ -88,8 +79,6 @@
         <junit.vintage.version>4.12.0</junit.vintage.version>
         <junit.platform.version>1.1.0</junit.platform.version>
 	</properties>
-
-
 
 	<build>
 		<plugins>
@@ -145,5 +134,4 @@
             </plugin>
 		</plugins>
 	</build>
-
 </project>

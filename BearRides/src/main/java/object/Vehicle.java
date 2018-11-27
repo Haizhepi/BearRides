@@ -6,10 +6,6 @@
 
 package object;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class Vehicle {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
@@ -60,6 +56,16 @@ public class Vehicle {
     public String getStorageSpace() {
         return storageSpace;
     }
+    
+    /*
+     * description: getter
+     * return: primaryKey
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Long getPrimaryKey() {
+        return primaryKey;
+    }
 
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
@@ -101,6 +107,16 @@ public class Vehicle {
      */
     public void setStorageSpace(String storageSpace) {
         this.storageSpace = storageSpace;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: primaryKey is set
+     */
+    public void setPrimaryKey(Long key) {
+        primaryKey = key;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -150,13 +166,11 @@ public class Vehicle {
         return true;
     }
     
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
+    //variables to be saved upon shutdown
+    private Long primaryKey = null;
+    
     private String model;
-    @XmlElement
     private String picture;
-    @XmlElement
     private Integer passengerCap;
-    @XmlElement
     private String storageSpace;
 }

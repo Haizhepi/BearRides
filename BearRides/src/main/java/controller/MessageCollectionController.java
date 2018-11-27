@@ -6,7 +6,6 @@
 
 package controller;
 
-import java.io.File;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -16,23 +15,30 @@ import javax.swing.RowFilter;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-
+import collection.MessageCollection;
 import object.Message;
 import object.Trip;
 import object.User;
-import table.MessageTable;
 
-
-public class MessageTableController {
+public class MessageCollectionController {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public MessageTableController(File file) {
+    public MessageCollectionController() {
         //load from file in future
         
-        tableModel = new MessageTable();
+        tableModel = new MessageCollection();
         table = new JTable(tableModel);
-        sorter = new TableRowSorter<MessageTable>(tableModel);
+        sorter = new TableRowSorter<MessageCollection>(tableModel);
+    }
+    
+    /*~~~~~~~~~~~~ IO  ~~~~~~~~~~~~*/
+    
+    public void load(IOBuffers buffers) {
+        tableModel.fireTableDataChanged();
+    }
+    
+    public void save(IOBuffers buffers) {
     }
     
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
@@ -245,8 +251,8 @@ public class MessageTableController {
     
     //variable not to be saved upon shutdown
     private JTable table;
-    private MessageTable tableModel;
-    private TableRowSorter<MessageTable> sorter;
+    private MessageCollection tableModel;
+    private TableRowSorter<MessageCollection> sorter;
     public enum Sorters {
         POST_TIME, ORIGIN_TIME, DESTIN_TIME, RETURN_TIME, PASSENGER_CAP
     }

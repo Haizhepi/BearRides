@@ -6,16 +6,17 @@
 
 package controller;
 
-import java.io.File;
+import collection.IOBuffers;
 
-public class ControlPanel {
+public class DashBoard {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public ControlPanel(File file) {
+    public DashBoard() {
         pc = new PanelController();
-        tc = new MessageTableController(file);
-        uc = new UserTableController(file);
+        tc = new MessageCollectionController();
+        uc = new UserCollectionController();
+        buffers = new IOBuffers();
     }
     
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
@@ -36,7 +37,7 @@ public class ControlPanel {
      * precondition: void
      * postcondition: nothing is changed
      */
-    public MessageTableController getMessageTableController() {
+    public MessageCollectionController getMessageTableController() {
         return tc;
     }
     
@@ -46,44 +47,23 @@ public class ControlPanel {
      * precondition: void
      * postcondition: nothing is changed
      */
-    public UserTableController getUserTableController() {
+    public UserCollectionController getUserTableController() {
         return uc;
     }
     
-    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
-    
-    /*
-     * description: setter
-     * return: pc
-     * precondition: void
-     * postcondition: pc is set
-     */
-    public void setPanelController(PanelController pc) {
-        this.pc = pc;
+    public void save() {
+        tc.save(buffers);
+        uc.save(buffers);
     }
     
-    /*
-     * description: setter
-     * return: tc
-     * precondition: void
-     * postcondition: tc is set
-     */
-    public void setTableController(MessageTableController tc) {
-        this.tc = tc;
-    }
-    
-    /*
-     * description: setter
-     * return: uc
-     * precondition: void
-     * postcondition: uc is set
-     */
-    public void setUserTableController(UserTableController uc) {
-        this.uc = uc;
+    public void load() {
+        tc.load(buffers);
+        uc.load(buffers);
     }
     
     //variable not to be saved upon shutdown
+    private IOBuffers buffers;
     private PanelController pc;
-    private MessageTableController tc;
-    private UserTableController uc;
+    private MessageCollectionController tc;
+    private UserCollectionController uc;
 }

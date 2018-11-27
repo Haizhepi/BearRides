@@ -5,11 +5,11 @@
  */
 package gui;
 
-import java.io.File;
-
 import javax.swing.*;
 
-import controller.ControlPanel;
+import org.apache.logging.log4j.LogManager;
+
+import controller.DashBoard;
 import controller.PanelController;
 
 /**
@@ -21,7 +21,7 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     /**
      * Creates new form DriverInfo
      */
-    public Driver_VehicleInfoGUI(ControlPanel cp) {
+    public Driver_VehicleInfoGUI(DashBoard cp) {
         this.cp = cp;
         this.pc = cp.getPanelController();
         initComponents();
@@ -220,21 +220,14 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {
-                } catch (InstantiationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
-
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                ControlPanel cp = new ControlPanel(new File(""));
+                
+                DashBoard cp = new DashBoard();
+                cp.load();
                 cp.getPanelController().changeFrame(new Driver_VehicleInfoGUI(cp));
             }
         });
@@ -260,7 +253,8 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     private javax.swing.JLabel vInfoLabel;
     // End of variables declaration//GEN-END:variables
     
-    private ControlPanel cp;
+    @SuppressWarnings("unused")
+    private DashBoard cp;
     private PanelController pc;
     private static final long serialVersionUID = 7794269541984046099L;
 }

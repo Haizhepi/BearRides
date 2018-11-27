@@ -5,22 +5,22 @@
  */
 package gui;
 
-import java.io.File;
-
 import javax.swing.*;
 
-import controller.ControlPanel;
+import org.apache.logging.log4j.LogManager;
+
+import controller.DashBoard;
 import controller.PanelController;
 /**
  *
  * @author Xingan_wan
  */
-public class HomePageGUI extends javax.swing.JPanel {
+public class HomePageGUI extends JPanel {
     
     /**
      * Creates new form HomePageGUI
      */
-    public HomePageGUI(ControlPanel cp) {
+    public HomePageGUI(DashBoard cp) {
         this.cp = cp;
         pc = cp.getPanelController();
         initComponents();
@@ -176,21 +176,14 @@ public class HomePageGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {
-                } catch (InstantiationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
-
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                ControlPanel cp = new ControlPanel(new File(""));
+                
+                DashBoard cp = new DashBoard();
+                cp.load();
                 cp.getPanelController().changeFrame(new HomePageGUI(cp));
             }
         });
@@ -208,7 +201,7 @@ public class HomePageGUI extends javax.swing.JPanel {
     private javax.swing.JLabel welcomeLabel;
     // End of variables declaration//GEN-END:variables
     
-    private ControlPanel cp;
+    private DashBoard cp;
     private PanelController pc;
     private static final long serialVersionUID = -3303691846979303846L;
 }

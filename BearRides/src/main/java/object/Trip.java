@@ -10,10 +10,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class Trip implements Comparable<Trip> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
@@ -196,6 +192,16 @@ public class Trip implements Comparable<Trip> {
     public Message getMessage() {
         return message;
     }
+    
+    /*
+     * description: getter
+     * return: primaryKey
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Long getPrimaryKey() {
+        return primaryKey;
+    }
 
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
@@ -277,6 +283,16 @@ public class Trip implements Comparable<Trip> {
      */
     public void setDriver(User driver) {
         this.driver = driver;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: primaryKey is set
+     */
+    public void setPrimaryKey(Long key) {
+        primaryKey = key;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -365,27 +381,18 @@ public class Trip implements Comparable<Trip> {
         return getOriginTime().compareTo(arg0.getOriginTime());
     }
 
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
+    //variables to be saved upon shutdown
+    private Long primaryKey = null;
+    
     private User driver;
-    @XmlElement
     private Message message;
-    @XmlElement
     private List<User> riders;
-    @XmlElement
     private List<String> requirements;
-    @XmlElement
     private Date originTime;
-    @XmlElement
     private Date destinTime;
-    @XmlElement
     private Date returnTime;
-    @XmlElement
     private String originLoc;
-    @XmlElement
     private String destinLoc;
-    @XmlElement
     private String returnLoc;
-    @XmlElement
     private Integer passengerCap;
 }

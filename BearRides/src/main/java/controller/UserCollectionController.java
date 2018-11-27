@@ -6,19 +6,26 @@
 
 package controller;
 
-import java.io.File;
-
+import collection.IOBuffers;
+import collection.UserCollection;
 import object.User;
-import table.UserTable;
 
-public class UserTableController {
+public class UserCollectionController {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public UserTableController(File file) {
+    public UserCollectionController() {
         //load from file later
         
-        this.table = new UserTable();
+        this.table = new UserCollection();
+    }
+    
+    /*~~~~~~~~~~~~ IO  ~~~~~~~~~~~~*/
+    
+    public void load(IOBuffers buffers) {
+    }
+    
+    public void save(IOBuffers buffers) {
     }
     
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
@@ -29,11 +36,14 @@ public class UserTableController {
      * precondition: void
      * postcondition: the new user will be mapped
      */
-    public void register(User user) {
-        if(user.getUUID().contains("@baylor.edu")) {
-        	table.insert(user);
+    public Boolean register(User user) {
+        if(user.getEmail().contains("@baylor.edu")) {
+        	return table.insert(user);
         } else {
+            //error window
         }
+        
+        return false;
     }
     
     /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
@@ -61,8 +71,12 @@ public class UserTableController {
         return null;
     }
     
-    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
+    public User getCurrentUser() {
+        return currentUser;
+    }
     
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
+
     /*
      * description: recovers an account when someone forgot their password
      * return: void
@@ -89,16 +103,18 @@ public class UserTableController {
      * precondition: user is not already logged in, user is registered
      * postcondition: the user is marked as logged in and
      */
-    public User login(String UUID, String password) {
-        User attempt = table.login(UUID, password);
+    public Boolean login(String UUID, String password) {
+        currentUser = table.login(UUID, password);
         
-        if(attempt == null) {
+        if(currentUser == null) {
             //error window
+            return false;
         }else {
         }
         
-        return attempt;
+        return true;
     }
     
-    private UserTable table;
+    private User currentUser;
+    private UserCollection table;
 }

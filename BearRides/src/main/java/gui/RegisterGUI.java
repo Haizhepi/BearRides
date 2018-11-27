@@ -5,12 +5,14 @@
  */
 package gui;
 
-import java.io.File;
-
 import javax.swing.*;
 
-import controller.ControlPanel;
+import org.apache.logging.log4j.LogManager;
+
+import controller.DashBoard;
 import controller.PanelController;
+import controller.UserCollectionController;
+import object.User;
 
 /**
  *
@@ -21,9 +23,10 @@ public class RegisterGUI extends javax.swing.JPanel {
     /**
      * Creates new form Register
      */
-    public RegisterGUI(ControlPanel cp) {
+    public RegisterGUI(DashBoard cp) {
         this.cp = cp;
-        this.pm = cp.getPanelController();
+        pc = cp.getPanelController();
+        uc = cp.getUserTableController();
         initComponents();
     }
 
@@ -243,12 +246,25 @@ public class RegisterGUI extends javax.swing.JPanel {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
-        pm.closeFrame();
+        pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        // TODO add your handling code here:
-        pm.closeFrame();
+        if(agreementCheckBox.isSelected()) {
+            User attempt = new User(emailFormattedTextField.getText(), new String(setPasswordField.getPassword()));
+            attempt.setAge(Integer.parseInt(ageFormattedTextField.getText()));
+            attempt.setContact(contactFormattedTextField.getText());
+            attempt.setGender(true);
+            attempt.setName(firstNameFormattedTextField.getText() + lastNameFormattedTextField.getText());
+            attempt.setPicture("");
+            if(uc.register(attempt)) {
+                cp.save();
+                pc.closeFrame();
+            }else {
+            }
+        }else {
+            //error window
+        }
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void agreementCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agreementCheckBoxActionPerformed
@@ -266,21 +282,14 @@ public class RegisterGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {
-                } catch (InstantiationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
-
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                ControlPanel cp = new ControlPanel(new File(""));
+                
+                DashBoard cp = new DashBoard();
+                cp.load();
                 cp.getPanelController().changeFrame(new RegisterGUI(cp));
             }
         });
@@ -313,7 +322,9 @@ public class RegisterGUI extends javax.swing.JPanel {
     private javax.swing.JLabel warningLabel;
     // End of variables declaration//GEN-END:variables
     
-    private ControlPanel cp;
-    private PanelController pm;
+    @SuppressWarnings("unused")
+    private DashBoard cp;
+    private PanelController pc;
+    private UserCollectionController uc;
     private static final long serialVersionUID = -3916977028254844999L;
 }

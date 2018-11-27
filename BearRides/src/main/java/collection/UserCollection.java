@@ -4,23 +4,19 @@
  * Date Last Modified: 10/22/2018
  */
 
-package table;
+package collection;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import object.User;
 
-@XmlRootElement
-public class UserTable {
+public class UserCollection {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public UserTable() {
+    public UserCollection() {
         userTable = new HashMap<String, User>();
         tokenMap = new HashMap<String, UUID>();
     }
@@ -34,7 +30,7 @@ public class UserTable {
      * postcondition: the new user will be mapped
      */
     public Boolean insert(User user) {
-        return userTable.putIfAbsent(user.getUUID(), user) == null;
+        return userTable.putIfAbsent(user.getEmail(), user) == null;
     }
     
     /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
@@ -46,7 +42,7 @@ public class UserTable {
      * postcondition: all references to user will be removed
      */
     public Boolean remove(User user) {
-        return userTable.remove(user.getUUID()) != null;
+        return userTable.remove(user.getEmail()) != null;
     }
     
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
@@ -59,6 +55,36 @@ public class UserTable {
      */
     public User get(String uuid) {
         return userTable.get(uuid);
+    }
+    
+    /*
+     * description: getter
+     * return: the mail man
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public static User getMailMan() {
+        if(mailMan == null) {
+            mailMan = new User("BearRides@baylor.edu", UUID.randomUUID().toString());
+            mailMan.setName("mailMan");
+            mailMan.setContact("BearRides@Baylor.edu");
+            mailMan.insertRating(999);
+        }else {
+        }
+        
+        return mailMan;
+    }
+    
+    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: mailMan is set
+     */
+    public static void setMailMan(User user) {
+        mailMan = user;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -85,11 +111,11 @@ public class UserTable {
             
             if(attempt != null &&
                     attempt.getPassHash().equals(password.hashCode()) &&
-                    !tokenMap.containsKey(attempt.getUUID())) {
+                    !tokenMap.containsKey(attempt.getEmail())) {
                 
                 UUID token = generateToken();
                 attempt.setToken(token);
-                tokenMap.put(attempt.getUUID(), token);
+                tokenMap.put(attempt.getEmail(), token);
                 
                 return attempt;
             }else {
@@ -106,7 +132,7 @@ public class UserTable {
      */
     public Boolean authenticate(User user) {
         return user.getToken() != null &&
-                user.getToken().equals(tokenMap.get(user.getUUID()));
+                user.getToken().equals(tokenMap.get(user.getEmail()));
     }
     
     /*
@@ -117,7 +143,7 @@ public class UserTable {
      *      will be removed from tokenMap
      */
     public void logout(User user) {
-        tokenMap.remove(user.getUUID());
+        tokenMap.remove(user.getEmail());
         user.setToken(null);
     }
     
@@ -132,8 +158,8 @@ public class UserTable {
     }
     
     //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
     private Map<String, User> userTable;
+    private static User mailMan = null;
     
     //variable not to be saved upon shutdown
     private Map<String, UUID> tokenMap;

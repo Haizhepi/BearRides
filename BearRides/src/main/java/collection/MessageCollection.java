@@ -4,39 +4,30 @@
  * Date Last Modified: 10/22/2018
  */
 
-package table;
+package collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import javax.swing.table.AbstractTableModel;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 
-import com.google.common.collect.Multimap;
 import com.google.common.collect.TreeMultimap;
 
 import object.Message;
 import object.Trip;
 import object.User;
 
-@XmlRootElement
-public class MessageTable extends AbstractTableModel {
+public class MessageCollection extends AbstractTableModel {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public MessageTable() {
+    public MessageCollection() {
         messages = new ArrayList<Message>();
         userMap = TreeMultimap.create();
         tripQueue = TreeMultimap.create();
-        
-        mailMan = new User("BearRides@baylor.edu", UUID.randomUUID().toString());
-        mailMan.setName("mailMan");
-        mailMan.setContact("BearRides@Baylor.edu");
-        mailMan.insertRating(999);
+        mailMan = UserCollection.getMailMan();
     }
     
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
@@ -205,16 +196,12 @@ public class MessageTable extends AbstractTableModel {
     }
     
     //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
     private List<Message> messages;
-    @XmlElement
-    private Multimap<User, Message> userMap;
-    @XmlElement
-    private Multimap<Date, Trip> tripQueue;
-    @XmlElement
-    private User mailMan;
+    private TreeMultimap<User, Message> userMap;
+    private TreeMultimap<Date, Trip> tripQueue;
     
     //variable not to be saved upon shutdown
     private final int COLUMN_COUNT = 1;
     private static final long serialVersionUID = 7104942565195945524L;
+    private User mailMan;
 }

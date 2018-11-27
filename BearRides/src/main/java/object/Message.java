@@ -8,10 +8,6 @@ package object;
 
 import java.time.Clock;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class Message implements Comparable<Message> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
@@ -20,7 +16,7 @@ public class Message implements Comparable<Message> {
         postTime = Clock.systemUTC().instant().toString();
         this.creator = creator;
         
-        umid = postTime + creator.getUUID();
+        umid = postTime + creator.getEmail();
         title = new String();
         body = new String();
     }
@@ -97,6 +93,16 @@ public class Message implements Comparable<Message> {
         return hidden;
     }
     
+    /*
+     * description: getter
+     * return: primaryKey
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Long getPrimaryKey() {
+        return primaryKey;
+    }
+    
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
     /*
@@ -137,6 +143,16 @@ public class Message implements Comparable<Message> {
      */
     public void setHidden(Boolean hidden) {
         this.hidden = hidden;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: primaryKey is set
+     */
+    public void setPrimaryKey(Long key) {
+        primaryKey = key;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -208,19 +224,14 @@ public class Message implements Comparable<Message> {
         return getUMID().compareTo(that.getUMID());
     }
     
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
+    //variables to be saved upon shutdown
+    private Long primaryKey = null;
+    
     protected String umid;
-    @XmlElement
     protected String title;
-    @XmlElement
     public Boolean hidden = false;
-    @XmlElement
     private User creator;
-    @XmlElement
     private String postTime;
-    @XmlElement
     private String body;
-    @XmlElement
     private Trip trip;
 }
