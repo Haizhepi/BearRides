@@ -70,6 +70,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
         messageTable.setFillsViewportHeight(true);
         messageTable.setRowHeight(20);
         messageTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        messageTable.getTableHeader().setReorderingAllowed(false);
         messageTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 messageTableMouseClicked(evt);
