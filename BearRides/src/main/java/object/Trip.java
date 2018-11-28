@@ -388,9 +388,9 @@ public class Trip implements Comparable<Trip> {
     //variables to be saved upon shutdown
     protected Long primaryKey = null;
     
-    protected User driver;
-    protected Message message;
-    protected List<User> riders;
+    protected User driver; //reference
+    protected Message message; //reference
+    protected List<User> riders; //list reference
     protected List<String> requirements;
     protected Date originTime;
     protected Date destinTime;

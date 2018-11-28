@@ -6,6 +6,7 @@
 
 package object;
 
+import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -416,10 +417,11 @@ public class User implements Comparable<User> {
     protected Integer age;
     protected String picture;
     protected Boolean isDriver = false;
-    protected Vehicle car;
+    protected Vehicle car; //reference
     protected Integer rating = 100;
     protected Integer ratingCount = 1;
-    protected SortedSet<Message> notifications;
+    protected SortedSet<Message> notifications; //set of references
+    protected List<Trip> trips; //set of references
     
     //variable not to be saved upon shutdown
     private UserCollection collection;

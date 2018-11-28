@@ -18,7 +18,8 @@ public class MessageTableCreator extends SQLStatementExecuter {
                 + "postTime CLOB NOT NULL, "
                 + "body CLOB NOT NULL, "
                 + "trip BIGINT, " //foreign key
-                + "PRIMARY KEY (id) );";
+                + "PRIMARY KEY (id) "
+                + ", FOREIGN KEY(creator) REFERENCES User(id) );";
         
         return true;
     }

@@ -233,8 +233,8 @@ public class Message implements Comparable<Message> {
     protected String umid;
     protected String title;
     protected Boolean hidden = false;
-    protected User creator;
+    protected User creator; //reference
     protected String postTime;
     protected String body;
-    protected Trip trip;
+    protected Trip trip; //reference
 }
