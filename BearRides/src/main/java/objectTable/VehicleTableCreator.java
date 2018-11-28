@@ -15,7 +15,7 @@ public class VehicleTableCreator extends SQLStatementExecuter {
                 + "picture CLOB, "
                 + "passengerCap INTEGER NOT NULL, "
                 + "storageSpace CLOB, "
-                + "PRIMARY KEY (id) );";
+                + "PRIMARY KEY (id) )";
         
         return true;
     }

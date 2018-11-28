@@ -21,7 +21,7 @@ public class VehicleSaver extends SQLStatementExecuter{
                 + "', '" + vehicle.getPicture()
                 + "', " + vehicle.getPassengerCap()
                 + ", '" + vehicle.getStorageSpace()
-                + "');";
+                + "')";
         
         try {
             vehicle.setPrimaryKey(connection.createStatement().executeQuery("SELECT LAST_INSERT_ID;").getLong(1));

@@ -3,7 +3,6 @@ package database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class DatabaseCreator {
     private static DatabaseCreator singleton = null;
@@ -24,24 +23,6 @@ public class DatabaseCreator {
                     DatabaseProtocol.getDbPassword());
             if (connection != null) {
                 System.out.println("You made it, take control your database now!");
-                
-                String InitializeDatabaseSQL = "CREATE TYPE STRING_SET AS TABLE OF CLOB;";
-                
-                Statement statement = connection.createStatement();
-                
-                try {
-                    statement.execute(InitializeDatabaseSQL);
-                } catch (SQLException e) {
-                    System.out.println(e.getMessage());
-                } finally {
-                    if (statement != null) {
-                        try {
-                            statement.close();
-                        } catch (SQLException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
             } else {
                 System.out.println("Failed to make connection!");
             }
