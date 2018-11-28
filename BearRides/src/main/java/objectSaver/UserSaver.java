@@ -1,12 +1,11 @@
 package objectSaver;
 
 import java.sql.Connection;
-import java.util.Iterator;
-import java.util.Set;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-import database.DatabaseProtocol;
 import database.SQLStatementExecuter;
-import object.Message;
 import object.User;
 
 public class UserSaver extends SQLStatementExecuter {
@@ -18,7 +17,7 @@ public class UserSaver extends SQLStatementExecuter {
         
         SQLStatement = "INSERT INTO User ("
                 + ((key != null) ? "id, " : "")
-                + "email, passHash, gender, name, contact, age, picture, isDriver, car, rating, ratingCount, notifications) VALUES "
+                + "email, passHash, gender, name, contact, age, picture, isDriver, car, rating, ratingCount) VALUES "
                 + "(" + ((key != null) ? key + ", " : "")
                 + "'" + user.getEmail()
                 + "', " + user.getPassHash()
@@ -31,16 +30,26 @@ public class UserSaver extends SQLStatementExecuter {
                 + ", " + user.getVehicle().getPrimaryKey()
                 + ", " + user.getRating()
                 + ", " + user.getRatingCount()
-                + ", " + DatabaseProtocol.dataTypes.foreignKeySet
-                + "( ";
-                
-        Set<Message> notifications = user.getNotifications();
-        for(Iterator<Message> i = notifications.iterator(); i.hasNext();) {
-            SQLStatement += i.next().getPrimaryKey() + ((i.hasNext()) ? " " : " , ");
-        }
-        
-        SQLStatement += "));";
+                + ")";
         
         return true;
+    }
+    
+    @Override
+    protected void afterHook(Statement statement, Object object) {
+        User user = (User) object;
+        Long key = user.getPrimaryKey();
+        
+        if(key == null) {
+            try {
+                ResultSet rs = statement.getGeneratedKeys();
+                
+                if(rs.next()) {
+                    user.setPrimaryKey(rs.getLong(1));
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

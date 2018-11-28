@@ -24,8 +24,6 @@ public class VehicleSaver extends SQLStatementExecuter{
                 + "', " + vehicle.getPassengerCap()
                 + ", '" + vehicle.getStorageSpace()
                 + "')";
-
-
         
         return true;
     }
@@ -33,23 +31,18 @@ public class VehicleSaver extends SQLStatementExecuter{
     @Override
     protected void afterHook(Statement statement, Object object) {
         Vehicle vehicle = (Vehicle) object;
-        ResultSet rs = null;
-        try {
-            rs = statement.getGeneratedKeys();
-        } catch (SQLException e1) {
-            e1.printStackTrace();
-        }
-        try {
-            if(rs.next()) {
-                try {
+        Long key = vehicle.getPrimaryKey();
+        
+        if(key == null) {
+            try {
+                ResultSet rs = statement.getGeneratedKeys();
+                
+                if(rs.next()) {
                     vehicle.setPrimaryKey(rs.getLong(1));
-                } catch (SQLException e) {
-                    e.printStackTrace();
                 }
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
     }
 }

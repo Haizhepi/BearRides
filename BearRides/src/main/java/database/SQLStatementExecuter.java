@@ -46,7 +46,6 @@ public abstract class SQLStatementExecuter {
                 statement = connection.createStatement();
                 // execute select SQL stetement
                 rs = statement.executeQuery(SQLStatement);
-                rs.next();
                 afterHook(statement, object);
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
@@ -58,7 +57,7 @@ public abstract class SQLStatementExecuter {
                         e.printStackTrace();
                     }
                 }
-            }    
+            }
         }
         return rs;
     }

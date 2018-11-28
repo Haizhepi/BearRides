@@ -14,9 +14,6 @@ public class Trip implements Comparable<Trip> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    protected Trip() {
-    }
-    
     public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
         this.driver = driver;
         this.message = message;
@@ -386,17 +383,17 @@ public class Trip implements Comparable<Trip> {
     }
 
     //variables to be saved upon shutdown
-    protected Long primaryKey = null;
+    private Long primaryKey = null;
     
-    protected User driver; //reference
-    protected Message message; //reference
-    protected List<User> riders; //list reference
-    protected List<String> requirements;
-    protected Date originTime;
-    protected Date destinTime;
-    protected Date returnTime;
-    protected String originLoc;
-    protected String destinLoc;
-    protected String returnLoc;
-    protected Integer passengerCap;
+    private User driver; //reference
+    private Message message; //reference
+    private List<User> riders; //list reference
+    private List<String> requirements;
+    private Date originTime;
+    private Date destinTime;
+    private Date returnTime;
+    private String originLoc;
+    private String destinLoc;
+    private String returnLoc;
+    private Integer passengerCap;
 }

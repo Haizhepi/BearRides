@@ -18,9 +18,6 @@ public class User implements Comparable<User> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    protected User() {
-    }
-    
     public User(String email, String password) {
         this.email = email;
         passHash = password.hashCode();
@@ -407,21 +404,22 @@ public class User implements Comparable<User> {
     }
     
     //variables to be saved upon shutdown
-    protected Long primaryKey = null;
+    private Long primaryKey = null;
     
-    protected String email;
-    protected Integer passHash;
-    protected Boolean gender;
-    protected String name;
-    protected String contact;
-    protected Integer age;
-    protected String picture;
-    protected Boolean isDriver = false;
-    protected Vehicle car; //reference
-    protected Integer rating = 100;
-    protected Integer ratingCount = 1;
-    protected SortedSet<Message> notifications; //set of references
-    protected List<Trip> trips; //set of references
+    private String email;
+    private Integer passHash;
+    private Boolean gender;
+    private String name;
+    private String contact;
+    private Integer age;
+    private String picture;
+    private Boolean isDriver = false;
+    private Vehicle car; //reference
+    private Integer rating = 100;
+    private Integer ratingCount = 1;
+    private SortedSet<Message> notifications; //set of references
+    @SuppressWarnings("unused")
+    private List<Trip> trips; //set of references
     
     //variable not to be saved upon shutdown
     private UserCollection collection;

@@ -1,12 +1,12 @@
 package objectSaver;
 
 import java.sql.Connection;
-import java.util.List;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-import database.DatabaseProtocol;
 import database.SQLStatementExecuter;
 import object.Trip;
-import object.User;
 
 public class TripSaver extends SQLStatementExecuter {
     
@@ -17,27 +17,11 @@ public class TripSaver extends SQLStatementExecuter {
         
         SQLStatement = "INSERT INTO Trip ("
                 + ((key != null) ? "id, " : "")
-                + "driver, message, riders, requirements, originTime, destinTime, returnTime, originLoc, destinLoc, returnLoc, passengerCap) VALUES "
+                + "driver, message, originTime, destinTime, returnTime, originLoc, destinLoc, returnLoc, passengerCap) VALUES "
                 + "(" + ((key != null) ? key + ", " : "")
                 + trip.getDriver().getPrimaryKey()
                 + ", " + trip.getMessage().getPrimaryKey()
-                + ", " + DatabaseProtocol.dataTypes.foreignKeySet
-                + "( ";
-                
-        List<User> riders = trip.getRiders();
-        for(int i = 0, j = riders.size(); i < j; i++) {
-            SQLStatement += riders.get(i).getPrimaryKey() + ((i == j - 1) ? " " : " , ");
-        }
-        
-        SQLStatement += "), " + DatabaseProtocol.dataTypes.stringSet
-                + "( ";
-        
-        List<String> requirements = trip.getRequirements();
-        for(int i = 0, j = riders.size(); i < j; i++) {
-            SQLStatement += "'" + requirements.get(i) + "'" + ((i == j - 1) ? " " : " , ");
-        }
-        
-        SQLStatement += "), " + trip.getOriginTime().getTime()
+                + ", " + trip.getOriginTime().getTime()
                 + ", " + trip.getDestinTime().getTime()
                 + ", " + trip.getReturnTime().getTime()
                 + ", '" + trip.getOriginLoc()
@@ -47,5 +31,23 @@ public class TripSaver extends SQLStatementExecuter {
                 + ");";
         
         return null;
+    }
+    
+    @Override
+    protected void afterHook(Statement statement, Object object) {
+        Trip trip = (Trip) object;
+        Long key = trip.getPrimaryKey();
+        
+        if(key == null) {
+            try {
+                ResultSet rs = statement.getGeneratedKeys();
+                
+                if(rs.next()) {
+                    trip.setPrimaryKey(rs.getLong(1));
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
