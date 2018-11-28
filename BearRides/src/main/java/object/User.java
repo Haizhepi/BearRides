@@ -6,24 +6,27 @@
 
 package object;
 
+import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.UUID;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import collection.UserCollection;
 
-import table.UserTable;
-
-@XmlRootElement
 public class User implements Comparable<User> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public User(String email, String password) {
-        uuid = email;
+        this.email = email;
         passHash = password.hashCode();
+        notifications = new TreeSet<Message>();
+    }
+    
+    public User(String email, Integer passHash) {
+        this.email = email;
+        this.passHash = passHash;
         notifications = new TreeSet<Message>();
     }
     
@@ -49,6 +52,16 @@ public class User implements Comparable<User> {
         notifications.add(notification);
     }
     
+    /*
+     * description: inserts a trip
+     * return: void
+     * precondition: void
+     * postcondition: the trip will be listed
+     */
+    public void insertTrip(Trip trip) {
+        trips.add(trip);
+    }
+    
     /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
     
     /*
@@ -61,7 +74,27 @@ public class User implements Comparable<User> {
         notifications.remove(notification);
     }
     
+    /*
+     * description: removes all references to trip
+     * return: void
+     * precondition: void
+     * postcondition: all references to trip will be removed
+     */
+    public void removeTrip(Trip trip) {
+        trips.remove(trip);
+    }
+    
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: getter
+     * return: isDriver
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Boolean isDriver() {
+        return isDriver;
+    }
     
     /*
      * description: getter
@@ -69,8 +102,8 @@ public class User implements Comparable<User> {
      * precondition: void
      * postcondition: nothing is changed
      */
-    public String getUUID() {
-        return uuid;
+    public String getEmail() {
+        return email;
     }
     
     /*
@@ -169,8 +202,38 @@ public class User implements Comparable<User> {
      * precondition: void
      * postcondition: nothing is changed
      */
-    public UserTable getTable() {
-        return table;
+    public UserCollection getTable() {
+        return collection;
+    }
+    
+    /*
+     * description: getter
+     * return: primaryKey
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Long getPrimaryKey() {
+        return primaryKey;
+    }
+    
+    /*
+     * description: getter
+     * return: car
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Vehicle getVehicle() {
+        return car;
+    }
+    
+    /*
+     * description: getter
+     * return: ratingCount
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Integer getRatingCount() {
+        return ratingCount;
     }
 
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
@@ -251,8 +314,49 @@ public class User implements Comparable<User> {
      * precondition: void
      * postcondition: table is set
      */
-    public void setTable(UserTable table) {
-        this.table = table;
+    public void setTable(UserCollection table) {
+        this.collection = table;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: primaryKey is set
+     */
+    public void setPrimaryKey(Long key) {
+        primaryKey = key;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: car is set
+     */
+    public void setVehicle(Vehicle vehicle) {
+        car = vehicle;
+        isDriver = vehicle != null;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: rating is set
+     */
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: rating count is set
+     */
+    public void setRatingCount(Integer ratingCount) {
+        this.ratingCount = ratingCount;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -275,7 +379,7 @@ public class User implements Comparable<User> {
         result = prime * result
                 + ((ratingCount == null) ? 0 : ratingCount.hashCode());
         result = prime * result + ((token == null) ? 0 : token.hashCode());
-        result = prime * result + ((uuid == null) ? 0 : uuid.hashCode());
+        result = prime * result + ((email == null) ? 0 : email.hashCode());
         return result;
     }
 
@@ -343,47 +447,37 @@ public class User implements Comparable<User> {
                 return false;
         } else if (!token.equals(other.token))
             return false;
-        if (uuid == null) {
-            if (other.uuid != null)
+        if (email == null) {
+            if (other.email != null)
                 return false;
-        } else if (!uuid.equals(other.uuid))
+        } else if (!email.equals(other.email))
             return false;
         return true;
     }
     
     @Override
     public int compareTo(User that) {
-        return this.uuid.compareTo(that.uuid);
+        return this.email.compareTo(that.email);
     }
     
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
-    private String uuid;
-    @XmlElement
+    //variables to be saved upon shutdown
+    private Long primaryKey = null;
+    
+    private String email;
     private Integer passHash;
-    @XmlElement
     private Boolean gender;
-    @XmlElement
     private String name;
-    @XmlElement
     private String contact;
-    @XmlElement
     private Integer age;
-    @XmlElement
     private String picture;
-    @XmlElement
     private Boolean isDriver = false;
-    @XmlElement
-    private Vehicle car;
-    @XmlElement
+    private Vehicle car; //reference
     private Integer rating = 100;
-    @XmlElement
     private Integer ratingCount = 1;
-    @XmlElement
-    private SortedSet<Message> notifications;
-    @XmlElement
-    private UserTable table;
+    private SortedSet<Message> notifications; //set of references
+    private List<Trip> trips; //set of references
     
     //variable not to be saved upon shutdown
+    private UserCollection collection;
     private UUID token = null;
 }

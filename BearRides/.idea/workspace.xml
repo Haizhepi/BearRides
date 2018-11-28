@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="994574b5-61ac-410d-8081-23d21b31c461" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/table/UserTableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/object/MessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/object/TripTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/object/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/object/VehicleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,138 +15,109 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1577251470">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="653" />
-          <entry key="xml" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="653" />
-          <entry key="XML" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="ControlPanel" value="2" />
-          <entry key="JavaScript-modules-diagram//Users/haizhepi/csi-3471-software/BearRides/src/main/java/controller" value="1" />
-          <entry key="PanelController" value="1" />
-          <entry key="java" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="14" />
-          <entry key="UML" value="4" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5934664">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/object/VehicleTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1478">
-                  <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+                <state relative-caret-position="216">
+                  <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/object/TripTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="296">
+                  <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
                   <folding>
-                    <element signature="e#2104#2105#0" expanded="true" />
-                    <element signature="e#2167#2168#0" expanded="true" />
-                    <element signature="e#2815#2816#0" expanded="true" />
-                    <element signature="e#2881#2882#0" expanded="true" />
+                    <element signature="e#221#222#0" expanded="true" />
+                    <element signature="e#253#254#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controller/ControlPanel.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/object/UserTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                <state relative-caret-position="972">
+                  <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#287#288#0" expanded="true" />
-                    <element signature="e#366#367#0" expanded="true" />
-                    <element signature="e#406#407#0" expanded="true" />
-                    <element signature="e#494#495#0" expanded="true" />
-                    <element signature="e#535#536#0" expanded="true" />
-                    <element signature="e#638#639#0" expanded="true" />
+                    <element signature="e#221#222#0" expanded="true" />
+                    <element signature="e#253#254#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-992">
-                  <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+                <state relative-caret-position="18">
+                  <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserTableController.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+                <state relative-caret-position="1890">
+                  <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="241">
-                  <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="4356">
+                  <caret line="262" column="38" selection-start-line="262" selection-start-column="38" selection-end-line="262" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/object/User.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/object/MessageTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="558">
+                  <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/AppTest.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/PanelController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-47">
-                  <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="108">
+                  <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -153,21 +125,42 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserTableController.java">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
-                  <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+                <state relative-caret-position="1992">
+                  <caret line="144" column="6" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/table/UserTable.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+                <state relative-caret-position="-265">
+                  <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="149">
+                  <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/object/Message.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2451">
+                  <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+                  <folding>
+                    <element signature="method#hashCode#0;class#Message#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -187,6 +180,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>iconLabel</find>
+      <find>DB_DRIVER</find>
+      <find>getRat</find>
+      <find>trips</find>
+      <find>equals</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,14 +206,22 @@
         <option value="$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/table/UserTableTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/DashBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java" />
+        <option value="$PROJECT_DIR$/src/test/java/object/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/object/VehicleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object/User.java" />
+        <option value="$PROJECT_DIR$/src/test/java/object/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/object/TripTest.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -239,11 +244,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="80" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,6 +265,11 @@
             <path>
               <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
               <item name="BearRides" type="462c0819:PsiDirectoryNode" />
+              <item name="ex1connect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,15 +291,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="collection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
@@ -299,22 +300,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
@@ -345,17 +330,35 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540301242509" />
+    <property name="DatabaseDriversLRU" value="derby" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543447139523" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -365,6 +368,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="object" />
       <recent name="table" />
       <recent name="controller" />
     </key>
@@ -388,23 +392,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTableControllerTest.testLogin">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="BearRides" />
+  <component name="RunManager" selected="JUnit.MessageTest.constructor">
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="MessageTest.constructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BearRides" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="object.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="object" />
+      <option name="MAIN_CLASS_NAME" value="object.MessageTest" />
+      <option name="METHOD_NAME" value="constructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -419,40 +426,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="controller" />
       <option name="MAIN_CLASS_NAME" value="controller.UserTableControllerTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTableControllerTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BearRides" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserTableControllerTest" />
-      <option name="METHOD_NAME" value="testConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTableControllerTest.testConstructor0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BearRides" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserTableControllerTest" />
-      <option name="METHOD_NAME" value="testConstructor0" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -475,13 +448,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VehicleTableTest.createTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BearRides" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csi3471.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csi3471.app" />
+      <option name="MAIN_CLASS_NAME" value="com.csi3471.app.VehicleTableTest" />
+      <option name="METHOD_NAME" value="createTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleTableTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BearRides" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csi3471.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csi3471.app" />
+      <option name="MAIN_CLASS_NAME" value="com.csi3471.app.VehicleTableTest" />
+      <option name="METHOD_NAME" value="insertTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -490,19 +497,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.UserTableControllerTest.testConstructor" />
-      <item itemvalue="JUnit.UserTableControllerTest.testConstructor0" />
       <item itemvalue="JUnit.UserTableControllerTest" />
       <item itemvalue="JUnit.UserTableControllerTest.testLogin" />
+      <item itemvalue="JUnit.VehicleTableTest.createTable" />
+      <item itemvalue="JUnit.VehicleTableTest.insertTest" />
+      <item itemvalue="JUnit.MessageTest.constructor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MessageTest.constructor" />
+        <item itemvalue="JUnit.VehicleTableTest.insertTest" />
+        <item itemvalue="JUnit.VehicleTableTest.createTable" />
         <item itemvalue="JUnit.UserTableControllerTest.testLogin" />
         <item itemvalue="JUnit.UserTableControllerTest" />
-        <item itemvalue="JUnit.UserTableControllerTest.testConstructor0" />
-        <item itemvalue="JUnit.UserTableControllerTest.testConstructor" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -516,46 +523,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540238544264</updated>
+      <workItem from="1543372240797" duration="3335000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testConstructor - 2018.10.22 at 21h 14m 24s.xml">
-      <configuration name="UserTest.testConstructor" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 21h 04m 48s.xml">
+      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.10.22 at 21h 23m 50s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 21h 04m 54s.xml">
+      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.10.22 at 21h 34m 49s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 09m 24s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTableControllerTest_testConstructor - 2018.10.22 at 23h 04m 13s.xml">
-      <configuration name="UserTableControllerTest.testConstructor" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 10m 35s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTableControllerTest_testConstructor0 - 2018.10.22 at 23h 08m 38s.xml">
-      <configuration name="UserTableControllerTest.testConstructor0" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 10m 40s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTableControllerTest_testConstructor0 - 2018.10.22 at 23h 09m 15s.xml">
-      <configuration name="UserTableControllerTest.testConstructor0" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 10m 55s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTableControllerTest_testConstructor0 - 2018.10.22 at 23h 11m 32s.xml">
-      <configuration name="UserTableControllerTest.testConstructor0" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 14m 08s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTableControllerTest - 2018.10.22 at 23h 19m 02s.xml">
-      <configuration name="UserTableControllerTest" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 19m 29s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTableControllerTest_testLogin - 2018.10.22 at 23h 22m 31s.xml">
-      <configuration name="UserTableControllerTest.testLogin" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 19m 35s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 19m 58s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8343000" />
+    <option name="totallyTimeSpent" value="14424000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="806" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17525035" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8434238" visible="true" weight="0.21173105" />
+      <window_info id="Structure" order="1" sideWeight="0.1565762" side_tool="true" weight="0.21173105" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -563,15 +575,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39981097" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32777777" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921812" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32986766" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32921812" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -580,10 +594,44 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="Database" order="9" weight="0.0" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20886981" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.32777777" />
+      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.32777777" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32921812" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32986766" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32921812" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.3297568" />
+    </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -599,6 +647,12 @@
           <line>74</line>
           <properties />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -664,13 +718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/IOBuffers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/IOBuffers.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -678,16 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/AppTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1478">
@@ -697,19 +736,6 @@
             <element signature="e#2167#2168#0" expanded="true" />
             <element signature="e#2815#2816#0" expanded="true" />
             <element signature="e#2881#2882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2095">
-          <caret line="207" column="21" lean-forward="true" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="21" />
-          <folding>
-            <element signature="method#hashCode#0;class#Message#0" />
-            <element signature="method#equals#0;class#Message#0" />
-            <element signature="e#5185#5186#0" expanded="true" />
-            <element signature="e#5243#5244#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,7 +768,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-159.5" y="81.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-159.0" y="82.0" />
           <SelectedNodes>
             <node>controller.ControlPanel</node>
           </SelectedNodes>
@@ -762,19 +788,13 @@
           <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="576.5" y="217.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="577.0" y="218.0" />
           <SelectedNodes />
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -785,57 +805,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ControlPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ControlPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserTableController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/table/UserTable.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="72">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserTableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-        </state>
-      </provider>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e724aea7-c1b0-4e13-9e90-b8b4d5698cb5/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="378">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
             <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectGateway/UserGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="132">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/table/UserTable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="211">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2451">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="method#hashCode#0;class#Message#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/object/VehicleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/object/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/object/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/Trip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="387" column="4" lean-forward="true" selection-start-line="387" selection-start-column="4" selection-end-line="387" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/object/TripTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding>
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4752">
+          <caret line="386" column="25" selection-start-line="386" selection-start-column="19" selection-end-line="386" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1992">
+          <caret line="144" column="6" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
         </state>
       </provider>
     </entry>

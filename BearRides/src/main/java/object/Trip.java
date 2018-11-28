@@ -10,17 +10,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class Trip implements Comparable<Trip> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
+    public Trip(User driver, Date originTime, Integer passengerCap) {
         this.driver = driver;
-        this.message = message;
         this.originTime = originTime;
         this.passengerCap = passengerCap;
         
@@ -196,6 +191,16 @@ public class Trip implements Comparable<Trip> {
     public Message getMessage() {
         return message;
     }
+    
+    /*
+     * description: getter
+     * return: primaryKey
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Long getPrimaryKey() {
+        return primaryKey;
+    }
 
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
@@ -279,6 +284,26 @@ public class Trip implements Comparable<Trip> {
         this.driver = driver;
     }
     
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: primaryKey is set
+     */
+    public void setPrimaryKey(Long key) {
+        primaryKey = key;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: message is set
+     */
+    public void setMessage(Message message) {
+        this.message = message;
+    }
+    
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override
@@ -360,32 +385,24 @@ public class Trip implements Comparable<Trip> {
             return false;
         return true;
     }
+    
     @Override
     public int compareTo(Trip arg0) {
         return getOriginTime().compareTo(arg0.getOriginTime());
     }
 
-    //variables to be saved upon shutdown, must be tagged with @XmlElement
-    @XmlElement
-    private User driver;
-    @XmlElement
-    private Message message;
-    @XmlElement
-    private List<User> riders;
-    @XmlElement
+    //variables to be saved upon shutdown
+    private Long primaryKey = null;
+    
+    private User driver; //reference
+    private Message message; //reference
+    private List<User> riders; //list reference
     private List<String> requirements;
-    @XmlElement
     private Date originTime;
-    @XmlElement
     private Date destinTime;
-    @XmlElement
     private Date returnTime;
-    @XmlElement
     private String originLoc;
-    @XmlElement
     private String destinLoc;
-    @XmlElement
     private String returnLoc;
-    @XmlElement
     private Integer passengerCap;
 }

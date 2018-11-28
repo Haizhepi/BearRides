@@ -5,12 +5,12 @@
  */
 package gui;
 
-import java.io.File;
-
 import javax.swing.*;
 
-import controller.ControlPanel;
-import controller.MessageTableController;
+import org.apache.logging.log4j.LogManager;
+
+import controller.DashBoard;
+import controller.MessageCollectionController;
 import controller.PanelController;
 
 /**
@@ -22,10 +22,10 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     /**
      * Creates new form MessageTableGUI1
      */
-    public MessageBoardGUI(ControlPanel cp) {
+    public MessageBoardGUI(DashBoard cp) {
         //later make load from file
         this.cp = cp;
-        tc = cp.getMessageTableController();
+        tc = cp.getMessageCollectionController();
         messageTable = tc.getTable();
         pc = cp.getPanelController();
         initComponents();
@@ -65,6 +65,8 @@ public class MessageBoardGUI extends javax.swing.JPanel {
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
+            
+            private static final long serialVersionUID = -3166042634019832264L;
         });
         messageTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         messageTable.setFillsViewportHeight(true);
@@ -158,21 +160,14 @@ public class MessageBoardGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {
-                } catch (InstantiationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
-
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                ControlPanel cp = new ControlPanel(new File(""));
+                
+                DashBoard cp = new DashBoard();
+                cp.load();
                 cp.getPanelController().changeFrame(new MessageBoardGUI(cp));
             }
         });
@@ -185,8 +180,8 @@ public class MessageBoardGUI extends javax.swing.JPanel {
     private javax.swing.JTable messageTable;
     // End of variables declaration//GEN-END:variables
     
-    private ControlPanel cp;
-    private MessageTableController tc;
+    private DashBoard cp;
+    private MessageCollectionController tc;
     private PanelController pc;
     private static final long serialVersionUID = 5164463894978645312L;
 }

@@ -5,12 +5,13 @@
  */
 package gui;
 
-import java.io.File;
-
 import javax.swing.*;
 
-import controller.ControlPanel;
+import org.apache.logging.log4j.LogManager;
+
+import controller.DashBoard;
 import controller.PanelController;
+import controller.UserCollectionController;
 
 /**
  *
@@ -21,9 +22,10 @@ public class LoginGUI extends javax.swing.JPanel {
     /**
      * Creates new form LoginGUI
      */
-    public LoginGUI(ControlPanel cp) {
+    public LoginGUI(DashBoard cp) {
         this.cp = cp;
-        this.pc = cp.getPanelController();
+        pc = cp.getPanelController();
+        uc = cp.getUserCollectionController();
         initComponents();
     }
 
@@ -133,9 +135,12 @@ public class LoginGUI extends javax.swing.JPanel {
                 .addGap(38, 38, 38))
         );
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        pc.changeFrame(new HomePageGUI(cp));
+        if(uc.login(emailTextField.getText(), new String(jPasswordField1.getPassword()))) {
+            pc.changeFrame(new HomePageGUI(cp));
+        } else {
+        }
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
@@ -153,21 +158,14 @@ public class LoginGUI extends javax.swing.JPanel {
                             break;
                         }
                     }
-                } catch (ClassNotFoundException ex) {
-                } catch (InstantiationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
-
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
-                ControlPanel cp = new ControlPanel(new File(""));
+                
+                DashBoard cp = new DashBoard();
+                cp.load();
                 cp.getPanelController().changeFrame(new LoginGUI(cp));
             }
         });
@@ -184,7 +182,8 @@ public class LoginGUI extends javax.swing.JPanel {
     private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
     
-    private ControlPanel cp;
+    private DashBoard cp;
     private PanelController pc;
+    private UserCollectionController uc;
     private static final long serialVersionUID = -2304000181439121969L;
 }
