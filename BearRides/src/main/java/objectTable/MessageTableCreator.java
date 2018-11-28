@@ -20,7 +20,7 @@ public class MessageTableCreator extends SQLStatementExecuter {
                 + "body CLOB NOT NULL, "
                 + "trip BIGINT NOT NULL, " //foreign key
                 + "PRIMARY KEY (id), "
-                + "FOREIGN KEY(creator) REFERENCES UserTable(id)), "
+                + "FOREIGN KEY(creator) REFERENCES UserTable(id), "
                 + "FOREIGN KEY(trip) REFERENCES Trip(id) )";
         
         return true;

@@ -12,8 +12,7 @@ public class MessageDeleter extends SQLStatementExecuter {
         Message message = (Message) object;
         
         SQLStatement = "DELETE FROM Message WHERE id = " + message.getPrimaryKey() + ";"
-                + "DELETE FROM Trip WHERE message = " + message.getPrimaryKey() + ";"
-                + "DELETE FROM User WHERE BIGINT(" + message.getPrimaryKey() + ") MEMBER OF notifications;"; //need to test!
+                + "DELETE FROM Trip WHERE message = " + message.getPrimaryKey() + ";";
         
         return true;
     }

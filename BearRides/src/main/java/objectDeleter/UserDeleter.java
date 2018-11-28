@@ -11,11 +11,12 @@ public class UserDeleter extends SQLStatementExecuter {
     @Override
     protected Boolean beforeHook(Connection connection, Object object) {
         User user = (User) object;
+        Long key = user.getPrimaryKey();
         
-        SQLStatement = "DELETE FROM User WHERE id = " + user.getPrimaryKey() + ";"
-                + "DELETE FROM Message WHERE creator = " + user.getPrimaryKey() + ";"
-                + "DELETE FROM Trip WHERE driver = " + user.getPrimaryKey() + ";"
-                + "DELETE FROM Trip WHERE BIGINT(" + user.getPrimaryKey() + ") MEMBER OF riders;"; //need to test!
+        SQLStatement = "DELETE FROM UserTable WHERE id = " + key + ";"
+                + "DELETE FROM Message WHERE creator = " + key + ";"
+                + "DELETE FROM Trip WHERE driver = " + key + ";"
+                + "DELETE FROM TripRider WHERE uid = " + key + ";";
         
         Vehicle vehicle = user.getVehicle();
         if(vehicle != null) {

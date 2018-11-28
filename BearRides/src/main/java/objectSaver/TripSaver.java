@@ -17,10 +17,9 @@ public class TripSaver extends SQLStatementExecuter {
         
         SQLStatement = "INSERT INTO Trip ("
                 + ((key != null) ? "id, " : "")
-                + "driver, message, originTime, destinTime, returnTime, originLoc, destinLoc, returnLoc, passengerCap) VALUES "
+                + "driver, originTime, destinTime, returnTime, originLoc, destinLoc, returnLoc, passengerCap) VALUES "
                 + "(" + ((key != null) ? key + ", " : "")
                 + trip.getDriver().getPrimaryKey()
-                + ", " + trip.getMessage().getPrimaryKey()
                 + ", " + trip.getOriginTime().getTime()
                 + ", " + trip.getDestinTime().getTime()
                 + ", " + trip.getReturnTime().getTime()
@@ -28,9 +27,9 @@ public class TripSaver extends SQLStatementExecuter {
                 + "', '" + trip.getDestinLoc()
                 + "', '" + trip.getReturnLoc()
                 + "', " +trip.getPassengerCap()
-                + ");";
+                + ")";
         
-        return null;
+        return true;
     }
     
     @Override

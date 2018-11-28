@@ -1,7 +1,7 @@
 package objectGateway;
 
 import java.sql.Connection;
-import java.util.List;
+import java.util.Map;
 
 public abstract class Gateway<T> {
     protected Connection connection = null;
@@ -14,7 +14,7 @@ public abstract class Gateway<T> {
     
     public abstract Gateway<T> delete(Object object);
     
-    public abstract List<T> load();
+    public abstract Map<Long, T> load();
     
     public abstract T find(Long id);
 }

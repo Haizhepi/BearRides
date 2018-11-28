@@ -10,9 +10,12 @@ public class TripDeleter extends SQLStatementExecuter {
     @Override
     protected Boolean beforeHook(Connection connection, Object object) {
         Trip trip = (Trip) object;
+        Long key = trip.getPrimaryKey();
         
-        SQLStatement = "DELETE FROM Trip WHERE id = " + trip.getPrimaryKey() + ";"
-                + "UPDATE Message SET trip = NULL WHERE trip = " + trip.getPrimaryKey() + ";";
+        SQLStatement = "DELETE FROM Trip WHERE id = " + key + ";"
+                + "DELETE FROM TripRequirement WHERE tid = " + key + ";"
+                + "DELETE FROM TripRider WHERE tid = " + key + ";"
+                + "UPDATE Message SET trip = NULL WHERE trip = " + key + ";";
         
         return true;
     }

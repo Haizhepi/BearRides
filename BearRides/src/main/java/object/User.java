@@ -24,6 +24,12 @@ public class User implements Comparable<User> {
         notifications = new TreeSet<Message>();
     }
     
+    public User(String email, Integer passHash) {
+        this.email = email;
+        this.passHash = passHash;
+        notifications = new TreeSet<Message>();
+    }
+    
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
     
     /*
@@ -46,6 +52,16 @@ public class User implements Comparable<User> {
         notifications.add(notification);
     }
     
+    /*
+     * description: inserts a trip
+     * return: void
+     * precondition: void
+     * postcondition: the trip will be listed
+     */
+    public void insertTrip(Trip trip) {
+        trips.add(trip);
+    }
+    
     /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
     
     /*
@@ -56,6 +72,16 @@ public class User implements Comparable<User> {
      */
     public void removeNotification(Message notification) {
         notifications.remove(notification);
+    }
+    
+    /*
+     * description: removes all references to trip
+     * return: void
+     * precondition: void
+     * postcondition: all references to trip will be removed
+     */
+    public void removeTrip(Trip trip) {
+        trips.remove(trip);
     }
     
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
@@ -302,6 +328,37 @@ public class User implements Comparable<User> {
         primaryKey = key;
     }
     
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: car is set
+     */
+    public void setVehicle(Vehicle vehicle) {
+        car = vehicle;
+        isDriver = vehicle != null;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: rating is set
+     */
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: rating count is set
+     */
+    public void setRatingCount(Integer ratingCount) {
+        this.ratingCount = ratingCount;
+    }
+    
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override
@@ -418,7 +475,6 @@ public class User implements Comparable<User> {
     private Integer rating = 100;
     private Integer ratingCount = 1;
     private SortedSet<Message> notifications; //set of references
-    @SuppressWarnings("unused")
     private List<Trip> trips; //set of references
     
     //variable not to be saved upon shutdown

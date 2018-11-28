@@ -3,11 +3,13 @@ package objectGateway;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import database.SQLStatementExecuter;
 import object.Trip;
+import object.User;
 import objectDeleter.TripDeleter;
 import objectLoader.TripLoader;
 import objectSaver.TripSaver;
@@ -35,17 +37,22 @@ public class TripGateway extends Gateway<Trip> {
     }
 
     @Override
-    public List<Trip> load() {
-        SQLStatementExecuter executer = new TripLoader();
-        ResultSet rs = executer.executeQuery(connection, null);
-        List<Trip> trips = new ArrayList<Trip>();
+    public Map<Long, Trip> load() {
+        ResultSet rs = new TripLoader().executeQuery(connection, null);
+        Map<Long, Trip> trips = new HashMap<Long, Trip>();
+        
+        UserGateway userGateway = new UserGateway(connection);
+        Map<Long, User> users = userGateway.load();
         
         try {
             if (rs.next() == false) {
                 System.out.println("ResultSet is empty in Java");
             } else {
                 do {
-                    trips.add(null);
+                    Trip trip = new Trip(users.get(rs.getLong("driver")), new Date(rs.getLong("originTime")), rs.getInt("passengerCap"));
+                    
+                    
+                    trips.put(null, null);
                 } while (rs.next());
             }
         } catch (SQLException e) {

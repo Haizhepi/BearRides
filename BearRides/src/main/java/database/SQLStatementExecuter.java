@@ -20,6 +20,7 @@ public abstract class SQLStatementExecuter {
             try {
                 statement = connection.createStatement();
                 // execute update SQL stetement
+                System.out.println(SQLStatement);
                 statement.executeUpdate(SQLStatement, Statement.RETURN_GENERATED_KEYS);
                 afterHook(statement, object);
             } catch (SQLException e) {

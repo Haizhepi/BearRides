@@ -14,9 +14,8 @@ public class Trip implements Comparable<Trip> {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-    public Trip(User driver, Message message, Date originTime, Integer passengerCap) {
+    public Trip(User driver, Date originTime, Integer passengerCap) {
         this.driver = driver;
-        this.message = message;
         this.originTime = originTime;
         this.passengerCap = passengerCap;
         
@@ -293,6 +292,16 @@ public class Trip implements Comparable<Trip> {
      */
     public void setPrimaryKey(Long key) {
         primaryKey = key;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: message is set
+     */
+    public void setMessage(Message message) {
+        this.message = message;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
