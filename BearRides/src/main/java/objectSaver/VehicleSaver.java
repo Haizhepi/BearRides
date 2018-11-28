@@ -1,6 +1,7 @@
 package objectSaver;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import database.SQLStatementExecuter;
 import object.Vehicle;
@@ -21,6 +22,12 @@ public class VehicleSaver extends SQLStatementExecuter{
                 + "', " + vehicle.getPassengerCap()
                 + ", '" + vehicle.getStorageSpace()
                 + "');";
+        
+        try {
+            vehicle.setPrimaryKey(connection.createStatement().executeQuery("SELECT LAST_INSERT_ID;").getLong(1));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         
         return true;
     }
