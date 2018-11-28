@@ -10,9 +10,8 @@ public abstract class SQLStatementExecuter {
 
 
     protected abstract Boolean beforeHook(Connection connection, Object object);
-
-    protected void afterHook(Statement statement, Object object) {
-    }
+    protected void afterHook(Statement statement, Object object) {}
+    
     public void execute(Connection connection, Object object) {
         
         if(beforeHook(connection, object)) {
@@ -21,9 +20,8 @@ public abstract class SQLStatementExecuter {
             try {
                 statement = connection.createStatement();
                 // execute update SQL stetement
-                statement.execute(SQLStatement);
+                statement.executeUpdate(SQLStatement, Statement.RETURN_GENERATED_KEYS);
                 afterHook(statement, object);
-
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             } finally {
@@ -48,6 +46,8 @@ public abstract class SQLStatementExecuter {
                 statement = connection.createStatement();
                 // execute select SQL stetement
                 rs = statement.executeQuery(SQLStatement);
+                rs.next();
+                afterHook(statement, object);
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             } finally {
