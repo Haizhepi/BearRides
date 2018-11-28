@@ -11,8 +11,7 @@ public class TripUserRelationTableCreator extends SQLStatementExecuter {
         SQLStatement = "CREATE TABLE Relation("
                 + "UID BIGINT NOT NULL,"
                 + "TID BIGINT NOT NULL,"
-                + "PRIMARY KEY (UID, TID), "
-                + " FOREIGN KEY(UID) REFERENCES User(id), FOREIGN KEY(TID) REFERENCES Trip(id);";
+                + "PRIMARY KEY (UID, TID)) ";
         return true;
     }
 }
