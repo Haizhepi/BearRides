@@ -11,13 +11,13 @@ public class UserTableCreator extends SQLStatementExecuter {
         
         SQLStatement = "CREATE TABLE UserTable("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
-                + "email CLOB NOT NULL, "
+                + "email LONG VARCHAR NOT NULL, "
                 + "passHash INTEGER NOT NULL, "
                 + "gender CHAR NOT NULL, "
-                + "name CLOB NOT NULL, "
-                + "contact CLOB NOT NULL, "
+                + "name LONG VARCHAR NOT NULL, "
+                + "contact LONG VARCHAR NOT NULL, "
                 + "age INTEGER NOT NULL, "
-                + "picture CLOB, "
+                + "picture LONG VARCHAR, "
                 + "isDriver CHAR NOT NULL, "
                 + "car BIGINT, " //foreign key
                 + "rating INTEGER NOT NULL, "

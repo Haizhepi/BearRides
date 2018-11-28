@@ -14,10 +14,10 @@ public class VehicleUpdater extends SQLStatementExecuter {
         
         if(key != null) {
             SQLStatement = "UPDATE Vehicle"
-                    + " SET model = '" + vehicle.getModel() //CLOB
-                    + "' SET picture = '" + vehicle.getPicture() //CLOB
+                    + " SET model = '" + vehicle.getModel() //VAR CHAR
+                    + "' SET picture = '" + vehicle.getPicture() //VAR CHAR
                     + "' SET passengerCap = " + vehicle.getPassengerCap() //INTEGER
-                    + " SET storageSpace = '" + vehicle.getStorageSpace() //CLOB
+                    + " SET storageSpace = '" + vehicle.getStorageSpace() //VAR CHAR
                     + "' WHERE id = " + key + ";";
         }else {
             return false;

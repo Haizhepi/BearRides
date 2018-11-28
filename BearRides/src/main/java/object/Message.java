@@ -175,6 +175,26 @@ public class Message implements Comparable<Message> {
         this.notification = notification;
     }
     
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: umid is set
+     */
+    public void setUmid(String umid) {
+        this.umid = umid;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: postTime is set
+     */
+    public void setPostTime(String postTime) {
+        this.postTime = postTime;
+    }
+    
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     @Override

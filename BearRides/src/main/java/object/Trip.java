@@ -396,8 +396,8 @@ public class Trip implements Comparable<Trip> {
     
     private User driver; //reference
     private Message message; //reference
-    private List<User> riders; //list reference
-    private List<String> requirements;
+    private List<User> riders; //table of reference
+    private List<String> requirements; //table of clob
     private Date originTime;
     private Date destinTime;
     private Date returnTime;

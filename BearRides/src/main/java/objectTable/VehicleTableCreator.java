@@ -11,10 +11,10 @@ public class VehicleTableCreator extends SQLStatementExecuter {
         
         SQLStatement = "CREATE TABLE Vehicle("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
-                + "model CLOB NOT NULL, "
-                + "picture CLOB, "
+                + "model LONG VARCHAR NOT NULL, "
+                + "picture LONG VARCHAR, "
                 + "passengerCap INTEGER NOT NULL, "
-                + "storageSpace CLOB, "
+                + "storageSpace LONG VARCHAR, "
                 + "PRIMARY KEY (id) )";
         
         return true;

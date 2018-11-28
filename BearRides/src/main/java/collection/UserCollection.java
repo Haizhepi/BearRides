@@ -57,36 +57,6 @@ public class UserCollection {
         return userTable.get(uuid);
     }
     
-    /*
-     * description: getter
-     * return: the mail man
-     * precondition: void
-     * postcondition: nothing is changed
-     */
-    public static User getMailMan() {
-        if(mailMan == null) {
-            mailMan = new User("BearRides@baylor.edu", UUID.randomUUID().toString());
-            mailMan.setName("mailMan");
-            mailMan.setContact("BearRides@Baylor.edu");
-            mailMan.insertRating(999);
-        }else {
-        }
-        
-        return mailMan;
-    }
-    
-    /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
-    
-    /*
-     * description: setter
-     * return: void
-     * precondition: void
-     * postcondition: mailMan is set
-     */
-    public static void setMailMan(User user) {
-        mailMan = user;
-    }
-    
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
     
     /*
@@ -159,7 +129,6 @@ public class UserCollection {
     
     //variables to be saved upon shutdown
     private Map<String, User> userTable;
-    private static User mailMan = null;
     
     //variable not to be saved upon shutdown
     private Map<String, UUID> tokenMap;

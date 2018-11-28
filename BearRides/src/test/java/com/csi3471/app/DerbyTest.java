@@ -120,7 +120,7 @@ public class DerbyTest {
         //user now has a primary key
         
         Message message = new Message(user);
-        Trip trip = new Trip(user, message, new Date(), 3);
+        Trip trip = new Trip(user, new Date(), 3);
         
         trip.setDestinLoc("there");
         trip.setDestinTime(new Date());

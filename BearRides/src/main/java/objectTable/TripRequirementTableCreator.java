@@ -10,7 +10,7 @@ public class TripRequirementTableCreator extends SQLStatementExecuter {
     protected Boolean beforeHook(Connection connection, Object object) {
         SQLStatement = "CREATE TABLE TripRequirement("
                 + "tid BIGINT NOT NULL,"
-                + "req CLOB NOT NULL,"
+                + "req LONG VARCHAR NOT NULL,"
                 + "PRIMARY KEY (tid)) ";
         return true;
     }

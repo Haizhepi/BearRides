@@ -1,6 +1,5 @@
 package objectGateway;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,14 +9,14 @@ import java.util.Map;
 import object.User;
 import object.Vehicle;
 import objectDeleter.UserDeleter;
-import objectLoader.ClobStringConversion;
 import objectLoader.UserLoader;
 import objectSaver.UserSaver;
 
 public class UserGateway extends Gateway<User> {
+    private static Map<Long, User> users;
 
-    public UserGateway(Connection connection) {
-        super(connection);
+    public UserGateway(Connection con) {
+        connection = con;
     }
 
     @Override
@@ -33,24 +32,24 @@ public class UserGateway extends Gateway<User> {
     }
 
     @Override
-    public Map<Long, User> load() {
+    protected Map<Long, User> load() {
         ResultSet rs = new UserLoader().executeQuery(connection, null);
-        Map<Long, User> users = new HashMap<Long, User>();
+        users = new HashMap<Long, User>();
         
         VehicleGateway vehicleGateway = new VehicleGateway(connection);
-        Map<Long, Vehicle> vehicles = vehicleGateway.load();
+        Map<Long, Vehicle> vehicles = vehicleGateway.getLoaded();
         
         try {
             if (rs.next() == false) {
                 System.out.println("ResultSet is empty in Java");
             } else {
                 do {
-                    User user = new User(ClobStringConversion.convert(rs.getClob("email")), rs.getInt("passHash"));
+                    User user = new User(rs.getString("email"), rs.getInt("passHash"));
                     user.setAge(rs.getInt("age"));
-                    user.setContact(ClobStringConversion.convert(rs.getClob("contact")));
+                    user.setContact(rs.getString("contact"));
                     user.setGender(rs.getString("gender") == "1");
-                    user.setName(ClobStringConversion.convert(rs.getClob("name")));
-                    user.setPicture(ClobStringConversion.convert(rs.getClob("picture")));
+                    user.setName(rs.getString("name"));
+                    user.setPicture(rs.getString("picture"));
                     user.setPrimaryKey(rs.getLong("id"));
                     user.setVehicle(vehicles.getOrDefault(rs.getLong("car"), null));
                     user.setRating(rs.getInt("rating"));
@@ -59,8 +58,18 @@ public class UserGateway extends Gateway<User> {
                     users.put(user.getPrimaryKey(), user);
                 } while (rs.next());
             }
-        } catch (SQLException | IOException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
+        }
+        
+        return users;
+    }
+    
+    @Override
+    public Map<Long, User> getLoaded() {
+        
+        if(users == null) {
+            this.load();
         }
         
         return users;

@@ -15,9 +15,9 @@ public class TripTableCreator extends SQLStatementExecuter {
                 + "originTime BIGINT, "
                 + "destinTime BIGINT, "
                 + "returnTime BIGINT, "
-                + "originLoc CLOB, "
-                + "destinLoc CLOB, "
-                + "returnLoc CLOB, "
+                + "originLoc LONG VARCHAR, "
+                + "destinLoc LONG VARCHAR, "
+                + "returnLoc LONG VARCHAR, "
                 + "passengerCap INTEGER, "
                 + "PRIMARY KEY (id), "
                 + "FOREIGN KEY (driver) REFERENCES UserTable(id) )";

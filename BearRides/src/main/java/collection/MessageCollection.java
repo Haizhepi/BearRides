@@ -27,7 +27,6 @@ public class MessageCollection extends AbstractTableModel {
         messages = new ArrayList<Message>();
         userMap = TreeMultimap.create();
         tripQueue = TreeMultimap.create();
-        mailMan = UserCollection.getMailMan();
     }
     
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
@@ -172,10 +171,11 @@ public class MessageCollection extends AbstractTableModel {
                 for(User user : trip.getRiders()) {
                     greeting = "Hi " + user.getName();
                     
-                    message = new Message(mailMan);
+                    message = new Message(user);
                     message.setTitle(title);
                     message.setBody(greeting + body);
                     message.setHidden(true);
+                    message.setNotification(true);
                     
                     insert(message);
                     user.insertNotification(message);
@@ -183,10 +183,11 @@ public class MessageCollection extends AbstractTableModel {
                 User driver = trip.getDriver();
                 greeting = "Hi " + driver.getName();
                 
-                message = new Message(mailMan);
+                message = new Message(driver);
                 message.setTitle(title);
                 message.setBody(greeting + body);
                 message.setHidden(true);
+                message.setNotification(true);
                 
                 insert(message);
                 driver.insertNotification(message);
@@ -203,5 +204,4 @@ public class MessageCollection extends AbstractTableModel {
     //variable not to be saved upon shutdown
     private final int COLUMN_COUNT = 1;
     private static final long serialVersionUID = 7104942565195945524L;
-    private User mailMan;
 }

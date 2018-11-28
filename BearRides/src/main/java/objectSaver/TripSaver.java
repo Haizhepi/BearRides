@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Trip;
+import object.User;
 
 public class TripSaver extends SQLStatementExecuter {
     
@@ -27,7 +28,21 @@ public class TripSaver extends SQLStatementExecuter {
                 + "', '" + trip.getDestinLoc()
                 + "', '" + trip.getReturnLoc()
                 + "', " +trip.getPassengerCap()
-                + ")";
+                + ");";
+                
+                for(String requirement : trip.getRequirements()) {
+                    SQLStatement += "INSERT INTO TripRequirement (tid, req) VALUES ("
+                            + trip.getPrimaryKey()
+                            + ", " + requirement
+                            + ");";
+                }
+                
+                for(User user : trip.getRiders()) {
+                    SQLStatement += "INSERT INTO TripRider (tid, uid) VALUES ("
+                            + trip.getPrimaryKey()
+                            + ", " + user.getPrimaryKey()
+                            + ");";
+                }
         
         return true;
     }

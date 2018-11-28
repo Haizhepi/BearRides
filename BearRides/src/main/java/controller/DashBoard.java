@@ -6,13 +6,6 @@
 
 package controller;
 
-import java.util.List;
-
-import database.DatabaseCreator;
-import object.Message;
-import objectGateway.Gateway;
-import objectGateway.MessageGateway;
-
 public class DashBoard {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
@@ -59,17 +52,6 @@ public class DashBoard {
     }
     
     public void load() {
-        //grab the unlinked messages
-        Gateway<Message> messageLoader = new MessageGateway(DatabaseCreator.getInstance().getConnection());
-        List<Message> messages = messageLoader.load();
-        
-        //grab the unlinked users
-        
-        //grab the vehicles
-        
-        //grab the unlinked trips
-        
-        //link them
     }
     
     //variable not to be saved upon shutdown

@@ -4,17 +4,18 @@ import java.sql.Connection;
 import java.util.Map;
 
 public abstract class Gateway<T> {
-    protected Connection connection = null;
+    protected Connection connection;
     
-    public Gateway(Connection connection) {
-        this.connection = connection;
+    public Gateway() {
     }
     
     public abstract Gateway<T> save(Object object);
     
     public abstract Gateway<T> delete(Object object);
     
-    public abstract Map<Long, T> load();
+    protected abstract Map<Long, T> load();
+    
+    public abstract Map<Long, T> getLoaded();
     
     public abstract T find(Long id);
 }

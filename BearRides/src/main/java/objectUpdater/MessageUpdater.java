@@ -13,13 +13,13 @@ public class MessageUpdater extends SQLStatementExecuter {
         
         if(message.getPrimaryKey() != null) {
             SQLStatement = "UPDATE Message"
-                    + " SET umid = '" + message.getUMID() //CLOB
-                    + "' SET title = '" + message.getTitle() //CLOB
-                    + "' SET hidden = " + ((message.isHidden() == true) ? 1 : 0) //BIT
-                    + " SET notification = " + ((message.isNotification() == true) ? 1 : 0) //BIT
-                    + " SET creator = " + message.getCreator().getPrimaryKey() //BIGINT foreign key
-                    + " SET postTime = '" + message.getPostTime() //CLOB
-                    + "' SET body = '" + message.getBody() //CLOB
+                    + " SET umid = '" + message.getUMID() //LONG VARCHAR
+                    + "' SET title = '" + message.getTitle() //LONG VARCHAR
+                    + "' SET hidden = '" + ((message.isHidden() == true) ? 1 : 0) //CHAR
+                    + "' SET notification = '" + ((message.isNotification() == true) ? 1 : 0) //CHAR
+                    + "' SET creator = " + message.getCreator().getPrimaryKey() //BIGINT foreign key
+                    + " SET postTime = '" + message.getPostTime() //LONG VARCHAR
+                    + "' SET body = '" + message.getBody() //LONG VARCHAR
                     + "' SET trip = " + message.getTrip().getPrimaryKey() //BIGINT foreign key
                     + " WHERE id = " + message.getPrimaryKey() + ";";
         }else {

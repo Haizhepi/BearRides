@@ -9,9 +9,9 @@ public class TripRiderTableCreator extends SQLStatementExecuter {
     @Override
     protected Boolean beforeHook(Connection connection, Object object) {
         SQLStatement = "CREATE TABLE TripRider("
-                + "uid BIGINT NOT NULL,"
                 + "tid BIGINT NOT NULL,"
-                + "PRIMARY KEY (uid, tid)) ";
+                + "uid BIGINT NOT NULL,"
+                + "PRIMARY KEY (tid, uid)) ";
         return true;
     }
 }
