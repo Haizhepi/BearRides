@@ -7,7 +7,7 @@ import database.SQLStatementExecuter;
 public class MessageTableCreator extends SQLStatementExecuter {
 
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         
         SQLStatement = "CREATE TABLE Message("
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "

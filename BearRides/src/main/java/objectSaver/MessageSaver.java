@@ -8,7 +8,7 @@ import object.Message;
 public class MessageSaver extends SQLStatementExecuter {
 
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         Message message = (Message) object;
         Long key = message.getPrimaryKey();
         

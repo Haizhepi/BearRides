@@ -8,7 +8,7 @@ import object.Trip;
 public class TripDeleter extends SQLStatementExecuter {
     
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         Trip trip = (Trip) object;
         
         SQLStatement = "DELETE FROM Trip WHERE id = " + trip.getPrimaryKey() + ";"

@@ -8,7 +8,7 @@ import object.Message;
 public class MessageUpdater extends SQLStatementExecuter {
 
     @Override
-    public Boolean hook(Connection connection, Object object) {
+    public Boolean beforeHook(Connection connection, Object object) {
         Message message = (Message) object;
         
         if(message.getPrimaryKey() != null) {

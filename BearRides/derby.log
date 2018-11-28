@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Tue Nov 27 21:04:52 CST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0167-5846-c6c8-00000745fa00 
+Tue Nov 27 21:29:07 CST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0167-585c-f754-00000750f000 
 on database directory /Users/haizhepi/csi-3471-software/BearRides/ex1connect with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c13da15 
 Loaded from file:/Users/haizhepi/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation

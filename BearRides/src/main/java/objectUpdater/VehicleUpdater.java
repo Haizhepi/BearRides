@@ -8,7 +8,7 @@ import object.Vehicle;
 public class VehicleUpdater extends SQLStatementExecuter {
 
     @Override
-    public Boolean hook(Connection connection, Object object) {
+    public Boolean beforeHook(Connection connection, Object object) {
         Vehicle vehicle = (Vehicle) object;
         
         if(vehicle.getPrimaryKey() != null) {

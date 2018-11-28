@@ -7,7 +7,7 @@ import database.SQLStatementExecuter;
 public class VehicleLoader extends SQLStatementExecuter {
 
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         
         SQLStatement = "SELECT id, model, picture, passengerCap, storageSpace from Vehicle";
         

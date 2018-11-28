@@ -12,7 +12,7 @@ import object.User;
 public class UserUpdater extends SQLStatementExecuter {
     
     @Override
-    public Boolean hook(Connection connection, Object object) {
+    public Boolean beforeHook(Connection connection, Object object) {
         User user = (User) object;
         
         if(user.getPrimaryKey() != null) {

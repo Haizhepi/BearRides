@@ -7,7 +7,7 @@ import database.SQLStatementExecuter;
 public class UserLoader extends SQLStatementExecuter {
     
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         
         SQLStatement = "SELECT id, email, passHash, gender, name, contact, age, picture, isDriver, car, rating, ratingCount, notifications from User";
         

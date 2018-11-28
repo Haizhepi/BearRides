@@ -2,6 +2,7 @@ package objectSaver;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Vehicle;
@@ -9,7 +10,7 @@ import object.Vehicle;
 public class VehicleSaver extends SQLStatementExecuter{
 
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         Vehicle vehicle = (Vehicle) object;
         Long key = vehicle.getPrimaryKey();
         
@@ -22,13 +23,18 @@ public class VehicleSaver extends SQLStatementExecuter{
                 + "', " + vehicle.getPassengerCap()
                 + ", '" + vehicle.getStorageSpace()
                 + "')";
+
+
         
+        return true;
+    }
+
+    protected void afterHook(Statement statement, Object object) {
+        Vehicle vehicle = (Vehicle)object;
         try {
-            vehicle.setPrimaryKey(connection.createStatement().executeQuery("SELECT LAST_INSERT_ID;").getLong(1));
+            vehicle.setPrimaryKey(statement.executeQuery("SELECT IDENTITY_VAL_LOCAL() FROM Vehicle").getLong(1));
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        
-        return true;
     }
 }

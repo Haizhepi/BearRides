@@ -7,18 +7,23 @@ import java.sql.Statement;
 
 public abstract class SQLStatementExecuter {
     protected String SQLStatement = null;
-    
-    protected abstract Boolean hook(Connection connection, Object object);
-        
+
+
+    protected abstract Boolean beforeHook(Connection connection, Object object);
+
+    protected void afterHook(Statement statement, Object object) {
+    }
     public void execute(Connection connection, Object object) {
         
-        if(hook(connection, object)) {
+        if(beforeHook(connection, object)) {
             Statement statement = null;
             
             try {
                 statement = connection.createStatement();
                 // execute update SQL stetement
                 statement.execute(SQLStatement);
+                afterHook(statement, object);
+
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             } finally {
@@ -36,7 +41,7 @@ public abstract class SQLStatementExecuter {
     public ResultSet executeQuery(Connection connection, Object object) {
         ResultSet rs = null;
         
-        if(hook(connection, object)) {
+        if(beforeHook(connection, object)) {
             Statement statement = null;
             
             try {

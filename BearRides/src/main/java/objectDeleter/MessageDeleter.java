@@ -8,7 +8,7 @@ import object.Message;
 public class MessageDeleter extends SQLStatementExecuter {
 
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         Message message = (Message) object;
         
         SQLStatement = "DELETE FROM Message WHERE id = " + message.getPrimaryKey() + ";"

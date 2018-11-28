@@ -8,7 +8,7 @@ import object.Vehicle;
 public class VehicleDeleter extends SQLStatementExecuter {
     
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         Vehicle vehicle = (Vehicle) object;
         
         SQLStatement = "DELETE FROM Vehicle WHERE id = " + vehicle.getPrimaryKey() + ";"

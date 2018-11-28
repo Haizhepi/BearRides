@@ -3,43 +3,43 @@
   <component name="ChangeListManager">
     <list default="true" id="994574b5-61ac-410d-8081-23d21b31c461" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/log/log1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c150.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c161.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c171.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c200.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c211.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c221.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c31.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c400.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c411.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c421.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c421.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c490.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c4a1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c71.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/cc0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/cc0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/cd1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/cd1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/ce1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/ce1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ex1connect/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/d5a0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/d5b0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/d5c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/d5d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1connect/seg0/d5e0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectDeleter/MessageDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectDeleter/MessageDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectDeleter/TripDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectDeleter/TripDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectDeleter/UserDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectDeleter/UserDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectDeleter/VehicleDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectDeleter/VehicleDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectLoader/MessageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectLoader/MessageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectLoader/TripLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectLoader/TripLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectLoader/UserLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectLoader/UserLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectLoader/VehicleLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectLoader/VehicleLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectSaver/MessageSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectSaver/MessageSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectSaver/UserSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectSaver/UserSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectUpdater/MessageUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectUpdater/MessageUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectUpdater/TripUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectUpdater/TripUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectUpdater/UserUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectUpdater/UserUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectUpdater/VehicleUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectUpdater/VehicleUpdater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,7 +64,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45298374">
+    <splitter split-orientation="horizontal" split-proportion="0.55293274">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -85,11 +85,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                <state relative-caret-position="116">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
                 </state>
               </provider>
             </entry>
@@ -103,11 +103,29 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="231">
-                  <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+                  <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/object/Vehicle.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
                 </state>
               </provider>
             </entry>
@@ -116,7 +134,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="144">
-                  <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="45" />
+                  <caret line="10" column="45" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -143,11 +161,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="41" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="213">
+                  <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -204,6 +231,8 @@
         <option value="$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java" />
       </list>
     </option>
   </component>
@@ -231,7 +260,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="814" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -385,7 +414,7 @@
     <property name="DatabaseDriversLRU" value="derby" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543374290595" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543375742879" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -418,7 +447,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VehicleTableTest.createTable">
+  <component name="RunManager" selected="JUnit.VehicleTableTest.insertTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -435,23 +464,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="controller" />
       <option name="MAIN_CLASS_NAME" value="controller.UserTableControllerTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTableControllerTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BearRides" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.UserTableControllerTest" />
-      <option name="METHOD_NAME" value="testConstructor" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -508,6 +520,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VehicleTableTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BearRides" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.csi3471.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.csi3471.app" />
+      <option name="MAIN_CLASS_NAME" value="com.csi3471.app.VehicleTableTest" />
+      <option name="METHOD_NAME" value="insertTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -523,19 +552,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserTableControllerTest.testConstructor" />
       <item itemvalue="JUnit.UserTableControllerTest.testConstructor0" />
       <item itemvalue="JUnit.UserTableControllerTest" />
       <item itemvalue="JUnit.UserTableControllerTest.testLogin" />
       <item itemvalue="JUnit.VehicleTableTest.createTable" />
+      <item itemvalue="JUnit.VehicleTableTest.insertTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VehicleTableTest.insertTest" />
         <item itemvalue="JUnit.VehicleTableTest.createTable" />
         <item itemvalue="JUnit.UserTableControllerTest.testLogin" />
         <item itemvalue="JUnit.UserTableControllerTest" />
         <item itemvalue="JUnit.UserTableControllerTest.testConstructor0" />
-        <item itemvalue="JUnit.UserTableControllerTest.testConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -549,47 +578,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540238544264</updated>
-      <workItem from="1543372240797" duration="2035000" />
+      <workItem from="1543372240797" duration="3335000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 46m 01s.xml">
+    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 21h 04m 48s.xml">
       <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 47m 37s.xml">
+    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 21h 04m 54s.xml">
       <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 50m 21s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 09m 24s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 50m 27s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 10m 35s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 51m 06s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 10m 40s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 55m 09s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 10m 55s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 55m 26s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 14m 08s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 55m 32s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 19m 29s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 56m 49s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 19m 35s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleTableTest_createTable - 2018.11.27 at 20h 57m 07s.xml">
-      <configuration name="VehicleTableTest.createTable" configurationId="JUnit" />
+    <history-entry file="VehicleTableTest_insertTest - 2018.11.27 at 21h 19m 58s.xml">
+      <configuration name="VehicleTableTest.insertTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10582000" />
+    <option name="totallyTimeSpent" value="11882000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="814" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20886981" />
@@ -603,8 +632,8 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32686982" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39889196" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32777777" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -613,7 +642,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32986766" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32921812" />
       <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.0" />
+      <window_info anchor="right" id="Database" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -623,6 +652,38 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.3297568" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20886981" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.32777777" />
+      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.32777777" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32921812" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32986766" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32921812" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.3297568" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -646,7 +707,7 @@
           <url>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</url>
           <line>18</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -823,13 +884,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserTableController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/table/UserTable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object/Trip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -846,13 +900,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e724aea7-c1b0-4e13-9e90-b8b4d5698cb5/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -873,13 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objectGateway/UserGateway.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -891,13 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -918,21 +951,56 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="45" />
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+        <state relative-caret-position="272">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ import database.SQLStatementExecuter;
 public class TripUserRelationTableCreator extends SQLStatementExecuter {
     
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         SQLStatement = "CREATE TABLE Relation("
                 + "UID BIGINT NOT NULL,"
                 + "TID BIGINT NOT NULL,"

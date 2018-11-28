@@ -7,7 +7,7 @@ import database.SQLStatementExecuter;
 public class MessageLoader extends SQLStatementExecuter {
     
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         
         SQLStatement = "SELECT id, umid, title, hidden, creator, postTime, body, trip from Message";
         

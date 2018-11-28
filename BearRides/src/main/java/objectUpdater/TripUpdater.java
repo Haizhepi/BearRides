@@ -11,7 +11,7 @@ import object.User;
 public class TripUpdater extends SQLStatementExecuter {
     
     @Override
-    public Boolean hook(Connection connection, Object object) {
+    public Boolean beforeHook(Connection connection, Object object) {
         Trip trip = (Trip) object;
         
         if(trip.getPrimaryKey() != null) {

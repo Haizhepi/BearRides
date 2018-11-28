@@ -11,7 +11,7 @@ import object.User;
 public class TripSaver extends SQLStatementExecuter {
     
     @Override
-    protected Boolean hook(Connection connection, Object object) {
+    protected Boolean beforeHook(Connection connection, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
         
