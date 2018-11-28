@@ -16,6 +16,7 @@ public class MessageUpdater extends SQLStatementExecuter {
                     + " SET umid = '" + message.getUMID() //CLOB
                     + "' SET title = '" + message.getTitle() //CLOB
                     + "' SET hidden = " + ((message.isHidden() == true) ? 1 : 0) //BIT
+                    + " SET notification = " + ((message.isNotification() == true) ? 1 : 0) //BIT
                     + " SET creator = " + message.getCreator().getPrimaryKey() //BIGINT foreign key
                     + " SET postTime = '" + message.getPostTime() //CLOB
                     + "' SET body = '" + message.getBody() //CLOB

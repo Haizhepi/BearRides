@@ -13,7 +13,6 @@ public class TripTableCreator extends SQLStatementExecuter {
                 + "id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
                 + "driver BIGINT NOT NULL, " //foreign key
                 + "message BIGINT NOT NULL, " //foreign key
-                + "riders FOREIGN_KEY_SET, " //nested table of foreign keys
                 + "requirements STRING_SET, " //nested table of CLOB
                 + "originTime BIGINT, "
                 + "destinTime BIGINT, "
@@ -22,9 +21,9 @@ public class TripTableCreator extends SQLStatementExecuter {
                 + "destinLoc CLOB, "
                 + "returnLoc CLOB, "
                 + "passengerCap INTEGER, "
-                + "PRIMARY KEY (id)"
-                + ", FOREIGN KEY (driver) REFERENCES User(id)"
-                + ", FOREIGN KEY (message) REFERENCES Message(id) );";
+                + "PRIMARY KEY (id), "
+                + "FOREIGN KEY (driver) REFERENCES User(id), "
+                + "FOREIGN KEY (message) REFERENCES Message(id) );";
         
         return true;
     }

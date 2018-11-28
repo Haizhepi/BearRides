@@ -14,11 +14,12 @@ public class MessageSaver extends SQLStatementExecuter {
         
         SQLStatement = "INSERT INTO Message ("
                 + ((key != null) ? "id, " : "")
-                + "umid, title, hidden, creator, postTime, body, trip) VALUES "
+                + "umid, title, hidden, notification, creator, postTime, body, trip) VALUES "
                 + "(" + ((key != null) ? key + ", " : "")
                 + "'" + message.getUMID()
                 + "', '" + message.getTitle()
                 + "', " + ((message.isHidden() == true) ? 1 : 0)
+                + ", " + ((message.isNotification() == true) ? 1 : 0)
                 + ", " + message.getCreator().getPrimaryKey()
                 + ", '" + message.getPostTime()
                 + "', '" + message.getBody()

@@ -22,8 +22,8 @@ public class UserTableCreator extends SQLStatementExecuter {
                 + "car BIGINT, " //foreign key
                 + "rating INTEGER NOT NULL, "
                 + "ratingCount INTEGER NOT NULL, "
-                + "PRIMARY KEY (id)"
-                + ", FOREIGN KEY (car) REFERENCES Vehicle(id) );";
+                + "PRIMARY KEY (id), "
+                + "FOREIGN KEY (car) REFERENCES Vehicle(id) );";
         
         return true;
     }
