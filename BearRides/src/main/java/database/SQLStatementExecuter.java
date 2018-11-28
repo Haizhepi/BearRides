@@ -19,7 +19,6 @@ public abstract class SQLStatementExecuter {
                 statement = connection.createStatement();
                 // execute update SQL stetement
                 statement.execute(SQLStatement);
-                System.out.println("Record is updated to DBUSER table!");
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             } finally {

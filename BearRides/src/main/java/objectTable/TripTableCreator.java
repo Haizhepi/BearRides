@@ -1,4 +1,4 @@
-package table;
+package objectTable;
 
 import java.sql.Connection;
 
@@ -22,7 +22,9 @@ public class TripTableCreator extends SQLStatementExecuter {
                 + "destinLoc CLOB, "
                 + "returnLoc CLOB, "
                 + "passengerCap INTEGER, "
-                + "PRIMARY KEY (id) );";
+                + "PRIMARY KEY (id)"
+                + ", FOREIGN KEY (driver) REFERENCES User(id)"
+                + ", FOREIGN KEY (message) REFERENCES Message(id) );";
         
         return true;
     }

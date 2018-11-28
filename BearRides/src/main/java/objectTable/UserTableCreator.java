@@ -1,4 +1,4 @@
-package table;
+package objectTable;
 
 import java.sql.Connection;
 
@@ -22,8 +22,8 @@ public class UserTableCreator extends SQLStatementExecuter {
                 + "car BIGINT, " //foreign key
                 + "rating INTEGER NOT NULL, "
                 + "ratingCount INTEGER NOT NULL, "
-                + "notifications FOREIGN_KEY_SET, " //nested table of BIGINT foreign keys
-                + "PRIMARY KEY (id) );";
+                + "PRIMARY KEY (id)"
+                + ", FOREIGN KEY (car) REFERENCES Vehicle(id) );";
         
         return true;
     }

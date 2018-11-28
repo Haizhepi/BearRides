@@ -1,4 +1,4 @@
-package table;
+package objectTable;
 
 import java.sql.Connection;
 

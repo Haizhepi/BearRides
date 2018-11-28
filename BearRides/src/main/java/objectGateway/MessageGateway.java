@@ -10,7 +10,6 @@ import database.SQLStatementExecuter;
 import object.Message;
 import objectDeleter.MessageDeleter;
 import objectLoader.MessageLoader;
-import objectLoader.UnlinkedMessage;
 import objectSaver.MessageSaver;
 
 public class MessageGateway extends Gateway<Message> {
@@ -46,15 +45,7 @@ public class MessageGateway extends Gateway<Message> {
                 System.out.println("ResultSet is empty in Java");
             } else {
                 do {
-                    UnlinkedMessage message = new UnlinkedMessage(rs.getLong("creator"), rs.getLong("trip"));
-                    message.setBody(rs.getString("body"));
-                    message.setHidden(rs.getBoolean("hidden"));
-                    message.setPostTime(rs.getString("postTime"));
-                    message.setPrimaryKey(rs.getLong("id"));
-                    message.setTitle(rs.getString("title"));
-                    message.setUmid(rs.getString("umid"));
-                    
-                    messages.add(message);
+                    messages.add(null);
                 } while (rs.next());
             }
         } catch (SQLException e) {

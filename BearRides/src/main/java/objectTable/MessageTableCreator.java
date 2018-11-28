@@ -1,4 +1,4 @@
-package table;
+package objectTable;
 
 import java.sql.Connection;
 
@@ -14,12 +14,14 @@ public class MessageTableCreator extends SQLStatementExecuter {
                 + "umid CLOB NOT NULL, "
                 + "title CLOB NOT NULL, "
                 + "hidden BIT NOT NULL, "
+                + "notification BIT NOT NULL, "
                 + "creator BIGINT NOT NULL, " //foreign key
                 + "postTime CLOB NOT NULL, "
                 + "body CLOB NOT NULL, "
                 + "trip BIGINT, " //foreign key
                 + "PRIMARY KEY (id) "
-                + ", FOREIGN KEY(creator) REFERENCES User(id) );";
+                + ", FOREIGN KEY(creator) REFERENCES User(id)"
+                + ", FOREIGN KEY(trip) REFERENCES Trip(id) );";
         
         return true;
     }

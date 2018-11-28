@@ -106,6 +106,16 @@ public class Message implements Comparable<Message> {
         return primaryKey;
     }
     
+    /*
+     * description: getter
+     * return: primaryKey
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Boolean isNotification() {
+        return notification;
+    }
+    
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
     
     /*
@@ -156,6 +166,16 @@ public class Message implements Comparable<Message> {
      */
     public void setPrimaryKey(Long key) {
         primaryKey = key;
+    }
+    
+    /*
+     * description: setter
+     * return: void
+     * precondition: void
+     * postcondition: isNotification is set
+     */
+    public void setNotification(Boolean notification) {
+        this.notification = notification;
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
@@ -237,4 +257,5 @@ public class Message implements Comparable<Message> {
     protected String postTime;
     protected String body;
     protected Trip trip; //reference
+    protected Boolean notification = false;
 }

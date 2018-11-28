@@ -4,15 +4,12 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 
 import database.SQLStatementExecuter;
 import object.Trip;
 import objectDeleter.TripDeleter;
 import objectLoader.TripLoader;
-import objectLoader.UnlinkedTrip;
 import objectSaver.TripSaver;
 
 public class TripGateway extends Gateway<Trip> {
@@ -48,13 +45,7 @@ public class TripGateway extends Gateway<Trip> {
                 System.out.println("ResultSet is empty in Java");
             } else {
                 do {
-                    UnlinkedTrip trip = new UnlinkedTrip(rs.getLong("creator"), rs.getLong("trip"), Arrays.asList((Long[]) (rs.getArray("requirements")).getArray()));
-                    trip.setDestinLoc(rs.getString("destinLoc"));
-                    trip.setDestinTime(new Date(rs.getLong("destinTime")));
-                    trip.setOriginLoc(rs.getString("originLoc"));
-                    trip.setOriginTime(new Date(rs.getLong("originTime")));
-                    
-                    trips.add(trip);
+                    trips.add(null);
                 } while (rs.next());
             }
         } catch (SQLException e) {
