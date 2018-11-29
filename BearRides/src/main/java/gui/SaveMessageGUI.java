@@ -18,12 +18,12 @@ import object.Message;
  *
  * @author Xingan_Wan
  */
-public class EditMessageGUI extends javax.swing.JPanel {
+public class SaveMessageGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form MessageGUI
      */
-    public EditMessageGUI(DashBoard cp, Message message) {
+    public SaveMessageGUI(DashBoard cp, Message message) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
@@ -164,6 +164,7 @@ public class EditMessageGUI extends javax.swing.JPanel {
         // TODO add your handling code here:
         message.setBody(jTextArea1.getText());
         message.setTitle(titleTextField.getText());
+        tc.postMessage(message);
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
@@ -197,7 +198,7 @@ public class EditMessageGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new EditMessageGUI(cp, null));
+                cp.getPanelController().changeFrame(new SaveMessageGUI(cp, null));
             }
         });
     }
@@ -219,7 +220,6 @@ public class EditMessageGUI extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
     
     private DashBoard cp;
-    @SuppressWarnings("unused")
     private MessageCollectionController tc;
     private PanelController pc;
     private Message message;

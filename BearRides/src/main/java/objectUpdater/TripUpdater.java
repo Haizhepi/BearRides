@@ -41,8 +41,8 @@ public class TripUpdater implements SQLStatementExecuter {
             for(String requirement : trip.getRequirements()) {
                 statement.execute("INSERT INTO TripRequirement (tid, req) VALUES ("
                         + trip.getPrimaryKey()
-                        + ", " + requirement
-                        + ")");
+                        + ", '" + requirement
+                        + "')");
             }
 
             for(User user : trip.getRiders()) {

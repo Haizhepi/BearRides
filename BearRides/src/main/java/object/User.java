@@ -101,6 +101,16 @@ public class User implements Comparable<User> {
     
     /*
      * description: getter
+     * return: the users name
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String toString() {
+        return name;
+    }
+    
+    /*
+     * description: getter
      * return: uuid
      * precondition: void
      * postcondition: nothing is changed
@@ -237,6 +247,16 @@ public class User implements Comparable<User> {
      */
     public Integer getRatingCount() {
         return ratingCount;
+    }
+    
+    /*
+     * description: getter
+     * return: trips
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public List<Trip> getTrips() {
+        return trips;
     }
 
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/

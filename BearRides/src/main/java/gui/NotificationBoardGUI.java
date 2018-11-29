@@ -12,6 +12,8 @@ import org.apache.logging.log4j.LogManager;
 import controller.DashBoard;
 import controller.MessageCollectionController;
 import controller.PanelController;
+import object.Message;
+import object.User;
 
 /**
  *
@@ -22,12 +24,13 @@ public class NotificationBoardGUI extends javax.swing.JPanel {
     /**
      * Creates new form MessageTableGUI1
      */
-    public NotificationBoardGUI(DashBoard cp) {
+    public NotificationBoardGUI(DashBoard cp, User user) {
         //later make load from file
         this.cp = cp;
         tc = cp.getMessageCollectionController();
         messageTable = tc.getTable();
         pc = cp.getPanelController();
+        this.user = user;
         initComponents();
     }
 
@@ -41,43 +44,15 @@ public class NotificationBoardGUI extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane = new javax.swing.JScrollPane();
-        messageTable = new javax.swing.JTable();
         backButton = new javax.swing.JButton();
         addButton = new javax.swing.JButton();
-
-        messageTable.setFont(new java.awt.Font("Leelawadee", 0, 14)); // NOI18N
-        messageTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Notification", "Time Post", "Creator"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        messageTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        messageTable.setFillsViewportHeight(true);
-        messageTable.setRowHeight(20);
-        messageTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        messageTable.getTableHeader().setReorderingAllowed(false);
+        
         messageTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 messageTableMouseClicked(evt);
             }
         });
         jScrollPane.setViewportView(messageTable);
-        if (messageTable.getColumnModel().getColumnCount() > 0) {
-            messageTable.getColumnModel().getColumn(0).setPreferredWidth(500);
-            messageTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-            messageTable.getColumnModel().getColumn(2).setPreferredWidth(100);
-        }
 
         backButton.setBackground(new java.awt.Color(0, 102, 0));
         backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
@@ -134,7 +109,7 @@ public class NotificationBoardGUI extends javax.swing.JPanel {
         if (2 == evt.getClickCount()) {
             int mouseIndex = messageTable.rowAtPoint(evt.getPoint());
             mouseIndex = messageTable.convertRowIndexToModel(mouseIndex);
-            pc.changeFrame(new ViewMessageGUI(cp));
+            pc.changeFrame(new ViewMessageGUI(cp, (Message) messageTable.getValueAt(mouseIndex, 0)));
         }
         
     }//GEN-LAST:event_messageTableMouseClicked
@@ -162,7 +137,7 @@ public class NotificationBoardGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new NotificationBoardGUI(cp));
+                cp.getPanelController().changeFrame(new NotificationBoardGUI(cp, null));
             }
         });
     }
@@ -177,5 +152,7 @@ public class NotificationBoardGUI extends javax.swing.JPanel {
     private DashBoard cp;
     private MessageCollectionController tc;
     private PanelController pc;
+    @SuppressWarnings("unused")
+    private User user;
     private static final long serialVersionUID = 5164463894978645312L;
 }

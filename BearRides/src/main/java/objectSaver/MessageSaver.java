@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Message;
+import object.Trip;
 
 public class MessageSaver implements SQLStatementExecuter {
     
@@ -23,6 +24,7 @@ public class MessageSaver implements SQLStatementExecuter {
         
         try {
             statement = connection.createStatement();
+            Trip trip = message.getTrip();
             
             statement.executeUpdate("INSERT INTO Message ("
                     + ((key != null) ? "id, " : "")
@@ -35,7 +37,7 @@ public class MessageSaver implements SQLStatementExecuter {
                     + "', " + message.getCreator().getPrimaryKey()
                     + ", '" + message.getPostTime()
                     + "', '" + message.getBody()
-                    + "', " + message.getTrip().getPrimaryKey()
+                    + "', " + ((trip == null) ? "NULL" : trip.getPrimaryKey())
                     + ")", Statement.RETURN_GENERATED_KEYS);
             
             if(key == null) {

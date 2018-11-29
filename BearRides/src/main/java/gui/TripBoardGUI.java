@@ -6,12 +6,15 @@
 package gui;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 import org.apache.logging.log4j.LogManager;
 
 import controller.DashBoard;
 import controller.MessageCollectionController;
 import controller.PanelController;
+import object.Trip;
+import object.User;
 
 /**
  *
@@ -22,12 +25,13 @@ public class TripBoardGUI extends javax.swing.JPanel {
     /**
      * Creates new form MessageTableGUI1
      */
-    public TripBoardGUI(DashBoard cp) {
+    public TripBoardGUI(DashBoard cp, User user) {
         //later make load from file
         this.cp = cp;
         tc = cp.getMessageCollectionController();
-        messageTable = tc.getTable();
+        tripTable = new JTable();
         pc = cp.getPanelController();
+        this.user = user;
         initComponents();
     }
 
@@ -41,41 +45,38 @@ public class TripBoardGUI extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane = new javax.swing.JScrollPane();
-        messageTable = new javax.swing.JTable();
+        tripTable = new javax.swing.JTable();
         backButton = new javax.swing.JButton();
 
-        messageTable.setFont(new java.awt.Font("Leelawadee", 0, 14)); // NOI18N
-        messageTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Trip", "Time Post", "Creator"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false
-            };
+        tripTable.setFont(new java.awt.Font("Leelawadee", 0, 14)); // NOI18N
+        
+        DefaultTableModel model = new DefaultTableModel() {
+            private static final long serialVersionUID = -2303248161806139568L;
+            boolean[] canEdit = new boolean [] {false};
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
-        });
-        messageTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        messageTable.setFillsViewportHeight(true);
-        messageTable.setRowHeight(20);
-        messageTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        messageTable.getTableHeader().setReorderingAllowed(false);
-        messageTable.addMouseListener(new java.awt.event.MouseAdapter() {
+        };
+        
+        for(Trip trip : user.getTrips()) {
+            model.addRow(new Trip[]{trip});
+        }
+        tripTable.setModel(model);
+        
+        tripTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tripTable.setFillsViewportHeight(true);
+        tripTable.setRowHeight(20);
+        tripTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        tripTable.getTableHeader().setReorderingAllowed(false);
+        tripTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 messageTableMouseClicked(evt);
             }
         });
-        jScrollPane.setViewportView(messageTable);
-        if (messageTable.getColumnModel().getColumnCount() > 0) {
-            messageTable.getColumnModel().getColumn(0).setPreferredWidth(500);
-            messageTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-            messageTable.getColumnModel().getColumn(2).setPreferredWidth(100);
+        jScrollPane.setViewportView(tripTable);
+        if (tripTable.getColumnModel().getColumnCount() > 0) {
+            tripTable.getColumnModel().getColumn(0).setPreferredWidth(500);
         }
 
         backButton.setBackground(new java.awt.Color(0, 102, 0));
@@ -110,9 +111,9 @@ public class TripBoardGUI extends javax.swing.JPanel {
     private void messageTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_messageTableMouseClicked
         // TODO add your handling code here:
         if (2 == evt.getClickCount()) {
-            int mouseIndex = messageTable.rowAtPoint(evt.getPoint());
-            mouseIndex = messageTable.convertRowIndexToModel(mouseIndex);
-            pc.changeFrame(new ViewMessageGUI(cp));
+            int mouseIndex = tripTable.rowAtPoint(evt.getPoint());
+            mouseIndex = tripTable.convertRowIndexToModel(mouseIndex);
+            pc.changeFrame(new ViewTripGUI(cp, ((Trip) tripTable.getValueAt(mouseIndex, 0)).getMessage()));
         }
         
     }//GEN-LAST:event_messageTableMouseClicked
@@ -136,7 +137,7 @@ public class TripBoardGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new TripBoardGUI(cp));
+                cp.getPanelController().changeFrame(new TripBoardGUI(cp, null));
             }
         });
     }
@@ -144,11 +145,13 @@ public class TripBoardGUI extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JScrollPane jScrollPane;
-    private javax.swing.JTable messageTable;
+    private javax.swing.JTable tripTable;
     // End of variables declaration//GEN-END:variables
     
     private DashBoard cp;
+    @SuppressWarnings("unused")
     private MessageCollectionController tc;
     private PanelController pc;
+    private User user;
     private static final long serialVersionUID = 5164463894978645312L;
 }

@@ -141,7 +141,7 @@ public class LoginGUI extends javax.swing.JPanel {
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         User user = uc.login(emailTextField.getText(), new String(jPasswordField1.getPassword()));
         if(user != null) {
-            pc.changeFrame(new HomePageGUI(cp));
+            pc.changeFrame(new HomePageGUI(cp, user));
         } else {
         }
         

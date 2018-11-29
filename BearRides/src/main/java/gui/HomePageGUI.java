@@ -11,6 +11,9 @@ import org.apache.logging.log4j.LogManager;
 
 import controller.DashBoard;
 import controller.PanelController;
+import object.User;
+import main.Shutdown;
+
 /**
  *
  * @author Xingan_wan
@@ -20,9 +23,10 @@ public class HomePageGUI extends JPanel {
     /**
      * Creates new form HomePageGUI
      */
-    public HomePageGUI(DashBoard cp) {
+    public HomePageGUI(DashBoard cp, User user) {
         this.cp = cp;
         pc = cp.getPanelController();
+        this.user = user;
         initComponents();
     }
 
@@ -172,23 +176,24 @@ public class HomePageGUI extends JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tripButtonActionPerformed
-        pc.changeFrame(new MessageBoardGUI(cp));
+        pc.changeFrame(new TripBoardGUI(cp, user));
     }//GEN-LAST:event_tripButtonActionPerformed
 
     private void messageBoardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageBoardButtonActionPerformed
-        pc.changeFrame(new MessageBoardGUI(cp));
+        pc.changeFrame(new MessageBoardGUI(cp, user));
     }//GEN-LAST:event_messageBoardButtonActionPerformed
 
     private void accountSettingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountSettingButtonActionPerformed
-        pc.changeFrame(new ViewUserGUI(cp));
+        pc.changeFrame(new ViewUserGUI(cp, user));
     }//GEN-LAST:event_accountSettingButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         pc.closeFrame();
+        new Shutdown(cp);
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void notificationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationButtonActionPerformed
-        pc.changeFrame(new MessageBoardGUI(cp));
+        pc.changeFrame(new NotificationBoardGUI(cp, user));
     }//GEN-LAST:event_notificationButtonActionPerformed
 
     public static void main(String[] args) throws Exception{
@@ -210,7 +215,7 @@ public class HomePageGUI extends JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new HomePageGUI(cp));
+                cp.getPanelController().changeFrame(new HomePageGUI(cp, null));
             }
         });
     }
@@ -231,5 +236,6 @@ public class HomePageGUI extends JPanel {
     
     private DashBoard cp;
     private PanelController pc;
+    private User user;
     private static final long serialVersionUID = -3303691846979303846L;
 }

@@ -11,6 +11,8 @@ import org.apache.logging.log4j.LogManager;
 
 import controller.DashBoard;
 import controller.PanelController;
+import object.User;
+import object.Vehicle;
 
 /**
  *
@@ -21,9 +23,11 @@ public class EditVehicleGUI extends javax.swing.JPanel {
     /**
      * Creates new form DriverInfo
      */
-    public EditVehicleGUI(DashBoard cp) {
+    public EditVehicleGUI(DashBoard cp, User user) {
         this.cp = cp;
         this.pc = cp.getPanelController();
+        this.vehicle = user.getVehicle();
+        this.user = user;
         initComponents();
     }
 
@@ -38,9 +42,9 @@ public class EditVehicleGUI extends javax.swing.JPanel {
         modelLabel = new javax.swing.JLabel();
         capaLabel = new javax.swing.JLabel();
         spaceLabel = new javax.swing.JLabel();
-        modelFormattedTextField = new javax.swing.JFormattedTextField();
-        capaFormattedTextField = new javax.swing.JFormattedTextField();
-        spaceFormattedTextField = new javax.swing.JFormattedTextField();
+        modelFormattedTextField = new javax.swing.JFormattedTextField(vehicle.getModel());
+        capaFormattedTextField = new javax.swing.JFormattedTextField(vehicle.getPassengerCap());
+        spaceFormattedTextField = new javax.swing.JFormattedTextField(vehicle.getStorageSpace());
         okButton = new javax.swing.JButton();
         bottomSeparator = new javax.swing.JSeparator();
         backButton = new javax.swing.JButton();
@@ -154,7 +158,11 @@ public class EditVehicleGUI extends javax.swing.JPanel {
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        // TODO add your handling code here:
+        vehicle.setModel(modelFormattedTextField.getText());
+        vehicle.setPassengerCap(Integer.parseInt(capaFormattedTextField.getText()));
+        vehicle.setStorageSpace(spaceFormattedTextField.getText());
+        
+        user.setVehicle(vehicle);
         pc.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
     
@@ -177,7 +185,7 @@ public class EditVehicleGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new EditVehicleGUI(cp));
+                cp.getPanelController().changeFrame(new EditVehicleGUI(cp, null));
             }
         });
     }
@@ -199,5 +207,7 @@ public class EditVehicleGUI extends javax.swing.JPanel {
     @SuppressWarnings("unused")
     private DashBoard cp;
     private PanelController pc;
+    private Vehicle vehicle;
+    private User user;
     private static final long serialVersionUID = 7794269541984046099L;
 }

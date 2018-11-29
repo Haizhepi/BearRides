@@ -35,6 +35,16 @@ public class Message implements Comparable<Message> {
     
     /*
      * description: getter
+     * return: title
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public String toString() {
+        return title;
+    }
+    
+    /*
+     * description: getter
      * return: postTime
      * precondition: void
      * postcondition: nothing is changed

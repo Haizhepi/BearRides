@@ -5,9 +5,13 @@
  */
 package gui;
 
+import java.util.Date;
+
 import controller.DashBoard;
 import controller.MessageCollectionController;
 import controller.PanelController;
+import object.Message;
+import object.Trip;
 
 /**
  *
@@ -18,10 +22,12 @@ public class ViewTripGUI extends javax.swing.JPanel {
     /**
      * Creates new form TripGUI
      */
-    public ViewTripGUI(DashBoard cp) {
+    public ViewTripGUI(DashBoard cp, Message message) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
+        this.trip = message.getTrip() == null ? new Trip(message.getCreator(), new Date(), 0) : message.getTrip();
+        this.message = message;
         initComponents();
     }
 
@@ -37,23 +43,23 @@ public class ViewTripGUI extends javax.swing.JPanel {
         driverLabel = new javax.swing.JLabel();
         viewTripLabel = new javax.swing.JLabel();
         separator3 = new javax.swing.JSeparator();
-        driverTextField = new javax.swing.JTextField();
+        driverTextField = new javax.swing.JTextField(trip == null ? "" : trip.getDriver() == null ? "" : trip.getDriver().getName());
         ridersLabel = new javax.swing.JLabel();
-        ridersTextField = new javax.swing.JTextField();
+        ridersTextField = new javax.swing.JTextField("Stubbed");
         originTimeLabel = new javax.swing.JLabel();
-        originTimeTextField = new javax.swing.JTextField();
+        originTimeTextField = new javax.swing.JTextField(trip.getOriginTime() == null ? new Date().toString() : trip.getOriginTime().toString());
         originLocLabel = new javax.swing.JLabel();
-        originLocTextField = new javax.swing.JTextField();
+        originLocTextField = new javax.swing.JTextField(trip.getOriginLoc());
         desTimeLabel = new javax.swing.JLabel();
-        desTimeTextField = new javax.swing.JTextField();
+        desTimeTextField = new javax.swing.JTextField(trip.getDestinTime() == null ? new Date().toString() : trip.getDestinTime().toString());
         desLocLabel = new javax.swing.JLabel();
-        desLocTextField = new javax.swing.JTextField();
+        desLocTextField = new javax.swing.JTextField(trip.getDestinLoc());
         returnTimeLabel = new javax.swing.JLabel();
-        returnTimeTextField = new javax.swing.JTextField();
+        returnTimeTextField = new javax.swing.JTextField(trip.getReturnTime() == null ? new Date().toString() : trip.getReturnTime().toString());
         returnLocLabel = new javax.swing.JLabel();
-        returnLocTextField = new javax.swing.JTextField();
+        returnLocTextField = new javax.swing.JTextField(trip.getReturnLoc());
         passenCapLabel = new javax.swing.JLabel();
-        passenCapTextField = new javax.swing.JTextField();
+        passenCapTextField = new javax.swing.JTextField(trip == null ? "" : trip.getPassengerCap().toString());
         editButton = new javax.swing.JButton();
         separator1 = new javax.swing.JSeparator();
         separator2 = new javax.swing.JSeparator();
@@ -111,7 +117,7 @@ public class ViewTripGUI extends javax.swing.JPanel {
         returnLocTextField.setEditable(false);
 
         passenCapLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        passenCapLabel.setText("Passenger Capcity");
+        passenCapLabel.setText("Passenger Capacity");
 
         passenCapTextField.setEditable(false);
 
@@ -120,7 +126,7 @@ public class ViewTripGUI extends javax.swing.JPanel {
         editButton.setText("Edit");
         editButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editButtonActionPerformed(evt);
+                messageButtonActionPerformed(evt);
             }
         });
 
@@ -229,14 +235,12 @@ public class ViewTripGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
-    private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
-        // TODO add your handling code here:
-        pc.changeFrame(new EditTripGUI(cp));
-    }//GEN-LAST:event_editButtonActionPerformed
+    private void messageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageButtonActionPerformed
+        pc.changeFrame(new EditTripGUI(cp, message));
+    }//GEN-LAST:event_messageButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -266,10 +270,11 @@ public class ViewTripGUI extends javax.swing.JPanel {
     private javax.swing.JLabel viewTripLabel;
     // End of variables declaration//GEN-END:variables
     
-    @SuppressWarnings("unused")
     private DashBoard cp;
     @SuppressWarnings("unused")
     private MessageCollectionController tc;
     private PanelController pc;
+    private Trip trip;
+    private Message message;
     private static final long serialVersionUID = 8028047312528638693L;
 }

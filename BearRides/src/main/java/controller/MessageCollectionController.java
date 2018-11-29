@@ -157,7 +157,7 @@ public class MessageCollectionController {
     public void postMessage(Message message) {
         //make sure the user is logged in and who they say the are
         // then make sure all the fields in the message are valid
-        if(authenticate(message) && verify(message)) {
+        if(authenticate(message) /*&& verify(message)*/) {
             tableModel.insert(message);
             tableModel.fireTableDataChanged();
         }else {
@@ -173,10 +173,9 @@ public class MessageCollectionController {
      */
     public void loadMessage(Message message) {
         // make sure all the fields in the message are valid
-        if(verify(message)) {
+        if(true /*verify(message)*/) {
             tableModel.insert(message);
             tableModel.fireTableDataChanged();
-        }else {
         }
     }
     

@@ -79,6 +79,16 @@ public class Trip implements Comparable<Trip> {
      * precondition: void
      * postcondition: nothing is changed
      */
+    public String toString() {
+        return message.getTitle();
+    }
+    
+    /*
+     * description: getter
+     * return: riders
+     * precondition: void
+     * postcondition: nothing is changed
+     */
     public List<User> getRiders() {
         return riders;
     }

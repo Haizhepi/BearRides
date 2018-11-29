@@ -5,9 +5,13 @@
  */
 package gui;
 
+import java.util.Date;
+
 import controller.DashBoard;
 import controller.MessageCollectionController;
 import controller.PanelController;
+import object.Message;
+import object.Trip;
 
 /**
  *
@@ -18,10 +22,12 @@ public class EditTripGUI extends javax.swing.JPanel {
     /**
      * Creates new form TripGUI
      */
-    public EditTripGUI(DashBoard cp) {
+    public EditTripGUI(DashBoard cp, Message message) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
+        this.trip = message.getTrip() == null ? new Trip(message.getCreator(), new Date(), 0) : message.getTrip();
+        this.message = message;
         initComponents();
     }
 
@@ -34,26 +40,22 @@ public class EditTripGUI extends javax.swing.JPanel {
     private void initComponents() {
 
         backButton = new javax.swing.JButton();
-        driverLabel = new javax.swing.JLabel();
         tripLabel = new javax.swing.JLabel();
         separator3 = new javax.swing.JSeparator();
-        driverTextField = new javax.swing.JTextField();
-        ridersLabel = new javax.swing.JLabel();
-        ridersTextField = new javax.swing.JTextField();
         originTimeLabel = new javax.swing.JLabel();
-        originTimeTextField = new javax.swing.JTextField();
+        originTimeTextField = new javax.swing.JTextField(trip.getOriginTime() == null ? new Date().toString() : trip.getOriginTime().toString());
         originLocLabel = new javax.swing.JLabel();
-        originLocTextField = new javax.swing.JTextField();
+        originLocTextField = new javax.swing.JTextField(trip.getOriginLoc());
         desTimeLabel = new javax.swing.JLabel();
-        desTimeTextField = new javax.swing.JTextField();
+        desTimeTextField = new javax.swing.JTextField(trip.getDestinTime() == null ? new Date().toString() : trip.getDestinTime().toString());
         desLocLabel = new javax.swing.JLabel();
-        desLocTextField = new javax.swing.JTextField();
+        desLocTextField = new javax.swing.JTextField(trip.getDestinLoc());
         returnTimeLabel = new javax.swing.JLabel();
-        returnTimeTextField = new javax.swing.JTextField();
+        returnTimeTextField = new javax.swing.JTextField(trip.getReturnTime() == null ? new Date().toString() : trip.getReturnTime().toString());
         returnLocLabel = new javax.swing.JLabel();
-        returnLocTextField = new javax.swing.JTextField();
+        returnLocTextField = new javax.swing.JTextField(trip.getReturnLoc());
         passenCapLabel = new javax.swing.JLabel();
-        passenCapTextField = new javax.swing.JTextField();
+        passenCapTextField = new javax.swing.JTextField(trip.getPassengerCap().toString());
         okButton = new javax.swing.JButton();
         separator1 = new javax.swing.JSeparator();
         separator2 = new javax.swing.JSeparator();
@@ -67,14 +69,8 @@ public class EditTripGUI extends javax.swing.JPanel {
             }
         });
 
-        driverLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        driverLabel.setText("Driver");
-
         tripLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         tripLabel.setText("Trip");
-
-        ridersLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        ridersLabel.setText("Riders");
 
         originTimeLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         originTimeLabel.setText("Origin Time");
@@ -95,7 +91,7 @@ public class EditTripGUI extends javax.swing.JPanel {
         returnLocLabel.setText("Return Location");
 
         passenCapLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        passenCapLabel.setText("Passenger Capcity");
+        passenCapLabel.setText("Passenger Capacity");
 
         okButton.setBackground(new java.awt.Color(0, 102, 0));
         okButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
@@ -116,9 +112,7 @@ public class EditTripGUI extends javax.swing.JPanel {
                     .addComponent(separator3)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(driverLabel)
                             .addComponent(tripLabel)
-                            .addComponent(ridersLabel)
                             .addComponent(originTimeLabel)
                             .addComponent(originLocLabel)
                             .addComponent(passenCapLabel)
@@ -130,8 +124,6 @@ public class EditTripGUI extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 140, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(driverTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ridersTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(originTimeTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(originLocTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(passenCapTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -158,14 +150,6 @@ public class EditTripGUI extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(tripLabel)
                 .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(driverLabel)
-                    .addComponent(driverTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ridersLabel)
-                    .addComponent(ridersTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(originTimeLabel)
                     .addComponent(originTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -211,12 +195,21 @@ public class EditTripGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
+    @SuppressWarnings("deprecation")
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        // TODO add your handling code here:
+        trip.setDestinLoc(desLocTextField.getText());
+        trip.setReturnLoc(returnLocLabel.getText());
+        trip.setOriginLoc(originLocTextField.getText());
+        trip.setDestinTime(new Date(desTimeTextField.getText()));
+        trip.setReturnTime(new Date(returnTimeTextField.getText()));
+        trip.setOriginTime(new Date(originTimeTextField.getText()));
+        trip.setMessage(message);
+        message.setTrip(trip);
+        
+        pc.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
 
 
@@ -226,8 +219,6 @@ public class EditTripGUI extends javax.swing.JPanel {
     private javax.swing.JTextField desLocTextField;
     private javax.swing.JLabel desTimeLabel;
     private javax.swing.JTextField desTimeTextField;
-    private javax.swing.JLabel driverLabel;
-    private javax.swing.JTextField driverTextField;
     private javax.swing.JButton okButton;
     private javax.swing.JLabel originLocLabel;
     private javax.swing.JTextField originLocTextField;
@@ -239,8 +230,6 @@ public class EditTripGUI extends javax.swing.JPanel {
     private javax.swing.JTextField returnLocTextField;
     private javax.swing.JLabel returnTimeLabel;
     private javax.swing.JTextField returnTimeTextField;
-    private javax.swing.JLabel ridersLabel;
-    private javax.swing.JTextField ridersTextField;
     private javax.swing.JSeparator separator1;
     private javax.swing.JSeparator separator2;
     private javax.swing.JSeparator separator3;
@@ -252,5 +241,7 @@ public class EditTripGUI extends javax.swing.JPanel {
     @SuppressWarnings("unused")
     private MessageCollectionController tc;
     private PanelController pc;
+    private Trip trip;
+    private Message message;
     private static final long serialVersionUID = 6279892748934017278L;
 }

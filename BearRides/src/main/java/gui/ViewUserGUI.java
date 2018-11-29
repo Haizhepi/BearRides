@@ -8,6 +8,7 @@ package gui;
 import controller.DashBoard;
 import controller.MessageCollectionController;
 import controller.PanelController;
+import object.User;
 
 /**
  *
@@ -19,10 +20,11 @@ public class ViewUserGUI extends javax.swing.JPanel {
      * Creates new form ViewUser
      * @return 
      */
-    public ViewUserGUI(DashBoard cp) {
+    public ViewUserGUI(DashBoard cp, User user) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
+        this.user = user;
         initComponents();
     }
 
@@ -36,32 +38,26 @@ public class ViewUserGUI extends javax.swing.JPanel {
 
         ViewUserInfoLabel = new javax.swing.JLabel();
         upperSeparator = new javax.swing.JSeparator();
-        firstnameLabel = new javax.swing.JLabel();
-        firstNameFormattedTextField = new javax.swing.JFormattedTextField();
-        lastnameLabel = new javax.swing.JLabel();
-        lastNameFormattedTextField = new javax.swing.JFormattedTextField();
-        ageFormattedTextField = new javax.swing.JFormattedTextField();
+        nameLabel = new javax.swing.JLabel();
+        nameFormattedTextField = new javax.swing.JFormattedTextField(user.getName());
+        ageFormattedTextField = new javax.swing.JFormattedTextField(user.getAge().toString());
         genderLabel = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
         contactLabel = new javax.swing.JLabel();
-        contactFormattedTextField = new javax.swing.JFormattedTextField();
+        contactFormattedTextField = new javax.swing.JFormattedTextField(user.getContact());
         isDriverLabel = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox1.setSelected(user.isDriver());
         editButton = new javax.swing.JButton();
         D_VInfoButton = new javax.swing.JButton();
 
         ViewUserInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         ViewUserInfoLabel.setText("View User Information");
 
-        firstnameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        firstnameLabel.setText("First Name");
+        nameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
+        nameLabel.setText("name");
 
-        firstNameFormattedTextField.setEditable(false);
-
-        lastnameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        lastnameLabel.setText("Last Name");
-
-        lastNameFormattedTextField.setEditable(false);
+        nameFormattedTextField.setEditable(false);
 
         ageFormattedTextField.setEditable(false);
 
@@ -127,12 +123,10 @@ public class ViewUserGUI extends javax.swing.JPanel {
                             .addComponent(contactFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lastnameLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(firstnameLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(nameLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(54, 54, 54)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(firstNameFormattedTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
-                            .addComponent(lastNameFormattedTextField))))
+                            .addComponent(nameFormattedTextField)))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(77, 77, 77)
@@ -154,12 +148,8 @@ public class ViewUserGUI extends javax.swing.JPanel {
                 .addComponent(upperSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(firstnameLabel)
-                    .addComponent(firstNameFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lastnameLabel)
-                    .addComponent(lastNameFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nameLabel)
+                    .addComponent(nameFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(genderLabel)
@@ -189,12 +179,12 @@ public class ViewUserGUI extends javax.swing.JPanel {
 
     private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
         // TODO add your handling code here:
-        pc.changeFrame(new EditUserGUI(cp));
+        pc.changeFrame(new EditUserGUI(cp, user));
     }//GEN-LAST:event_editButtonActionPerformed
 
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
         // TODO add your handling code here:
-        pc.changeFrame(new ViewVehicleGUI(cp));
+        pc.changeFrame(new ViewVehicleGUI(cp, user));
     }//GEN-LAST:event_D_VInfoButtonActionPerformed
 
 
@@ -206,20 +196,18 @@ public class ViewUserGUI extends javax.swing.JPanel {
     private javax.swing.JFormattedTextField contactFormattedTextField;
     private javax.swing.JLabel contactLabel;
     private javax.swing.JButton editButton;
-    private javax.swing.JFormattedTextField firstNameFormattedTextField;
-    private javax.swing.JLabel firstnameLabel;
     private javax.swing.JLabel genderLabel;
     private javax.swing.JLabel isDriverLabel;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JFormattedTextField lastNameFormattedTextField;
-    private javax.swing.JLabel lastnameLabel;
+    private javax.swing.JFormattedTextField nameFormattedTextField;
+    private javax.swing.JLabel nameLabel;
     private javax.swing.JSeparator upperSeparator;
     // End of variables declaration//GEN-END:variables
     
-    @SuppressWarnings("unused")
     private DashBoard cp;
     @SuppressWarnings("unused")
     private MessageCollectionController tc;
     private PanelController pc;
+    private User user;
     private static final long serialVersionUID = -4418835094826682827L;
 }

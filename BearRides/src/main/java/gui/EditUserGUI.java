@@ -10,15 +10,17 @@ import org.apache.logging.log4j.LogManager;
 
 import controller.DashBoard;
 import controller.PanelController;
+import object.User;
 
 public class EditUserGUI extends JPanel {
     
     /**
      * Creates new form UserGUI
      */
-    public EditUserGUI(DashBoard cp) {
+    public EditUserGUI(DashBoard cp, User user) {
         this.cp = cp;
         this.pm = cp.getPanelController();
+        this.user = user;
         initComponents();
     }
 
@@ -32,18 +34,14 @@ public class EditUserGUI extends JPanel {
 
         userInfoLabel = new javax.swing.JLabel();
         reqLabel = new javax.swing.JLabel();
-        firstnameLabel = new javax.swing.JLabel();
-        lastnameLabel = new javax.swing.JLabel();
+        nameLabel = new javax.swing.JLabel();
         ageLabel = new javax.swing.JLabel();
         genderLabel = new javax.swing.JLabel();
         contactLabel = new javax.swing.JLabel();
-        emailLabel = new javax.swing.JLabel();
-        firstNameFormattedTextField = new javax.swing.JFormattedTextField();
-        lastNameFormattedTextField = new javax.swing.JFormattedTextField();
-        ageFormattedTextField = new javax.swing.JFormattedTextField();
-        genderFormattedTextField = new javax.swing.JFormattedTextField();
-        contactFormattedTextField = new javax.swing.JFormattedTextField();
-        emailFormattedTextField = new javax.swing.JFormattedTextField();
+        nameFormattedTextField = new javax.swing.JFormattedTextField(user.getName());
+        ageFormattedTextField = new javax.swing.JFormattedTextField(user.getAge());
+        genderFormattedTextField = new javax.swing.JFormattedTextField(user.getGender() == false ? "Male" : "Female");
+        contactFormattedTextField = new javax.swing.JFormattedTextField(user.getContact());
         upperSeparator = new javax.swing.JSeparator();
         LowerSeparator = new javax.swing.JSeparator();
         okButton = new javax.swing.JButton();
@@ -62,11 +60,8 @@ public class EditUserGUI extends JPanel {
         reqLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         reqLabel.setText("* Indicates required field");
 
-        firstnameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        firstnameLabel.setText("First Name*");
-
-        lastnameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        lastnameLabel.setText("Last Name*");
+        nameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
+        nameLabel.setText("Last Name*");
 
         ageLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         ageLabel.setText("Age*");
@@ -76,9 +71,6 @@ public class EditUserGUI extends JPanel {
 
         contactLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         contactLabel.setText("Contact (Phone/WeChat#)*");
-
-        emailLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        emailLabel.setText("Email Address*");
 
         okButton.setBackground(new java.awt.Color(255, 255, 51));
         okButton.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
@@ -139,14 +131,10 @@ public class EditUserGUI extends JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(firstnameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addGap(62, 62, 62))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(lastnameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(nameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addGap(119, 119, 119))
                                             .addComponent(genderLabel)
-                                            .addComponent(contactLabel)
-                                            .addComponent(emailLabel))
+                                            .addComponent(contactLabel))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(ageLabel)
@@ -163,9 +151,7 @@ public class EditUserGUI extends JPanel {
                             .addComponent(contactFormattedTextField)
                             .addComponent(genderFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(ageFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lastNameFormattedTextField)
-                            .addComponent(firstNameFormattedTextField)
-                            .addComponent(emailFormattedTextField))))
+                            .addComponent(nameFormattedTextField))))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(272, 272, 272)
@@ -186,12 +172,8 @@ public class EditUserGUI extends JPanel {
                 .addComponent(upperSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(firstnameLabel)
-                    .addComponent(firstNameFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lastnameLabel)
-                    .addComponent(lastNameFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nameLabel)
+                    .addComponent(nameFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ageFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -204,10 +186,6 @@ public class EditUserGUI extends JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(contactLabel)
                     .addComponent(contactFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(emailLabel)
-                    .addComponent(emailFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(passwordLabel)
@@ -227,20 +205,30 @@ public class EditUserGUI extends JPanel {
                 .addGap(64, 64, 64))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ageFormattedTextField, contactFormattedTextField, emailFormattedTextField, firstNameFormattedTextField, genderFormattedTextField, lastNameFormattedTextField});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ageFormattedTextField, contactFormattedTextField, genderFormattedTextField, nameFormattedTextField});
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {backButton, okButton});
 
     }// </editor-fold>//GEN-END:initComponents
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        // TODO add your handling code here:
+        String pass1 = new String(setPasswordField.getPassword()),
+                pass2 = new String(comfirmPasswordField.getPassword());
+        
+        if(pass1.equals(pass2)) {
+            user.setPassHash(pass1.hashCode());
+            user.setAge(Integer.parseInt(ageFormattedTextField.getText()));
+            user.setContact(contactFormattedTextField.getText());
+            user.setName(nameFormattedTextField.getText());
+            user.setGender(genderFormattedTextField.getText() == "Male");
+        }
+        
         pm.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
 
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
         // TODO add your handling code here:
-        pm.changeFrame(new ViewVehicleGUI(cp));
+        pm.changeFrame(new EditVehicleGUI(cp, user));
 
     }//GEN-LAST:event_D_VInfoButtonActionPerformed
 
@@ -268,7 +256,7 @@ public class EditUserGUI extends JPanel {
                    
                    DashBoard cp = new DashBoard();
                    cp.load();
-                   cp.getPanelController().changeFrame(new EditUserGUI(cp));
+                   cp.getPanelController().changeFrame(new EditUserGUI(cp, null));
                }
            });
        }
@@ -282,14 +270,10 @@ public class EditUserGUI extends JPanel {
     private javax.swing.JPasswordField comfirmPasswordField;
     private javax.swing.JFormattedTextField contactFormattedTextField;
     private javax.swing.JLabel contactLabel;
-    private javax.swing.JFormattedTextField emailFormattedTextField;
-    private javax.swing.JLabel emailLabel;
-    private javax.swing.JFormattedTextField firstNameFormattedTextField;
-    private javax.swing.JLabel firstnameLabel;
     private javax.swing.JFormattedTextField genderFormattedTextField;
     private javax.swing.JLabel genderLabel;
-    private javax.swing.JFormattedTextField lastNameFormattedTextField;
-    private javax.swing.JLabel lastnameLabel;
+    private javax.swing.JFormattedTextField nameFormattedTextField;
+    private javax.swing.JLabel nameLabel;
     private javax.swing.JButton okButton;
     private javax.swing.JLabel passwordComfirmLabel;
     private javax.swing.JLabel passwordLabel;
@@ -301,5 +285,6 @@ public class EditUserGUI extends JPanel {
     
     private DashBoard cp;
     private PanelController pm;
+    private User user;
     private static final long serialVersionUID = -4925806868701427735L;
 }

@@ -8,6 +8,7 @@ package gui;
 import controller.DashBoard;
 import controller.MessageCollectionController;
 import controller.PanelController;
+import object.Message;
 
 /**
  *
@@ -18,10 +19,11 @@ public class ViewMessageGUI extends javax.swing.JPanel {
     /**
      * Creates new form ViewMessageGUI
      */
-    public ViewMessageGUI(DashBoard cp) {
+    public ViewMessageGUI(DashBoard cp, Message message) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
+        this.message = message;
         initComponents();
     }
 
@@ -36,9 +38,9 @@ public class ViewMessageGUI extends javax.swing.JPanel {
         viewMessageLabel = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         titleLabel = new javax.swing.JLabel();
-        creatorTextField = new javax.swing.JTextField();
+        title = new javax.swing.JTextField();
         creatorLabel = new javax.swing.JLabel();
-        postTimeTextField1 = new javax.swing.JTextField();
+        creatorTextField = new javax.swing.JTextField();
         postTimeLabel = new javax.swing.JLabel();
         postTimeTextField = new javax.swing.JTextField();
         descriptionLabel = new javax.swing.JLabel();
@@ -57,17 +59,20 @@ public class ViewMessageGUI extends javax.swing.JPanel {
         titleLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         titleLabel.setText("Title");
 
-        creatorTextField.setEditable(false);
+        title.setEditable(false);
+        title.setText(message.getTitle());
 
         creatorLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         creatorLabel.setText("Creator");
 
-        postTimeTextField1.setEditable(false);
+        creatorTextField.setEditable(false);
+        creatorTextField.setText(message.getCreator().toString());
 
         postTimeLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         postTimeLabel.setText("PostTime");
 
         postTimeTextField.setEditable(false);
+        postTimeTextField.setText(message.getPostTime());
 
         descriptionLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         descriptionLabel.setText("Description");
@@ -77,6 +82,7 @@ public class ViewMessageGUI extends javax.swing.JPanel {
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
+        jTextArea1.setText(message.getBody());
 
         backButton.setBackground(new java.awt.Color(0, 102, 0));
         backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
@@ -126,7 +132,7 @@ public class ViewMessageGUI extends javax.swing.JPanel {
                         .addGap(658, 671, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(creatorTextField)
+                            .addComponent(title)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(viewMessageLabel)
@@ -137,7 +143,7 @@ public class ViewMessageGUI extends javax.swing.JPanel {
                             .addComponent(jSeparator1)
                             .addComponent(jScrollPane1)
                             .addComponent(postTimeTextField)
-                            .addComponent(postTimeTextField1, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(creatorTextField, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addContainerGap())))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -160,11 +166,11 @@ public class ViewMessageGUI extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(titleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(creatorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(creatorLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(postTimeTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(creatorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(postTimeLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -190,17 +196,17 @@ public class ViewMessageGUI extends javax.swing.JPanel {
 
     private void creatorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_creatorButtonActionPerformed
         // TODO add your handling code here:
-        pc.changeFrame(new ViewUserGUI(cp));
+        pc.changeFrame(new ViewUserGUI(cp, message.getCreator()));
     }//GEN-LAST:event_creatorButtonActionPerformed
 
     private void tripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tripButtonActionPerformed
         // TODO add your handling code here:
-        pc.changeFrame(new ViewTripGUI(cp));
+        pc.changeFrame(new ViewTripGUI(cp, message));
     }//GEN-LAST:event_tripButtonActionPerformed
 
     private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
         // TODO add your handling code here:
-        pc.changeFrame(new EditMessageGUI(cp));
+        pc.changeFrame(new EditMessageGUI(cp, message));
     }//GEN-LAST:event_editButtonActionPerformed
 
 
@@ -208,7 +214,7 @@ public class ViewMessageGUI extends javax.swing.JPanel {
     private javax.swing.JButton backButton;
     private javax.swing.JButton creatorButton;
     private javax.swing.JLabel creatorLabel;
-    private javax.swing.JTextField creatorTextField;
+    private javax.swing.JTextField title;
     private javax.swing.JLabel descriptionLabel;
     private javax.swing.JButton editButton;
     private javax.swing.JScrollPane jScrollPane1;
@@ -216,16 +222,16 @@ public class ViewMessageGUI extends javax.swing.JPanel {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel postTimeLabel;
     private javax.swing.JTextField postTimeTextField;
-    private javax.swing.JTextField postTimeTextField1;
+    private javax.swing.JTextField creatorTextField;
     private javax.swing.JLabel titleLabel;
     private javax.swing.JButton tripButton;
     private javax.swing.JLabel viewMessageLabel;
     // End of variables declaration//GEN-END:variables
     
-    @SuppressWarnings("unused")
     private DashBoard cp;
     @SuppressWarnings("unused")
     private MessageCollectionController tc;
     private PanelController pc;
+    private Message message;
     private static final long serialVersionUID = 5688490924844336601L;
 }

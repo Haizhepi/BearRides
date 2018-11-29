@@ -200,6 +200,10 @@ public class MessageCollection extends AbstractTableModel {
         }
     }
     
+    public String getColumnName(int row) {
+        return "Title";
+    }
+    
     //variables to be saved upon shutdown
     private List<Message> messages;
     private TreeMultimap<User, Message> userMap;
