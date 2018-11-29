@@ -38,7 +38,9 @@ public class UserTableCreator implements SQLStatementExecuter {
                     + "FOREIGN KEY (car) REFERENCES Vehicle(id) )");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            if(!e.toString().contains("already exists in Schema")) {
+                e.printStackTrace();
+            }
         } finally {
             if (statement != null) {
                 try {

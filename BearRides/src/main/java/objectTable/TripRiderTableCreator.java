@@ -27,7 +27,9 @@ public class TripRiderTableCreator implements SQLStatementExecuter {
                     + "PRIMARY KEY (tid, uid))");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            if(!e.toString().contains("already exists in Schema")) {
+                e.printStackTrace();
+            }
         } finally {
             if (statement != null) {
                 try {

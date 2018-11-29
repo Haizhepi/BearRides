@@ -35,7 +35,9 @@ public class TripTableCreator implements SQLStatementExecuter {
                     + "FOREIGN KEY (driver) REFERENCES UserTable(id) )");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            if(!e.toString().contains("already exists in Schema")) {
+                e.printStackTrace();
+            }
         } finally {
             if (statement != null) {
                 try {

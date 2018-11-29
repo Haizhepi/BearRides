@@ -30,7 +30,9 @@ public class VehicleTableCreator implements SQLStatementExecuter {
                     + "PRIMARY KEY (id) )");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            if(!e.toString().contains("already exists in Schema")) {
+                e.printStackTrace();
+            }
         } finally {
             if (statement != null) {
                 try {

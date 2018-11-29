@@ -24,7 +24,7 @@ import objectSaver.VehicleSaver;
 
 public class DerbyTest {
     
-    @Test
+    //@Test
     @BeforeAll
     public static void createTableTest() {
         DatabaseCreator db = DatabaseCreator.getInstance();
@@ -55,7 +55,9 @@ public class DerbyTest {
                     + " INNER JOIN SYS.SYSSCHEMAS ON SYS.SYSTABLES.SCHEMAID = SYS.SYSSCHEMAS.SCHEMAID"
                     + " where schemaname='BearRides'");
         } catch (SQLException e) {
-            e.printStackTrace();
+            if(!e.toString().contains("already exists in Schema")) {
+                e.printStackTrace();
+            }
         } finally {
             if (statement != null) {
                 try {

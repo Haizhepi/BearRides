@@ -52,10 +52,13 @@ class UserCollectionTest {
     @Test
     void authenticate() {
         userCollection.insert(user);
-        //assertTrue(userCollection.);
+        assertFalse(userCollection.authenticate(user));
     }
 
     @Test
     void logout() {
+        userCollection.insert(user);
+        userCollection.logout(user);
+        assertNull(user.getToken());
     }
 }

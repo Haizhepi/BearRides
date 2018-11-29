@@ -24,20 +24,7 @@ public class TripSaver implements SQLStatementExecuter {
         
         try {
             statement = connection.createStatement();
-            
-            for(String requirement : trip.getRequirements()) {
-                statement.execute("INSERT INTO TripRequirement (tid, req) VALUES ("
-                        + trip.getPrimaryKey()
-                        + ", " + requirement
-                        + ")");
-            }
-            
-            for(User user : trip.getRiders()) {
-                statement.execute("INSERT INTO TripRider (tid, uid) VALUES ("
-                        + trip.getPrimaryKey()
-                        + ", " + user.getPrimaryKey()
-                        + ")");
-            }
+
             
             statement.executeUpdate("INSERT INTO Trip ("
                     + ((key != null) ? "id, " : "")
@@ -63,6 +50,21 @@ public class TripSaver implements SQLStatementExecuter {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+            }
+
+
+            for(String requirement : trip.getRequirements()) {
+                statement.execute("INSERT INTO TripRequirement (tid, req) VALUES ("
+                        + trip.getPrimaryKey()
+                        + ", '" + requirement
+                        + "')");
+            }
+
+            for(User user : trip.getRiders()) {
+                statement.execute("INSERT INTO TripRider (tid, uid) VALUES ("
+                        + trip.getPrimaryKey()
+                        + ", " + user.getPrimaryKey()
+                        + ")");
             }
             
         } catch (SQLException e) {
