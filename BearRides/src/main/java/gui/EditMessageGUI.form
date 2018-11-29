@@ -34,14 +34,8 @@
                           <Component id="jSeparator1" max="32767" attributes="0"/>
                           <Component id="jScrollPane1" alignment="0" pref="680" max="32767" attributes="0"/>
                           <Component id="creatorTextField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="postTimeTextField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="postTimeTextField1" alignment="1" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="creatorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="postTimeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="descriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="descriptionLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -56,7 +50,7 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
-              <Component id="editTripButton" min="-2" pref="128" max="-2" attributes="0"/>
+              <Component id="saveTripButton" min="-2" pref="139" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="backButton" min="-2" pref="128" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
@@ -74,22 +68,14 @@
               <Component id="titleLabel" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="creatorTextField" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="creatorLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="postTimeTextField1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="postTimeLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="postTimeTextField" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="descriptionLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="descriptionLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="backButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
-                  <Component id="editTripButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="saveTripButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
           </Group>
@@ -121,25 +107,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="creatorLabel">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Leelawadee UI" size="18" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Creator"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JTextField" name="creatorTextField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="postTimeLabel">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Leelawadee UI" size="18" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="PostTime"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="postTimeTextField">
     </Component>
     <Component class="javax.swing.JButton" name="backButton">
       <Properties>
@@ -154,8 +122,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backButtonActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="postTimeTextField1">
     </Component>
     <Component class="javax.swing.JLabel" name="titleLabel">
       <Properties>
@@ -175,7 +141,7 @@
         <Property name="text" type="java.lang.String" value="Message"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="editTripButton">
+    <Component class="javax.swing.JButton" name="saveTripButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="66" red="0" type="rgb"/>
@@ -183,10 +149,10 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Leelawadee UI" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Edit Trip"/>
+        <Property name="text" type="java.lang.String" value="Save Trip"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editTripButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveTripButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

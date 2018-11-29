@@ -1,8 +1,15 @@
 ----------------------------------------------------------------
+<<<<<<< HEAD
 Thu Nov 29 07:34:30 CST 2018:
 Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0167-5fad-9492-00000ea07f28 
 on database directory C:\Users\Ash\Documents\csi-3471-software\BearRides\BearRides with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4d8fc0d7 
 Loaded from file:/C:/Users/Ash/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+=======
+Thu Nov 29 04:02:14 CST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0167-5eeb-3c57-00001eb00c30 
+on database directory H:\#3471 Project\BearRides\BearRides with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5ef04b5 
+Loaded from file:/C:/Users/wan/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+>>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
 java.vendor=Oracle Corporation
 java.runtime.version=10.0.2+13
 user.dir=C:\Users\Ash\Documents\csi-3471-software\BearRides
