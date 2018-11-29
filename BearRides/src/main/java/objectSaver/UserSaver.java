@@ -11,7 +11,7 @@ import object.User;
 public class UserSaver extends SQLStatementExecuter {
 
     @Override
-    protected Boolean beforeHook(Connection connection, Object object) {
+    protected Boolean beforeHook(Statement statement, Object object) {
         User user = (User) object;
         Long key = user.getPrimaryKey();
         

@@ -1,6 +1,7 @@
 package objectDeleter;
 
 import java.sql.Connection;
+import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Trip;
@@ -8,7 +9,7 @@ import object.Trip;
 public class TripDeleter extends SQLStatementExecuter {
     
     @Override
-    protected Boolean beforeHook(Connection connection, Object object) {
+    protected Boolean beforeHook(Statement statement, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
         

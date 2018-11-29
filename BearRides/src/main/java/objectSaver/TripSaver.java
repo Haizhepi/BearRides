@@ -27,13 +27,13 @@ public class TripSaver extends SQLStatementExecuter {
                 + "', '" + trip.getDestinLoc()
                 + "', '" + trip.getReturnLoc()
                 + "', " +trip.getPassengerCap()
-                + ");";
+                + ")";
                 
         for(String requirement : trip.getRequirements()) {
             String batch = "INSERT INTO TripRequirement (tid, req) VALUES ("
                     + trip.getPrimaryKey()
                     + ", " + requirement
-                    + ");";
+                    + ")";
             
             try {
                 statement.addBatch(batch);
@@ -46,7 +46,7 @@ public class TripSaver extends SQLStatementExecuter {
             String batch = "INSERT INTO TripRider (tid, uid) VALUES ("
                     + trip.getPrimaryKey()
                     + ", " + user.getPrimaryKey()
-                    + ");";
+                    + ")";
             
            try {
                 statement.addBatch(batch);
@@ -55,7 +55,7 @@ public class TripSaver extends SQLStatementExecuter {
             }
         }
         
-        return true;
+        return false;
     }
     
     @Override

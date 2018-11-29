@@ -11,7 +11,7 @@ import object.Vehicle;
 public class VehicleSaver extends SQLStatementExecuter{
 
     @Override
-    protected Boolean beforeHook(Connection connection, Object object) {
+    protected Boolean beforeHook(Statement statement, Object object) {
         Vehicle vehicle = (Vehicle) object;
         Long key = vehicle.getPrimaryKey();
         

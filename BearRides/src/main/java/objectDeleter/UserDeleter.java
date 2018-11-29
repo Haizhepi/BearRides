@@ -1,6 +1,7 @@
 package objectDeleter;
 
 import java.sql.Connection;
+import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.User;
@@ -9,7 +10,7 @@ import object.Vehicle;
 public class UserDeleter extends SQLStatementExecuter {
     
     @Override
-    protected Boolean beforeHook(Connection connection, Object object) {
+    protected Boolean beforeHook(Statement statement, Object object) {
         User user = (User) object;
         Long key = user.getPrimaryKey();
         

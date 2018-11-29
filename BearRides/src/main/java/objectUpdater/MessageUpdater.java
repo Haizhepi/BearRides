@@ -1,6 +1,7 @@
 package objectUpdater;
 
 import java.sql.Connection;
+import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Message;
@@ -8,7 +9,7 @@ import object.Message;
 public class MessageUpdater extends SQLStatementExecuter {
 
     @Override
-    public Boolean beforeHook(Connection connection, Object object) {
+    public Boolean beforeHook(Statement statement, Object object) {
         Message message = (Message) object;
         
         if(message.getPrimaryKey() != null) {
