@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 
 public class UserLoader implements SQLStatementExecuter {
@@ -23,7 +25,7 @@ public class UserLoader implements SQLStatementExecuter {
             statement.executeQuery("SELECT id, email, passHash, gender, name, contact, age, picture, isDriver, car, rating, ratingCount from UserTable");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         return statement;

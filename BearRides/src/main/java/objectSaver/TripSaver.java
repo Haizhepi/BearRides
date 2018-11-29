@@ -5,6 +5,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 import object.Trip;
 import object.User;
@@ -48,7 +50,7 @@ public class TripSaver implements SQLStatementExecuter {
                         trip.setPrimaryKey(rs.getLong(1));
                     }
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
             }
 
@@ -68,7 +70,7 @@ public class TripSaver implements SQLStatementExecuter {
             }
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         return statement;

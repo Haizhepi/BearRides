@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 
 public class TripRequirementLoader implements SQLStatementExecuter {
@@ -23,7 +25,7 @@ public class TripRequirementLoader implements SQLStatementExecuter {
             statement.executeQuery("SELECT tid, req from TripRequirement");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         return statement;

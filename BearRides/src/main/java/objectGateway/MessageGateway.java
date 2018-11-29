@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 import object.Message;
 import object.Trip;
@@ -60,7 +62,6 @@ public class MessageGateway extends Gateway<Message> {
             ResultSet rs = statement.getResultSet();
             
             if (rs.next() == false) {
-                System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     Message message = new Message(users.get(rs.getLong("creator")));
@@ -86,13 +87,13 @@ public class MessageGateway extends Gateway<Message> {
                 } while (rs.next());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         } finally {
             if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
             }
         }

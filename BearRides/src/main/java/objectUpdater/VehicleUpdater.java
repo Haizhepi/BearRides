@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 import object.Vehicle;
 
@@ -30,7 +32,7 @@ public class VehicleUpdater implements SQLStatementExecuter {
                     + "' WHERE id = " + vehicle.getPrimaryKey());
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         return statement;
