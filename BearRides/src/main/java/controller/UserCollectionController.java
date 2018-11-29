@@ -16,7 +16,6 @@ public class UserCollectionController {
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public UserCollectionController() {
-        
         this.table = new UserCollection();
     }
     
@@ -107,16 +106,22 @@ public class UserCollectionController {
      * precondition: user is not already logged in, user is registered
      * postcondition: the user is marked as logged in and
      */
-    public Boolean login(String UUID, String password) {
-        currentUser = table.login(UUID, password);
-        
-        if(currentUser == null) {
-            //error window
-            return false;
-        }else {
+    public User login(String UUID, String password) {
+        return table.login(UUID, password);
+    }
+    
+    /*
+     * description: attempts to logout with the provided info
+     * return: User
+     * precondition: user is logged in, user is registered
+     * postcondition: the user is logged out
+     */
+    public Boolean logout(User user) {
+        if(table.authenticate(user)) {
+            table.logout(user);
+            return true;
         }
-        
-        return true;
+        return false;
     }
     
     private User currentUser;

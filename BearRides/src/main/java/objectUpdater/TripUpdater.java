@@ -26,13 +26,13 @@ public class TripUpdater implements SQLStatementExecuter {
             
             statement.execute("UPDATE Trip"
                     + " SET driver = " + trip.getDriver().getPrimaryKey() //BIGINT foreign key
-                    + " SET originTime = " + trip.getOriginTime().getTime() //BIGINT
-                    + " SET destinTime = " + trip.getDestinTime().getTime() //BIGINT
-                    + " SET returnTime = " + trip.getReturnTime().getTime() //BIGINT
-                    + " SET originLoc = '" + trip.getOriginLoc() //LONG VARCHAR
-                    + "' SET destinLoc = '" + trip.getDestinLoc() //LONG VARCHAR
-                    + "' SET returnLoc = '" + trip.getReturnLoc() //LONG VARCHAR
-                    + "' SET passengerCap = " + trip.getPassengerCap() //INTEGER
+                    + ", originTime = " + trip.getOriginTime().getTime() //BIGINT
+                    + ", destinTime = " + trip.getDestinTime().getTime() //BIGINT
+                    + ", returnTime = " + trip.getReturnTime().getTime() //BIGINT
+                    + ", originLoc = '" + trip.getOriginLoc() //LONG VARCHAR
+                    + "', destinLoc = '" + trip.getDestinLoc() //LONG VARCHAR
+                    + "', returnLoc = '" + trip.getReturnLoc() //LONG VARCHAR
+                    + "', passengerCap = " + trip.getPassengerCap() //INTEGER
                     + " WHERE id = " + key);
             
             statement.execute("DELETE FROM TripRequirement WHERE tid = " + key);

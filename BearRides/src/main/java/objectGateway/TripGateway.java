@@ -30,10 +30,13 @@ public class TripGateway extends Gateway<Trip> {
 
     @Override
     public Gateway<Trip> save(Object object) {
-        if(((Trip) object).getPrimaryKey() == null) {
-            new TripSaver().execute(connection, object);
-        } else {
-            new TripUpdater().execute(connection, object);
+        
+        if(object != null) {
+            if(((Trip) object).getPrimaryKey() == null) {
+                new TripSaver().execute(connection, object);
+            } else {
+                new TripUpdater().execute(connection, object);
+            }
         }
         
         return this;

@@ -23,10 +23,13 @@ public class UserGateway extends Gateway<User> {
 
     @Override
     public Gateway<User> save(Object object) {
-        if(((User) object).getPrimaryKey() == null) {
-            new UserSaver().execute(connection, object);
-        } else {
-            new UserUpdater().execute(connection, object);
+        
+        if(object != null) {
+            if(((User) object).getPrimaryKey() == null) {
+                new UserSaver().execute(connection, object);
+            } else {
+                new UserUpdater().execute(connection, object);
+            }
         }
         
         return this;

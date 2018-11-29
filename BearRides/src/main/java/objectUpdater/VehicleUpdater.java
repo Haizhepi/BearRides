@@ -24,9 +24,9 @@ public class VehicleUpdater implements SQLStatementExecuter {
             
             statement.execute("UPDATE Vehicle"
                     + " SET model = '" + vehicle.getModel() //VAR CHAR
-                    + "' SET picture = '" + vehicle.getPicture() //VAR CHAR
-                    + "' SET passengerCap = " + vehicle.getPassengerCap() //INTEGER
-                    + " SET storageSpace = '" + vehicle.getStorageSpace() //VAR CHAR
+                    + "', picture = '" + vehicle.getPicture() //VAR CHAR
+                    + "', passengerCap = " + vehicle.getPassengerCap() //INTEGER
+                    + ", storageSpace = '" + vehicle.getStorageSpace() //VAR CHAR
                     + "' WHERE id = " + vehicle.getPrimaryKey());
             
         } catch (SQLException e) {

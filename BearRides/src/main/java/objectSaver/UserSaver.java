@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.User;
+import object.Vehicle;
 
 public class UserSaver implements SQLStatementExecuter {
     
@@ -23,6 +24,7 @@ public class UserSaver implements SQLStatementExecuter {
         
         try {
             statement = connection.createStatement();
+            Vehicle vehicle = user.getVehicle();
             
             statement.executeUpdate("INSERT INTO UserTable ("
                     + ((key != null) ? "id, " : "")
@@ -36,7 +38,7 @@ public class UserSaver implements SQLStatementExecuter {
                     + "', " + user.getAge()
                     + ", '" + user.getPicture()
                     + "', '" + ((user.isDriver() == true) ? 1 : 0)
-                    + "', " + user.getVehicle().getPrimaryKey()
+                    + "', " + ((vehicle == null) ? "NULL" : vehicle.getPrimaryKey())
                     + ", " + user.getRating()
                     + ", " + user.getRatingCount()
                     + ")", Statement.RETURN_GENERATED_KEYS);

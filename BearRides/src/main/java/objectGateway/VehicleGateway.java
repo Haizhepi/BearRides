@@ -22,10 +22,13 @@ public class VehicleGateway extends Gateway<Vehicle> {
 
     @Override
     public Gateway<Vehicle> save(Object object) {
-        if(((Vehicle) object).getPrimaryKey() == null) {
-            new VehicleSaver().execute(connection, object);
-        } else {
-            new VehicleUpdater().execute(connection, object);
+        
+        if(object != null) {
+            if(((Vehicle) object).getPrimaryKey() == null) {
+                new VehicleSaver().execute(connection, object);
+            } else {
+                new VehicleUpdater().execute(connection, object);
+            }
         }
         
         return this;

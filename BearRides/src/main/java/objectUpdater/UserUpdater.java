@@ -6,6 +6,7 @@ import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.User;
+import object.Vehicle;
 
 public class UserUpdater implements SQLStatementExecuter {
     
@@ -21,19 +22,20 @@ public class UserUpdater implements SQLStatementExecuter {
         
         try {
             statement = connection.createStatement();
+            Vehicle vehicle = user.getVehicle();
             
             statement.execute("UPDATE UserTable"
                     + " SET email = '" + user.getEmail() //VAR CHAR
-                    + "' SET passHash = " + user.getPassHash() //INTEGER
-                    + " SET gender = '" + ((user.getGender() == true) ? 1 : 0) //CHAR
-                    + "' SET name = '" + user.getName() //VAR CHAR
-                    + "' SET contact = '" + user.getContact() //VAR CHAR
-                    + "' SET age = " + user.getAge() //INTEGER
-                    + " SET picture = '" + user.getPicture() //VAR CHAR
-                    + "' SET isDriver = '" + ((user.isDriver() == true) ? 1 : 0) //CHAR
-                    + "' SET car = " + user.getVehicle().getPrimaryKey() //BIGINT
-                    + " SET rating = " + user.getRating() //INTEGER
-                    + " SET ratingCount = " + user.getRatingCount() //INTEGER
+                    + "', passHash = " + user.getPassHash() //INTEGER
+                    + ", gender = '" + ((user.getGender() == true) ? 1 : 0) //CHAR
+                    + "', name = '" + user.getName() //VAR CHAR
+                    + "', contact = '" + user.getContact() //VAR CHAR
+                    + "', age = " + user.getAge() //INTEGER
+                    + ", picture = '" + user.getPicture() //VAR CHAR
+                    + "', isDriver = '" + ((user.isDriver() == true) ? 1 : 0) //CHAR
+                    + "', car = " + ((vehicle == null) ? "NULL" : vehicle.getPrimaryKey()) //BIGINT
+                    + ", rating = " + user.getRating() //INTEGER
+                    + ", ratingCount = " + user.getRatingCount() //INTEGER
                     + " WHERE id = " + user.getPrimaryKey());
             
         } catch (SQLException e) {

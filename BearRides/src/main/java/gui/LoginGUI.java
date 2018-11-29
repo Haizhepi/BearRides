@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import controller.DashBoard;
 import controller.PanelController;
 import controller.UserCollectionController;
+import object.User;
 
 /**
  *
@@ -137,13 +138,14 @@ public class LoginGUI extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        if(uc.login(emailTextField.getText(), new String(jPasswordField1.getPassword()))) {
-            emailTextField.setText("");
-            jPasswordField1.setText("");
-            
-            pc.changeFrame(new HomePageGUI(cp));
+        User user = uc.login(emailTextField.getText(), new String(jPasswordField1.getPassword()));
+        if(user != null) {
+            pc.changeFrame(new HomePageGUI(cp, user));
         } else {
         }
+        
+        emailTextField.setText("");
+        jPasswordField1.setText("");
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed

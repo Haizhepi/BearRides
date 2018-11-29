@@ -26,10 +26,12 @@ public class MessageGateway extends Gateway<Message> {
     @Override
     public Gateway<Message> save(Object object) {
         
-        if(((Message) object).getPrimaryKey() == null) {
-            new MessageSaver().execute(connection, object);
-        } else {
-            new MessageUpdater().execute(connection, object);
+        if(object != null) {
+            if(((Message) object).getPrimaryKey() == null) {
+                new MessageSaver().execute(connection, object);
+            } else {
+                new MessageUpdater().execute(connection, object);
+            }
         }
         
         return this;
