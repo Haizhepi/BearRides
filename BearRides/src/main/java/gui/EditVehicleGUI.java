@@ -16,12 +16,12 @@ import controller.PanelController;
  *
  * @author Xingan_Wan
  */
-public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
+public class EditVehicleGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form DriverInfo
      */
-    public Driver_VehicleInfoGUI(DashBoard cp) {
+    public EditVehicleGUI(DashBoard cp) {
         this.cp = cp;
         this.pc = cp.getPanelController();
         initComponents();
@@ -228,7 +228,7 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new Driver_VehicleInfoGUI(cp));
+                cp.getPanelController().changeFrame(new EditVehicleGUI(cp));
             }
         });
     }

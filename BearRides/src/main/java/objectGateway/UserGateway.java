@@ -3,6 +3,7 @@ package objectGateway;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,13 +40,15 @@ public class UserGateway extends Gateway<User> {
 
     @Override
     protected Map<Long, User> load() {
-        ResultSet rs = new UserLoader().executeQuery(connection, null);
+        Statement statement = new UserLoader().executeQuery(connection, null);
         users = new HashMap<Long, User>();
         
         VehicleGateway vehicleGateway = new VehicleGateway(connection);
         Map<Long, Vehicle> vehicles = vehicleGateway.getLoaded();
         
         try {
+            ResultSet rs = statement.getResultSet();
+            
             if (rs.next() == false) {
                 System.out.println("ResultSet is empty in Java");
             } else {
@@ -66,6 +69,14 @@ public class UserGateway extends Gateway<User> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         
         return users;

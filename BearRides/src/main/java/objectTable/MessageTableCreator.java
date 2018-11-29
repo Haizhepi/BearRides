@@ -1,7 +1,6 @@
 package objectTable;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -15,7 +14,7 @@ public class MessageTableCreator implements SQLStatementExecuter {
     }
 
     @Override
-    public ResultSet executeQuery(Connection connection, Object object) {
+    public Statement executeQuery(Connection connection, Object object) {
         Statement statement = null;
         
         try {
@@ -39,16 +38,8 @@ public class MessageTableCreator implements SQLStatementExecuter {
             if(!e.toString().contains("already exists in Schema")) {
                 e.printStackTrace();
             }
-        } finally {
-            if (statement != null) {
-                try {
-                    statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         
-        return null;
+        return statement;
     }
 }

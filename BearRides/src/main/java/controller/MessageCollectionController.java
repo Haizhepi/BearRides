@@ -165,6 +165,22 @@ public class MessageCollectionController {
     }
     
     /*
+     * description: posts a message to table, does not require user
+     *      to be logged in only used for loading!
+     * return: void
+     * precondition: void
+     * postcondition: a new message may be put into table if its valid
+     */
+    public void loadMessage(Message message) {
+        // make sure all the fields in the message are valid
+        if(verify(message)) {
+            tableModel.insert(message);
+            tableModel.fireTableDataChanged();
+        }else {
+        }
+    }
+    
+    /*
      * description: authenticates the user posting the message
      * return: true if authentic user
      * precondition: void

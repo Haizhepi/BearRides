@@ -16,7 +16,7 @@ public class UserSaver implements SQLStatementExecuter {
     }
 
     @Override
-    public ResultSet executeQuery(Connection connection, Object object) {
+    public Statement executeQuery(Connection connection, Object object) {
         User user = (User) object;
         Long key = user.getPrimaryKey();
         Statement statement = null;
@@ -55,16 +55,8 @@ public class UserSaver implements SQLStatementExecuter {
             
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            if (statement != null) {
-                try {
-                    statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         
-        return null;
+        return statement;
     }
 }

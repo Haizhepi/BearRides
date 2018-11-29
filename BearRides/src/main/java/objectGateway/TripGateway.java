@@ -3,6 +3,7 @@ package objectGateway;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -48,7 +49,7 @@ public class TripGateway extends Gateway<Trip> {
 
     @Override
     protected Map<Long, Trip> load() {
-        ResultSet rs = new TripLoader().executeQuery(connection, null);
+        Statement statement = new TripLoader().executeQuery(connection, null);
         
         UserGateway userGateway = new UserGateway(connection);
         Map<Long, User> users = userGateway.getLoaded();
@@ -59,14 +60,15 @@ public class TripGateway extends Gateway<Trip> {
         
         //map the requirements
         try {
-            ResultSet trSet = new TripRequirementLoader().executeQuery(connection, null);
+            Statement trStatement = new TripRequirementLoader().executeQuery(connection, null);
+            ResultSet trSet = trStatement.getResultSet();
             
-            if (rs.next() == false) {
+            if (trSet.next() == false) {
                 System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     tripRequirement.put(trSet.getLong("tid"), trSet.getString("req"));
-                } while (rs.next());
+                } while (trSet.next());
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -74,16 +76,17 @@ public class TripGateway extends Gateway<Trip> {
         
         //map the riders
         try {
-            ResultSet trSet = new TripRiderLoader().executeQuery(connection, null);
+            Statement trStatement = new TripRiderLoader().executeQuery(connection, null);
+            ResultSet trSet = trStatement.getResultSet();
             
-            if (rs.next() == false) {
+            if (trSet.next() == false) {
                 System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     Long tid = trSet.getLong("tid"), uid = trSet.getLong("uid");
                     
                     tripRider.put(tid, uid);
-                } while (rs.next());
+                } while (trSet.next());
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -91,6 +94,8 @@ public class TripGateway extends Gateway<Trip> {
         
         //map the trips
         try {
+            ResultSet rs = statement.getResultSet();
+            
             if (rs.next() == false) {
                 System.out.println("ResultSet is empty in Java");
             } else {
@@ -122,6 +127,14 @@ public class TripGateway extends Gateway<Trip> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         
         return trips;
