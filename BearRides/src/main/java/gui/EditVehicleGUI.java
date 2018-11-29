@@ -26,7 +26,7 @@ public class EditVehicleGUI extends javax.swing.JPanel {
     public EditVehicleGUI(DashBoard cp, User user) {
         this.cp = cp;
         this.pc = cp.getPanelController();
-        this.vehicle = user.getVehicle();
+        this.vehicle = (user.getVehicle() == null) ? new Vehicle("Model", 0) : user.getVehicle();
         this.user = user;
         initComponents();
     }
