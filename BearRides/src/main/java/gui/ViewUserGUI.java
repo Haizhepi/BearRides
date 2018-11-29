@@ -47,9 +47,11 @@ public class ViewUserGUI extends javax.swing.JPanel {
         contactFormattedTextField = new javax.swing.JFormattedTextField();
         isDriverLabel = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
+        editButton = new javax.swing.JButton();
+        D_VInfoButton = new javax.swing.JButton();
 
         ViewUserInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        ViewUserInfoLabel.setText("View User Infomation");
+        ViewUserInfoLabel.setText("View User Information");
 
         firstnameLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         firstnameLabel.setText("First Name");
@@ -68,7 +70,7 @@ public class ViewUserGUI extends javax.swing.JPanel {
 
         backButton.setBackground(new java.awt.Color(255, 255, 51));
         backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        backButton.setText("BACK");
+        backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backButtonActionPerformed(evt);
@@ -86,6 +88,24 @@ public class ViewUserGUI extends javax.swing.JPanel {
         jCheckBox1.setText("DRIVER");
         jCheckBox1.setEnabled(false);
 
+        editButton.setBackground(new java.awt.Color(102, 255, 51));
+        editButton.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
+        editButton.setText("Edit");
+        editButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editButtonActionPerformed(evt);
+            }
+        });
+
+        D_VInfoButton.setBackground(new java.awt.Color(255, 0, 0));
+        D_VInfoButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        D_VInfoButton.setText("Driver Info");
+        D_VInfoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D_VInfoButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,14 +116,6 @@ public class ViewUserGUI extends javax.swing.JPanel {
                     .addComponent(upperSeparator)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lastnameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE)
-                            .addComponent(firstnameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE))
-                        .addGap(54, 54, 54)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(firstNameFormattedTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
-                            .addComponent(lastNameFormattedTextField)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(genderLabel)
                             .addComponent(contactLabel)
                             .addComponent(ViewUserInfoLabel)
@@ -112,12 +124,26 @@ public class ViewUserGUI extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
                             .addComponent(ageFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(contactFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(contactFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lastnameLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(firstnameLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(54, 54, 54)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(firstNameFormattedTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                            .addComponent(lastNameFormattedTextField))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(209, 209, 209))
+                .addGap(77, 77, 77)
+                .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(95, 95, 95))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(269, 269, 269)
+                .addComponent(D_VInfoButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,8 +172,12 @@ public class ViewUserGUI extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(isDriverLabel)
                     .addComponent(jCheckBox1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 181, Short.MAX_VALUE)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addComponent(D_VInfoButton)
+                .addGap(47, 47, 47)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -157,13 +187,25 @@ public class ViewUserGUI extends javax.swing.JPanel {
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
+    private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
+        // TODO add your handling code here:
+        pc.changeFrame(new EditUserGUI(cp));
+    }//GEN-LAST:event_editButtonActionPerformed
+
+    private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
+        // TODO add your handling code here:
+        pc.changeFrame(new ViewVehicleGUI(cp));
+    }//GEN-LAST:event_D_VInfoButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton D_VInfoButton;
     private javax.swing.JLabel ViewUserInfoLabel;
     private javax.swing.JFormattedTextField ageFormattedTextField;
     private javax.swing.JButton backButton;
     private javax.swing.JFormattedTextField contactFormattedTextField;
     private javax.swing.JLabel contactLabel;
+    private javax.swing.JButton editButton;
     private javax.swing.JFormattedTextField firstNameFormattedTextField;
     private javax.swing.JLabel firstnameLabel;
     private javax.swing.JLabel genderLabel;

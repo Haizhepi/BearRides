@@ -48,11 +48,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
         messageTable.setFont(new java.awt.Font("Leelawadee", 0, 14)); // NOI18N
         messageTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"OK", "1", "123"},
-                {"TEST", "2", "123123"},
-                {"Your", "2", "1233"},
-                {"Program", "33", "3131"},
-                {"First", "44", null}
+
             },
             new String [] {
                 "Message", "Time Post", "Creator"
@@ -65,8 +61,6 @@ public class MessageBoardGUI extends javax.swing.JPanel {
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
-            
-            private static final long serialVersionUID = -3166042634019832264L;
         });
         messageTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         messageTable.setFillsViewportHeight(true);

@@ -34,8 +34,6 @@ public class EditVehicleGUI extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        driverLabel = new javax.swing.JLabel();
-        driverCheckBox = new javax.swing.JCheckBox();
         vInfoLabel = new javax.swing.JLabel();
         modelLabel = new javax.swing.JLabel();
         capaLabel = new javax.swing.JLabel();
@@ -43,30 +41,15 @@ public class EditVehicleGUI extends javax.swing.JPanel {
         modelFormattedTextField = new javax.swing.JFormattedTextField();
         capaFormattedTextField = new javax.swing.JFormattedTextField();
         spaceFormattedTextField = new javax.swing.JFormattedTextField();
-        middleSeparator = new javax.swing.JSeparator();
         okButton = new javax.swing.JButton();
         bottomSeparator = new javax.swing.JSeparator();
         backButton = new javax.swing.JButton();
         topSeparator = new javax.swing.JSeparator();
-        driverCheckLabel = new javax.swing.JLabel();
-        dlLabel = new javax.swing.JLabel();
-        dlTextField = new javax.swing.JTextField();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
-        driverLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        driverLabel.setText("Driver Infomation");
-
-        driverCheckBox.setFont(new java.awt.Font("Leelawadee UI Semilight", 0, 18)); // NOI18N
-        driverCheckBox.setText("(Check if is a driver)");
-        driverCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                driverCheckBoxActionPerformed(evt);
-            }
-        });
-
         vInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        vInfoLabel.setText("Vehicle Infomation");
+        vInfoLabel.setText("Vehicle Information");
 
         modelLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         modelLabel.setText("Model (Description)");
@@ -95,24 +78,13 @@ public class EditVehicleGUI extends javax.swing.JPanel {
             }
         });
 
-        driverCheckLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        driverCheckLabel.setText("Driver");
-
-        dlLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        dlLabel.setText("Driver License #");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(bottomSeparator)
-                    .addComponent(middleSeparator, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(driverLabel)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(bottomSeparator)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(127, 127, 127)
@@ -127,26 +99,19 @@ public class EditVehicleGUI extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(driverCheckLabel)
-                    .addComponent(dlLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dlTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(driverCheckBox))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(capaLabel)
-                    .addComponent(vInfoLabel)
                     .addComponent(spaceLabel)
                     .addComponent(modelLabel))
-                .addGap(97, 97, 97)
+                .addGap(127, 127, 127)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(capaFormattedTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
                     .addComponent(modelFormattedTextField)
                     .addComponent(spaceFormattedTextField))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(vInfoLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {backButton, okButton});
@@ -155,21 +120,9 @@ public class EditVehicleGUI extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(driverLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(topSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(driverCheckLabel)
-                    .addComponent(driverCheckBox))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dlLabel)
-                    .addComponent(dlTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(75, 75, 75)
                 .addComponent(vInfoLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(middleSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addComponent(topSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(modelLabel)
@@ -182,7 +135,7 @@ public class EditVehicleGUI extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(spaceLabel)
                     .addComponent(spaceFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
+                .addGap(232, 232, 232)
                 .addComponent(bottomSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -204,10 +157,6 @@ public class EditVehicleGUI extends javax.swing.JPanel {
         // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
-
-    private void driverCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_driverCheckBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_driverCheckBoxActionPerformed
     
     public static void main(String[] args) {
         // take place on thread other than main thread
@@ -238,12 +187,6 @@ public class EditVehicleGUI extends javax.swing.JPanel {
     private javax.swing.JSeparator bottomSeparator;
     private javax.swing.JFormattedTextField capaFormattedTextField;
     private javax.swing.JLabel capaLabel;
-    private javax.swing.JLabel dlLabel;
-    private javax.swing.JTextField dlTextField;
-    private javax.swing.JCheckBox driverCheckBox;
-    private javax.swing.JLabel driverCheckLabel;
-    private javax.swing.JLabel driverLabel;
-    private javax.swing.JSeparator middleSeparator;
     private javax.swing.JFormattedTextField modelFormattedTextField;
     private javax.swing.JLabel modelLabel;
     private javax.swing.JButton okButton;

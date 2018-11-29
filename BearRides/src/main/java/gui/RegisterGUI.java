@@ -114,7 +114,7 @@ public class RegisterGUI extends javax.swing.JPanel {
         });
 
         agreementCheckBox.setFont(new java.awt.Font("Leelawadee UI", 0, 14)); // NOI18N
-        agreementCheckBox.setText("I accept the Term of Service. (Dont have now)");
+        agreementCheckBox.setText("I accept the Term of Service. ");
         agreementCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 agreementCheckBoxActionPerformed(evt);

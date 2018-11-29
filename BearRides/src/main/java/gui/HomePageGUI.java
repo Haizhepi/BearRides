@@ -172,7 +172,7 @@ public class HomePageGUI extends JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tripButtonActionPerformed
-        pc.changeFrame(new ViewTripGUI(cp));
+        pc.changeFrame(new MessageBoardGUI(cp));
     }//GEN-LAST:event_tripButtonActionPerformed
 
     private void messageBoardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageBoardButtonActionPerformed
@@ -188,7 +188,7 @@ public class HomePageGUI extends JPanel {
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void notificationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationButtonActionPerformed
-        // TODO add your handling code here:
+        pc.changeFrame(new MessageBoardGUI(cp));
     }//GEN-LAST:event_notificationButtonActionPerformed
 
     public static void main(String[] args) throws Exception{

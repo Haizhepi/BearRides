@@ -54,7 +54,7 @@ public class ViewTripGUI extends javax.swing.JPanel {
         returnLocTextField = new javax.swing.JTextField();
         passenCapLabel = new javax.swing.JLabel();
         passenCapTextField = new javax.swing.JTextField();
-        messageButton = new javax.swing.JButton();
+        editButton = new javax.swing.JButton();
         separator1 = new javax.swing.JSeparator();
         separator2 = new javax.swing.JSeparator();
 
@@ -115,12 +115,12 @@ public class ViewTripGUI extends javax.swing.JPanel {
 
         passenCapTextField.setEditable(false);
 
-        messageButton.setBackground(new java.awt.Color(0, 102, 0));
-        messageButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        messageButton.setText("Message");
-        messageButton.addActionListener(new java.awt.event.ActionListener() {
+        editButton.setBackground(new java.awt.Color(0, 102, 0));
+        editButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        editButton.setText("Edit");
+        editButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                messageButtonActionPerformed(evt);
+                editButtonActionPerformed(evt);
             }
         });
 
@@ -156,7 +156,7 @@ public class ViewTripGUI extends javax.swing.JPanel {
                             .addComponent(returnTimeTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(returnLocTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(messageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(139, 139, 139)
                                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(145, 145, 145))
@@ -217,7 +217,7 @@ public class ViewTripGUI extends javax.swing.JPanel {
                     .addComponent(passenCapTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(messageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,9 +233,10 @@ public class ViewTripGUI extends javax.swing.JPanel {
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
-    private void messageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageButtonActionPerformed
+    private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_messageButtonActionPerformed
+        pc.changeFrame(new EditTripGUI(cp));
+    }//GEN-LAST:event_editButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -246,7 +247,7 @@ public class ViewTripGUI extends javax.swing.JPanel {
     private javax.swing.JTextField desTimeTextField;
     private javax.swing.JLabel driverLabel;
     private javax.swing.JTextField driverTextField;
-    private javax.swing.JButton messageButton;
+    private javax.swing.JButton editButton;
     private javax.swing.JLabel originLocLabel;
     private javax.swing.JTextField originLocTextField;
     private javax.swing.JLabel originTimeLabel;

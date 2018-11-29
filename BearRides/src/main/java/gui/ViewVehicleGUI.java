@@ -16,12 +16,12 @@ import controller.PanelController;
  *
  * @author Xingan_Wan
  */
-public class VehicleInfoGUI extends javax.swing.JPanel {
+public class ViewVehicleGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form DriverInfo
      */
-    public VehicleInfoGUI(DashBoard cp) {
+    public ViewVehicleGUI(DashBoard cp) {
         this.cp = cp;
         this.pc = cp.getPanelController();
         initComponents();
@@ -34,7 +34,7 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        vInfoLabel = new javax.swing.JLabel();
+        viewVInfoLabel = new javax.swing.JLabel();
         modelLabel = new javax.swing.JLabel();
         capaLabel = new javax.swing.JLabel();
         spaceLabel = new javax.swing.JLabel();
@@ -42,14 +42,14 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
         capaFormattedTextField = new javax.swing.JFormattedTextField();
         spaceFormattedTextField = new javax.swing.JFormattedTextField();
         separator1 = new javax.swing.JSeparator();
-        okButton = new javax.swing.JButton();
+        editButton = new javax.swing.JButton();
         separator2 = new javax.swing.JSeparator();
         backButton = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
-        vInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        vInfoLabel.setText("Vehicle Infomation");
+        viewVInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        viewVInfoLabel.setText("View Vehicle Information");
 
         modelLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         modelLabel.setText("Model (Description)");
@@ -60,12 +60,18 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
         spaceLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         spaceLabel.setText("storage Space (Cases)");
 
-        okButton.setBackground(new java.awt.Color(0, 102, 0));
-        okButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        okButton.setText("OK");
-        okButton.addActionListener(new java.awt.event.ActionListener() {
+        modelFormattedTextField.setEditable(false);
+
+        capaFormattedTextField.setEditable(false);
+
+        spaceFormattedTextField.setEditable(false);
+
+        editButton.setBackground(new java.awt.Color(0, 102, 0));
+        editButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        editButton.setText("Edit");
+        editButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                okButtonActionPerformed(evt);
+                editButtonActionPerformed(evt);
             }
         });
 
@@ -88,7 +94,7 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(127, 127, 127)
-                .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(135, 135, 135))
@@ -106,21 +112,21 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(vInfoLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(separator1)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(viewVInfoLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {backButton, okButton});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {backButton, editButton});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(vInfoLabel)
+                .addComponent(viewVInfoLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(separator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -135,28 +141,26 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(spaceLabel)
                     .addComponent(spaceFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 230, Short.MAX_VALUE)
                 .addComponent(separator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {backButton, okButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {backButton, editButton});
 
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
-    private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        // TODO add your handling code here:
-        pc.closeFrame();
-    }//GEN-LAST:event_okButtonActionPerformed
+    private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
+        pc.changeFrame(new EditVehicleGUI(cp));
+    }//GEN-LAST:event_editButtonActionPerformed
     
     public static void main(String[] args) {
         // take place on thread other than main thread
@@ -177,7 +181,7 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new VehicleInfoGUI(cp));
+                cp.getPanelController().changeFrame(new ViewVehicleGUI(cp));
             }
         });
     }
@@ -186,14 +190,14 @@ public class VehicleInfoGUI extends javax.swing.JPanel {
     private javax.swing.JButton backButton;
     private javax.swing.JFormattedTextField capaFormattedTextField;
     private javax.swing.JLabel capaLabel;
+    private javax.swing.JButton editButton;
     private javax.swing.JFormattedTextField modelFormattedTextField;
     private javax.swing.JLabel modelLabel;
-    private javax.swing.JButton okButton;
     private javax.swing.JSeparator separator1;
     private javax.swing.JSeparator separator2;
     private javax.swing.JFormattedTextField spaceFormattedTextField;
     private javax.swing.JLabel spaceLabel;
-    private javax.swing.JLabel vInfoLabel;
+    private javax.swing.JLabel viewVInfoLabel;
     // End of variables declaration//GEN-END:variables
     
     @SuppressWarnings("unused")

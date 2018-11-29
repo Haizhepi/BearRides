@@ -240,7 +240,7 @@ public class EditUserGUI extends JPanel {
 
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
         // TODO add your handling code here:
-        pm.changeFrame(new VehicleInfoGUI(cp));
+        pm.changeFrame(new ViewVehicleGUI(cp));
 
     }//GEN-LAST:event_D_VInfoButtonActionPerformed
 
