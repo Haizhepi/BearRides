@@ -18,16 +18,13 @@ public abstract class SQLStatementExecuter {
         try {
             statement = connection.createStatement();
             
-            if(beforeHook(statement, object)) {
-                
-                statement = connection.createStatement();
-                
+            if(!beforeHook(statement, object)) {
                 statement.executeBatch();
-                
-                statement.executeUpdate(SQLStatement, Statement.RETURN_GENERATED_KEYS);
-                
-                afterHook(statement, object);
             }
+            
+            statement.executeUpdate(SQLStatement, Statement.RETURN_GENERATED_KEYS);
+            
+            afterHook(statement, object);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -48,14 +45,13 @@ public abstract class SQLStatementExecuter {
         try {
             statement = connection.createStatement();
             
-            if(beforeHook(statement, object)) {
-                
+            if(!beforeHook(statement, object)) {    
                 statement.executeBatch();
-                
-                // execute select SQL stetement
-                rs = statement.executeQuery(SQLStatement);
-                afterHook(statement, object);
             }
+            
+            rs = statement.executeQuery(SQLStatement);
+            
+            afterHook(statement, object);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
