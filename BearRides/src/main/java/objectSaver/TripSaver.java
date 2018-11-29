@@ -1,6 +1,5 @@
 package objectSaver;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -12,7 +11,7 @@ import object.User;
 public class TripSaver extends SQLStatementExecuter {
     
     @Override
-    protected Boolean beforeHook(Connection connection, Object object) {
+    protected Boolean beforeHook(Statement statement, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
         
@@ -30,19 +29,31 @@ public class TripSaver extends SQLStatementExecuter {
                 + "', " +trip.getPassengerCap()
                 + ");";
                 
-                for(String requirement : trip.getRequirements()) {
-                    SQLStatement += "INSERT INTO TripRequirement (tid, req) VALUES ("
-                            + trip.getPrimaryKey()
-                            + ", " + requirement
-                            + ");";
-                }
-                
-                for(User user : trip.getRiders()) {
-                    SQLStatement += "INSERT INTO TripRider (tid, uid) VALUES ("
-                            + trip.getPrimaryKey()
-                            + ", " + user.getPrimaryKey()
-                            + ");";
-                }
+        for(String requirement : trip.getRequirements()) {
+            String batch = "INSERT INTO TripRequirement (tid, req) VALUES ("
+                    + trip.getPrimaryKey()
+                    + ", " + requirement
+                    + ");";
+            
+            try {
+                statement.addBatch(batch);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        
+        for(User user : trip.getRiders()) {
+            String batch = "INSERT INTO TripRider (tid, uid) VALUES ("
+                    + trip.getPrimaryKey()
+                    + ", " + user.getPrimaryKey()
+                    + ");";
+            
+           try {
+                statement.addBatch(batch);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
         
         return true;
     }

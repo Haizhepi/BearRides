@@ -37,9 +37,9 @@ public class Main {
                 // turn off metal's use of bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
                 
-                DashBoard cp = new DashBoard();
-                cp.load();
-                cp.getPanelController().changeFrame(new LoginGUI(cp));
+                DashBoard db = new DashBoard();
+                db.load();
+                db.getPanelController().changeFrame(new LoginGUI(db));
             }
         });
     }

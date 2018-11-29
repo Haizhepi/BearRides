@@ -15,6 +15,7 @@ import javax.swing.table.AbstractTableModel;
 
 import com.google.common.collect.TreeMultimap;
 
+import controller.DashBoard;
 import object.Message;
 import object.Trip;
 import object.User;
@@ -58,6 +59,7 @@ public class MessageCollection extends AbstractTableModel {
         
         for(Message message : fromUser(user)) {
             flag = remove(message) && flag;
+            DashBoard.removeFromDatabase(message);
         }
         
         return flag;
@@ -72,6 +74,8 @@ public class MessageCollection extends AbstractTableModel {
      */
     public Boolean remove(Message message) {
         Trip trip = message.getTrip();
+        
+        DashBoard.removeFromDatabase(message);
         
         return messages.remove(message) &&
                 userMap.remove(message.getCreator(), message) &&

@@ -17,7 +17,7 @@ public class PanelController {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
 
-	public PanelController() {
+	public PanelController(DashBoard db) {
 		frame = new JFrame("BearRides");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(700, 500);
@@ -25,6 +25,7 @@ public class PanelController {
 		frame.setVisible(true);
 
 		this.stack = new Stack<JPanel>();
+		this.db = db;
 	}
     
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/
@@ -55,7 +56,7 @@ public class PanelController {
      */
     public void closeFrame() {
         if (this.stack.isEmpty()) {
-            new Shutdown();
+            new Shutdown(db);
         }
         this.stack.pop();
 
@@ -82,4 +83,5 @@ public class PanelController {
 	//variable not to be saved upon shutdown
 	private static JFrame frame;
 	private Stack<JPanel> stack;
+	private DashBoard db;
 }

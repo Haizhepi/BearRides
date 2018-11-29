@@ -6,11 +6,14 @@
 
 package main;
 
+import controller.DashBoard;
+
 public class Shutdown {
     
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
-	public Shutdown() {
+	public Shutdown(DashBoard db) {
+	    db.save();
 	    System.exit(0);
 	}
 }

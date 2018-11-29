@@ -23,7 +23,7 @@ public class DashBoard {
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public DashBoard() {
-        pc = new PanelController();
+        pc = new PanelController(this);
         mc = new MessageCollectionController();
         uc = new UserCollectionController();
         dc = DatabaseCreator.getInstance();
@@ -93,26 +93,26 @@ public class DashBoard {
         }
     }
     
-    public void removeFromDatabase(User user) {
-        UserGateway userGateway = new UserGateway(dc.getConnection());
+    public static void removeFromDatabase(User user) {
+        UserGateway userGateway = new UserGateway(DatabaseCreator.getInstance().getConnection());
         
         userGateway.delete(user);
     }
     
-    public void remove(Vehicle vehicle) {
-        VehicleGateway vehicleGateway = new VehicleGateway(dc.getConnection());
+    public static void removeFromDatabase(Vehicle vehicle) {
+        VehicleGateway vehicleGateway = new VehicleGateway(DatabaseCreator.getInstance().getConnection());
         
         vehicleGateway.delete(vehicle);
     }
     
-    public void removeFromDatabase(Message message) {
-        MessageGateway messageGateway = new MessageGateway(dc.getConnection());
+    public static void removeFromDatabase(Message message) {
+        MessageGateway messageGateway = new MessageGateway(DatabaseCreator.getInstance().getConnection());
         
         messageGateway.delete(message);
     }
     
-    public void removeFromDatabase(Trip trip) {
-        TripGateway tripGateway = new TripGateway(dc.getConnection());
+    public static void removeFromDatabase(Trip trip) {
+        TripGateway tripGateway = new TripGateway(DatabaseCreator.getInstance().getConnection());
         
         tripGateway.delete(trip);
     }

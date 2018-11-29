@@ -9,29 +9,33 @@ public abstract class SQLStatementExecuter {
     protected String SQLStatement = null;
 
 
-    protected abstract Boolean beforeHook(Connection connection, Object object);
+    protected abstract Boolean beforeHook(Statement statement, Object object);
     protected void afterHook(Statement statement, Object object) {}
     
     public void execute(Connection connection, Object object) {
         
-        if(beforeHook(connection, object)) {
-            Statement statement = null;
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
             
-            try {
+            if(beforeHook(statement, object)) {
+                
                 statement = connection.createStatement();
-                // execute update SQL stetement
-                System.out.println(SQLStatement);
+                
+                statement.executeBatch();
+                
                 statement.executeUpdate(SQLStatement, Statement.RETURN_GENERATED_KEYS);
+                
                 afterHook(statement, object);
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            } finally {
-                if (statement != null) {
-                    try {
-                        statement.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
         }
@@ -40,26 +44,30 @@ public abstract class SQLStatementExecuter {
     public ResultSet executeQuery(Connection connection, Object object) {
         ResultSet rs = null;
         
-        if(beforeHook(connection, object)) {
-            Statement statement = null;
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
             
-            try {
-                statement = connection.createStatement();
+            if(beforeHook(statement, object)) {
+                
+                statement.executeBatch();
+                
                 // execute select SQL stetement
                 rs = statement.executeQuery(SQLStatement);
                 afterHook(statement, object);
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            } finally {
-                if (statement != null) {
-                    try {
-                        statement.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
         }
+        
         return rs;
     }
 }

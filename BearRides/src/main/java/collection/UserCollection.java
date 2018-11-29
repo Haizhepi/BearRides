@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import controller.DashBoard;
 import object.User;
 
 public class UserCollection {
@@ -43,6 +44,8 @@ public class UserCollection {
      * postcondition: all references to user will be removed
      */
     public Boolean remove(User user) {
+        DashBoard.removeFromDatabase(user);
+        
         return userTable.remove(user.getEmail()) != null;
     }
     
