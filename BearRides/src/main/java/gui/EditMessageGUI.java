@@ -41,7 +41,6 @@ public class EditMessageGUI extends javax.swing.JPanel {
 
         descriptionLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-<<<<<<< HEAD
         jTextArea1 = new javax.swing.JTextArea(message.getBody());
         creatorLabel = new javax.swing.JLabel();
         titleTextField = new javax.swing.JTextField(message.getTitle());
@@ -49,15 +48,10 @@ public class EditMessageGUI extends javax.swing.JPanel {
         postTimeTextField = new javax.swing.JTextField(message.getPostTime());
         backButton = new javax.swing.JButton();
         creatorTextField = new javax.swing.JTextField(message.getCreator().toString());
-=======
-        jTextArea1 = new javax.swing.JTextArea();
-        creatorTextField = new javax.swing.JTextField();
-        backButton = new javax.swing.JButton();
->>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
         titleLabel = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         messageLabel = new javax.swing.JLabel();
-        saveTripButton = new javax.swing.JButton();
+        editTripButton = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
@@ -68,6 +62,12 @@ public class EditMessageGUI extends javax.swing.JPanel {
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
+
+        creatorLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
+        creatorLabel.setText("Creator");
+
+        postTimeLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
+        postTimeLabel.setText("PostTime");
 
         backButton.setBackground(new java.awt.Color(0, 102, 0));
         backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
@@ -84,12 +84,12 @@ public class EditMessageGUI extends javax.swing.JPanel {
         messageLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         messageLabel.setText("Message");
 
-        saveTripButton.setBackground(new java.awt.Color(0, 102, 0));
-        saveTripButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        saveTripButton.setText("Save Trip");
-        saveTripButton.addActionListener(new java.awt.event.ActionListener() {
+        editTripButton.setBackground(new java.awt.Color(0, 102, 0));
+        editTripButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        editTripButton.setText("Edit Trip");
+        editTripButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveTripButtonActionPerformed(evt);
+                editTripButtonActionPerformed(evt);
             }
         });
 
@@ -108,15 +108,14 @@ public class EditMessageGUI extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jSeparator1)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 680, Short.MAX_VALUE)
-<<<<<<< HEAD
                             .addComponent(titleTextField, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(postTimeTextField, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(creatorTextField)
-=======
-                            .addComponent(creatorTextField, javax.swing.GroupLayout.Alignment.LEADING)
->>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(descriptionLabel)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(creatorLabel)
+                                    .addComponent(postTimeLabel)
+                                    .addComponent(descriptionLabel))
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
@@ -125,7 +124,7 @@ public class EditMessageGUI extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(116, 116, 116)
-                .addComponent(saveTripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(editTripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(156, 156, 156))
@@ -140,7 +139,6 @@ public class EditMessageGUI extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(titleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-<<<<<<< HEAD
                 .addComponent(titleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(creatorLabel)
@@ -151,17 +149,13 @@ public class EditMessageGUI extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(postTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-=======
-                .addComponent(creatorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
->>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
                 .addComponent(descriptionLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(130, 130, 130)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(saveTripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(editTripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -173,15 +167,10 @@ public class EditMessageGUI extends javax.swing.JPanel {
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 
-    private void saveTripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveTripButtonActionPerformed
+    private void editTripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editTripButtonActionPerformed
         // TODO add your handling code here:
-<<<<<<< HEAD
         pc.changeFrame(new EditTripGUI(cp, message));
     }//GEN-LAST:event_editTripButtonActionPerformed
-=======
-        pc.changeFrame(new EditTripGUI(cp));
-    }//GEN-LAST:event_saveTripButtonActionPerformed
->>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
     
     @SuppressWarnings("unused")
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
@@ -215,24 +204,17 @@ public class EditMessageGUI extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
-<<<<<<< HEAD
     private javax.swing.JLabel creatorLabel;
     private javax.swing.JTextField titleTextField;
-=======
-    private javax.swing.JTextField creatorTextField;
->>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
     private javax.swing.JLabel descriptionLabel;
+    private javax.swing.JButton editTripButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel messageLabel;
-<<<<<<< HEAD
     private javax.swing.JLabel postTimeLabel;
     private javax.swing.JTextField postTimeTextField;
     private javax.swing.JTextField creatorTextField;
-=======
-    private javax.swing.JButton saveTripButton;
->>>>>>> 613328bce7d7d3d77c219c7f27d091cfaf4a125f
     private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
     
