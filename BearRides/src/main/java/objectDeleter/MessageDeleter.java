@@ -11,11 +11,25 @@ import object.Message;
 
 public class MessageDeleter implements SQLStatementExecuter {
     
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: executes without return
+     * return: void
+     * precondition: void
+     * postcondition: message object is deleted
+     */
     @Override
     public void execute(Connection connection, Object object) {
         executeQuery(connection, object);
     }
-
+    
+    /*
+     * description: executes with return
+     * return: void
+     * precondition: void
+     * postcondition: message object is deleted
+     */
     @Override
     public Statement executeQuery(Connection connection, Object object) {
         Message message = (Message) object;
