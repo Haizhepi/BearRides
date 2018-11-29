@@ -18,6 +18,7 @@ import objectLoader.TripLoader;
 import objectLoader.TripRequirementLoader;
 import objectLoader.TripRiderLoader;
 import objectSaver.TripSaver;
+import objectUpdater.TripUpdater;
 
 public class TripGateway extends Gateway<Trip> {
     private static Map<Long, Trip> trips;
@@ -28,8 +29,11 @@ public class TripGateway extends Gateway<Trip> {
 
     @Override
     public Gateway<Trip> save(Object object) {
-        SQLStatementExecuter executer = new TripSaver();
-        executer.execute(connection, object);
+        if(((Trip) object).getPrimaryKey() == null) {
+            new TripSaver().execute(connection, object);
+        } else {
+            new TripUpdater().execute(connection, object);
+        }
         
         return this;
     }

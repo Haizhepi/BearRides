@@ -33,6 +33,19 @@ public class MessageCollectionController {
         sorter = new TableRowSorter<MessageCollection>(tableModel);
     }
     
+    /*~~~~~~~~~~~~ Removal  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: removes all references to message from this database
+     * return: true if successfully removed in all places
+     * precondition: void
+     * postcondition: all references to the message that can be
+     *      removed are removed
+     */
+    public void remove(Message message) {
+        tableModel.remove(message);
+    }
+    
     /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
     
     /*

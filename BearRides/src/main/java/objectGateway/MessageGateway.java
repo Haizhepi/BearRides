@@ -13,6 +13,7 @@ import object.User;
 import objectDeleter.MessageDeleter;
 import objectLoader.MessageLoader;
 import objectSaver.MessageSaver;
+import objectUpdater.MessageUpdater;
 
 public class MessageGateway extends Gateway<Message> {
     private static Map<Long, Message> messages;
@@ -23,8 +24,12 @@ public class MessageGateway extends Gateway<Message> {
 
     @Override
     public Gateway<Message> save(Object object) {
-        SQLStatementExecuter executer = new MessageSaver();
-        executer.execute(connection, object);
+        
+        if(((Message) object).getPrimaryKey() == null) {
+            new MessageSaver().execute(connection, object);
+        } else {
+            new MessageUpdater().execute(connection, object);
+        }
         
         return this;
     }

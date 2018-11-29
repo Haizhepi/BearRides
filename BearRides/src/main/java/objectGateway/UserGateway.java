@@ -11,6 +11,7 @@ import object.Vehicle;
 import objectDeleter.UserDeleter;
 import objectLoader.UserLoader;
 import objectSaver.UserSaver;
+import objectUpdater.UserUpdater;
 
 public class UserGateway extends Gateway<User> {
     private static Map<Long, User> users;
@@ -21,7 +22,12 @@ public class UserGateway extends Gateway<User> {
 
     @Override
     public Gateway<User> save(Object object) {
-        new UserSaver().execute(connection, object);
+        if(((User) object).getPrimaryKey() == null) {
+            new UserSaver().execute(connection, object);
+        } else {
+            new UserUpdater().execute(connection, object);
+        }
+        
         return this;
     }
 

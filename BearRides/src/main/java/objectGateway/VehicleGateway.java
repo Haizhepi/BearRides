@@ -10,6 +10,7 @@ import object.Vehicle;
 import objectDeleter.VehicleDeleter;
 import objectLoader.VehicleLoader;
 import objectSaver.VehicleSaver;
+import objectUpdater.VehicleUpdater;
 
 public class VehicleGateway extends Gateway<Vehicle> {
     private static Map<Long, Vehicle> vehicles;
@@ -20,7 +21,12 @@ public class VehicleGateway extends Gateway<Vehicle> {
 
     @Override
     public Gateway<Vehicle> save(Object object) {
-        new VehicleSaver().execute(connection, object);
+        if(((Vehicle) object).getPrimaryKey() == null) {
+            new VehicleSaver().execute(connection, object);
+        } else {
+            new VehicleUpdater().execute(connection, object);
+        }
+        
         return this;
     }
 

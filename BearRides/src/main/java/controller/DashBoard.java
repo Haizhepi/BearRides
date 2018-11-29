@@ -10,7 +10,9 @@ import java.sql.Connection;
 
 import database.DatabaseCreator;
 import object.Message;
+import object.Trip;
 import object.User;
+import object.Vehicle;
 import objectGateway.MessageGateway;
 import objectGateway.TripGateway;
 import objectGateway.UserGateway;
@@ -91,12 +93,28 @@ public class DashBoard {
         }
     }
     
-    public void remove(User user) {
+    public void removeFromDatabase(User user) {
+        UserGateway userGateway = new UserGateway(dc.getConnection());
         
+        userGateway.delete(user);
     }
     
-    public void remove(Message message) {
+    public void remove(Vehicle vehicle) {
+        VehicleGateway vehicleGateway = new VehicleGateway(dc.getConnection());
         
+        vehicleGateway.delete(vehicle);
+    }
+    
+    public void removeFromDatabase(Message message) {
+        MessageGateway messageGateway = new MessageGateway(dc.getConnection());
+        
+        messageGateway.delete(message);
+    }
+    
+    public void removeFromDatabase(Trip trip) {
+        TripGateway tripGateway = new TripGateway(dc.getConnection());
+        
+        tripGateway.delete(trip);
     }
     
     //variable not to be saved upon shutdown
