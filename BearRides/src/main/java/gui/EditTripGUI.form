@@ -46,7 +46,7 @@
                           <Component id="returnTimeTextField" alignment="1" min="-2" pref="273" max="-2" attributes="0"/>
                           <Component id="returnLocTextField" alignment="1" min="-2" pref="273" max="-2" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="messageButton" min="-2" pref="128" max="-2" attributes="0"/>
+                              <Component id="okButton" min="-2" pref="128" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
                               <Component id="backButton" min="-2" pref="128" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
@@ -124,7 +124,7 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="messageButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="okButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
                   <Component id="backButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -254,7 +254,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="passenCapTextField">
     </Component>
-    <Component class="javax.swing.JButton" name="messageButton">
+    <Component class="javax.swing.JButton" name="okButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="66" red="0" type="rgb"/>
@@ -262,10 +262,10 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Leelawadee UI" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Message"/>
+        <Property name="text" type="java.lang.String" value="OK"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="messageButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="okButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JSeparator" name="separator1">
