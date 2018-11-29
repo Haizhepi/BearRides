@@ -1,0 +1,1046 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>186</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>178</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void messageBoardButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>182</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void accountSettingButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>190</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void notificationButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>174</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void tripButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>128</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>142</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void addButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>247</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>252</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>270</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void agreementCheckBoxActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>140</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void loginButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>151</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void registerButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>283</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip void setDriver(object.User driver)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>191</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip object.Message getMessage()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Vehicle.java</file>
+  <line>78</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Vehicle void setModel(java.lang.String model)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Vehicle.java</file>
+  <line>98</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Vehicle void setPassengerCap(java.lang.Integer passengerCap)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>250</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User void setPassHash(java.lang.Integer passHash)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>86</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User void removeTrip(object.Trip trip)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/PanelController.java</file>
+  <line>79</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.PanelController javax.swing.JPanel getCurrentFrame()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>388</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.driverFilter driverFilter(java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>276</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void remind(java.util.Date date)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>77</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController javax.swing.table.AbstractTableModel getModel()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>89</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void sortBy(controller.MessageCollectionController.Sorters sorters)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>244</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void editMessage(object.Message newMessage, object.Message oldMessage)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>455</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.originLocFilter originLocFilter(java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>490</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.destinLocFilter destinLocFilter(java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>560</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.passengerCapFilter passengerCapFilter(java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>525</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.returnLocFilter returnLocFilter(java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>262</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void clearUser(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>423</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.hasTripFilter hasTripFilter()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>45</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void remove(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>157</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void postMessage(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>121</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void filterBy(controller.MessageCollectionController.Filters filters, java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController java.lang.Boolean setInfo(object.User newUser, object.User oldUser)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController java.lang.Boolean setInfo(object.User newUser, object.User oldUser)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="newUser" />
+  </hints>
+  <description>Parameter &lt;code&gt;newUser&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController java.lang.Boolean setInfo(object.User newUser, object.User oldUser)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="oldUser" />
+  </hints>
+  <description>Parameter &lt;code&gt;oldUser&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>119</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController java.lang.Boolean logout(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>48</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController void remove(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>89</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController void recover(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>89</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController void recover(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="user" />
+  </hints>
+  <description>Parameter &lt;code&gt;user&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>77</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController object.User getCurrentUser()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>127</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.UserCollectionController currentUser" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field is never assigned.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>99</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController void reverifyAll()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java</file>
+  <line>102</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.DashBoard void removeFromDatabase(object.Vehicle vehicle)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java</file>
+  <line>114</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.DashBoard void removeFromDatabase(object.Trip trip)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>236</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void editButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>231</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>201</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void editButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>186</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>196</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void tripButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>191</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void creatorButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>195</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>190</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void editButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>185</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.SQLStatementExecuter java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used as a member of this interface, but only as a member of the implementation class(es). The project will stay compilable if the method is removed from the interface.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="field" FQNAME="database.DatabaseProtocol.dataTypes foreignKeySet" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has no usages.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java</file>
+  <line>12</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.DatabaseProtocol.dataTypes dataTypes(java.lang.String sql)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has usage(s) but they all belong to calls chain that has no members reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="field" FQNAME="database.DatabaseProtocol.dataTypes stringSet" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has no usages.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>18</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway java.util.Map&lt;java.lang.Long,T&gt; getLoaded()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used as a member of this abstract&amp;nbsp;class, but only as a member of the implementation class(es). The project will stay compilable if the method is removed from the abstract&amp;nbsp;class.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway T find(java.lang.Long id)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway T find(java.lang.Long id)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="id" />
+  </hints>
+  <description>Parameter &lt;code&gt;id&lt;/code&gt; is not used in any implementation</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>12</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway objectGateway.Gateway&lt;T&gt; save(java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used as a member of this abstract&amp;nbsp;class, but only as a member of the implementation class(es). The project will stay compilable if the method is removed from the abstract&amp;nbsp;class.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway java.util.Map&lt;java.lang.Long,T&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used as a member of this abstract&amp;nbsp;class, but only as a member of the implementation class(es). The project will stay compilable if the method is removed from the abstract&amp;nbsp;class.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>14</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway objectGateway.Gateway&lt;T&gt; delete(java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used as a member of this abstract&amp;nbsp;class, but only as a member of the implementation class(es). The project will stay compilable if the method is removed from the abstract&amp;nbsp;class.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectDeleter/TripDeleter.java</file>
+  <line>13</line>
+  <module>BearRides</module>
+  <package>objectDeleter</package>
+  <entry_point TYPE="method" FQNAME="objectDeleter.TripDeleter void execute(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>&lt;ul&gt;&lt;li&gt;Method owner class is never instantiated OR&lt;/li&gt;&lt;li&gt;An instantiation is not reachable from entry points.&lt;/li&gt;&lt;/ul&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>61</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.UserCollection object.User get(java.lang.String uuid)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>151</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>156</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>218</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>213</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>148</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>241</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>236</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>247</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>161</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void editButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>157</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void backButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused declaration</problem_class>
+  <hints>
+    <hint value="evt" />
+  </hints>
+  <description>Parameter &lt;code&gt;evt&lt;/code&gt; is not used in either this method or any of its derived methods</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>327</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="class" FQNAME="controller.tripDestinTimeComparator" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>295</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="class" FQNAME="controller.postTimeComparator" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>308</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="class" FQNAME="controller.tripOriginTimeComparator" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>365</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="class" FQNAME="controller.tripPassengerCapComparator" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>346</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="class" FQNAME="controller.tripReturnTimeComparator" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectDeleter/VehicleDeleter.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>objectDeleter</package>
+  <entry_point TYPE="class" FQNAME="objectDeleter.VehicleDeleter" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectDeleter/TripDeleter.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>objectDeleter</package>
+  <entry_point TYPE="class" FQNAME="objectDeleter.TripDeleter" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation but it is not reachable from entry points.</description>
+</problem>
+</problems>

@@ -1,0 +1,22 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/object/UserTest.java</file>
+  <line>8</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/src/test/java/object/UserTest.java" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.util.List;&lt;/code&gt; #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/object/UserTest.java</file>
+  <line>6</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/src/test/java/object/UserTest.java" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.util.Date;&lt;/code&gt; #loc</description>
+</problem>
+</problems>

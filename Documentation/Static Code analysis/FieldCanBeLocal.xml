@@ -1,0 +1,1631 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>223</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI notificationButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>221</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI messageBoardButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>225</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI topSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>222</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI messageBoardLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>227</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI tripLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>229</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI welcomeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>226</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI tripButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>219</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI accountSettingButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>224</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI notificationLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>220</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>228</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI userInfoLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>171</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI addButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>173</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI jScrollPane" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>172</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>178</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>303</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>312</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI genderLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>311</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI genderFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>319</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI reqLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>301</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI ageLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>322</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI warningLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>304</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI comfirmPasswordField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>315</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI lastnameLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>318</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI passwordLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>299</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI LowerSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>317</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI passwordComfirmLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>306</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI contactLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>316</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI okButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>308</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI emailLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>313</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI jSeparator1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>310</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI firstnameLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>321</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI titleLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>185</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI passwordLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>187</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI titleLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>184</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI loginButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>182</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI iconLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>186</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI registerButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>180</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI emailLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>255</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI passenCapLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>264</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI separator2" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>248</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI driverLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>257</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI returnLocLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>263</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI separator1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>247</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI desTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>253</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI originTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>260</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI returnTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>262</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI ridersTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>246</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI desTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>272</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>261</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI ridersLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>245</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI desLocTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>252</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI originLocTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>244</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI desLocLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>258</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI returnLocTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>254</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI originTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>251</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI originLocLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>266</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI viewTripLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>250</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI editButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>243</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>265</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI separator3" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>249</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI driverTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>259</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI returnTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>256</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI passenCapTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>213</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI editButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>228</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>221</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI tripButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>220</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI titleLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>222</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI viewMessageLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>211</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI creatorTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>209</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI creatorButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>215</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI jSeparator1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>217</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI postTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>218</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI postTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>214</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI jScrollPane1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>208</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>210</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI creatorLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>216</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI jTextArea1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>212</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI descriptionLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>219</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI postTimeTextField1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>213</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI jCheckBox1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>212</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI isDriverLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>204</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI ageFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>214</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI lastNameFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>211</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI genderLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>206</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI contactFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>216</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI upperSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>222</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>215</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI lastnameLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>207</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI contactLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>205</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>202</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI D_VInfoButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>203</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI ViewUserInfoLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>208</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI editButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>210</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI firstnameLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>209</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI firstNameFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>200</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>194</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI spaceLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>196</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI vInfoLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>195</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI topSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>187</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI bottomSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>186</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>192</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI okButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>189</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI capaLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>188</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI capaFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>191</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI modelLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>190</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI modelFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>193</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI spaceFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>236</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI passenCapLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>246</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI separator3" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>240</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI returnTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>239</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI returnLocTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>230</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI driverTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>234</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI originTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>247</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI tripLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>244</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI separator1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>235</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI originTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>229</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI driverLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>245</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI separator2" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>238</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI returnLocLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>232</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI originLocLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>233</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI originLocTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>253</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>241</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI returnTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>225</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI desLocLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>227</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI desTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>237</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI passenCapTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>231</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI okButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>242</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI ridersLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>224</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>251</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>228</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI desTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>226</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI desLocTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>243</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI ridersTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>191</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI messageLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>199</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>192</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI postTimeLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>201</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>195</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI titleLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>186</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI creatorTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>190</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI jTextArea1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>185</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI creatorLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>187</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI descriptionLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>189</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI jSeparator1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>184</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>194</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI postTimeTextField1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>188</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI jScrollPane1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>193</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI postTimeTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>288</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI firstnameLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>285</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI emailFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>293</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI okButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>283</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI contactFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>277</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI D_VInfoButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>279</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI ageFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>286</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI emailLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>289</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI genderFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>292</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI lastnameLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>299</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI userInfoLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>280</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI ageLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>294</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI passwordComfirmLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>282</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI comfirmPasswordField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>291</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI lastNameFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>284</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI contactLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>295</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI passwordLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>281</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>298</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI upperSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>297</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI setPasswordField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>296</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI reqLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>278</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI LowerSeparator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>290</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI genderLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>287</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI firstNameFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>196</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI separator1" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>193</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI editButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>194</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI modelFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>198</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI spaceFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>197</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI separator2" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>195</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI modelLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>192</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI capaLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>200</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI viewVInfoLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>199</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI spaceLabel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>191</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI capaFormattedTextField" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>190</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI backButton" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Field can be local</problem_class>
+  <description>Field can be converted to a local variable</description>
+</problem>
+</problems>

@@ -1,0 +1,11 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>3</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Dangling Javadoc comment</problem_class>
+  <description>Dangling Javadoc comment #loc</description>
+</problem>
+</problems>

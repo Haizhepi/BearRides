@@ -1,0 +1,137 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>22</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip Trip(object.User driver, java.util.Date originTime, java.lang.Integer passengerCap)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument User can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>23</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip Trip(object.User driver, java.util.Date originTime, java.lang.Integer passengerCap)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument String can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>25</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User User(java.lang.String email, java.lang.String password)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Message can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>26</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User User(java.lang.String email, java.lang.String password)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Trip can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>32</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User User(java.lang.String email, java.lang.Integer passHash)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Message can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>33</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User User(java.lang.String email, java.lang.Integer passHash)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Trip can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/PanelController.java</file>
+  <line>27</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.PanelController PanelController(controller.DashBoard db)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument JPanel can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>33</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController MessageCollectionController()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument MessageCollection can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/VehicleGateway.java</file>
+  <line>46</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.VehicleGateway java.util.Map&lt;java.lang.Long,object.Vehicle&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Long, Vehicle can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java</file>
+  <line>51</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.MessageGateway java.util.Map&lt;java.lang.Long,object.Message&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Long, Message can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/TripGateway.java</file>
+  <line>60</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.TripGateway java.util.Map&lt;java.lang.Long,object.Trip&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Long, Trip can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/UserGateway.java</file>
+  <line>47</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.UserGateway java.util.Map&lt;java.lang.Long,object.User&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Long, User can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>22</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.UserCollection UserCollection()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument String, User can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>23</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.UserCollection UserCollection()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument String, UUID can be replaced with &lt;&gt;</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>28</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection MessageCollection()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Explicit type can be replaced with &lt;&gt;</problem_class>
+  <description>Explicit type argument Message can be replaced with &lt;&gt;</description>
+</problem>
+</problems>

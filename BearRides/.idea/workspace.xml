@@ -533,11 +533,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.UserCollectionTest" />
       <item itemvalue="JUnit.UserCollectionTest.authenticate" />
       <item itemvalue="JUnit.DerbyTest.saveObjectTest" />
       <item itemvalue="JUnit.DerbyTest" />
-      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>

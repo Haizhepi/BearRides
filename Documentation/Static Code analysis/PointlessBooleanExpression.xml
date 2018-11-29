@@ -1,0 +1,128 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/MessageSaver.java</file>
+  <line>33</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.MessageSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;message.isHidden() == true&lt;/code&gt; can be simplified to 'message.isHidden()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/MessageSaver.java</file>
+  <line>34</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.MessageSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;message.isNotification() == true&lt;/code&gt; can be simplified to 'message.isNotification()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/UserSaver.java</file>
+  <line>35</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.UserSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;user.getGender() == true&lt;/code&gt; can be simplified to 'user.getGender()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/UserSaver.java</file>
+  <line>40</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.UserSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;user.isDriver() == true&lt;/code&gt; can be simplified to 'user.isDriver()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectUpdater/MessageUpdater.java</file>
+  <line>28</line>
+  <module>BearRides</module>
+  <package>objectUpdater</package>
+  <entry_point TYPE="method" FQNAME="objectUpdater.MessageUpdater java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;message.isHidden() == true&lt;/code&gt; can be simplified to 'message.isHidden()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectUpdater/MessageUpdater.java</file>
+  <line>29</line>
+  <module>BearRides</module>
+  <package>objectUpdater</package>
+  <entry_point TYPE="method" FQNAME="objectUpdater.MessageUpdater java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;message.isNotification() == true&lt;/code&gt; can be simplified to 'message.isNotification()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectUpdater/UserUpdater.java</file>
+  <line>30</line>
+  <module>BearRides</module>
+  <package>objectUpdater</package>
+  <entry_point TYPE="method" FQNAME="objectUpdater.UserUpdater java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;user.getGender() == true&lt;/code&gt; can be simplified to 'user.getGender()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectUpdater/UserUpdater.java</file>
+  <line>35</line>
+  <module>BearRides</module>
+  <package>objectUpdater</package>
+  <entry_point TYPE="method" FQNAME="objectUpdater.UserUpdater java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;user.isDriver() == true&lt;/code&gt; can be simplified to 'user.isDriver()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/VehicleGateway.java</file>
+  <line>51</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.VehicleGateway java.util.Map&lt;java.lang.Long,object.Vehicle&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;rs.next() == false&lt;/code&gt; can be simplified to '!rs.next()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java</file>
+  <line>62</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.MessageGateway java.util.Map&lt;java.lang.Long,object.Message&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;rs.next() == false&lt;/code&gt; can be simplified to '!rs.next()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/TripGateway.java</file>
+  <line>69</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.TripGateway java.util.Map&lt;java.lang.Long,object.Trip&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;trSet.next() == false&lt;/code&gt; can be simplified to '!trSet.next()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/TripGateway.java</file>
+  <line>85</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.TripGateway java.util.Map&lt;java.lang.Long,object.Trip&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;trSet.next() == false&lt;/code&gt; can be simplified to '!trSet.next()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/TripGateway.java</file>
+  <line>102</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.TripGateway java.util.Map&lt;java.lang.Long,object.Trip&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;rs.next() == false&lt;/code&gt; can be simplified to '!rs.next()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/UserGateway.java</file>
+  <line>55</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.UserGateway java.util.Map&lt;java.lang.Long,object.User&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless boolean expression</problem_class>
+  <description>&lt;code&gt;rs.next() == false&lt;/code&gt; can be simplified to '!rs.next()' #loc</description>
+</problem>
+</problems>

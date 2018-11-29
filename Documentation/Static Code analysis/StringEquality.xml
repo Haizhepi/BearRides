@@ -1,0 +1,29 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java</file>
+  <line>69</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.MessageGateway java.util.Map&lt;java.lang.Long,object.Message&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">String comparison using '==', instead of 'equals()'</problem_class>
+  <description>String values are compared using &lt;code&gt;==&lt;/code&gt;, not 'equals()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/MessageGateway.java</file>
+  <line>73</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.MessageGateway java.util.Map&lt;java.lang.Long,object.Message&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">String comparison using '==', instead of 'equals()'</problem_class>
+  <description>String values are compared using &lt;code&gt;==&lt;/code&gt;, not 'equals()' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/UserGateway.java</file>
+  <line>62</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.UserGateway java.util.Map&lt;java.lang.Long,object.User&gt; load()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">String comparison using '==', instead of 'equals()'</problem_class>
+  <description>String values are compared using &lt;code&gt;==&lt;/code&gt;, not 'equals()' #loc</description>
+</problem>
+</problems>
