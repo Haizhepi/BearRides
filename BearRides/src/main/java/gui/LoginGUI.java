@@ -22,6 +22,7 @@ public class LoginGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form LoginGUI
+     * @param cp
      */
     public LoginGUI(DashBoard cp) {
         this.cp = cp;
@@ -140,7 +141,7 @@ public class LoginGUI extends javax.swing.JPanel {
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         User user = uc.login(emailTextField.getText(), new String(jPasswordField1.getPassword()));
         if(user != null) {
-            pc.changeFrame(new HomePageGUI(cp, user));
+            pc.changeFrame(new HomePageGUI(cp));
         } else {
         }
         

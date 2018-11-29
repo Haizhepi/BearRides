@@ -49,6 +49,7 @@ public class EditMessageGUI extends javax.swing.JPanel {
         titleLabel = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         messageLabel = new javax.swing.JLabel();
+        editTripButton = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
@@ -81,6 +82,15 @@ public class EditMessageGUI extends javax.swing.JPanel {
         messageLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         messageLabel.setText("Message");
 
+        editTripButton.setBackground(new java.awt.Color(0, 102, 0));
+        editTripButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        editTripButton.setText("Edit Trip");
+        editTripButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editTripButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -88,14 +98,9 @@ public class EditMessageGUI extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(280, 280, 280)
-                                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(messageLabel)))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(messageLabel)
+                        .addGap(0, 586, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -115,6 +120,12 @@ public class EditMessageGUI extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(titleLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(116, 116, 116)
+                .addComponent(editTripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(156, 156, 156))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -140,7 +151,9 @@ public class EditMessageGUI extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(editTripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -149,12 +162,17 @@ public class EditMessageGUI extends javax.swing.JPanel {
         // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
+
+    private void editTripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editTripButtonActionPerformed
+        // TODO add your handling code here:
+        pc.changeFrame(new EditTripGUI(cp));
+    }//GEN-LAST:event_editTripButtonActionPerformed
     
     @SuppressWarnings("unused")
-    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:
         pc.closeFrame();
-    }//GEN-LAST:event_addButtonActionPerformed
+    }                                         
     
     public static void main(String[] args) throws Exception{
         // take place on thread other than main thread
@@ -185,6 +203,7 @@ public class EditMessageGUI extends javax.swing.JPanel {
     private javax.swing.JLabel creatorLabel;
     private javax.swing.JTextField creatorTextField;
     private javax.swing.JLabel descriptionLabel;
+    private javax.swing.JButton editTripButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;

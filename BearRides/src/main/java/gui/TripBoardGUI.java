@@ -17,12 +17,12 @@ import controller.PanelController;
  *
  * @author Xingan_Wan
  */
-public class MessageBoardGUI extends javax.swing.JPanel {
+public class TripBoardGUI extends javax.swing.JPanel {
 
     /**
      * Creates new form MessageTableGUI1
      */
-    public MessageBoardGUI(DashBoard cp) {
+    public TripBoardGUI(DashBoard cp) {
         //later make load from file
         this.cp = cp;
         tc = cp.getMessageCollectionController();
@@ -51,7 +51,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Message", "Time Post", "Creator"
+                "Trip", "Time Post", "Creator"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -90,7 +90,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
         addButton.setBackground(new java.awt.Color(255, 0, 51));
         addButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        addButton.setText("Add Message");
+        addButton.setText("Add Trip");
         addButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addButtonActionPerformed(evt);
@@ -141,7 +141,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
 
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         // TODO add your handling code here:
-        pc.changeFrame(new MessageBoardGUI(cp));
+        pc.changeFrame(new TripBoardGUI(cp));
     }//GEN-LAST:event_addButtonActionPerformed
 
     public static void main(String[] args) throws Exception {
@@ -163,7 +163,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new MessageBoardGUI(cp));
+                cp.getPanelController().changeFrame(new TripBoardGUI(cp));
             }
         });
     }
