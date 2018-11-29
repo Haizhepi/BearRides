@@ -1,0 +1,11 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>111</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void sortBy(controller.MessageCollectionController.Sorters sorters)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Collections.sort() can be replaced with List.sort()</problem_class>
+  <description>Collections.sort could be replaced with List.sort</description>
+</problem>
+</problems>

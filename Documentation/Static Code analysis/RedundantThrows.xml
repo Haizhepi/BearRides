@@ -1,0 +1,74 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>194</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant 'throws' clause</problem_class>
+  <hints>
+    <hint value="Exception" />
+  </hints>
+  <description>The declared exception &lt;code&gt;Exception&lt;/code&gt; is never thrown</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>146</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant 'throws' clause</problem_class>
+  <hints>
+    <hint value="Exception" />
+  </hints>
+  <description>The declared exception &lt;code&gt;Exception&lt;/code&gt; is never thrown</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>274</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant 'throws' clause</problem_class>
+  <hints>
+    <hint value="Exception" />
+  </hints>
+  <description>The declared exception &lt;code&gt;Exception&lt;/code&gt; is never thrown</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>155</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant 'throws' clause</problem_class>
+  <hints>
+    <hint value="Exception" />
+  </hints>
+  <description>The declared exception &lt;code&gt;Exception&lt;/code&gt; is never thrown</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>159</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant 'throws' clause</problem_class>
+  <hints>
+    <hint value="Exception" />
+  </hints>
+  <description>The declared exception &lt;code&gt;Exception&lt;/code&gt; is never thrown</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>252</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant 'throws' clause</problem_class>
+  <hints>
+    <hint value="Exception" />
+  </hints>
+  <description>The declared exception &lt;code&gt;Exception&lt;/code&gt; is never thrown</description>
+</problem>
+</problems>

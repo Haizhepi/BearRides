@@ -1,0 +1,11 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseCreator.java</file>
+  <line>32</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.DatabaseCreator DatabaseCreator()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unnecessary 'return' statement</problem_class>
+  <description>&lt;code&gt;return&lt;/code&gt; is unnecessary as the last statement in a constructor #loc</description>
+</problem>
+</problems>

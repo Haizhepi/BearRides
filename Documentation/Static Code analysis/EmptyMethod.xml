@@ -1,0 +1,182 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>142</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void addButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>270</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void agreementCheckBoxActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>89</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController void recover(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>99</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController void reverifyAll()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void get()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>28</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void authenticate()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void checkFor()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>8</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void insert()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>32</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void logout()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>12</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void remove()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/table/UserTableTest.java</file>
+  <line>24</line>
+  <module>BearRides</module>
+  <package>table</package>
+  <entry_point TYPE="method" FQNAME="table.UserTableTest void login()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>160</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void deleteObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>150</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void loadObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>155</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void updateObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>218</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty method</problem_class>
+  <hints>
+    <hint value="false" />
+  </hints>
+  <description>The method is empty</description>
+</problem>
+</problems>

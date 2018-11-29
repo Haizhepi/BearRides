@@ -1,0 +1,110 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>112</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>124</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>187</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>243</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>115</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>117</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>147</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>176</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>230</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>232</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>123</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>153</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant array creation</problem_class>
+  <description>Redundant array creation for calling varargs method</description>
+</problem>
+</problems>

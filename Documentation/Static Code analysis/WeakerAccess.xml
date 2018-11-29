@@ -1,0 +1,410 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>18</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.HomePageGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.MessageBoardGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>21</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.RegisterGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/main/Main.java</file>
+  <line>19</line>
+  <module>BearRides</module>
+  <package>main</package>
+  <entry_point TYPE="class" FQNAME="main.Main" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>588</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.passengerCapFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>518</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.destinLocFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>483</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.originLocFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>416</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.driverFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>553</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.returnLocFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.ViewTripGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.ViewMessageGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.ViewUserGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>7</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="field" FQNAME="objectGateway.Gateway connection" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectGateway/Gateway.java</file>
+  <line>9</line>
+  <module>BearRides</module>
+  <package>objectGateway</package>
+  <entry_point TYPE="method" FQNAME="objectGateway.Gateway Gateway()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java</file>
+  <line>7</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.UserTableControllerTest userTableController" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>92</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void closeConnection()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>160</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void deleteObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>150</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void loadObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>97</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void saveObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>29</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void createTableTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>25</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="class" FQNAME="com.csi3471.app.DerbyTest" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</file>
+  <line>155</line>
+  <module>BearRides</module>
+  <package>com.csi3471.app</package>
+  <entry_point TYPE="method" FQNAME="com.csi3471.app.DerbyTest void updateObjectTest()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/object/UserTest.java</file>
+  <line>14</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.UserTest user" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/object/TripTest.java</file>
+  <line>11</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.TripTest trip" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/collection/MessageCollectionTest.java</file>
+  <line>15</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.MessageCollectionTest messageCollection" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/collection/MessageCollectionTest.java</file>
+  <line>17</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.MessageCollectionTest user" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/collection/MessageCollectionTest.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.MessageCollectionTest m" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/collection/UserCollectionTest.java</file>
+  <line>11</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.UserCollectionTest userCollection" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/collection/UserCollectionTest.java</file>
+  <line>12</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.UserCollectionTest user" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="private" />
+  </hints>
+  <description>Can be private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>19</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.EditVehicleGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>16</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.EditTripGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.EditMessageGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>14</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.EditUserGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>19</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="class" FQNAME="gui.ViewVehicleGUI" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration access can be weaker</problem_class>
+  <hints>
+    <hint value="packageLocal" />
+  </hints>
+  <description>Can be package-private</description>
+</problem>
+</problems>

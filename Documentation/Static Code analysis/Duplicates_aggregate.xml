@@ -1,0 +1,173 @@
+<root>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java" line="176" start="5265" end="5676" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java" line="188" start="5759" end="6140" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java" line="43" start="1230" end="1483" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="53" start="1886" end="2143" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="53" start="1890" end="2149" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java" line="69" start="2306" end="2702" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="61" start="2255" end="2651" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java" line="82" start="2801" end="3197" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java" line="81" start="2823" end="3219" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="61" start="2261" end="2657" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java" line="69" start="2306" end="2774" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="61" start="2255" end="2724" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="61" start="2261" end="2730" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java" line="71" start="2452" end="2774" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="63" start="2401" end="2724" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="63" start="2407" end="2730" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java" line="73" start="2701" end="3025" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java" line="163" start="8508" end="9304" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="256" start="15518" end="16356" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="165" start="8353" end="9149" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java" line="198" start="10535" end="11331" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java" line="159" start="7797" end="8593" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java" line="150" start="6397" end="7193" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="278" start="16513" end="17309" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="169" start="8525" end="9321" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/main/Main.java" line="27" start="691" end="1487" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="36" start="989" end="2844" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="36" start="989" end="2854" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="37" start="1037" end="1277" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java" line="41" start="1063" end="1253" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="37" start="1037" end="1281" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="40" start="1182" end="1496" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="46" start="1505" end="1817" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java" line="39" start="1154" end="1471" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="40" start="1186" end="1500" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="46" start="1509" end="1821" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="100" start="3974" end="4358" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="63" start="2164" end="2548" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="109" start="4368" end="13560" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="127" start="4822" end="14027" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java" line="109" start="4368" end="13561" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="127" start="4822" end="14026" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="33" start="765" end="997" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="43" start="1168" end="1402" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="37" start="961" end="1514" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="44" start="1219" end="1775" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="38" start="1006" end="1514" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="45" start="1269" end="1775" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="46" start="1523" end="1743" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="43" start="1300" end="1463" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="65" start="2418" end="2741" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="71" start="2621" end="2948" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="83" start="3187" end="3574" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="107" start="4216" end="4603" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="92" start="3584" end="3980" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="98" start="3810" end="4206" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="93" start="3649" end="3980" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java" line="91" start="3533" end="3864" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="99" start="3875" end="4206" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java" line="72" start="2620" end="2951" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="101" start="3990" end="4408" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java" line="100" start="3779" end="4197" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java" line="110" start="4418" end="4692" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="89" start="3390" end="3664" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="37" start="964" end="1510" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="37" start="964" end="1562" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="37" start="964" end="1563" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="37" start="964" end="1514" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="54" start="1767" end="2154" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="54" start="1779" end="2166" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="72" start="2558" end="3063" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="78" start="2740" end="3245" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="84" start="3111" end="3941" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="90" start="3293" end="4120" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java" line="99" start="4110" end="4816" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="101" start="4121" end="4827" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java" line="39" start="1050" end="1245" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java" line="43" start="1254" end="1511" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java" line="45" start="1362" end="1572" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java" line="46" start="1322" end="1521" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java" line="47" start="1464" end="1646" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java" line="50" start="1731" end="1909" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="47" start="1523" end="1699" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java" line="157" start="7705" end="8689" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/main/Main.java" line="25" start="599" end="1584" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java" line="157" start="7705" end="8690" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/main/Main.java" line="25" start="599" end="1583" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" line="52" start="1709" end="1945" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java" line="40" start="1162" end="1475" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java" line="108" start="4059" end="4564" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="118" start="4416" end="4921" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java" line="116" start="4368" end="4812" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java" line="67" start="2281" end="2730" />
+</duplicate>
+  <duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/src/main/java/objectSaver/MessageSaver.java" line="41" start="1523" end="1884" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java" line="43" start="1513" end="1871" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/objectSaver/UserSaver.java" line="46" start="1725" end="2083" />
+  <fragment file="file://$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java" line="37" start="1238" end="1599" />
+</duplicate>
+</root>

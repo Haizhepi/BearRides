@@ -1,0 +1,35 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>44</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection java.lang.Boolean insert(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Simplifiable conditional expression</problem_class>
+  <description>&lt;code&gt;messages.add(message) &amp;&amp; userMap.put(message.getCreator(), message) &amp;&amp; ...&lt;/code&gt; can be simplified to '!messages.add(message) ||
+                !userMap.put(message.getCreator(), message) ||
+                trip==null || tripQueue.put(trip.getOriginTime(), trip)' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>80</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection java.lang.Boolean remove(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Simplifiable conditional expression</problem_class>
+  <description>&lt;code&gt;messages.remove(message) &amp;&amp; userMap.remove(message.getCreator(), message) &amp;&amp; ...&lt;/code&gt; can be simplified to '!messages.remove(message) ||
+                !userMap.remove(message.getCreator(), message) ||
+                trip==null || tripQueue.remove(trip.getOriginTime(), trip)' #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>139</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection java.lang.Boolean checkFor(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Simplifiable conditional expression</problem_class>
+  <description>&lt;code&gt;messages.contains(message) &amp;&amp; userMap.containsValue(message) &amp;&amp; mess...&lt;/code&gt; can be simplified to '!messages.contains(message)
+                || !userMap.containsValue(message)
+                || message.getTrip()==null || tripQueue.containsValue(message.getTrip())' #loc</description>
+</problem>
+</problems>

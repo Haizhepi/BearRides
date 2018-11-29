@@ -1,0 +1,29 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>136</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void messageTableMouseClicked(java.awt.event.MouseEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>The value messageTable.convertRowIndexToModel(mouseIndex) assigned to &lt;code&gt;mouseIndex&lt;/code&gt; is never used</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>106</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void sortBy(controller.MessageCollectionController.Sorters sorters)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>The value new tripPassengerCapComparator() assigned to &lt;code&gt;compare&lt;/code&gt; is never used</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>122</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void filterBy(controller.MessageCollectionController.Filters filters, java.lang.String search)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>Variable &lt;code&gt;filter&lt;/code&gt; initializer &lt;code&gt;null&lt;/code&gt; is redundant</description>
+</problem>
+</problems>

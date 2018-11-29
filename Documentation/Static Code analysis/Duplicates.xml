@@ -1,0 +1,551 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>43</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 43-47</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>91</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 91-97</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>198</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI$6 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 198-212</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>82</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 82-89</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>150</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI$5 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 150-164</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>278</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI$4 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 278-292</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>44</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 44-52</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>71</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 71-77</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>89</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 89-93</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>98</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 98-105</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>107</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 107-114</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/main/Main.java</file>
+  <line>25</line>
+  <module>BearRides</module>
+  <package>main</package>
+  <entry_point TYPE="method" FQNAME="main.Main void main(java.lang.String[] args)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 25-44</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>41</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 41-44</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>46</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 46-50</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>157</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 157-176</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>36</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 36-73</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>116</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 116-125</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>127</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 127-228</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>39</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 39-44</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>50</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 50-54</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>81</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 81-88</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>108</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 108-118</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>40</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 40-44</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>73</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 73-80</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>100</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 100-107</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/MessageSaver.java</file>
+  <line>41</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.MessageSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 41-51</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/VehicleSaver.java</file>
+  <line>37</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.VehicleSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 37-47</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java</file>
+  <line>43</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.TripSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 43-53</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/objectSaver/UserSaver.java</file>
+  <line>46</line>
+  <module>BearRides</module>
+  <package>objectSaver</package>
+  <entry_point TYPE="method" FQNAME="objectSaver.UserSaver java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 46-56</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>176</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection void pushReminders(java.util.Date date)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 176-185</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>188</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection void pushReminders(java.util.Date date)" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 188-197</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>84</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 84-95</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>99</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 99-110</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>37</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 37-46</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>54</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 54-61</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>63</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 63-70</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 72-82</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>165</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI$3 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 165-179</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>36</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 36-73</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>100</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 100-107</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>109</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 109-210</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>43</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 43-47</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>69</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 69-78</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>163</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI$2 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 163-177</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>33</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 33-37</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>38</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 38-45</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>46</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 46-49</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>65</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 65-71</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>83</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 83-90</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>92</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 92-99</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>101</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 101-108</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>110</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 110-114</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>256</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI$4 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 256-270</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>169</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI$3 void run()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 169-183</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>90</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 90-101</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>101</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 101-112</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>37</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 37-46</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>47</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 47-51</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>54</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 54-61</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>67</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 67-76</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>78</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Duplicated code fragment</problem_class>
+  <description>Duplicate code: lines 78-88</description>
+</problem>
+</problems>

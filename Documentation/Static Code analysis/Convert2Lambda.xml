@@ -1,0 +1,362 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>60</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>84</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>93</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>105</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>196</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.HomePageGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>85</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>94</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>148</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.MessageBoardGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>276</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>101</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>110</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>118</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/main/Main.java</file>
+  <line>25</line>
+  <module>BearRides</module>
+  <package>main</package>
+  <entry_point TYPE="method" FQNAME="main.Main void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>64</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>75</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>157</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>64</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>121</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewTripGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>84</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>93</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>102</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>111</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewMessageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>74</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>94</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>103</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>66</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>75</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>163</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditVehicleGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>64</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>103</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditTripGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>161</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditMessageGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>86</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>95</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>104</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>254</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.EditUserGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>167</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void main(java.lang.String[] args)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new Runnable() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>72</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>81</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewVehicleGUI void initComponents()" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Anonymous type can be replaced with lambda</problem_class>
+  <description>Anonymous new java.awt.event.ActionListener() can be replaced with lambda</description>
+</problem>
+</problems>

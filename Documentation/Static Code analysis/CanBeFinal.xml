@@ -1,0 +1,602 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>232</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/HomePageGUI.java</file>
+  <line>233</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.HomePageGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>179</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>177</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>57</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI$1 canEdit" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/MessageBoardGUI.java</file>
+  <line>178</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.MessageBoardGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>327</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>328</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI uc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>326</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.RegisterGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>190</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>191</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>192</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.LoginGUI uc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Message.java</file>
+  <line>273</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.Message creator" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>399</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.Trip riders" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>400</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.Trip requirements" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>480</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.User notifications" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>481</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.User trips" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>469</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="field" FQNAME="object.User email" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/PanelController.java</file>
+  <line>85</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.PanelController stack" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/PanelController.java</file>
+  <line>86</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.PanelController db" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>588</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.passengerCapFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>285</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.MessageCollectionController tableModel" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>518</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.destinLocFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>483</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.originLocFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>286</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.MessageCollectionController sorter" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>284</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.MessageCollectionController table" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>416</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.driverFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>553</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.returnLocFilter search" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>128</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.UserCollectionController table" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java</file>
+  <line>124</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.DashBoard dc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java</file>
+  <line>122</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.DashBoard mc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java</file>
+  <line>121</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.DashBoard pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java</file>
+  <line>123</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="field" FQNAME="controller.DashBoard uc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>272</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>270</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewTripGUI.java</file>
+  <line>273</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewTripGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>228</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>226</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewMessageGUI.java</file>
+  <line>229</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewMessageGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>223</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>222</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>220</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewUserGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java</file>
+  <line>21</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="field" FQNAME="database.DatabaseProtocol.dataTypes sql" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>146</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.UserCollection userTable" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>149</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.UserCollection tokenMap" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>204</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.MessageCollection messages" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>206</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.MessageCollection tripQueue" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>205</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="field" FQNAME="collection.MessageCollection userMap" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>200</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditVehicleGUI.java</file>
+  <line>201</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditVehicleGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>254</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>253</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditTripGUI.java</file>
+  <line>251</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditTripGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>199</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>201</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI tc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditMessageGUI.java</file>
+  <line>202</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditMessageGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>302</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/EditUserGUI.java</file>
+  <line>303</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.EditUserGUI pm" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>205</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI pc" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewVehicleGUI.java</file>
+  <line>204</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="field" FQNAME="gui.ViewVehicleGUI cp" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration can have final modifier</problem_class>
+  <hints />
+  <description>Declaration can have final modifier</description>
+</problem>
+</problems>

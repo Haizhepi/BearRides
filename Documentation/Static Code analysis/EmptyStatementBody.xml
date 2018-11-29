@@ -1,0 +1,164 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>263</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java</file>
+  <line>265</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.RegisterGUI void okButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/LoginGUI.java</file>
+  <line>144</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.LoginGUI void loginButtonActionPerformed(java.awt.event.ActionEvent evt)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>477</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.originLocFilter boolean include(javax.swing.RowFilter.Entry&lt;? extends javax.swing.table.TableModel,? extends java.lang.Integer&gt; row)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>279</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void remind(java.util.Date date)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>547</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.returnLocFilter boolean include(javax.swing.RowFilter.Entry&lt;? extends javax.swing.table.TableModel,? extends java.lang.Integer&gt; row)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>250</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void editMessage(object.Message newMessage, object.Message oldMessage)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>252</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void editMessage(object.Message newMessage, object.Message oldMessage)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>582</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.passengerCapFilter boolean include(javax.swing.RowFilter.Entry&lt;? extends javax.swing.table.TableModel,? extends java.lang.Integer&gt; row)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>179</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void loadMessage(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>444</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.hasTripFilter boolean include(javax.swing.RowFilter.Entry&lt;? extends javax.swing.table.TableModel,? extends java.lang.Integer&gt; row)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>266</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void clearUser(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>512</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.destinLocFilter boolean include(javax.swing.RowFilter.Entry&lt;? extends javax.swing.table.TableModel,? extends java.lang.Integer&gt; row)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>410</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.driverFilter boolean include(javax.swing.RowFilter.Entry&lt;? extends javax.swing.table.TableModel,? extends java.lang.Integer&gt; row)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/MessageCollectionController.java</file>
+  <line>163</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.MessageCollectionController void postMessage(object.Message message)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/controller/UserCollectionController.java</file>
+  <line>33</line>
+  <module>BearRides</module>
+  <package>controller</package>
+  <entry_point TYPE="method" FQNAME="controller.UserCollectionController java.lang.Boolean register(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>106</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.UserCollection object.User login(java.lang.String uuid, java.lang.String password)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>199</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection void pushReminders(java.util.Date date)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement with empty body</problem_class>
+  <description>&lt;code&gt;else&lt;/code&gt; statement has empty body #loc</description>
+</problem>
+</problems>

@@ -1,0 +1,29 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Message.java</file>
+  <line>263</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Message int compareTo(object.Message that)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+  <description>Not annotated parameter overrides @NotNull parameter</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>390</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip int compareTo(object.Trip arg0)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+  <description>Not annotated parameter overrides @NotNull parameter</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>462</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User int compareTo(object.User that)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+  <description>Not annotated parameter overrides @NotNull parameter</description>
+</problem>
+</problems>

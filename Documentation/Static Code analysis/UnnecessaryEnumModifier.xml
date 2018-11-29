@@ -1,0 +1,20 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java</file>
+  <line>12</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.DatabaseProtocol.dataTypes dataTypes(java.lang.String sql)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary enum modifier</problem_class>
+  <description>Modifier &lt;code&gt;private&lt;/code&gt; is redundant for enum constructors #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java</file>
+  <line>9</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="class" FQNAME="database.DatabaseProtocol.dataTypes" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary enum modifier</problem_class>
+  <description>Modifier &lt;code&gt;static&lt;/code&gt; is redundant for inner enums #loc</description>
+</problem>
+</problems>

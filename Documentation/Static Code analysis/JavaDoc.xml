@@ -1,0 +1,20 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI ViewUserGUI(controller.DashBoard cp)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration has Javadoc problems</problem_class>
+  <description>&lt;code&gt;@return&lt;/code&gt; tag description is missing</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/gui/ViewUserGUI.java</file>
+  <line>20</line>
+  <module>BearRides</module>
+  <package>gui</package>
+  <entry_point TYPE="method" FQNAME="gui.ViewUserGUI ViewUserGUI(controller.DashBoard cp)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Declaration has Javadoc problems</problem_class>
+  <description>Tag &lt;code&gt;return&lt;/code&gt; is not allowed here</description>
+</problem>
+</problems>

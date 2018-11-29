@@ -1,0 +1,11 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/test/java/object/UserTest.java</file>
+  <line>25</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.UserTest void insertRating()" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Number constructor call with primitive argument</problem_class>
+  <description>Number constructor call with primitive argument #loc</description>
+</problem>
+</problems>

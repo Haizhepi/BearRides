@@ -1,0 +1,32 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>34</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip java.lang.Boolean insertRider(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Method can be void</problem_class>
+  <hints />
+  <description>Return value of the method is never used</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/UserCollection.java</file>
+  <line>47</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.UserCollection java.lang.Boolean remove(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Method can be void</problem_class>
+  <hints />
+  <description>Return value of the method is never used</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/collection/MessageCollection.java</file>
+  <line>57</line>
+  <module>BearRides</module>
+  <package>collection</package>
+  <entry_point TYPE="method" FQNAME="collection.MessageCollection java.lang.Boolean removeAll(object.User user)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Method can be void</problem_class>
+  <hints />
+  <description>Return value of the method is never used</description>
+</problem>
+</problems>

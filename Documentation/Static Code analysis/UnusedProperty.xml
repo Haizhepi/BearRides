@@ -1,0 +1,130 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>7</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>8</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>9</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>10</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>11</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>12</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>13</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>14</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>15</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>16</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>17</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>18</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>19</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>20</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>21</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/BearRides/service.properties</file>
+  <line>22</line>
+  <package>&lt;default&gt;</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/BearRides/service.properties" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused Property</problem_class>
+  <description>Unused property</description>
+</problem>
+</problems>

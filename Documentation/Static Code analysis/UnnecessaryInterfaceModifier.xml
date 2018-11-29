@@ -1,0 +1,38 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</file>
+  <line>8</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.SQLStatementExecuter void execute(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary interface modifier</problem_class>
+  <description>Modifier &lt;code&gt;public&lt;/code&gt; is redundant for interface methods #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</file>
+  <line>8</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.SQLStatementExecuter void execute(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary interface modifier</problem_class>
+  <description>Modifier &lt;code&gt;abstract&lt;/code&gt; is redundant for interface methods #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.SQLStatementExecuter java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary interface modifier</problem_class>
+  <description>Modifier &lt;code&gt;public&lt;/code&gt; is redundant for interface methods #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/database/SQLStatementExecuter.java</file>
+  <line>10</line>
+  <module>BearRides</module>
+  <package>database</package>
+  <entry_point TYPE="method" FQNAME="database.SQLStatementExecuter java.sql.Statement executeQuery(java.sql.Connection connection, java.lang.Object object)" />
+  <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary interface modifier</problem_class>
+  <description>Modifier &lt;code&gt;abstract&lt;/code&gt; is redundant for interface methods #loc</description>
+</problem>
+</problems>

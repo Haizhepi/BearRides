@@ -1,0 +1,74 @@
+<problems>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Message.java</file>
+  <line>255</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Message boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Message.java</file>
+  <line>257</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Message boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>382</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Trip.java</file>
+  <line>384</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Trip boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Vehicle.java</file>
+  <line>162</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Vehicle boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/Vehicle.java</file>
+  <line>164</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.Vehicle boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>454</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+  <problem>
+  <file>file://$PROJECT_DIR$/src/main/java/object/User.java</file>
+  <line>456</line>
+  <module>BearRides</module>
+  <package>object</package>
+  <entry_point TYPE="method" FQNAME="object.User boolean equals(java.lang.Object obj)" />
+  <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+</problem>
+</problems>
