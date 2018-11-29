@@ -8,41 +8,56 @@ import java.sql.Statement;
 import database.SQLStatementExecuter;
 import object.Vehicle;
 
-public class VehicleSaver extends SQLStatementExecuter{
-
-    @Override
-    protected Boolean beforeHook(Statement statement, Object object) {
-        Vehicle vehicle = (Vehicle) object;
-        Long key = vehicle.getPrimaryKey();
-        
-        SQLStatement = "INSERT INTO Vehicle ("
-                + ((key != null) ? "id, " : "")
-                + "model, picture, passengerCap, storageSpace) VALUES "
-                + "(" + ((key != null) ? key + ", " : "")
-                + "'" + vehicle.getModel()
-                + "', '" + vehicle.getPicture()
-                + "', " + vehicle.getPassengerCap()
-                + ", '" + vehicle.getStorageSpace()
-                + "')";
-        
-        return true;
-    }
+public class VehicleSaver implements SQLStatementExecuter{
     
     @Override
-    protected void afterHook(Statement statement, Object object) {
+    public void execute(Connection connection, Object object) {
+        executeQuery(connection, object);
+    }
+
+    @Override
+    public ResultSet executeQuery(Connection connection, Object object) {
         Vehicle vehicle = (Vehicle) object;
         Long key = vehicle.getPrimaryKey();
+        Statement statement = null;
         
-        if(key == null) {
-            try {
-                ResultSet rs = statement.getGeneratedKeys();
-                
-                if(rs.next()) {
-                    vehicle.setPrimaryKey(rs.getLong(1));
+        try {
+            statement = connection.createStatement();
+            
+            statement.executeUpdate("INSERT INTO Vehicle ("
+                    + ((key != null) ? "id, " : "")
+                    + "model, picture, passengerCap, storageSpace) VALUES "
+                    + "(" + ((key != null) ? key + ", " : "")
+                    + "'" + vehicle.getModel()
+                    + "', '" + vehicle.getPicture()
+                    + "', " + vehicle.getPassengerCap()
+                    + ", '" + vehicle.getStorageSpace()
+                    + "')", Statement.RETURN_GENERATED_KEYS);
+            
+            if(key == null) {
+                try {
+                    ResultSet rs = statement.getGeneratedKeys();
+                    
+                    if(rs.next()) {
+                        vehicle.setPrimaryKey(rs.getLong(1));
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
-            } catch (SQLException e) {
-                e.printStackTrace();
+            }
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }
+        
+        return null;
     }
 }

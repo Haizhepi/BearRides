@@ -1,17 +1,40 @@
 package objectLoader;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 
-public class TripRiderLoader extends SQLStatementExecuter {
+public class TripRiderLoader implements SQLStatementExecuter {
+    
+    @Override
+    public void execute(Connection connection, Object object) {
+        executeQuery(connection, object);
+    }
 
     @Override
-    protected Boolean beforeHook(Statement statement, Object object) {
+    public ResultSet executeQuery(Connection connection, Object object) {
+        Statement statement = null;
         
-        SQLStatement = "SELECT uid, tid from TripRider";
+        try {
+            statement = connection.createStatement();
+            
+            return statement.executeQuery("SELECT uid, tid from TripRider");
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
         
-        return true;
+        return null;
     }
 }

@@ -1,23 +1,46 @@
 package objectDeleter;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Trip;
 
-public class TripDeleter extends SQLStatementExecuter {
-    
+public class TripDeleter implements SQLStatementExecuter {
+
     @Override
-    protected Boolean beforeHook(Statement statement, Object object) {
+    public void execute(Connection connection, Object object) {
+        executeQuery(connection, object);
+    }
+
+    @Override
+    public ResultSet executeQuery(Connection connection, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
+        Statement statement = null;
         
-        SQLStatement = "DELETE FROM Trip WHERE id = " + key + ";"
-                + "DELETE FROM TripRequirement WHERE tid = " + key + ";"
-                + "DELETE FROM TripRider WHERE tid = " + key + ";"
-                + "UPDATE Message SET trip = NULL WHERE trip = " + key + ";";
+        try {
+            statement = connection.createStatement();
+            
+            statement.execute("DELETE FROM Trip WHERE id = " + key);
+            statement.execute("DELETE FROM TripRequirement WHERE tid = " + key);
+            statement.execute("DELETE FROM TripRider WHERE tid = " + key);
+            statement.execute("UPDATE Message SET trip = NULL WHERE trip = " + key);
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
         
-        return true;
+        return null;
     }
 }

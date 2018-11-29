@@ -1,6 +1,7 @@
 package objectUpdater;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -8,51 +9,62 @@ import database.SQLStatementExecuter;
 import object.Trip;
 import object.User;
 
-public class TripUpdater extends SQLStatementExecuter {
+public class TripUpdater implements SQLStatementExecuter {
     
     @Override
-    public Boolean beforeHook(Statement statement, Object object) {
+    public void execute(Connection connection, Object object) {
+        executeQuery(connection, object);
+    }
+
+    @Override
+    public ResultSet executeQuery(Connection connection, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
+        Statement statement = null;
         
+        try {
+            statement = connection.createStatement();
+            
+            statement.execute("UPDATE Trip"
+                    + " SET driver = " + trip.getDriver().getPrimaryKey() //BIGINT foreign key
+                    + " SET originTime = " + trip.getOriginTime().getTime() //BIGINT
+                    + " SET destinTime = " + trip.getDestinTime().getTime() //BIGINT
+                    + " SET returnTime = " + trip.getReturnTime().getTime() //BIGINT
+                    + " SET originLoc = '" + trip.getOriginLoc() //LONG VARCHAR
+                    + "' SET destinLoc = '" + trip.getDestinLoc() //LONG VARCHAR
+                    + "' SET returnLoc = '" + trip.getReturnLoc() //LONG VARCHAR
+                    + "' SET passengerCap = " + trip.getPassengerCap() //INTEGER
+                    + " WHERE id = " + key);
+            
+            statement.execute("DELETE FROM TripRequirement WHERE tid = " + key);
+            statement.execute("DELETE FROM TripRider WHERE tid = " + key);
+            
+            for(String requirement : trip.getRequirements()) {
+                statement.execute("INSERT INTO TripRequirement (tid, req) VALUES ("
+                        + trip.getPrimaryKey()
+                        + ", " + requirement
+                        + ")");
+            }
 
-        SQLStatement = "UPDATE Trip"
-                + " SET driver = " + trip.getDriver().getPrimaryKey() //BIGINT foreign key
-                + " SET originTime = " + trip.getOriginTime().getTime() //BIGINT
-                + " SET destinTime = " + trip.getDestinTime().getTime() //BIGINT
-                + " SET returnTime = " + trip.getReturnTime().getTime() //BIGINT
-                + " SET originLoc = '" + trip.getOriginLoc() //LONG VARCHAR
-                + "' SET destinLoc = '" + trip.getDestinLoc() //LONG VARCHAR
-                + "' SET returnLoc = '" + trip.getReturnLoc() //LONG VARCHAR
-                + "' SET passengerCap = " + trip.getPassengerCap() //INTEGER
-                + " WHERE id = " + key + ";"
-                + "DELETE FROM TripRequirement WHERE tid = " + key + ";"
-                + "DELETE FROM TripRider WHERE tid = " + key + ";";
-
-        for(String requirement : trip.getRequirements()) {
-            String batch = "INSERT INTO TripRequirement (tid, req) VALUES ("
-                    + trip.getPrimaryKey()
-                    + ", " + requirement
-                    + ")";
-            try {
-                statement.addBatch(batch);
-            }catch (SQLException e) {
-                e.printStackTrace();
+            for(User user : trip.getRiders()) {
+                statement.execute("INSERT INTO TripRider (tid, uid) VALUES ("
+                        + trip.getPrimaryKey()
+                        + ", " + user.getPrimaryKey()
+                        + ")");
+            }
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }
-
-        for(User user : trip.getRiders()) {
-            String batch = "INSERT INTO TripRider (tid, uid) VALUES ("
-                    + trip.getPrimaryKey()
-                    + ", " + user.getPrimaryKey()
-                    + ")";
-            try {
-                statement.addBatch(batch);
-            }catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        return false;
+        
+        return null;
     }
 }

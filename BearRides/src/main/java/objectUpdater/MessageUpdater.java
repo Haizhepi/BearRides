@@ -1,19 +1,29 @@
 package objectUpdater;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import database.SQLStatementExecuter;
 import object.Message;
 
-public class MessageUpdater extends SQLStatementExecuter {
+public class MessageUpdater implements SQLStatementExecuter {
+    
+    @Override
+    public void execute(Connection connection, Object object) {
+        executeQuery(connection, object);
+    }
 
     @Override
-    public Boolean beforeHook(Statement statement, Object object) {
+    public ResultSet executeQuery(Connection connection, Object object) {
         Message message = (Message) object;
+        Statement statement = null;
         
-        if(message.getPrimaryKey() != null) {
-            SQLStatement = "UPDATE Message"
+        try {
+            statement = connection.createStatement();
+            
+            statement.execute("UPDATE Message"
                     + " SET umid = '" + message.getUMID() //LONG VARCHAR
                     + "' SET title = '" + message.getTitle() //LONG VARCHAR
                     + "' SET hidden = '" + ((message.isHidden() == true) ? 1 : 0) //CHAR
@@ -22,10 +32,20 @@ public class MessageUpdater extends SQLStatementExecuter {
                     + " SET postTime = '" + message.getPostTime() //LONG VARCHAR
                     + "' SET body = '" + message.getBody() //LONG VARCHAR
                     + "' SET trip = " + message.getTrip().getPrimaryKey() //BIGINT foreign key
-                    + " WHERE id = " + message.getPrimaryKey() + ";";
-        }else {
-            return false;
+                    + " WHERE id = " + message.getPrimaryKey());
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        return true;
+        
+        return null;
     }
 }
