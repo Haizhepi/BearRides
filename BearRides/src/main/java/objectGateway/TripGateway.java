@@ -8,6 +8,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.google.common.collect.Multimap;
 import com.google.common.collect.TreeMultimap;
 
@@ -67,14 +69,13 @@ public class TripGateway extends Gateway<Trip> {
             ResultSet trSet = trStatement.getResultSet();
             
             if (trSet.next() == false) {
-                System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     tripRequirement.put(trSet.getLong("tid"), trSet.getString("req"));
                 } while (trSet.next());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         //map the riders
@@ -83,7 +84,6 @@ public class TripGateway extends Gateway<Trip> {
             ResultSet trSet = trStatement.getResultSet();
             
             if (trSet.next() == false) {
-                System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     Long tid = trSet.getLong("tid"), uid = trSet.getLong("uid");
@@ -92,7 +92,7 @@ public class TripGateway extends Gateway<Trip> {
                 } while (trSet.next());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         //map the trips
@@ -100,7 +100,6 @@ public class TripGateway extends Gateway<Trip> {
             ResultSet rs = statement.getResultSet();
             
             if (rs.next() == false) {
-                System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     Long key = rs.getLong("id");
@@ -129,13 +128,13 @@ public class TripGateway extends Gateway<Trip> {
                 } while (rs.next());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         } finally {
             if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
             }
         }

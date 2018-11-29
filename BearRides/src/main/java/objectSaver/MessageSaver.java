@@ -5,6 +5,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 import object.Message;
 import object.Trip;
@@ -48,12 +50,12 @@ public class MessageSaver implements SQLStatementExecuter {
                         message.setPrimaryKey(rs.getLong(1));
                     }
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
             }
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         return statement;

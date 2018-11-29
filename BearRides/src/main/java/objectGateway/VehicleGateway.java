@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+
 import object.Vehicle;
 import objectDeleter.VehicleDeleter;
 import objectLoader.VehicleLoader;
@@ -49,7 +51,6 @@ public class VehicleGateway extends Gateway<Vehicle> {
             ResultSet rs = statement.getResultSet();
             
             if (rs.next() == false) {
-                System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     Vehicle vehicle = new Vehicle(rs.getString("model"), rs.getInt("passengerCap"));
@@ -61,13 +62,13 @@ public class VehicleGateway extends Gateway<Vehicle> {
                 } while (rs.next());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         } finally {
             if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
             }
         }

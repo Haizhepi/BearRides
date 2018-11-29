@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+
 import object.User;
 import object.Vehicle;
 import objectDeleter.UserDeleter;
@@ -53,7 +55,6 @@ public class UserGateway extends Gateway<User> {
             ResultSet rs = statement.getResultSet();
             
             if (rs.next() == false) {
-                System.out.println("ResultSet is empty in Java");
             } else {
                 do {
                     User user = new User(rs.getString("email"), rs.getInt("passHash"));
@@ -71,13 +72,13 @@ public class UserGateway extends Gateway<User> {
                 } while (rs.next());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         } finally {
             if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    LogManager.getLogger().error(e.getMessage(), e);
                 }
             }
         }

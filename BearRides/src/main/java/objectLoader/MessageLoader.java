@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 
 public class MessageLoader implements SQLStatementExecuter {
@@ -23,7 +25,7 @@ public class MessageLoader implements SQLStatementExecuter {
             statement.executeQuery("SELECT id, umid, title, hidden, notification, creator, postTime, body, trip from Message");
             
         } catch (SQLException e) {
-            e.printStackTrace();
+            LogManager.getLogger().error(e.getMessage(), e);
         }
         
         return statement;

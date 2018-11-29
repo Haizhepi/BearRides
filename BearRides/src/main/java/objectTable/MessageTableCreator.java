@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+
 import database.SQLStatementExecuter;
 
 public class MessageTableCreator implements SQLStatementExecuter {
@@ -36,7 +38,7 @@ public class MessageTableCreator implements SQLStatementExecuter {
             
         } catch (SQLException e) {
             if(!e.toString().contains("already exists in Schema")) {
-                e.printStackTrace();
+                LogManager.getLogger().error(e.getMessage(), e);
             }
         }
         
