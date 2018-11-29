@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Main</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">main</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Main (main)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Main</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/ 4)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Main$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    69.2%
+  </span>
+  <span class="absValue">
+    (9/ 13)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    70.6%
+  </span>
+  <span class="absValue">
+    (12/ 17)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/*
+<i>2</i>&nbsp; * Contributors: Ash
+<i>3</i>&nbsp; * Description: this class serves to initialize the control panel and start loginGUI
+<i>4</i>&nbsp; * Date Last Modified: 10/22/2018
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;package main;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;import javax.swing.SwingUtilities;
+<i>10</i>&nbsp;import javax.swing.UIManager;
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;import controller.DashBoard;
+<i>13</i>&nbsp;import gui.LoginGUI;
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;import javax.swing.UnsupportedLookAndFeelException;
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;import org.apache.logging.log4j.LogManager;
+<i>18</i>&nbsp;
+<b class="nc"><i>19</i>&nbsp;public class Main {</b>
+<i>20</i>&nbsp;    
+<i>21</i>&nbsp;    public static void main(String[] args) {
+<b class="fc"><i>22</i>&nbsp;        System.setProperty(&quot;log4j.configurationFile&quot;, &quot;resources/log4j2.xml&quot;);</b>
+<i>23</i>&nbsp;        
+<i>24</i>&nbsp;        // take place on thread other than main thread
+<b class="fc"><i>25</i>&nbsp;        SwingUtilities.invokeLater(new Runnable() {</b>
+<i>26</i>&nbsp;            public void run() {
+<i>27</i>&nbsp;                try {
+<b class="fc"><i>28</i>&nbsp;                    for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {</b>
+<b class="fc"><i>29</i>&nbsp;                        if (&quot;Windows&quot;.equals(info.getName())) {</b>
+<b class="nc"><i>30</i>&nbsp;                            javax.swing.UIManager.setLookAndFeel(info.getClassName());</b>
+<b class="nc"><i>31</i>&nbsp;                            break;</b>
+<i>32</i>&nbsp;                        }
+<i>33</i>&nbsp;                    }
+<b class="nc"><i>34</i>&nbsp;                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {</b>
+<b class="nc"><i>35</i>&nbsp;                    LogManager.getLogger().error(e.getMessage(), e);</b>
+<b class="fc"><i>36</i>&nbsp;                }</b>
+<i>37</i>&nbsp;                // turn off metal&#39;s use of bold fonts
+<b class="fc"><i>38</i>&nbsp;                UIManager.put(&quot;swing.boldMetal&quot;, Boolean.FALSE);</b>
+<i>39</i>&nbsp;                
+<b class="fc"><i>40</i>&nbsp;                DashBoard db = new DashBoard();</b>
+<b class="fc"><i>41</i>&nbsp;                db.load();</b>
+<b class="fc"><i>42</i>&nbsp;                db.getPanelController().changeFrame(new LoginGUI(db));</b>
+<b class="fc"><i>43</i>&nbsp;            }</b>
+<i>44</i>&nbsp;        });
+<b class="fc"><i>45</i>&nbsp;    }</b>
+<i>46</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-11-29 08:05</div>
+</div>
+</body>
+</html>

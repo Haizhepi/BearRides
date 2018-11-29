@@ -10,6 +10,8 @@ public class DatabaseCreator {
     private static DatabaseCreator singleton = null;
     private Connection connection = null;
     
+    /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
+    
     private DatabaseCreator() {
         try {
             Class.forName(DatabaseProtocol.getDbDriver());
@@ -26,6 +28,14 @@ public class DatabaseCreator {
         }
     }
     
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: getter
+     * return: the singleton instance of this
+     * precondition: void
+     * postcondition: this is initialized if it wasnt
+     */
     public static DatabaseCreator getInstance() {
         if(singleton == null) {
             singleton = new DatabaseCreator();
@@ -34,6 +44,18 @@ public class DatabaseCreator {
         return singleton;
     }
     
+    public Connection getConnection() {
+        return connection;
+    }
+    
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: frees the connection of this instance and the singleton
+     * return: void
+     * precondition: void
+     * postcondition: connection and this are freed
+     */
     public void freeInstance() {
         singleton = null;
         
@@ -48,9 +70,5 @@ public class DatabaseCreator {
             
             connection = null;
         }
-    }
-    
-    public Connection getConnection() {
-        return connection;
     }
 }

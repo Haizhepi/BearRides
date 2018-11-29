@@ -12,11 +12,25 @@ import object.Vehicle;
 
 public class UserDeleter implements SQLStatementExecuter {
     
+    /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: executes without return
+     * return: void
+     * precondition: void
+     * postcondition: user object is deleted
+     */
     @Override
     public void execute(Connection connection, Object object) {
         executeQuery(connection, object);
     }
-
+    
+    /*
+     * description: executes with return
+     * return: void
+     * precondition: void
+     * postcondition: user object is deleted
+     */
     @Override
     public Statement executeQuery(Connection connection, Object object) {
         User user = (User) object;
