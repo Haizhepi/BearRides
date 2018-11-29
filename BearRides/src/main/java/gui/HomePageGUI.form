@@ -22,35 +22,42 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="topSeparator" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="248" max="-2" attributes="0"/>
+                      <Component id="backButton" min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="welcomeLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="topSeparator" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="userInfoLabel" min="-2" max="-2" attributes="0"/>
                                   <Component id="tripLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="notificationLabel" min="-2" max="-2" attributes="0"/>
                                   <Component id="messageBoardLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="userInfoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <EmptySpace pref="231" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="messageBoardButton" pref="200" max="32767" attributes="0"/>
                                   <Component id="accountSettingButton" pref="200" max="32767" attributes="0"/>
-                                  <Component id="messageBoardButton" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="tripButton" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="tripButton" alignment="1" pref="200" max="32767" attributes="0"/>
+                                  <Component id="notificationButton" max="32767" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="welcomeLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="248" max="-2" attributes="0"/>
-              <Component id="backButton" min="-2" pref="200" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -61,22 +68,27 @@
               <Component id="welcomeLabel" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="topSeparator" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="tripLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tripButton" alignment="3" min="-2" pref="68" max="-2" attributes="0"/>
+                  <Component id="notificationButton" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="notificationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tripButton" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="tripLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="messageBoardLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="messageBoardButton" alignment="3" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="messageBoardButton" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="accountSettingButton" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="userInfoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="accountSettingButton" alignment="3" min="-2" pref="76" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="39" max="32767" attributes="0"/>
+              <EmptySpace pref="78" max="32767" attributes="0"/>
               <Component id="backButton" min="-2" pref="68" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
           </Group>
@@ -143,7 +155,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Leelawadee UI" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Become a driver/ Change your Info:"/>
+        <Property name="text" type="java.lang.String" value="Change your Info:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="accountSettingButton">
@@ -172,6 +184,28 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="notificationLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Leelawadee UI" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Notification:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="notificationButton">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Leelawadee UI" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Notification"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="notificationButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
