@@ -32,6 +32,7 @@ public class UserCollection {
      * postcondition: the new user will be mapped
      */
     public Boolean insert(User user) {
+        user.setTable(this);
         return userTable.putIfAbsent(user.getEmail(), user) == null;
     }
     

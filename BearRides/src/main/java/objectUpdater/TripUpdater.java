@@ -1,7 +1,6 @@
 package objectUpdater;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -17,7 +16,7 @@ public class TripUpdater implements SQLStatementExecuter {
     }
 
     @Override
-    public ResultSet executeQuery(Connection connection, Object object) {
+    public Statement executeQuery(Connection connection, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
         Statement statement = null;
@@ -55,16 +54,8 @@ public class TripUpdater implements SQLStatementExecuter {
             
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            if (statement != null) {
-                try {
-                    statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         
-        return null;
+        return statement;
     }
 }

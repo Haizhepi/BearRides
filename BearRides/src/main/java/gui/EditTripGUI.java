@@ -13,12 +13,12 @@ import controller.PanelController;
  *
  * @author WAN
  */
-public class TripGUI extends javax.swing.JPanel {
+public class EditTripGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form TripGUI
      */
-    public TripGUI(DashBoard cp) {
+    public EditTripGUI(DashBoard cp) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();

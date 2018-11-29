@@ -11,12 +11,12 @@ import org.apache.logging.log4j.LogManager;
 import controller.DashBoard;
 import controller.PanelController;
 
-public class UserGUI extends JPanel {
+public class EditUserGUI extends JPanel {
     
     /**
      * Creates new form UserGUI
      */
-    public UserGUI(DashBoard cp) {
+    public EditUserGUI(DashBoard cp) {
         this.cp = cp;
         this.pm = cp.getPanelController();
         initComponents();
@@ -241,6 +241,7 @@ public class UserGUI extends JPanel {
     private void D_VInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D_VInfoButtonActionPerformed
         // TODO add your handling code here:
         pm.changeFrame(new VehicleInfoGUI(cp));
+
     }//GEN-LAST:event_D_VInfoButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
@@ -267,7 +268,7 @@ public class UserGUI extends JPanel {
                    
                    DashBoard cp = new DashBoard();
                    cp.load();
-                   cp.getPanelController().changeFrame(new UserGUI(cp));
+                   cp.getPanelController().changeFrame(new EditUserGUI(cp));
                }
            });
        }

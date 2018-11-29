@@ -17,12 +17,12 @@ import controller.PanelController;
  *
  * @author Xingan_Wan
  */
-public class MessageGUI extends javax.swing.JPanel {
+public class EditMessageGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form MessageGUI
      */
-    public MessageGUI(DashBoard cp) {
+    public EditMessageGUI(DashBoard cp) {
         this.cp = cp;
         this.tc = cp.getMessageCollectionController();
         this.pc = cp.getPanelController();
@@ -175,7 +175,7 @@ public class MessageGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new MessageGUI(cp));
+                cp.getPanelController().changeFrame(new EditMessageGUI(cp));
             }
         });
     }
