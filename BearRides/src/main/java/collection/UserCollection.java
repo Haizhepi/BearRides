@@ -6,6 +6,7 @@
 
 package collection;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -55,6 +56,16 @@ public class UserCollection {
      */
     public User get(String uuid) {
         return userTable.get(uuid);
+    }
+    
+    /*
+     * description: getter
+     * return: all users
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Collection<User> getAll(){
+        return userTable.values();
     }
     
     /*~~~~~~~~~~~~ Utilities  ~~~~~~~~~~~~*/

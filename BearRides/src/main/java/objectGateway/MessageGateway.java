@@ -38,7 +38,7 @@ public class MessageGateway extends Gateway<Message> {
     }
 
     @Override
-    public Map<Long, Message> load() {
+    protected Map<Long, Message> load() {
         ResultSet rs = new MessageLoader().executeQuery(connection, null);
         Map<Long, Message> messages = new HashMap<Long, Message>();
         

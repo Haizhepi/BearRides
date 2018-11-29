@@ -57,7 +57,7 @@ public class UserGUI extends JPanel {
         setPreferredSize(new java.awt.Dimension(700, 500));
 
         userInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        userInfoLabel.setText("User Infomation");
+        userInfoLabel.setText("User Information");
 
         reqLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
         reqLabel.setText("* Indicates required field");
@@ -129,7 +129,7 @@ public class UserGUI extends JPanel {
                     .addComponent(LowerSeparator)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(userInfoLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 316, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 308, Short.MAX_VALUE)
                         .addComponent(reqLabel))
                     .addComponent(upperSeparator)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()

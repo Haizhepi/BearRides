@@ -9,6 +9,7 @@ package controller;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 
 import javax.swing.JTable;
 import javax.swing.RowFilter;
@@ -42,6 +43,16 @@ public class MessageCollectionController {
      */
     public JTable getTable() {
         return this.table;
+    }
+    
+    /*
+     * description: getter
+     * return: all messages
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public List<Message> getMessages() {
+        return tableModel.getMessages();
     }
     
     /*

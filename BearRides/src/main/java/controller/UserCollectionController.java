@@ -6,6 +6,8 @@
 
 package controller;
 
+import java.util.Collection;
+
 import collection.UserCollection;
 import object.User;
 
@@ -14,7 +16,6 @@ public class UserCollectionController {
     /*~~~~~~~~~~~~ Construction  ~~~~~~~~~~~~*/
     
     public UserCollectionController() {
-        //load from file later
         
         this.table = new UserCollection();
     }
@@ -47,6 +48,18 @@ public class UserCollectionController {
      */
     public void remove(User user) {
     	table.remove(user);
+    }
+    
+    /*~~~~~~~~~~~~ Getters  ~~~~~~~~~~~~*/
+    
+    /*
+     * description: getter
+     * return: user mapped by uuid
+     * precondition: void
+     * postcondition: nothing is changed
+     */
+    public Collection<User> getUsers() {
+        return table.getAll();
     }
     
     /*~~~~~~~~~~~~ Setters  ~~~~~~~~~~~~*/
