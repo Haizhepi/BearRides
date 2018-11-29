@@ -140,7 +140,7 @@ public class MessageBoardGUI extends javax.swing.JPanel {
         if (2 == evt.getClickCount()) {
             int mouseIndex = messageTable.rowAtPoint(evt.getPoint());
             mouseIndex = messageTable.convertRowIndexToModel(mouseIndex);
-            pc.changeFrame(new MessageGUI(cp));
+            pc.changeFrame(new ViewMessageGUI(cp));
         }
         
     }//GEN-LAST:event_messageTableMouseClicked

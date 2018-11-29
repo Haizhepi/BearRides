@@ -6,6 +6,7 @@
 
 package object;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
@@ -22,12 +23,14 @@ public class User implements Comparable<User> {
         this.email = email;
         passHash = password.hashCode();
         notifications = new TreeSet<Message>();
+        trips = new ArrayList<Trip>();
     }
     
     public User(String email, Integer passHash) {
         this.email = email;
         this.passHash = passHash;
         notifications = new TreeSet<Message>();
+        trips = new ArrayList<Trip>();
     }
     
     /*~~~~~~~~~~~~ Insertion  ~~~~~~~~~~~~*/

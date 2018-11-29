@@ -89,7 +89,7 @@ public class DashBoard {
         }
         
         for(Message message : messageGateway.getLoaded().values()) {
-            mc.postMessage(message);
+            mc.loadMessage(message);
         }
     }
     

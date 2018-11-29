@@ -1,7 +1,6 @@
 package objectUpdater;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -16,7 +15,7 @@ public class UserUpdater implements SQLStatementExecuter {
     }
 
     @Override
-    public ResultSet executeQuery(Connection connection, Object object) {
+    public Statement executeQuery(Connection connection, Object object) {
         User user = (User) object;
         Statement statement = null;
         
@@ -39,16 +38,8 @@ public class UserUpdater implements SQLStatementExecuter {
             
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            if (statement != null) {
-                try {
-                    statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         
-        return null;
+        return statement;
     }
 }

@@ -148,7 +148,7 @@ public class HomePageGUI extends JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tripButtonActionPerformed
-        // TODO add your handling code here:
+        pc.changeFrame(new ViewTripGUI(cp));
     }//GEN-LAST:event_tripButtonActionPerformed
 
     private void messageBoardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageBoardButtonActionPerformed
@@ -156,12 +156,10 @@ public class HomePageGUI extends JPanel {
     }//GEN-LAST:event_messageBoardButtonActionPerformed
 
     private void accountSettingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountSettingButtonActionPerformed
-        // TODO add your handling code here:
-        pc.changeFrame(new UserGUI(cp));
+        pc.changeFrame(new ViewUserGUI(cp));
     }//GEN-LAST:event_accountSettingButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
 

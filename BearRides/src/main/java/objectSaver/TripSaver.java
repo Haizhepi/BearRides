@@ -17,7 +17,7 @@ public class TripSaver implements SQLStatementExecuter {
     }
 
     @Override
-    public ResultSet executeQuery(Connection connection, Object object) {
+    public Statement executeQuery(Connection connection, Object object) {
         Trip trip = (Trip) object;
         Long key = trip.getPrimaryKey();
         Statement statement = null;
@@ -69,16 +69,8 @@ public class TripSaver implements SQLStatementExecuter {
             
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            if (statement != null) {
-                try {
-                    statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         
-        return null;
+        return statement;
     }
 }
