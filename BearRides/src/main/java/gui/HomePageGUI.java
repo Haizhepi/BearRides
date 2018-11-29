@@ -43,6 +43,8 @@ public class HomePageGUI extends JPanel {
         userInfoLabel = new javax.swing.JLabel();
         accountSettingButton = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
+        notificationLabel = new javax.swing.JLabel();
+        notificationButton = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
@@ -74,7 +76,7 @@ public class HomePageGUI extends JPanel {
         });
 
         userInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        userInfoLabel.setText("Become a driver/ Change your Info:");
+        userInfoLabel.setText("Change your Info:");
 
         accountSettingButton.setBackground(new java.awt.Color(0, 102, 204));
         accountSettingButton.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
@@ -94,33 +96,51 @@ public class HomePageGUI extends JPanel {
             }
         });
 
+        notificationLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        notificationLabel.setText("Notification:");
+
+        notificationButton.setBackground(new java.awt.Color(255, 102, 102));
+        notificationButton.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
+        notificationButton.setText("Notification");
+        notificationButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                notificationButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(topSeparator)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(248, 248, 248)
+                        .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(welcomeLabel)
+                            .addComponent(topSeparator)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(userInfoLabel)
                                     .addComponent(tripLabel)
-                                    .addComponent(messageBoardLabel)
-                                    .addComponent(userInfoLabel))
-                                .addGap(73, 73, 73)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(notificationLabel)
+                                    .addComponent(messageBoardLabel))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 231, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(messageBoardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                                     .addComponent(accountSettingButton, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                                    .addComponent(messageBoardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(tripButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(0, 27, Short.MAX_VALUE)))
+                                    .addComponent(tripButton, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                                    .addComponent(notificationButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(33, 33, 33))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(29, 29, 29)
+                                .addComponent(welcomeLabel)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(248, 248, 248)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,19 +149,23 @@ public class HomePageGUI extends JPanel {
                 .addComponent(welcomeLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(topSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tripLabel)
-                    .addComponent(tripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                    .addComponent(notificationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(notificationLabel))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tripLabel))
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(messageBoardLabel)
-                    .addComponent(messageBoardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
+                    .addComponent(messageBoardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(userInfoLabel)
-                    .addComponent(accountSettingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                    .addComponent(accountSettingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userInfoLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
         );
@@ -164,6 +188,10 @@ public class HomePageGUI extends JPanel {
         // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_backButtonActionPerformed
+
+    private void notificationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_notificationButtonActionPerformed
 
     public static void main(String[] args) throws Exception{
         // take place on thread other than main thread
@@ -194,6 +222,8 @@ public class HomePageGUI extends JPanel {
     private javax.swing.JButton backButton;
     private javax.swing.JButton messageBoardButton;
     private javax.swing.JLabel messageBoardLabel;
+    private javax.swing.JButton notificationButton;
+    private javax.swing.JLabel notificationLabel;
     private javax.swing.JSeparator topSeparator;
     private javax.swing.JButton tripButton;
     private javax.swing.JLabel tripLabel;

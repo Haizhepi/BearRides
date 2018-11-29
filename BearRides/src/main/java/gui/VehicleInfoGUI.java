@@ -16,12 +16,12 @@ import controller.PanelController;
  *
  * @author Xingan_Wan
  */
-public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
+public class VehicleInfoGUI extends javax.swing.JPanel {
     
     /**
      * Creates new form DriverInfo
      */
-    public Driver_VehicleInfoGUI(DashBoard cp) {
+    public VehicleInfoGUI(DashBoard cp) {
         this.cp = cp;
         this.pc = cp.getPanelController();
         initComponents();
@@ -34,8 +34,6 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        driverLabel = new javax.swing.JLabel();
-        driverCheckBox = new javax.swing.JCheckBox();
         vInfoLabel = new javax.swing.JLabel();
         modelLabel = new javax.swing.JLabel();
         capaLabel = new javax.swing.JLabel();
@@ -43,27 +41,12 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
         modelFormattedTextField = new javax.swing.JFormattedTextField();
         capaFormattedTextField = new javax.swing.JFormattedTextField();
         spaceFormattedTextField = new javax.swing.JFormattedTextField();
-        middleSeparator = new javax.swing.JSeparator();
+        separator1 = new javax.swing.JSeparator();
         okButton = new javax.swing.JButton();
-        bottomSeparator = new javax.swing.JSeparator();
+        separator2 = new javax.swing.JSeparator();
         backButton = new javax.swing.JButton();
-        topSeparator = new javax.swing.JSeparator();
-        driverCheckLabel = new javax.swing.JLabel();
-        dlLabel = new javax.swing.JLabel();
-        dlTextField = new javax.swing.JTextField();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
-
-        driverLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        driverLabel.setText("Driver Infomation");
-
-        driverCheckBox.setFont(new java.awt.Font("Leelawadee UI Semilight", 0, 18)); // NOI18N
-        driverCheckBox.setText("(Check if is a driver)");
-        driverCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                driverCheckBoxActionPerformed(evt);
-            }
-        });
 
         vInfoLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
         vInfoLabel.setText("Vehicle Infomation");
@@ -95,24 +78,13 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
             }
         });
 
-        driverCheckLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        driverCheckLabel.setText("Driver");
-
-        dlLabel.setFont(new java.awt.Font("Leelawadee UI", 0, 18)); // NOI18N
-        dlLabel.setText("Driver License #");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(bottomSeparator)
-                    .addComponent(middleSeparator, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(driverLabel)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(separator2)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(127, 127, 127)
@@ -122,30 +94,23 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                 .addGap(135, 135, 135))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(topSeparator)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(driverCheckLabel)
-                    .addComponent(dlLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dlTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(driverCheckBox))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(capaLabel)
-                    .addComponent(vInfoLabel)
                     .addComponent(spaceLabel)
                     .addComponent(modelLabel))
-                .addGap(97, 97, 97)
+                .addGap(127, 127, 127)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(capaFormattedTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
                     .addComponent(modelFormattedTextField)
                     .addComponent(spaceFormattedTextField))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(vInfoLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(separator1)
                 .addContainerGap())
         );
 
@@ -155,22 +120,10 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(driverLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(topSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(driverCheckLabel)
-                    .addComponent(driverCheckBox))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dlLabel)
-                    .addComponent(dlTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(75, 75, 75)
                 .addComponent(vInfoLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(middleSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(separator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(modelLabel)
                     .addComponent(modelFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -182,8 +135,8 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(spaceLabel)
                     .addComponent(spaceFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
-                .addComponent(bottomSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
+                .addComponent(separator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -204,10 +157,6 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
         // TODO add your handling code here:
         pc.closeFrame();
     }//GEN-LAST:event_okButtonActionPerformed
-
-    private void driverCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_driverCheckBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_driverCheckBoxActionPerformed
     
     public static void main(String[] args) {
         // take place on thread other than main thread
@@ -228,28 +177,22 @@ public class Driver_VehicleInfoGUI extends javax.swing.JPanel {
                 
                 DashBoard cp = new DashBoard();
                 cp.load();
-                cp.getPanelController().changeFrame(new Driver_VehicleInfoGUI(cp));
+                cp.getPanelController().changeFrame(new VehicleInfoGUI(cp));
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
-    private javax.swing.JSeparator bottomSeparator;
     private javax.swing.JFormattedTextField capaFormattedTextField;
     private javax.swing.JLabel capaLabel;
-    private javax.swing.JLabel dlLabel;
-    private javax.swing.JTextField dlTextField;
-    private javax.swing.JCheckBox driverCheckBox;
-    private javax.swing.JLabel driverCheckLabel;
-    private javax.swing.JLabel driverLabel;
-    private javax.swing.JSeparator middleSeparator;
     private javax.swing.JFormattedTextField modelFormattedTextField;
     private javax.swing.JLabel modelLabel;
     private javax.swing.JButton okButton;
+    private javax.swing.JSeparator separator1;
+    private javax.swing.JSeparator separator2;
     private javax.swing.JFormattedTextField spaceFormattedTextField;
     private javax.swing.JLabel spaceLabel;
-    private javax.swing.JSeparator topSeparator;
     private javax.swing.JLabel vInfoLabel;
     // End of variables declaration//GEN-END:variables
     

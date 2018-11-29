@@ -44,9 +44,9 @@ public class ViewMessageGUI extends javax.swing.JPanel {
         descriptionLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        TripButton = new javax.swing.JButton();
-        creatorButton = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
+        creatorButton = new javax.swing.JButton();
+        tripButton = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
@@ -77,12 +77,12 @@ public class ViewMessageGUI extends javax.swing.JPanel {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        TripButton.setBackground(new java.awt.Color(0, 102, 0));
-        TripButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        TripButton.setText("Trip");
-        TripButton.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setBackground(new java.awt.Color(0, 102, 0));
+        backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TripButtonActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
 
@@ -95,12 +95,12 @@ public class ViewMessageGUI extends javax.swing.JPanel {
             }
         });
 
-        backButton.setBackground(new java.awt.Color(0, 102, 0));
-        backButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
-        backButton.setText("Back");
-        backButton.addActionListener(new java.awt.event.ActionListener() {
+        tripButton.setBackground(new java.awt.Color(0, 102, 0));
+        tripButton.setFont(new java.awt.Font("Leelawadee UI", 0, 24)); // NOI18N
+        tripButton.setText("Trip");
+        tripButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
+                tripButtonActionPerformed(evt);
             }
         });
 
@@ -113,7 +113,7 @@ public class ViewMessageGUI extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(titleLabel)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(658, 671, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(creatorTextField)
@@ -132,11 +132,11 @@ public class ViewMessageGUI extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(85, 85, 85)
                 .addComponent(creatorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79)
-                .addComponent(TripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(78, 78, 78)
+                .addComponent(tripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74))
+                .addGap(84, 84, 84))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,29 +163,28 @@ public class ViewMessageGUI extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(creatorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tripButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(28, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TripButtonActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
         pc.closeFrame();
-    }//GEN-LAST:event_TripButtonActionPerformed
+    }//GEN-LAST:event_backButtonActionPerformed
 
     private void creatorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_creatorButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_creatorButtonActionPerformed
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+    private void tripButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tripButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_backButtonActionPerformed
+    }//GEN-LAST:event_tripButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton TripButton;
     private javax.swing.JButton backButton;
     private javax.swing.JButton creatorButton;
     private javax.swing.JLabel creatorLabel;
@@ -198,6 +197,7 @@ public class ViewMessageGUI extends javax.swing.JPanel {
     private javax.swing.JTextField postTimeTextField;
     private javax.swing.JTextField postTimeTextField1;
     private javax.swing.JLabel titleLabel;
+    private javax.swing.JButton tripButton;
     private javax.swing.JLabel viewMessageLabel;
     // End of variables declaration//GEN-END:variables
     
