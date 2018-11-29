@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="994574b5-61ac-410d-8081-23d21b31c461" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c400.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c490.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c4a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c4b0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c4c1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c4d1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c4d1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c4e0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c4e0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c4f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c4f1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c501.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c501.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c510.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c521.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c521.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c530.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c530.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c541.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c541.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c550.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c550.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c561.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c561.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c571.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c571.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c581.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c581.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearRides/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/BearRides/seg0/c81.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/TripRequirementTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/TripRequirementTableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/TripRiderTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/TripRiderTableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/collection/UserCollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collection/UserCollectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,23 +32,23 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/VehicleTableCreator.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="134">
-                  <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="80" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="80" />
                   <folding>
-                    <element signature="e#322#323#0" expanded="true" />
-                    <element signature="e#370#371#0" expanded="true" />
+                    <element signature="e#729#730#0" expanded="true" />
+                    <element signature="e#761#762#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripRiderTableCreator.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseCreator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+                <state relative-caret-position="217">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                 </state>
               </provider>
             </entry>
@@ -91,6 +58,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="123">
                   <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="223">
+                  <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -125,8 +101,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1479">
-                  <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+                <state relative-caret-position="135">
+                  <caret line="29" selection-start-line="29" selection-end-line="29" />
                   <folding>
                     <element signature="e#3049#3050#0" expanded="true" />
                   </folding>
@@ -135,24 +111,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripTableCreator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="39" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/UserTableCreator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/objectSaver/TripSaver.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="199">
@@ -161,6 +119,15 @@
                     <element signature="e#352#353#0" expanded="true" />
                     <element signature="e#400#401#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="103">
+                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -289,7 +256,6 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/MessageGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/RegisterGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/LoginGUI.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/csi3471/app/UserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java" />
@@ -329,6 +295,8 @@
         <option value="$PROJECT_DIR$/src/main/java/objectTable/TripRiderTableCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/objectTable/TripRequirementTableCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/objectTable/MessageTableCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -371,170 +339,6 @@
               <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
               <item name="BearRides" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="collection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="objectDeleter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="objectGateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="objectLoader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="objectSaver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="objectTable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="objectUpdater" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="collection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BearRides" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BearRides" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -547,7 +351,7 @@
     <property name="DatabaseDriversLRU" value="derby" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543464006876" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543465711691" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -582,7 +386,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DerbyTest.saveObjectTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="BearRides" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -653,23 +471,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCollectionTest.logout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BearRides" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="collection" />
-      <option name="MAIN_CLASS_NAME" value="collection.UserCollectionTest" />
-      <option name="METHOD_NAME" value="logout" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -685,19 +486,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserCollectionTest.logout" />
       <item itemvalue="JUnit.UserCollectionTest" />
       <item itemvalue="JUnit.UserCollectionTest.authenticate" />
       <item itemvalue="JUnit.DerbyTest.saveObjectTest" />
       <item itemvalue="JUnit.DerbyTest" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DerbyTest.saveObjectTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DerbyTest" />
+        <item itemvalue="JUnit.DerbyTest.saveObjectTest" />
         <item itemvalue="JUnit.UserCollectionTest.authenticate" />
         <item itemvalue="JUnit.UserCollectionTest" />
-        <item itemvalue="JUnit.UserCollectionTest.logout" />
       </list>
     </recent_temporary>
   </component>
@@ -716,9 +517,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DerbyTest_saveObjectTest - 2018.11.28 at 21h 24m 11s.xml">
-      <configuration name="DerbyTest.saveObjectTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DerbyTest_saveObjectTest - 2018.11.28 at 21h 26m 38s.xml">
       <configuration name="DerbyTest.saveObjectTest" configurationId="JUnit" />
     </history-entry>
@@ -746,9 +544,12 @@
     <history-entry file="DerbyTest_saveObjectTest - 2018.11.28 at 21h 58m 53s.xml">
       <configuration name="DerbyTest.saveObjectTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DerbyTest - 2018.11.28 at 22h 18m 43s.xml">
+      <configuration name="DerbyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22779000" />
+    <option name="totallyTimeSpent" value="24384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="806" extended-state="6" />
@@ -782,7 +583,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.3297568" />
-      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="9" weight="0.32761088" />
     </layout>
     <layout-to-restore>
@@ -854,28 +655,22 @@
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/database/DatabaseCreator.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/table/UserTable.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e724aea7-c1b0-4e13-9e90-b8b4d5698cb5/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/objectGateway/UserGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objectTable/TripUserRelationTableCreator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/VehicleTableTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/DashBoard.java">
@@ -1141,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/controller/UserTableControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1213,16 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1479">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-          <folding>
-            <element signature="e#3049#3050#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/object/TripTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -1238,6 +1016,55 @@
             <element signature="e#352#353#0" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/csi3471/app/DerbyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#3049#3050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/jdk.management.jfr/jdk/management/jfr/internal/FlightRecorderMXBeanProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="80" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="80" />
+          <folding>
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
         </state>
       </provider>
     </entry>
